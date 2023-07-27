@@ -1,4 +1,4 @@
-export interface ParagraphQuestion {
+export interface QuestionType {
 	question: string;
 	answers: string[];
 	true: string;
@@ -13,10 +13,22 @@ export interface ParagraphType {
 	index: number;
 	paragraph: string;
 	notes?: string;
-	questions: ParagraphQuestion[];
+	questions: QuestionType[];
+}
+
+export interface ModelType {
+	name: string;
+	questions: QuestionType[];
 }
 
 export interface StatusTuple extends Array<number | number> {
 	0: number;
 	1: number;
+}
+
+export interface StatusTupleVerbose {
+	correct: number;
+	incorrect: number;
+	question: string;
+	answer: string;
 }

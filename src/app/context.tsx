@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import { ParagraphQuestion } from './types';
-import data from './data.json';
+import { QuestionType } from './types';
+import data from './paragraphs/data.json';
 
 interface ContextType {
 	selected: number[][];
