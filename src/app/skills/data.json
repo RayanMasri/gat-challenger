@@ -13668,5 +13668,10 @@
 				"skill": "sentence-completion"
 			}
 		]
-	}
+	},
+	{
+		"name": "جديدة",
+		"questions": [
+			{ "question": "ماء : أجاج", "answers": ["مدرسة : تعليم", "طاقة : مفاعل", "اغنام : راع", "ليمون : حامض"], "true": "ليمون : حامض", "status": "normal", "skill": "verbal-analogy" },
+	
 ]

@@ -337,7 +337,12 @@ const Page = () => {
 	const getRemaining = () => data.length - getFilteredIndices().length;
 
 	const formatSeconds = (seconds: number) => {
-		return `${seconds.toFixed(2)}s`;
+		let minutes = Math.floor(seconds / 60);
+		let hours = minutes / 60;
+
+		if (hours >= 1) return `${hours.toFixed(2)}h`;
+		if (minutes > 0) return `${minutes}m`;
+		return `${Math.floor(seconds)}s`;
 	};
 
 	useEffect(() => {
