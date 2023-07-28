@@ -3,6 +3,7 @@ export interface QuestionType {
 	answers: string[];
 	true: string;
 	status: string;
+	notes?: string;
 	selected?: boolean;
 	index?: number;
 }
@@ -18,6 +19,7 @@ export interface ParagraphType {
 
 export interface ModelType {
 	name: string;
+	video?: string;
 	questions: QuestionType[];
 }
 
@@ -31,4 +33,21 @@ export interface StatusTupleVerbose {
 	incorrect: number;
 	question: string;
 	answer: string;
+}
+
+export interface AnomalyStatusTuple {
+	correct: number;
+	incorrect: number;
+	answers: string[];
+	solution: string;
+}
+
+export interface AnomalyAnswerType {
+	content: string;
+	meaning: string;
+}
+
+export interface AnomalyQuestionType {
+	answers: AnomalyAnswerType[];
+	solution: string | null;
 }

@@ -574,7 +574,10 @@ const Question: FC<QuestionProps> = ({ info, index, model, evaluate, onChange })
 										setState({ ...state, selected: _index });
 									}}
 								/>
-								<div className=' w-full break-words max-w-[850px]'>{answer}</div>
+								<div className='w-full break-words max-w-[850px] flex flex-row'>
+									{answer}
+									{evaluate && answer == info.true ? <div className='mr-3 text-gray-400 text-[16px]'>{info.notes}</div> : ''}
+								</div>
 							</div>
 							<div className='ml-3'>
 								{evaluate ? answer == info.true ? <AiOutlineCheck className='text-green-300' /> : _index == state.selected ? <AiOutlineClose className='text-red-500' /> : '' : ''}
