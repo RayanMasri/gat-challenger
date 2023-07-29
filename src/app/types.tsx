@@ -39,7 +39,7 @@ export interface AnomalyStatusTuple {
 	correct: number;
 	incorrect: number;
 	answers: string[];
-	solution: string;
+	solution: string | null;
 }
 
 export interface AnomalyAnswerType {

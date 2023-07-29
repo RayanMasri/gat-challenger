@@ -313,8 +313,8 @@ const Page = () => {
 		timestamp: null,
 	});
 
-	const questions = useRef(null);
-	const main = useRef(null);
+	const questions: React.RefObject<HTMLInputElement> = useRef(null);
+	const main: React.RefObject<HTMLInputElement> = useRef(null);
 	let status = getStatus();
 
 	const getFilteredIndices = (threshold: number = 0) => {
@@ -401,12 +401,13 @@ const Page = () => {
 		});
 
 		setTimeout(function () {
+			if (questions.current == null) return console.log('Failed to scroll, question div is null');
+			if (main.current == null) return console.log('Failed to scroll, main div is null');
+
 			let indices = getFilteredIndices(value).sort((a, b) => a - b);
 			for (let i = 1; i < indices.length; i++) {
 				let difference = indices[i] - indices[i - 1];
 				if (difference == 1) continue;
-
-				if (questions.current == null) return console.log('Failed to scroll, current is null');
 
 				let latest = Array.from(questions.current.children)[indices[i] + 1];
 				if (latest) {
