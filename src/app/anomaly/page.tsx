@@ -4,8 +4,9 @@ import React, { FC, useContext, useState, useEffect, useRef } from 'react';
 import data from './data.json';
 
 import { AnomalyAnswerType, AnomalyQuestionType, AnomalyStatusTuple } from '../types';
-import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineCheck, AiOutlineClose, AiOutlineLink } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
+import { BiSolidBrain } from 'react-icons/bi';
 
 function shuffle(array: any[]) {
 	let currentIndex = array.length,
@@ -112,18 +113,24 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 		return shuffle(answers);
 	};
 
+	const getMarked = () => JSON.parse(localStorage.getItem('anomaly-marked') || '[]');
+
+	const isDifficult = () => getMarked().includes(index);
+
 	const [state, setState] = useState<{
 		evaluate: boolean;
 		fade: boolean;
 		answers: [AnomalyAnswerType, number][];
 		selected: number;
 		status: AnomalyStatusTuple;
+		difficult: boolean;
 	}>({
 		evaluate: false,
 		fade: false,
 		answers: getAnswers(),
 		selected: -1,
 		status: status || { correct: 0, incorrect: 0, answers: [], solution: '' },
+		difficult: isDifficult(),
 	});
 
 	let { context, setContext } = useContext(Context);
@@ -143,10 +150,42 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 
 	const isCollapsed = () => context.collapsed.includes(index);
 
+	const markDifficult = () => {
+		let marked = getMarked();
+
+		if (marked.includes(index)) {
+			let _index = marked.findIndex((item: number) => item == index);
+			marked.splice(_index, 1);
+		} else {
+			marked.push(index);
+		}
+
+		setState({
+			...state,
+			difficult: !state.difficult,
+		});
+
+		localStorage.setItem('anomaly-marked', JSON.stringify(marked));
+	};
+
+	const showMeaning = (word: string) => {
+		let url = `https://www.almaany.com/ar/dict/ar-ar/${word}/`;
+
+		window.open(url, '_blank');
+	};
+
 	return (
 		<div className='w-full flex flex-row mb-2 px-2 items-center' style={{ direction: 'rtl' }}>
 			<div className='h-full bg-[#25253E] py-[2px] w-[128px] text-2xl rounded flex items-center justify-center flex-col'>
 				<div className='w-full flex flex-row justify-center items-center'>
+					<div
+						onClick={() => {
+							markDifficult();
+						}}
+						className='mt-[2px] hover:opacity-50 transition-all ml-[4px] h-full flex justify-center items-center'
+					>
+						<BiSolidBrain size={18} className={`${state.difficult ? 'text-red-900' : 'text-white'} transition-all`} />
+					</div>
 					<div>Q{index + 1}</div>
 					<div
 						onClick={() => {
@@ -204,7 +243,6 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 											if (state.evaluate) return;
 
 											let correct: boolean = answer.content == info.solution;
-											console.log(correct);
 
 											setState({
 												...state,
@@ -229,6 +267,13 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 										{state.evaluate && answer.meaning != '' ? <div className='mr-3 text-[#FFD3BA] text-[16px]'>{answer.meaning}</div> : ''}
 									</div>
 								</div>
+								<AiOutlineLink
+									className='ml-1 hover:opacity-50 transition-all'
+									onClick={() => {
+										showMeaning(answer.content);
+									}}
+								/>
+
 								<div className='ml-3'>
 									{state.evaluate ? (
 										answer.content == info.solution ? (
@@ -460,6 +505,7 @@ const Page = () => {
 			</div>
 			<div ref={questions} className='w-full h-full flex flex-col gap-y-2 pt-2'>
 				{data.map((question, index) => {
+					if (question.solution == null) return;
 					return <Question info={question} index={index} status={status[index]} onSubmit={(correct, incorrect) => onSubmit(correct, incorrect, index)} />;
 				})}
 			</div>

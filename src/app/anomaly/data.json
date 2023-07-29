@@ -37,19 +37,19 @@
 	},
 	{
 		"answers": [
-			{ "content": "كهولة", "meaning": "" },
-			{ "content": "بنوة", "meaning": "" },
-			{ "content": "فتوة", "meaning": "" },
-			{ "content": "شيخوخة", "meaning": "" }
+			{ "content": "كهولة", "meaning": "سِنّ الإنسان ما بَين الثلاثين والخمسين" },
+			{ "content": "بنوة", "meaning": "شاب صغير السنّ" },
+			{ "content": "فتوة", "meaning": "الشَّبابُ بين طَوْرَيِ المراهقة والرُّجولة" },
+			{ "content": "شيخوخة", "meaning": "مَرْحَلَةٌ عُمْرِ تَبْدَأُ مِنْ سِنِّ الْخَمْسِينَ فَما فَوْق" }
 		],
 		"solution": "فتوة"
 	},
 	{
 		"answers": [
-			{ "content": "كهولة", "meaning": "" },
+			{ "content": "كهولة", "meaning": "سِنّ الإنسان ما بَين الثلاثين والخمسين" },
 			{ "content": "نبوة", "meaning": "" },
-			{ "content": "فتوة", "meaning": "" },
-			{ "content": "مشيب", "meaning": "" }
+			{ "content": "فتوة", "meaning": "الشَّبابُ بين طَوْرَيِ المراهقة والرُّجولة" },
+			{ "content": "مشيب", "meaning": "سِنُّ الشَّيْبِ" }
 		],
 		"solution": "مشيب"
 	},
@@ -154,37 +154,37 @@
 	},
 	{
 		"answers": [
-			{ "content": "آسن", "meaning": "" },
-			{ "content": "زُلال", "meaning": "" },
-			{ "content": "منتن", "meaning": "" },
-			{ "content": "أجاج", "meaning": "" }
+			{ "content": "آسن", "meaning": "مَاءٌ مُتَغَيِّرٌ طَعْمُهُ وَلَوْنُهُ وَرِيحُهُ" },
+			{ "content": "زُلال", "meaning": "الماءُ العذبُ الصافي البارد السّلِس" },
+			{ "content": "منتن", "meaning": "رَائِحَتُهُ كَرِيهَةٌ" },
+			{ "content": "أجاج", "meaning": "طَعْمٌ شَدِيد الْمُلوحَةِ والمرارَةِ" }
 		],
 		"solution": "زُلال"
 	},
 	{
 		"answers": [
-			{ "content": "أبرم", "meaning": "" },
+			{ "content": "أبرم", "meaning": "أَحكمه ودبَّره. جعله يمضي" },
 			{ "content": "غدر", "meaning": "" },
-			{ "content": "نكث", "meaning": "" },
+			{ "content": "نكث", "meaning": "نقضَه ونبذَه" },
 			{ "content": "نقض", "meaning": "" }
 		],
 		"solution": "أبرم"
 	},
 	{
 		"answers": [
-			{ "content": "أبو الهول", "meaning": "" },
-			{ "content": "النيل", "meaning": "" },
+			{ "content": "أبو الهول", "meaning": "تمثال لمخلوق أسطوري في مصر" },
+			{ "content": "النيل", "meaning": "نهرٌ تاريخي في مصر" },
 			{ "content": "الأهرامات", "meaning": "" },
-			{ "content": "بورسعيد", "meaning": "" }
+			{ "content": "بورسعيد", "meaning": "مدينة مصرية ساحلية" }
 		],
 		"solution": "بورسعيد"
 	},
 	{
 		"answers": [
-			{ "content": "أبو حفص الفاروق", "meaning": "" },
-			{ "content": "أبو بكر الصديق", "meaning": "" },
-			{ "content": "عثمان ذو النورين", "meaning": "" },
-			{ "content": "حمزة أسد الله", "meaning": "" }
+			{ "content": "أبو حفص الفاروق", "meaning": "لقب لعمر بن الخطاب - أحد الخلفاء الراشدين" },
+			{ "content": "أبو بكر الصديق", "meaning": "أحد الخلفاء الراشدين" },
+			{ "content": "عثمان ذو النورين", "meaning": "لقب لعثمان بن عفان - أحد الخلفاء الراشدين" },
+			{ "content": "حمزة أسد الله", "meaning": "لقب لحمزة بن عبدالمطلب - صحابي" }
 		],
 		"solution": "حمزة أسد الله"
 	},
@@ -199,10 +199,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "أجدع", "meaning": "" },
-			{ "content": "أبتر", "meaning": "" },
-			{ "content": "أصلم", "meaning": "" },
-			{ "content": "أحوص", "meaning": "" }
+			{ "content": "أجدع", "meaning": "قَطَعَ أَنْفَهُ أَوْ طَرَفاً مِنْ أَطْرَافِهِ" },
+			{ "content": "أبتر", "meaning": "مقطوع الذنب، مقطوع اليد أو الرِّجل" },
+			{ "content": "أصلم", "meaning": "المقطوع الأُذُنِ" },
+			{ "content": "أحوص", "meaning": "ضاقت إِحدى عينَيه دون الأخرى" }
 		],
 		"solution": "أحوص"
 	},
@@ -354,14 +354,14 @@
 		"answers": [
 			{ "content": "أعمدة", "meaning": "" },
 			{ "content": "أوتاد", "meaning": "" },
-			{ "content": "أطناب", "meaning": "" },
+			{ "content": "أطناب", "meaning": "حبلٌ يُشَدُّ به الخِباء والسُّرادق ونحوهما" },
 			{ "content": "قصور", "meaning": "" }
 		],
 		"solution": "قصور"
 	},
 	{
 		"answers": [
-			{ "content": "أقحوان", "meaning": "" },
+			{ "content": "أقحوان", "meaning": "نَبَاتٌ لَهُ زَهْرٌ أبْيَضُ وَرَحيقٌ أصْفَ" },
 			{ "content": "أحمر", "meaning": "" },
 			{ "content": "أسود", "meaning": "" },
 			{ "content": "أصفر", "meaning": "" }
@@ -469,7 +469,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "إزار", "meaning": "" },
+			{ "content": "إزار", "meaning": " ثوب يُحيط بالنِّصف الأَسفل من البدن" },
 			{ "content": "بنطال", "meaning": "" },
 			{ "content": "سروال", "meaning": "" },
 			{ "content": "ثوب", "meaning": "" }
@@ -478,7 +478,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "إزار", "meaning": "" },
+			{ "content": "إزار", "meaning": " ثوب يُحيط بالنِّصف الأَسفل من البدن" },
 			{ "content": "ثوب", "meaning": "" },
 			{ "content": "قفاز", "meaning": "" },
 			{ "content": "رداء", "meaning": "" }
@@ -568,10 +568,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "الألب", "meaning": "" },
-			{ "content": "الهيمالايا", "meaning": "" },
-			{ "content": "الجولان", "meaning": "" },
-			{ "content": "الطور", "meaning": "" }
+			{ "content": "الألب", "meaning": "جبال في أوروبا" },
+			{ "content": "الهيمالايا", "meaning": "جبال بين الهند والصين" },
+			{ "content": "الجولان", "meaning": "هضبة في الشام" },
+			{ "content": "الطور", "meaning": "جبل موسى - جبال في مصر" }
 		],
 		"solution": "الجولان"
 	},
@@ -883,9 +883,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "العسجد", "meaning": "" },
-			{ "content": "التبر", "meaning": "" },
-			{ "content": "العقيق", "meaning": "" },
+			{ "content": "العسجد", "meaning": "الذَّهَبُ، الجوهر كُلُّه كالدُّرّ والياقوت" },
+			{ "content": "التبر", "meaning": "سبائك الذهب أو الفضة قبل ضربها نقودا ً" },
+			{ "content": "العقيق", "meaning": "حجرٌ كريمٌ أحمر" },
 			{ "content": "اللجين", "meaning": "" }
 		],
 		"solution": "اللجين"
@@ -902,9 +902,9 @@
 	{
 		"answers": [
 			{ "content": "العلم", "meaning": "" },
-			{ "content": "اللواء", "meaning": "" },
+			{ "content": "اللواء", "meaning": "العلم" },
 			{ "content": "الشعار", "meaning": "" },
-			{ "content": "الراية", "meaning": "" }
+			{ "content": "الراية", "meaning": "العلم" }
 		],
 		"solution": "الشعار"
 	},
@@ -921,7 +921,7 @@
 		"answers": [
 			{ "content": "الفستان", "meaning": "" },
 			{ "content": "الخلخال", "meaning": "" },
-			{ "content": "القميص", "meaning": "" },
+			{ "content": "القميص", "meaning": "لباس داخليّ يغطِّي الجلدَ وتغطِّيه ثيابٌ خارجيَّة" },
 			{ "content": "العقد", "meaning": "" }
 		],
 		"solution": "القميص"
@@ -956,7 +956,7 @@
 	{
 		"answers": [
 			{ "content": "القيد", "meaning": "" },
-			{ "content": "الإسار", "meaning": "" },
+			{ "content": "الإسار", "meaning": " القَيْدُ، ما يُشَدُّ بِهِ" },
 			{ "content": "الغلال", "meaning": "" },
 			{ "content": "الرِّباط", "meaning": "" }
 		],
@@ -964,7 +964,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "الكركدن", "meaning": "" },
+			{ "content": "الكركدن", "meaning": "Rhino" },
 			{ "content": "التمساح", "meaning": "" },
 			{ "content": "السلحفاة", "meaning": "" },
 			{ "content": "البطريق", "meaning": "" }
@@ -991,10 +991,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "المتنبي", "meaning": "" },
-			{ "content": "الجاحظ", "meaning": "" },
-			{ "content": "أبو نوّاس", "meaning": "" },
-			{ "content": "أبو تمّام", "meaning": "" }
+			{ "content": "المتنبي", "meaning": "شاعر" },
+			{ "content": "الجاحظ", "meaning": "أديب" },
+			{ "content": "أبو نوّاس", "meaning": "شاعر" },
+			{ "content": "أبو تمّام", "meaning": "شاعر" }
 		],
 		"solution": "الجاحظ"
 	},
@@ -1028,7 +1028,7 @@
 	{
 		"answers": [
 			{ "content": "المعدة", "meaning": "" },
-			{ "content": "الطحال", "meaning": "" },
+			{ "content": "الطحال", "meaning": "عضو من أعضاء البدن الداخلية - Spleen" },
 			{ "content": "الأمعاء", "meaning": "" },
 			{ "content": "العين", "meaning": "" }
 		],
@@ -1036,19 +1036,19 @@
 	},
 	{
 		"answers": [
-			{ "content": "النيل", "meaning": "" },
-			{ "content": "الفرات", "meaning": "" },
-			{ "content": "دجلة", "meaning": "" },
+			{ "content": "النيل", "meaning": "نهر" },
+			{ "content": "الفرات", "meaning": "نهر" },
+			{ "content": "دجلة", "meaning": "نهر" },
 			{ "content": "الأهرامات", "meaning": "" }
 		],
 		"solution": "الأهرامات"
 	},
 	{
 		"answers": [
-			{ "content": "النيل", "meaning": "" },
-			{ "content": "المسيسبي", "meaning": "" },
-			{ "content": "إفرست", "meaning": "" },
-			{ "content": "الأمازون", "meaning": "" }
+			{ "content": "النيل", "meaning": "اسم لنهر" },
+			{ "content": "المسيسبي", "meaning": "اسم لنهر" },
+			{ "content": "إفرست", "meaning": "اسم لجبل" },
+			{ "content": "الأمازون", "meaning": "اسم لنهر" }
 		],
 		"solution": "إفرست"
 	},
@@ -1063,9 +1063,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "الوجاهة", "meaning": "" },
-			{ "content": "العز", "meaning": "" },
-			{ "content": "الجاه", "meaning": "" },
+			{ "content": "الوجاهة", "meaning": "ذُو مَكَانَةٍ، قُوَّةٍ، مَرْتَبَةٍ،" },
+			{ "content": "العز", "meaning": "قَوِيٌّ" },
+			{ "content": "الجاه", "meaning": "ذو شرف ومكانة" },
 			{ "content": "الرفيعة", "meaning": "" }
 		],
 		"solution": "الرفيعة"
@@ -1074,8 +1074,8 @@
 		"answers": [
 			{ "content": "بئر", "meaning": "" },
 			{ "content": "كهف", "meaning": "" },
-			{ "content": "جب", "meaning": "" },
-			{ "content": "قليب", "meaning": "" }
+			{ "content": "جب", "meaning": "البئر الواسعة" },
+			{ "content": "قليب", "meaning": "البئرُ" }
 		],
 		"solution": "كهف"
 	},
@@ -1090,10 +1090,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "باكستان", "meaning": "" },
-			{ "content": "كازاخستان", "meaning": "" },
-			{ "content": "أفغانستان", "meaning": "" },
-			{ "content": "أوزباكستان", "meaning": "" }
+			{ "content": "باكستان", "meaning": "في جنوب آسيا" },
+			{ "content": "كازاخستان", "meaning": "في منتصف آسيا" },
+			{ "content": "أفغانستان", "meaning": "في منتصف آسيا" },
+			{ "content": "أوزباكستان", "meaning": "في منتصف آسيا" }
 		],
 		"solution": "باكستان"
 	},
@@ -1153,7 +1153,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "براثن", "meaning": "" },
+			{ "content": "براثن", "meaning": "مخالب السَّبُع أو الطَّير" },
 			{ "content": "مخالب", "meaning": "" },
 			{ "content": "كواسر", "meaning": "" },
 			{ "content": "أظافر", "meaning": "" }
@@ -1181,7 +1181,7 @@
 	{
 		"answers": [
 			{ "content": "بردعة", "meaning": "" },
-			{ "content": "رحل", "meaning": "" },
+			{ "content": "رحل", "meaning": "ما يُوضَعُ على ظهر البعير للركوب" },
 			{ "content": "جمل", "meaning": "" },
 			{ "content": "سرج", "meaning": "" }
 		],
@@ -1216,28 +1216,28 @@
 	},
 	{
 		"answers": [
-			{ "content": "بسمل", "meaning": "" },
+			{ "content": "بسمل", "meaning": "قال بسم الله" },
 			{ "content": "تأخر", "meaning": "" },
-			{ "content": "تحمّد", "meaning": "" },
-			{ "content": "تحوقل", "meaning": "" }
+			{ "content": "تحمّد", "meaning": "قال الحمد لله" },
+			{ "content": "تحوقل", "meaning": "قال لا حول ولا قوة إلا بالله" }
 		],
 		"solution": "تأخر"
 	},
 	{
 		"answers": [
-			{ "content": "بشار بن برد", "meaning": "" },
+			{ "content": "بشار بن برد", "meaning": "شاعر" },
 			{ "content": "المتنبي", "meaning": "" },
 			{ "content": "أبو تمام", "meaning": "" },
-			{ "content": "حسان بن ثابت", "meaning": "" }
+			{ "content": "حسان بن ثابت", "meaning": "شاعر و صحابي" }
 		],
 		"solution": "حسان بن ثابت"
 	},
 	{
 		"answers": [
-			{ "content": "بشع", "meaning": "" },
+			{ "content": "بشع", "meaning": "بَشِعَ الرَّجُلُ : صارَ دَميماً وَكَريهاً" },
 			{ "content": "غليظ", "meaning": "" },
 			{ "content": "خشن", "meaning": "" },
-			{ "content": "فظ", "meaning": "" }
+			{ "content": "فظ", "meaning": "كَانَ فَظّاً، أَيْ أَسَاءَ وَقَسَا" }
 		],
 		"solution": "بشع"
 	},
@@ -1452,7 +1452,7 @@
 		"answers": [
 			{ "content": "تكاتف", "meaning": "" },
 			{ "content": "تعاون", "meaning": "" },
-			{ "content": "تعاضد", "meaning": "" },
+			{ "content": "تعاضد", "meaning": " تعاونوا وتناصروا" },
 			{ "content": "تفاخر", "meaning": "" }
 		],
 		"solution": "تفاخر"
@@ -1461,7 +1461,7 @@
 		"answers": [
 			{ "content": "تلّ", "meaning": "" },
 			{ "content": "جبل", "meaning": "" },
-			{ "content": "كثبان", "meaning": "" },
+			{ "content": "كثبان", "meaning": "جمع الكثيب - الكثيب: تل أو مرتفع من الرمال" },
 			{ "content": "هضبة", "meaning": "" }
 		],
 		"solution": "كثبان"
@@ -1587,7 +1587,7 @@
 		"answers": [
 			{ "content": "ثوم", "meaning": "" },
 			{ "content": "بصل", "meaning": "" },
-			{ "content": "كراث", "meaning": "" },
+			{ "content": "كراث", "meaning": "Leek" },
 			{ "content": "عدس", "meaning": "" }
 		],
 		"solution": "عدس"
@@ -1604,7 +1604,7 @@
 	{
 		"answers": [
 			{ "content": "جبل", "meaning": "" },
-			{ "content": "طود", "meaning": "" },
+			{ "content": "طود", "meaning": "الجبلُ العظيم " },
 			{ "content": "نار", "meaning": "" },
 			{ "content": "قمة", "meaning": "" }
 		],
@@ -1705,7 +1705,7 @@
 			{ "content": "جمال", "meaning": "" },
 			{ "content": "قوة", "meaning": "" },
 			{ "content": "حزن", "meaning": "" },
-			{ "content": "سعة", "meaning": "" }
+			{ "content": "سعة", "meaning": "غني أو حليم" }
 		],
 		"solution": "حزن"
 	},
@@ -1837,7 +1837,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "حدْس", "meaning": "" },
+			{ "content": "حدْس", "meaning": "ظن" },
 			{ "content": "تخمين", "meaning": "" },
 			{ "content": "توقع", "meaning": "" },
 			{ "content": "توهم", "meaning": "" }
@@ -1918,8 +1918,8 @@
 	},
 	{
 		"answers": [
-			{ "content": "حسر", "meaning": "" },
-			{ "content": "أسفر", "meaning": "" },
+			{ "content": "حسر", "meaning": "انكشفَ وظهر" },
+			{ "content": "أسفر", "meaning": "وضَح وانكشف، أشرق وأضاء، ظهر" },
 			{ "content": "كشف", "meaning": "" },
 			{ "content": "أسدل", "meaning": "" }
 		],
@@ -1930,7 +1930,7 @@
 			{ "content": "حصان", "meaning": "" },
 			{ "content": "حمار", "meaning": "" },
 			{ "content": "جمل", "meaning": "" },
-			{ "content": "بقرة", "meaning": "" }
+			{ "content": "بقرة", "meaning": "مؤنث؟" }
 		],
 		"solution": "بقرة"
 	},
@@ -1984,7 +1984,7 @@
 			{ "content": "حمامة", "meaning": "" },
 			{ "content": "عصفور", "meaning": "" },
 			{ "content": "بلبل", "meaning": "" },
-			{ "content": "طائر", "meaning": "" }
+			{ "content": "طائر", "meaning": "حيوان يطير" }
 		],
 		"solution": "طائر"
 	},
@@ -2028,7 +2028,7 @@
 		"answers": [
 			{ "content": "خبر", "meaning": "" },
 			{ "content": "إعلان", "meaning": "" },
-			{ "content": "تحقيق", "meaning": "" },
+			{ "content": "تحقيق", "meaning": "تقرير يعدّه أحد الصَّحفيِّين عن أحداث شهدها أو قضيّة تهمّ المجتمع" },
 			{ "content": "مقال", "meaning": "" }
 		],
 		"solution": "إعلان"
@@ -2080,7 +2080,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "خفّ", "meaning": "" },
+			{ "content": "خفّ", "meaning": "ما يُلْبَسُ في الرِّجْل من جِلْد رقيق" },
 			{ "content": "جورب", "meaning": "" },
 			{ "content": "حذاء", "meaning": "" },
 			{ "content": "نعال", "meaning": "" }
@@ -2161,19 +2161,19 @@
 	},
 	{
 		"answers": [
-			{ "content": "دبي", "meaning": "" },
-			{ "content": "الدوحة", "meaning": "" },
+			{ "content": "دبي", "meaning": "مدينة في الإمارات" },
+			{ "content": "الدوحة", "meaning": "عاصمة قطر" },
 			{ "content": "الرياض", "meaning": "" },
-			{ "content": "المنامة", "meaning": "" }
+			{ "content": "المنامة", "meaning": "عاصمة البحرين" }
 		],
 		"solution": "دبي"
 	},
 	{
 		"answers": [
-			{ "content": "دبي", "meaning": "" },
-			{ "content": "بغداد", "meaning": "" },
-			{ "content": "دمشق", "meaning": "" },
-			{ "content": "مسقط", "meaning": "" }
+			{ "content": "دبي", "meaning": "مدينة في الإمارات" },
+			{ "content": "بغداد", "meaning": "عاصمة العراق" },
+			{ "content": "دمشق", "meaning": "عاصمة سوريا" },
+			{ "content": "مسقط", "meaning": "عاصمة عمان" }
 		],
 		"solution": "دبي"
 	},
@@ -2296,7 +2296,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "دمث", "meaning": "" },
+			{ "content": "دمث", "meaning": "سَهُل ولان" },
 			{ "content": "مقطب", "meaning": "" },
 			{ "content": "سلس", "meaning": "" },
 			{ "content": "لطيف", "meaning": "" }
@@ -2452,7 +2452,7 @@
 			{ "content": "ربو", "meaning": "" },
 			{ "content": "صداع", "meaning": "" },
 			{ "content": "زكام", "meaning": "" },
-			{ "content": "دوّار", "meaning": "" }
+			{ "content": "دوّار", "meaning": "دَوْخَةٌ تأخذ بالرَّأس" }
 		],
 		"solution": "ربو"
 	},
@@ -2476,17 +2476,17 @@
 	},
 	{
 		"answers": [
-			{ "content": "رحى", "meaning": "" },
-			{ "content": "طاحون", "meaning": "" },
-			{ "content": "غربال", "meaning": "" },
-			{ "content": "مجش", "meaning": "" }
+			{ "content": "رحى", "meaning": "طحن" },
+			{ "content": "طاحون", "meaning": "آلة طحن" },
+			{ "content": "غربال", "meaning": "أدَاةٌ دائِرِيَّةٌ بها ثقوب صغيرة تنقي بِهَا الطَّحِينُ" },
+			{ "content": "مجش", "meaning": "طاحون يطحن بها" }
 		],
 		"solution": "غربال"
 	},
 	{
 		"answers": [
 			{ "content": "رحيق", "meaning": "" },
-			{ "content": "شهد", "meaning": "" },
+			{ "content": "شهد", "meaning": "عسل النَّحل ما دام لم يعصر من شمعه" },
 			{ "content": "علقم", "meaning": "" },
 			{ "content": "خلية", "meaning": "" }
 		],
@@ -2514,7 +2514,7 @@
 		"answers": [
 			{ "content": "رفيق", "meaning": "" },
 			{ "content": "صديق", "meaning": "" },
-			{ "content": "خلّ", "meaning": "" },
+			{ "content": "خلّ", "meaning": "صديق" },
 			{ "content": "أخ", "meaning": "" }
 		],
 		"solution": "أخ"
@@ -2548,7 +2548,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "رمد", "meaning": "" },
+			{ "content": "رمد", "meaning": "داءٌ يُصيبُ العَيْنَ فَيُحْدِثُ فيها الْتِهاباً وَاحْمِراراً وَتُفْرِزُ مادَّةً" },
 			{ "content": "عمى", "meaning": "" },
 			{ "content": "عور", "meaning": "" },
 			{ "content": "صمم", "meaning": "" }
@@ -2648,7 +2648,7 @@
 	{
 		"answers": [
 			{ "content": "ريق", "meaning": "" },
-			{ "content": "بصاق", "meaning": "" },
+			{ "content": "بصاق", "meaning": "الرِّيق" },
 			{ "content": "لعاب", "meaning": "" },
 			{ "content": "مُخاط", "meaning": "" }
 		],
@@ -2683,10 +2683,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "زِرَب", "meaning": "" },
+			{ "content": "زِرَب", "meaning": "حظيرةُ الغنم" },
 			{ "content": "قَتَادة", "meaning": "" },
-			{ "content": "مَراح", "meaning": "" },
-			{ "content": "الوِجار", "meaning": "" }
+			{ "content": "مَراح", "meaning": "المكان الذي ترتاح فيه المواشي وتبيت فيه" },
+			{ "content": "الوِجار", "meaning": "الكهف الَّتِي يَأْوِي إِلَيْها الحيوان فِي الْجَبَلِ - جُحْرُهُ" }
 		],
 		"solution": "قَتَادة"
 	},
@@ -2729,7 +2729,7 @@
 	{
 		"answers": [
 			{ "content": "زَواج", "meaning": "" },
-			{ "content": "قِران", "meaning": "" },
+			{ "content": "قِران", "meaning": "الجمعُ بين الزوجين بالعَقد" },
 			{ "content": "نِكاح", "meaning": "" },
 			{ "content": "خطبة", "meaning": "" }
 		],
