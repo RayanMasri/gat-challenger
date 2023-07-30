@@ -301,17 +301,33 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 const Page = () => {
 	let { context, setContext } = useContext(Context);
 
-	const [state, setState] = useState<{
+	const [state, _setState] = useState<{
 		filterMinimumValue: number;
 		pace: [number | null, number | null];
 		paces: number[];
 		timestamp: number | null;
+		blur: number | null;
+		initial: number;
+		elapsed: number;
+		trueInitial: number;
+		trueElapsed: number;
 	}>({
 		filterMinimumValue: 0,
 		pace: [null, null],
 		paces: [],
 		timestamp: null,
+		blur: null,
+		initial: Date.now(),
+		elapsed: 0,
+		trueInitial: Date.now(),
+		trueElapsed: 0,
 	});
+
+	const _state = useRef(state);
+	const setState = (data: any) => {
+		_setState(data);
+		_state.current = data;
+	};
 
 	const questions: React.RefObject<HTMLInputElement> = useRef(null);
 	const main: React.RefObject<HTMLInputElement> = useRef(null);
@@ -330,6 +346,8 @@ const Page = () => {
 			let matched = tuple.correct + tuple.incorrect >= (threshold || state.filterMinimumValue);
 			if (matched) indices.push(index);
 		});
+		console.log(indices);
+
 		return indices;
 	};
 
@@ -390,8 +408,48 @@ const Page = () => {
 		return `${Math.floor(seconds)}s`;
 	};
 
+	const onFocus = () => {
+		if (_state.current.blur == null) return;
+		let inactive = Date.now() - _state.current.blur;
+
+		console.log(`Been inactive for ${inactive}ms`);
+		if (_state.current.timestamp == null) {
+			return setState({
+				..._state.current,
+
+				initial: _state.current.initial + inactive,
+			});
+		}
+
+		setState({
+			..._state.current,
+
+			timestamp: _state.current.timestamp + inactive,
+			initial: _state.current.initial + inactive,
+		});
+	};
+
+	const onBlur = () => {
+		setState({
+			..._state.current,
+
+			blur: Date.now(),
+		});
+	};
+
+	const onTimer = () => {
+		setState({
+			..._state.current,
+			elapsed: Math.floor((Date.now() - _state.current.initial) / 1000),
+			trueElapsed: Math.floor((Date.now() - _state.current.trueInitial) / 1000),
+		});
+	};
+
 	useEffect(() => {
 		let value = parseInt(localStorage.getItem('filter-minimum') || '0');
+
+		window.addEventListener('focus', onFocus);
+		window.addEventListener('blur', onBlur);
 
 		onFilterMinimum(value);
 
@@ -426,6 +484,14 @@ const Page = () => {
 				return;
 			}
 		}, 10);
+
+		let interval = setInterval(onTimer, 1000);
+
+		return () => {
+			clearInterval(interval);
+			window.removeEventListener('focus', onFocus);
+			window.removeEventListener('blur', onBlur);
+		};
 	}, []);
 
 	return (
@@ -492,13 +558,24 @@ const Page = () => {
 							<div>Average: {formatSeconds((state.paces.reduce((a, b) => a + b, 0) / (state.paces.length || 1)) * getRemaining())}</div>
 						</div>
 					</div>
+					<div className={`flex flex-col w-[250px] bg-[#25253E] justify-start items-center rounded py-2 h-full transition-all`}>
+						<div>Time</div>
+						<div className='w-full h-[2px] bg-gray-100 my-[4px]'>&nbsp;</div>
+
+						<div className='flex flex-col justify-center items-center h-full w-full'>
+							<div>Elapsed: {formatSeconds(state.elapsed)}</div>
+							<div>True Elapsed: {formatSeconds(state.trueElapsed)}</div>
+						</div>
+					</div>
+
 					<div className='flex flex-col w-[350px] bg-[#25253E] justify-start items-center rounded py-2 h-full'>
 						<div>Completion (minimum sum filter related)</div>
 						<div className='w-full h-[2px] bg-gray-100 my-[4px]'>&nbsp;</div>
 
 						<div className='flex flex-col justify-center items-center h-full w-full'>
 							<div>
-								Rate: {((getFilteredIndices().length / data.length) * 100).toFixed(2)}% ({getFilteredIndices().length}/{data.length})
+								Rate: {((getFilteredIndices().length / data.filter((item) => item.solution != null).length) * 100).toFixed(2)}% ({getFilteredIndices().length}/
+								{data.filter((item) => item.solution != null).length})
 							</div>
 						</div>
 					</div>

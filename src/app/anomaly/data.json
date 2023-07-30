@@ -4664,9 +4664,9 @@
 	{
 		"answers": [
 			{ "content": "لَحْن", "meaning": "" },
-			{ "content": "طَرَب", "meaning": "" },
-			{ "content": "شَجَن", "meaning": "" },
-			{ "content": "صَدْح", "meaning": "" }
+			{ "content": "طَرَب", "meaning": "الطَّرَبُ : خِفَّةٌ وهِزَّةٌ تثير النَّفْسَ لفرحٍ أَو حُزْنٍ أَو ارتياح" },
+			{ "content": "شَجَن", "meaning": "شَجَنَتِ الحَمَامَةُ : نَاحَتْ، تَحَزَّنَتْ بِتَرْدِيدِ صَوْتِهَا" },
+			{ "content": "صَدْح", "meaning": "صدَح الطَّائرُ :صاح، غرَّد ورفع صَوْتهَ فأطرب" }
 		],
 		"solution": "لَحْن"
 	},
@@ -4674,7 +4674,7 @@
 		"answers": [
 			{ "content": "لسان", "meaning": "" },
 			{ "content": "لثة", "meaning": "" },
-			{ "content": "ترقوة", "meaning": "" },
+			{ "content": "ترقوة", "meaning": "Collarbone" },
 			{ "content": "ضرس", "meaning": "" }
 		],
 		"solution": "ترقوة"
@@ -4691,7 +4691,7 @@
 	{
 		"answers": [
 			{ "content": "لمعان", "meaning": "" },
-			{ "content": "سراب", "meaning": "" },
+			{ "content": "سراب", "meaning": "Mirage" },
 			{ "content": "ضوء", "meaning": "" },
 			{ "content": "بريق", "meaning": "" }
 		],
@@ -4798,10 +4798,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "مجد", "meaning": "" },
-			{ "content": "ذروة", "meaning": "" },
-			{ "content": "رفعة", "meaning": "" },
-			{ "content": "سموّ", "meaning": "" }
+			{ "content": "مجد", "meaning": "كان ذا عِزَّةٍ ورِفعة وشرف" },
+			{ "content": "ذروة", "meaning": " أعلَى الشّيء وقمَّته" },
+			{ "content": "رفعة", "meaning": "أعلاه وطوَّله أو زاد فيه" },
+			{ "content": "سموّ", "meaning": "عُلُوُّهَا، رِفْعَتُهَا" }
 		],
 		"solution": "ذروة"
 	},
@@ -4809,7 +4809,7 @@
 		"answers": [
 			{ "content": "مجد", "meaning": "" },
 			{ "content": "رفعة", "meaning": "" },
-			{ "content": "سمو", "meaning": "" },
+			{ "content": "سمو", "meaning": "عُلُوُّهَا، رِفْعَتُهَا" },
 			{ "content": "عبقرية", "meaning": "" }
 		],
 		"solution": "عبقرية"
@@ -4864,7 +4864,7 @@
 			{ "content": "مخالف", "meaning": "" },
 			{ "content": "مغاير", "meaning": "" },
 			{ "content": "خامل", "meaning": "" },
-			{ "content": "خلاّق", "meaning": "" }
+			{ "content": "خلاّق", "meaning": "صيغة مبالغة من خلَقَ :كثير الإبداع والابتكار" }
 		],
 		"solution": "خامل"
 	},
@@ -4897,10 +4897,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "مدريد", "meaning": "" },
-			{ "content": "برشلونة", "meaning": "" },
-			{ "content": "إسكندرية", "meaning": "" },
-			{ "content": "عدن", "meaning": "" }
+			{ "content": "مدريد", "meaning": "عاصمة إسبانيا" },
+			{ "content": "برشلونة", "meaning": "مدينة ساحلية في إسبانيا" },
+			{ "content": "إسكندرية", "meaning": "مدينة ساحلية في مصر" },
+			{ "content": "عدن", "meaning": "مدينة ساحلية في اليمن" }
 		],
 		"solution": "مدريد"
 	},
@@ -5169,7 +5169,7 @@
 		"answers": [
 			{ "content": "مقص", "meaning": "" },
 			{ "content": "شعر", "meaning": "" },
-			{ "content": "مُوسيّ", "meaning": "" },
+			{ "content": "مُوسيّ", "meaning": "آلَةٌ مِنْ فُولاَذٍ يُحْلَقُ بِهَا الشَّعْرُ" },
 			{ "content": "مشط", "meaning": "" }
 		],
 		"solution": "شعر"
@@ -5213,8 +5213,8 @@
 	{
 		"answers": [
 			{ "content": "مكة", "meaning": "" },
-			{ "content": "بكة", "meaning": "" },
-			{ "content": "أم القرى", "meaning": "" },
+			{ "content": "بكة", "meaning": "اسم لمكّة المكرَّمة" },
+			{ "content": "أم القرى", "meaning": "مكة المكرمة" },
 			{ "content": "طيبة", "meaning": "" }
 		],
 		"solution": "طيبة"
@@ -5230,10 +5230,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "مُنادمة", "meaning": "" },
+			{ "content": "مُنادمة", "meaning": "الْمُجَالَسَةُ، الْمُرَافَقَةُ" },
 			{ "content": "مفاخرة", "meaning": "" },
 			{ "content": "مصاحبة", "meaning": "" },
-			{ "content": "مؤانسة", "meaning": "" }
+			{ "content": "مؤانسة", "meaning": " سَلاَّهُ وَلاَطَفَهُ وَجَعَلَهُ يَشْعُرُ بِالأُنْسِ وَالأُلْفَةِ، أَنَسَهُ" }
 		],
 		"solution": "مفاخرة"
 	},
@@ -5248,7 +5248,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "مندوب", "meaning": "" },
+			{ "content": "مندوب", "meaning": "مُسْتَحَبٌّ فِعْلُهُ" },
 			{ "content": "محرم", "meaning": "" },
 			{ "content": "جائز", "meaning": "" },
 			{ "content": "واجب", "meaning": "" }
@@ -5277,7 +5277,7 @@
 		"answers": [
 			{ "content": "منشفة", "meaning": "" },
 			{ "content": "إسفنج", "meaning": "" },
-			{ "content": "خرقة", "meaning": "" },
+			{ "content": "خرقة", "meaning": "القطعةُ من الثوْب المُمَزَّق" },
 			{ "content": "قماش", "meaning": "" }
 		],
 		"solution": "إسفنج"
@@ -5287,16 +5287,16 @@
 			{ "content": "مِنشفة", "meaning": "" },
 			{ "content": "مِكنسة", "meaning": "" },
 			{ "content": "مِبخرة", "meaning": "" },
-			{ "content": "مِشطفة", "meaning": "" }
+			{ "content": "مِشطفة", "meaning": "شطف الشيء: غسَله؛ نظّفه بالماء" }
 		],
 		"solution": "مِبخرة"
 	},
 	{
 		"answers": [
-			{ "content": "مها", "meaning": "" },
-			{ "content": "ظبي", "meaning": "" },
+			{ "content": "مها", "meaning": "Oryx - Type of antelope" },
+			{ "content": "ظبي", "meaning": "Antelope - Inclusive of both" },
 			{ "content": "بقرة", "meaning": "" },
-			{ "content": "ريم", "meaning": "" }
+			{ "content": "ريم", "meaning": "Gazelle - Type of antelope" }
 		],
 		"solution": "بقرة"
 	},
@@ -5375,9 +5375,9 @@
 	{
 		"answers": [
 			{ "content": "ناصع", "meaning": "" },
-			{ "content": "مبهم", "meaning": "" },
+			{ "content": "مبهم", "meaning": "بهيم - مُظْلِمٌ" },
 			{ "content": "حالك", "meaning": "" },
-			{ "content": "معتم", "meaning": "" }
+			{ "content": "معتم", "meaning": "مُظْلِمٌ" }
 		],
 		"solution": "ناصع"
 	},
@@ -5401,10 +5401,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "نحنحة", "meaning": "" },
+			{ "content": "نحنحة", "meaning": "تَرَدَّدَ صَوْتُهُ فِي صَدْرِهِ" },
 			{ "content": "وسوسة", "meaning": "" },
-			{ "content": "قهقهة", "meaning": "" },
-			{ "content": "ولولة", "meaning": "" }
+			{ "content": "قهقهة", "meaning": "الضحك بصوت يسمعه من يجلس بجواره" },
+			{ "content": "ولولة", "meaning": "صوت النساء عند المصائب " }
 		],
 		"solution": "وسوسة"
 	},
@@ -5420,7 +5420,7 @@
 	{
 		"answers": [
 			{ "content": "نسيب", "meaning": "" },
-			{ "content": "صهر", "meaning": "" },
+			{ "content": "صهر", "meaning": "القَريبُ بالزواج" },
 			{ "content": "صديق", "meaning": "" },
 			{ "content": "قريب", "meaning": "" }
 		],
@@ -5428,7 +5428,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "نصب", "meaning": "" },
+			{ "content": "نصب", "meaning": "التَّعَبِ، العَنَاءِ" },
 			{ "content": "تعب", "meaning": "" },
 			{ "content": "إجهاد", "meaning": "" },
 			{ "content": "بلاء", "meaning": "" }
@@ -5474,8 +5474,8 @@
 	{
 		"answers": [
 			{ "content": "نقيض", "meaning": "" },
-			{ "content": "صنو", "meaning": "" },
-			{ "content": "ند", "meaning": "" },
+			{ "content": "صنو", "meaning": "النَّظِيرُ والمِثْلُ" },
+			{ "content": "ند", "meaning": "المثل والنظير" },
 			{ "content": "نظير", "meaning": "" }
 		],
 		"solution": "نقيض"
@@ -5527,7 +5527,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "نهش", "meaning": "" },
+			{ "content": "نهش", "meaning": "عضَّه وخَدَشَه" },
 			{ "content": "لدغ", "meaning": "" },
 			{ "content": "لسع", "meaning": "" },
 			{ "content": "قرص", "meaning": "" }
@@ -5546,7 +5546,7 @@
 	{
 		"answers": [
 			{ "content": "نوم", "meaning": "" },
-			{ "content": "اضطجاع", "meaning": "" },
+			{ "content": "اضطجاع", "meaning": "اِسْتِلْقاءٍ" },
 			{ "content": "قعود", "meaning": "" },
 			{ "content": "جري", "meaning": "" }
 		],
@@ -5554,10 +5554,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "نوم", "meaning": "" },
+			{ "content": "نوم", "meaning": ":أَوَّلُ النَّوم" },
 			{ "content": "نعاس", "meaning": "" },
-			{ "content": "قيلولة", "meaning": "" },
-			{ "content": "غفوة", "meaning": "" }
+			{ "content": "قيلولة", "meaning": "نومةُ نصفِ النهار، أو الاستراحة فيه وإِن لم يكن نوم" },
+			{ "content": "غفوة", "meaning": "نَوْمَةٌ خَفِيفَةٌ" }
 		],
 		"solution": "قيلولة"
 	},
@@ -5581,10 +5581,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "هزبر", "meaning": "" },
+			{ "content": "هزبر", "meaning": "الأَسدُ الكاسرُ" },
 			{ "content": "نمر", "meaning": "" },
 			{ "content": "ليث", "meaning": "" },
-			{ "content": "قسورة", "meaning": "" }
+			{ "content": "قسورة", "meaning": "أسد قويّ شديد" }
 		],
 		"solution": "نمر"
 	},
@@ -5592,7 +5592,7 @@
 		"answers": [
 			{ "content": "هِزِبر", "meaning": "" },
 			{ "content": "غضَنفر", "meaning": "" },
-			{ "content": "أبو حفص", "meaning": "" },
+			{ "content": "أبو حفص", "meaning": "كُنْيَةُ الأسَد" },
 			{ "content": "عرين", "meaning": "" }
 		],
 		"solution": "عرين"
@@ -5707,7 +5707,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "وكن", "meaning": "" },
+			{ "content": "وكن", "meaning": "عُشُّ الطائر حيث كان" },
 			{ "content": "وكر", "meaning": "" },
 			{ "content": "عش", "meaning": "" },
 			{ "content": "عرين", "meaning": "" }
@@ -5734,19 +5734,19 @@
 	},
 	{
 		"answers": [
-			{ "content": "وهم", "meaning": "" },
+			{ "content": "وهم", "meaning": "تخيَّلها وتصوَّرها" },
 			{ "content": "شك", "meaning": "" },
-			{ "content": "ظن", "meaning": "" },
-			{ "content": "حدْس", "meaning": "" }
+			{ "content": "ظن", "meaning": "علمَه بغير يقينٍ" },
+			{ "content": "حدْس", "meaning": "يظُنّ الظّنَّ فلا يخطئ" }
 		],
 		"solution": "حدْس"
 	},
 	{
 		"answers": [
-			{ "content": "وهم", "meaning": "" },
+			{ "content": "وهم", "meaning": "تخيَّلها وتصوَّرها" },
 			{ "content": "يقين", "meaning": "" },
-			{ "content": "زعم", "meaning": "" },
-			{ "content": "ريب", "meaning": "" }
+			{ "content": "زعم", "meaning": "ظنَّ أو اعتقد" },
+			{ "content": "ريب", "meaning": "الظَّنُّ والشكُّ والتُّهمةُ" }
 		],
 		"solution": "يقين"
 	},
