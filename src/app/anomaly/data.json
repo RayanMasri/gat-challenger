@@ -2836,7 +2836,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "سَحَر", "meaning": "" },
+			{ "content": "سَحَر", "meaning": "آخرُ الليل قبيل الفجر" },
 			{ "content": "فجر", "meaning": "" },
 			{ "content": "ليل", "meaning": "" },
 			{ "content": "ظهر", "meaning": "" }
@@ -2865,7 +2865,7 @@
 		"answers": [
 			{ "content": "سرج", "meaning": "" },
 			{ "content": "حدوة", "meaning": "" },
-			{ "content": "رسن", "meaning": "" },
+			{ "content": "رسن", "meaning": "حبلٌ يُوضع في أنف الدَّابَّة" },
 			{ "content": "صهيل", "meaning": "" }
 		],
 		"solution": "صهيل"
@@ -2883,8 +2883,8 @@
 		"answers": [
 			{ "content": "سرق", "meaning": "" },
 			{ "content": "أخذ", "meaning": "" },
-			{ "content": "نهب", "meaning": "" },
-			{ "content": "اختلس", "meaning": "" }
+			{ "content": "نهب", "meaning": "سلبه بالخداع والغشّ" },
+			{ "content": "اختلس", "meaning": "سَلَبَهُ بِخِدَاعٍ وَحِيلَةٍ" }
 		],
 		"solution": "أخذ"
 	},
@@ -2953,7 +2953,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "سفع", "meaning": "" },
+			{ "content": "سفع", "meaning": "ضربه ولطمه" },
 			{ "content": "صفع", "meaning": "" },
 			{ "content": "صفّق", "meaning": "" },
 			{ "content": "لطم", "meaning": "" }
@@ -2980,10 +2980,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "سقر", "meaning": "" },
-			{ "content": "لظى", "meaning": "" },
+			{ "content": "سقر", "meaning": "اسم من أسماء جهنَّم" },
+			{ "content": "لظى", "meaning": "اسم من أسماء جهنَّم" },
 			{ "content": "جهنم", "meaning": "" },
-			{ "content": "عدن", "meaning": "" }
+			{ "content": "عدن", "meaning": "جنَّات عدْن جنّات إقامة، لمكان الخلد فيها" }
 		],
 		"solution": "عدن"
 	},
@@ -3044,7 +3044,7 @@
 	{
 		"answers": [
 			{ "content": "سلحفاة", "meaning": "" },
-			{ "content": "مساح", "meaning": "" },
+			{ "content": "مساح", "meaning": "تمساح؟" },
 			{ "content": "ثعبان", "meaning": "" },
 			{ "content": "فيل", "meaning": "" }
 		],
@@ -3063,7 +3063,7 @@
 		"answers": [
 			{ "content": "سمّاعة", "meaning": "" },
 			{ "content": "سكين", "meaning": "" },
-			{ "content": "مبضع", "meaning": "" },
+			{ "content": "مبضع", "meaning": "المِشْرَطُ" },
 			{ "content": "مقص", "meaning": "" }
 		],
 		"solution": "سكين"
@@ -3206,9 +3206,9 @@
 	{
 		"answers": [
 			{ "content": "شتاء", "meaning": "" },
-			{ "content": "غائم", "meaning": "" },
+			{ "content": "غائم", "meaning": "الْجَوُّ غَائِمٌ : الْجَوُّ تَكْتَنِفُهُ الغُيُومُ" },
 			{ "content": "صحو", "meaning": "" },
-			{ "content": "ملبّد", "meaning": "" }
+			{ "content": "ملبّد", "meaning": "مُغَطَّى بِالغُيُومِ" }
 		],
 		"solution": "صحو"
 	},
@@ -3224,18 +3224,18 @@
 	{
 		"answers": [
 			{ "content": "شجرة", "meaning": "" },
-			{ "content": "أيكة", "meaning": "" },
+			{ "content": "أيكة", "meaning": "الشَّجر الكثير الملتفّ" },
 			{ "content": "جمرة", "meaning": "" },
-			{ "content": "سمرة", "meaning": "" }
+			{ "content": "سمرة", "meaning": "اسم لشجرة؟" }
 		],
 		"solution": "جمرة"
 	},
 	{
 		"answers": [
-			{ "content": "شحيح", "meaning": "" },
+			{ "content": "شحيح", "meaning": "البَخيلُ" },
 			{ "content": "ماسك", "meaning": "" },
 			{ "content": "ماطل", "meaning": "" },
-			{ "content": "مُقتّر", "meaning": "" }
+			{ "content": "مُقتّر", "meaning": "قَتَّرَ على عيالِه: بَخِلَ وضيَّق عليهم في النفقة" }
 		],
 		"solution": "ماطل"
 	},
@@ -3269,7 +3269,7 @@
 	{
 		"answers": [
 			{ "content": "شق", "meaning": "" },
-			{ "content": "غار", "meaning": "" },
+			{ "content": "غار", "meaning": "كهف، بيت منقور في الجبل" },
 			{ "content": "جبل", "meaning": "" },
 			{ "content": "كهف", "meaning": "" }
 		],
@@ -3306,7 +3306,7 @@
 		"answers": [
 			{ "content": "شناعة", "meaning": "" },
 			{ "content": "بشاعة", "meaning": "" },
-			{ "content": "دمامة", "meaning": "" },
+			{ "content": "دمامة", "meaning": "قبحه" },
 			{ "content": "غضاضة", "meaning": "" }
 		],
 		"solution": "غضاضة"
@@ -3333,7 +3333,7 @@
 		"answers": [
 			{ "content": "صبر", "meaning": "" },
 			{ "content": "ذكاء", "meaning": "" },
-			{ "content": "جَلَد", "meaning": "" },
+			{ "content": "جَلَد", "meaning": "أَي الصَّبْرَ، القُوَّةَ، الاسْتِمَاتَةَ" },
 			{ "content": "تحمُّل", "meaning": "" }
 		],
 		"solution": "ذكاء"
@@ -3367,8 +3367,8 @@
 	},
 	{
 		"answers": [
-			{ "content": "صعيد", "meaning": "" },
-			{ "content": "ثرى", "meaning": "" },
+			{ "content": "صعيد", "meaning": " وجه الأرض : اقصدوا ترابًا طاهرًا" },
+			{ "content": "ثرى", "meaning": "التُّراب النَّدِي" },
 			{ "content": "تراب", "meaning": "" },
 			{ "content": "ثريّا", "meaning": "" }
 		],
@@ -3412,7 +3412,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "صومعة", "meaning": "" },
+			{ "content": "صومعة", "meaning": "بيت يجلس فيه عباد النصارى ينقطعون فيه للعبادة" },
 			{ "content": "مسجد", "meaning": "" },
 			{ "content": "كنيسة", "meaning": "" },
 			{ "content": "مصحف", "meaning": "" }
@@ -3424,7 +3424,7 @@
 			{ "content": "ضباب", "meaning": "" },
 			{ "content": "سحاب", "meaning": "" },
 			{ "content": "غبار", "meaning": "" },
-			{ "content": "قتام", "meaning": "" }
+			{ "content": "قتام", "meaning": "الغبارُ الأسود" }
 		],
 		"solution": "سحاب"
 	},
@@ -3451,7 +3451,7 @@
 			{ "content": "ضفدع", "meaning": "" },
 			{ "content": "حوت", "meaning": "" },
 			{ "content": "تمساح", "meaning": "" },
-			{ "content": "قريدس", "meaning": "" }
+			{ "content": "قريدس", "meaning": "Prawn" }
 		],
 		"solution": "حوت"
 	},
@@ -3495,8 +3495,8 @@
 		"answers": [
 			{ "content": "طاعون", "meaning": "" },
 			{ "content": "صداع", "meaning": "" },
-			{ "content": "جذام", "meaning": "" },
-			{ "content": "جدري", "meaning": "" }
+			{ "content": "جذام", "meaning": "داء يصيب الجلد والأعصاب الطَّرفية" },
+			{ "content": "جدري", "meaning": "مرض فَيْروسيّ معدٍ، يتميز بطفح جلديٍّ " }
 		],
 		"solution": "صداع"
 	},
@@ -3539,7 +3539,7 @@
 	{
 		"answers": [
 			{ "content": "طفل", "meaning": "" },
-			{ "content": "فطيم", "meaning": "" },
+			{ "content": "فطيم", "meaning": "المقطوع عن الرضاع" },
 			{ "content": "رضيع", "meaning": "" },
 			{ "content": "وليد", "meaning": "" }
 		],
@@ -3548,9 +3548,9 @@
 	{
 		"answers": [
 			{ "content": "طلحة", "meaning": "" },
-			{ "content": "حمزة", "meaning": "" },
+			{ "content": "حمزة", "meaning": "أسد" },
 			{ "content": "معاذ", "meaning": "" },
-			{ "content": "أسامة", "meaning": "" }
+			{ "content": "أسامة", "meaning": "أسد" }
 		],
 		"solution": "معاذ"
 	},
@@ -3585,7 +3585,7 @@
 		"answers": [
 			{ "content": "طيّب", "meaning": "" },
 			{ "content": "لذيذ", "meaning": "" },
-			{ "content": "سائغ", "meaning": "" },
+			{ "content": "سائغ", "meaning": "سَهْلَ الأكْلِ وَالهَضْمِ" },
 			{ "content": "لطيف", "meaning": "" }
 		],
 		"solution": "لطيف"
@@ -3603,7 +3603,7 @@
 		"answers": [
 			{ "content": "عابس", "meaning": "" },
 			{ "content": "غاضب", "meaning": "" },
-			{ "content": "مكفهر", "meaning": "" },
+			{ "content": "مكفهر", "meaning": "عابسٌ مُجْدِب" },
 			{ "content": "باشّ", "meaning": "" }
 		],
 		"solution": "باشّ"
@@ -3622,16 +3622,16 @@
 			{ "content": "عبد العزيز", "meaning": "" },
 			{ "content": "بغداد", "meaning": "" },
 			{ "content": "حضر موت", "meaning": "" },
-			{ "content": "تأبّط شر�ا", "meaning": "" }
+			{ "content": "تأبّط شرَّا", "meaning": "اسم شخص" }
 		],
 		"solution": "بغداد"
 	},
 	{
 		"answers": [
-			{ "content": "عبق", "meaning": "" },
-			{ "content": "شذا", "meaning": "" },
+			{ "content": "عبق", "meaning": "عطر، أريج،" },
+			{ "content": "شذا", "meaning": "شذا المِسكُ : قويت رائِحتُه وانتشرت" },
 			{ "content": "ياسمين", "meaning": "" },
-			{ "content": "أريج", "meaning": "" }
+			{ "content": "أريج", "meaning": "رائحة طيِّبة" }
 		],
 		"solution": "ياسمين"
 	},
@@ -3711,7 +3711,7 @@
 		"answers": [
 			{ "content": "عشق", "meaning": "" },
 			{ "content": "حب", "meaning": "" },
-			{ "content": "هيام", "meaning": "" },
+			{ "content": "هيام", "meaning": "الجُنون من العشق" },
 			{ "content": "رضا", "meaning": "" }
 		],
 		"solution": "رضا"
@@ -3721,7 +3721,7 @@
 			{ "content": "عصا", "meaning": "" },
 			{ "content": "جرس", "meaning": "" },
 			{ "content": "صفارة", "meaning": "" },
-			{ "content": "بوق", "meaning": "" }
+			{ "content": "بوق", "meaning": "أداة مجوّفة يُنْفَخُ فها ويُزمَر" }
 		],
 		"solution": "عصا"
 	},
@@ -3729,7 +3729,7 @@
 		"answers": [
 			{ "content": "عطاء", "meaning": "" },
 			{ "content": "حِلم", "meaning": "" },
-			{ "content": "ندى", "meaning": "" },
+			{ "content": "ندى", "meaning": " الجُود والسخاءُ والخير" },
 			{ "content": "كرم", "meaning": "" }
 		],
 		"solution": "حِلم"
@@ -3737,7 +3737,7 @@
 	{
 		"answers": [
 			{ "content": "عقاب", "meaning": "" },
-			{ "content": "زجر", "meaning": "" },
+			{ "content": "زجر", "meaning": "منعه ونهاه عنه" },
 			{ "content": "شكر", "meaning": "" },
 			{ "content": "منع", "meaning": "" }
 		],
@@ -3899,7 +3899,7 @@
 	{
 		"answers": [
 			{ "content": "غالٍ", "meaning": "" },
-			{ "content": "باهظ", "meaning": "" },
+			{ "content": "باهظ", "meaning": "غالياً مُفْرِطاً" },
 			{ "content": "ثمين", "meaning": "" },
 			{ "content": "كثير", "meaning": "" }
 		],
@@ -3907,7 +3907,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "غبطة", "meaning": "" },
+			{ "content": "غبطة", "meaning": "أَن يتمنى المرءُ مِثْلَ ما للمغبوط من النعمة من غير أَن يتمنَّى زوالَها عنه" },
 			{ "content": "كره", "meaning": "" },
 			{ "content": "حسد", "meaning": "" },
 			{ "content": "زوال", "meaning": "" }
@@ -3945,8 +3945,8 @@
 		"answers": [
 			{ "content": "غضب", "meaning": "" },
 			{ "content": "خوف", "meaning": "" },
-			{ "content": "هلع", "meaning": "" },
-			{ "content": "جزع", "meaning": "" }
+			{ "content": "هلع", "meaning": "جزِع، خاف خوفًا شديدًا" },
+			{ "content": "جزع", "meaning": "خَافَ" }
 		],
 		"solution": "غضب"
 	},
@@ -3962,8 +3962,8 @@
 	{
 		"answers": [
 			{ "content": "غيث", "meaning": "" },
-			{ "content": "سيل", "meaning": "" },
-			{ "content": "ديمة", "meaning": "" },
+			{ "content": "سيل", "meaning": "ماءُ المطر إذا جرى مُسْرِعًا فوق سطح الأرض" },
+			{ "content": "ديمة", "meaning": "المطر يطول زمانه في سكون" },
 			{ "content": "سحابة", "meaning": "" }
 		],
 		"solution": "سحابة"
@@ -3980,9 +3980,9 @@
 	{
 		"answers": [
 			{ "content": "فائدة", "meaning": "" },
-			{ "content": "هباء", "meaning": "" },
-			{ "content": "هدر", "meaning": "" },
-			{ "content": "سُدى", "meaning": "" }
+			{ "content": "هباء", "meaning": "هدرًا، انتهى إلى لا شيء،" },
+			{ "content": "هدر", "meaning": "باطلاً" },
+			{ "content": "سُدى", "meaning": "مُهمل، دون فائدة، باطل" }
 		],
 		"solution": "فائدة"
 	},
@@ -4279,7 +4279,7 @@
 			{ "content": "قطر", "meaning": "" },
 			{ "content": "البحرين", "meaning": "" },
 			{ "content": "مدغشقر", "meaning": "" },
-			{ "content": "قبرص", "meaning": "" }
+			{ "content": "قبرص", "meaning": "Cyprus" }
 		],
 		"solution": "قطر"
 	},
