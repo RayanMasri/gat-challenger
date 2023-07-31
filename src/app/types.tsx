@@ -20,6 +20,7 @@ export interface ParagraphType {
 export interface ModelType {
 	name: string;
 	video?: string;
+	instant_evaluation?: boolean;
 	questions: QuestionType[];
 }
 
