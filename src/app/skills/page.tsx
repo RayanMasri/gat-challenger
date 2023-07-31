@@ -186,11 +186,9 @@ const Question: FC<QuestionProps> = ({ info, index, model, evaluate, onChange })
 
 	const getCorrespondent = () => {
 		if (context.status[model][index] == null) {
-			console.log(context.status);
-			console.log(model);
-			console.log(index);
+			console.log(`Failed to get correspondent for status of model ${model}, question ${index}`);
 		}
-		return context.status[model][index];
+		return context.status[model][index] || { correct: 0, incorrect: 0 };
 	};
 	return (
 		<div className='w-full flex flex-col mb-2' style={{ direction: 'rtl' }}>
@@ -495,6 +493,16 @@ const Page = () => {
 				<div className='flex flex-row w-fit'>
 					<div className='mr-2'>Filter paragraph by minimum:</div>
 					<input type='number' min='0' className='text-black' onChange={(event) => onFilterMinimum(parseInt(event.target.value))} />
+				</div>
+				<div className='flex flex-row w-fit'>
+					<div
+						className='mr-2 hover:opacity-50 active:opacity-30 transition-all'
+						onClick={() => {
+							refreshStatus();
+						}}
+					>
+						Refresh Status
+					</div>
 				</div>
 			</div>
 			{/* <div className='w-full h-full flex flex-col gap-y-2 mt-20'> */}

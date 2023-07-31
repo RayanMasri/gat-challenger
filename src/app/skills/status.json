@@ -4657,5 +4657,5 @@
 		{ "correct": 1, "incorrect": 0, "question": "خرق : ثوب", "answer": "ثلبة:اناء" },
 		{ "correct": 1, "incorrect": 0, "question": "جدب : مجاعة", "answer": "طوفان:غرق" },
 		{ "correct": 0, "incorrect": 1, "question": "شعر : قصّ", "answer": "أشجار:تهذيب" }
-	]
+	], [], []
 ]
