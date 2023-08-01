@@ -1,0 +1,12 @@
+{
+	"rId": 37741,
+	"pptConnected": "Connected",
+	"start": "2023-07-26T15:44:26.839Z",
+	"prId": "rabeeelawa@gmail.com",
+	"time": "Mon Jul 31 2023 16:08:19 GMT+0000 (Coordinated Universal Time)",
+	"active": true,
+	"lastEndTime": "2023-07-31T15:33:05.024Z",
+	"activity": { "activity": "idle", "active": true, "status": "start", "config": {} },
+	"status": "ok",
+	"config": { "title": "ClassPoint Presentation", "slideshow": "1", "titleimage": null, "firstname": "rabee", "lastname": "elawa", "organization": "Albaraah", "slideIndex": 0, "slideCount": 467 }
+}

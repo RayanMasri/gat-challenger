@@ -26,6 +26,8 @@ import clsx from 'clsx';
 // 	onAffect: (index: number, additive: number) => void;
 // }
 
+const showIncorrect = true;
+
 function shuffle(array: any[]) {
 	let currentIndex = array.length,
 		randomIndex;
@@ -130,10 +132,14 @@ const refreshStatus = () => {
 interface ContextType {
 	collapsed: number[];
 	status: StatusTupleVerbose[][];
+	threshold: number;
+	glass: boolean;
 }
 let object: ContextType = {
 	collapsed: [],
 	status: getStatus(),
+	threshold: -1,
+	glass: true,
 };
 const Context = React.createContext({
 	context: object,
@@ -190,8 +196,9 @@ const Question: FC<QuestionProps> = ({ info, index, model, evaluate, onChange })
 		}
 		return context.status[model][index] || { correct: 0, incorrect: 0 };
 	};
+
 	return (
-		<div className='w-full flex flex-col mb-2' style={{ direction: 'rtl' }}>
+		<div className={`w-full flex flex-col mb-2 ${context.glass && getCorrespondent().correct + getCorrespondent().incorrect <= context.threshold ? 'glass' : ''}`} style={{ direction: 'rtl' }}>
 			<div className='w-full text-center text-cyan-100 text-2xl flex flex-row relative h-min'>
 				<div className='h-full absolute top-0 left-0 w-full max-w-[200px] flex flex-row justify-end '>
 					<div className='h-full flex flex-wrap justify-end content-start gap-1'>
@@ -307,7 +314,7 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 	const resetSolutions = () => {
 		let status = getStatus();
 
-		status[index] = data[index].questions.map((question) => {
+		status[index] = data[index].questions.map((question: QuestionType) => {
 			return {
 				correct: 0,
 				incorrect: 0,
@@ -351,15 +358,21 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 	};
 
 	const onSubmit = () => {
-		if (state.selected.filter((_, _index) => info.questions[_index].status != 'normal').some((item: number) => item == -1)) {
+		if (
+			state.selected
+				.filter((_, _index) => info.questions[_index].status != 'normal' && (showIncorrect ? context.status[index][_index].incorrect > 0 : true))
+				.some((item: number) => item == -1) &&
+			state.error == ''
+		) {
 			setState({
 				...state,
-				error: `${state.selected.filter((item, _index) => item == -1 && info.questions[_index].status != 'normal')} answer(s) were left unanswered`,
+				error: `${state.selected.filter((item, _index) => item == -1 && info.questions[_index].status != 'normal').length} answer(s) were left unanswered`,
 			});
 			return;
 		}
 
-		let target = info.questions.map((_, index) => index + 1);
+		let target = state.selected.map((selection, index) => (selection != -1 ? index : -1)).filter((e) => e != -1);
+		// info.questions.map((_, index) => index + 1);
 
 		setState({
 			...state,
@@ -386,10 +399,12 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 
 		setState({
 			...state,
+			error: '',
 			selected: selected,
 		});
 	};
 
+	let status = getStatus();
 	return (
 		<div className='w-full h-min bg-gray-800 p-2'>
 			<div className='text-5xl w-full flex justify-center items-center text-center mb-5 flex-row relative pt-2'>
@@ -427,7 +442,13 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 					<div className='flex flex-col'>
 						{info.questions.map((question: QuestionType, _index: number) => {
 							// Hide normal questions
-							if (question.status == 'normal') return;
+							let tuple = status[index][_index];
+							if (tuple == undefined) {
+								console.log(`Failed to fetch tuple for question in model ${index} of index ${_index}, question below:`);
+								console.log(question);
+							}
+
+							if (question.status == 'normal' || tuple == undefined || tuple.incorrect < 1) return;
 
 							return <Question info={question} index={_index} model={index} evaluate={state.evaluated.includes(_index)} onChange={(i) => changeAnswer(_index, i)} />;
 							// return (
@@ -471,20 +492,28 @@ const Page = () => {
 		let collapsed: number[] = [];
 
 		data.map((_, index) => {
-			let matched = status[index].every((question: StatusTupleVerbose) => question.correct + question.incorrect <= threshold);
-			if (!matched) collapsed.push(index);
+			let viable = data[index].questions.filter((question) => question.status != 'normal');
+			let questions = status[index].filter(
+				(question: StatusTupleVerbose) => viable.filter((_question: QuestionType) => _question.question == question.question && _question.true == question.answer).length != 0
+			);
+			let collapse = questions.every((question: StatusTupleVerbose) => question.correct + question.incorrect > threshold);
+			console.log(`Status of ${index} is ${collapse ? 'collapsed' : 'not collapsed'} with threshold ${threshold}`);
+			if (collapse) collapsed.push(index);
 		});
 
 		setContext({
 			...context,
 			collapsed: collapsed,
+			threshold: threshold,
 		});
 	};
+
+	let status = getStatus();
 
 	return (
 		<div className='w-full h-screen top-0 left-0 fixed overflow-y-scroll gap-y-2 flex flex-col bg-blue-900' ref={main}>
 			<div
-				className={clsx(`w-full h-min py-5 px-2 bg-purple-900 z-10 sticky top-0`)}
+				className={clsx(`w-full h-min py-5 px-2 bg-purple-900 z-10 sticky top-0 flex flex-row`)}
 				// style={{
 				// 	top: state.headerFixed ? 0 : -state.headerOffset,
 				// 	transition: '0.05s',
@@ -496,7 +525,7 @@ const Page = () => {
 				</div>
 				<div className='flex flex-row w-fit'>
 					<div
-						className='mr-2 hover:opacity-50 active:opacity-30 transition-all'
+						className='mr-2 hover:opacity-50 active:opacity-30 transition-all bg-green-300'
 						onClick={() => {
 							refreshStatus();
 						}}
@@ -504,11 +533,28 @@ const Page = () => {
 						Refresh Status
 					</div>
 				</div>
+				<div className='flex flex-row w-fit'>
+					<div
+						className='mr-2 hover:opacity-50 active:opacity-30 transition-all bg-green-300'
+						onClick={() => {
+							setContext({
+								...context,
+								glass: !context.glass,
+							});
+						}}
+					>
+						{context.glass ? 'Disable ' : 'Enable '}&nbsp;glass
+					</div>
+				</div>
 			</div>
 			{/* <div className='w-full h-full flex flex-col gap-y-2 mt-20'> */}
 			<div className='w-full h-full flex flex-col gap-y-2 '>
 				{data.map((model, index) => {
-					if (model.questions.filter((question: QuestionType) => question.status != 'normal').length == 0) return;
+					let tuples = status[index];
+					if (model.questions.filter((question: QuestionType) => question.status != 'normal').length == 0 || !tuples.some((tuple: StatusTupleVerbose) => tuple.incorrect != 0)) {
+						return;
+					}
+
 					return <Model info={model} index={index} instant_evaluation={model.instant_evaluation} />;
 
 					// let collapsed = context.collapsed.includes(index);

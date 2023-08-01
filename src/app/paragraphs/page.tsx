@@ -239,8 +239,20 @@ ${question.answers
 							{/* <div className='ml-3'>{evaluate ? answer == question.true ? <AiOutlineCheck /> : index == state.selected ? <AiOutlineClose /> : '' : ''}</div> */}
 							<div className='flex flex-row items-center w-full'>
 								{/* <div>{answer}</div> */}
-								<input type='radio' className='w-[18px] h-[18px] mx-2' checked={state.selected == index} onChange={() => {}} onClick={() => chooseAnswer(index)} />
-								<div className=' w-full break-words max-w-[850px]'>{answer}</div>
+								<input
+									type='radio'
+									className='w-[18px] h-[18px] mx-2'
+									checked={state.selected == index}
+									onChange={() => {}}
+									onClick={() => {
+										onChange(index);
+										setState({ ...state, selected: index });
+									}}
+								/>
+								<div className='w-full break-words max-w-[850px] flex flex-row'>
+									{answer}
+									{evaluate && answer == question.true ? <div className='mr-3 text-gray-400 text-[16px]'>{question.notes}</div> : ''}
+								</div>
 							</div>
 							<div className='ml-3'>
 								{evaluate ? answer == question.true ? <AiOutlineCheck className='text-green-300' /> : index == state.selected ? <AiOutlineClose className='text-red-500' /> : '' : ''}
