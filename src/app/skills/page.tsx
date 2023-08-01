@@ -197,6 +197,18 @@ const Question: FC<QuestionProps> = ({ info, index, model, evaluate, onChange })
 		return context.status[model][index] || { correct: 0, incorrect: 0 };
 	};
 
+	const onTelegramCopy = () => {
+		let formulated = `السؤال: ${info.question}
+
+الخيارات:
+${info.answers.filter((e) => e != '...').join('\n')}
+
+الإجابة: ${info.true}
+`;
+
+		navigator.clipboard.writeText(formulated);
+	};
+
 	return (
 		<div className={`w-full flex flex-col mb-2 ${context.glass && getCorrespondent().correct + getCorrespondent().incorrect <= context.threshold ? 'glass' : ''}`} style={{ direction: 'rtl' }}>
 			<div className='w-full text-center text-cyan-100 text-2xl flex flex-row relative h-min'>
@@ -205,6 +217,14 @@ const Question: FC<QuestionProps> = ({ info, index, model, evaluate, onChange })
 						{info.status.split('&&').map((status) => {
 							return <div className='text-[10px] h-[16px] p-2 flex justify-center items-center w-min text-black bg-cyan-100 rounded'>{status.trim()}</div>;
 						})}
+					</div>
+					<div
+						className='text-black text-[12px] h-full w-fit px-1 mr-1 rounded bg-cyan-100 transition-all hover:opacity-50 active:opacity-30'
+						onClick={() => {
+							onTelegramCopy();
+						}}
+					>
+						Telegram
 					</div>
 					{/* <div className='bg-gpt rounded flex items-center justify-center p-[2px] mr-2 h-full w-[24px] transition-all hover:opacity-50 active:opacity-20' onClick={onFormulateGPT}>
 						<Image priority src={gpt} alt='Follow us on Twitter' />

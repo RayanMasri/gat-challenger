@@ -409,7 +409,7 @@
 			{ "content": "أمراء", "meaning": "" },
 			{ "content": "مدراء", "meaning": "" },
 			{ "content": "وزراء", "meaning": "" },
-			{ "content": "تابعون", "meaning": "" }
+			{ "content": "تابعون", "meaning": "البقية ذو منصب ما عدا هذا" }
 		],
 		"solution": "تابعون"
 	},
@@ -667,10 +667,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "الحجابة", "meaning": "" },
-			{ "content": "الرفادة", "meaning": "" },
-			{ "content": "السقاية", "meaning": "" },
-			{ "content": "الإنابة", "meaning": "" }
+			{ "content": "الحجابة", "meaning": "السدانة وهي خدمة الكعبة" },
+			{ "content": "الرفادة", "meaning": "ما كانَتْ قُرَيْشُ تُخْرِجُهُ في الجاهِلِيَّةِ مِنْ أَمْوالِها تَشْتَرِي بِهِ طَعاماً وَشَراباً لِفُقَراءِ الحُجَّاجِ في مَوْسِمِ الحَجِّ" },
+			{ "content": "السقاية", "meaning": "سَقْيُهة الحجاج الماءَ ينبذ فيه الزَّبيب، وكانت من مآثر قريش" },
+			{ "content": "الإنابة", "meaning": "التوبه" }
 		],
 		"solution": "الإنابة"
 	},
@@ -703,9 +703,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "الرباط", "meaning": "" },
-			{ "content": "الخرطوم", "meaning": "" },
-			{ "content": "الكويت", "meaning": "" },
+			{ "content": "الرباط", "meaning": "عاصمة المغرب" },
+			{ "content": "الخرطوم", "meaning": "عاصمة السودان" },
+			{ "content": "الكويت", "meaning": "عاصمة الكويت" },
 			{ "content": "البحرين", "meaning": "" }
 		],
 		"solution": "البحرين"
@@ -838,10 +838,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "الصين", "meaning": "" },
-			{ "content": "كوريا", "meaning": "" },
-			{ "content": "اليابان", "meaning": "" },
-			{ "content": "روسيا", "meaning": "" }
+			{ "content": "الصين", "meaning": "قارة آسيا فقط" },
+			{ "content": "كوريا", "meaning": "قارة آسيا فقط" },
+			{ "content": "اليابان", "meaning": "قارة آسيا فقط" },
+			{ "content": "روسيا", "meaning": "قارة آسيا وأوروبا" }
 		],
 		"solution": "روسيا"
 	},
@@ -1118,7 +1118,7 @@
 	{
 		"answers": [
 			{ "content": "بحر", "meaning": "" },
-			{ "content": "نهر", "meaning": "" },
+			{ "content": "نهر", "meaning": "جميعها راكدة أو مالحة ما عدا النهر" },
 			{ "content": "محيط", "meaning": "" },
 			{ "content": "خليج", "meaning": "" }
 		],
@@ -1291,9 +1291,9 @@
 			{ "content": "بطريق", "meaning": "" },
 			{ "content": "نعامة", "meaning": "" },
 			{ "content": "دجاجة", "meaning": "" },
-			{ "content": "نورس", "meaning": "" }
+			{ "content": "نورس/عصفور", "meaning": "تطير والبقية لا تطير" }
 		],
-		"solution": "نورس"
+		"solution": "نورس/عصفور"
 	},
 	{
 		"answers": [
@@ -1365,6 +1365,7 @@
 			{ "content": "عمّار", "meaning": "" },
 			{ "content": "غانم", "meaning": "" }
 		],
+		"categories": ["name-based"],
 		"solution": "عمّار"
 	},
 	{
@@ -1743,7 +1744,8 @@
 			{ "content": "شغل شاغل", "meaning": "" },
 			{ "content": "جهد جاهد", "meaning": "" }
 		],
-		"solution": "جهد جاهد"
+		"perception": "unsure",
+		"solution": "جمل صائل"
 	},
 	{
 		"answers": [
@@ -1941,6 +1943,8 @@
 			{ "content": "عائشة", "meaning": "" },
 			{ "content": "فاطمة", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "فاطمة"
 	},
 	{
@@ -2013,6 +2017,8 @@
 			{ "content": "أحمد", "meaning": "" },
 			{ "content": "ناصر", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "أحمد"
 	},
 	{
@@ -2022,6 +2028,8 @@
 			{ "content": "سعد", "meaning": "" },
 			{ "content": "ماجد", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "سعد"
 	},
 	{
@@ -2049,6 +2057,8 @@
 			{ "content": "عتيقة", "meaning": "" },
 			{ "content": "حفصة", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "عتيقة"
 	},
 	{
@@ -2224,7 +2234,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "درب", "meaning": "" },
+			{ "content": "درب", "meaning": "طرق" },
 			{ "content": "دليل", "meaning": "" },
 			{ "content": "سبيل", "meaning": "" },
 			{ "content": "طريق", "meaning": "" }
@@ -2247,6 +2257,7 @@
 			{ "content": "ترس", "meaning": "" },
 			{ "content": "قوس", "meaning": "" }
 		],
+		"perception": "unsure",
 		"solution": "ترس"
 	},
 	{
@@ -2760,6 +2771,8 @@
 			{ "content": "صلاح", "meaning": "" },
 			{ "content": "سعد", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "سعد"
 	},
 	{
@@ -3090,10 +3103,11 @@
 		"answers": [
 			{ "content": "سهم", "meaning": "" },
 			{ "content": "درع", "meaning": "" },
-			{ "content": "ترس", "meaning": "" },
+			{ "content": "ترس", "meaning": "دائرة مسننة في الصناعة Gear" },
 			{ "content": "سيف", "meaning": "" }
 		],
-		"solution": "درع"
+		"perception": "unsure",
+		"solution": "ترس"
 	},
 	{
 		"answers": [
@@ -3246,6 +3260,8 @@
 			{ "content": "إسماعيل", "meaning": "" },
 			{ "content": "علي", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "إسماعيل"
 	},
 	{
@@ -3318,6 +3334,7 @@
 			{ "content": "هند", "meaning": "" },
 			{ "content": "منال", "meaning": "" }
 		],
+		"categories": ["name-based"],
 		"solution": "منال"
 	},
 	{
@@ -3804,6 +3821,8 @@
 			{ "content": "سيِّد", "meaning": "" },
 			{ "content": "حسين", "meaning": "" }
 		],
+		"categories": ["name-based"],
+
 		"solution": "سيِّد"
 	},
 	{
@@ -4132,12 +4151,21 @@
 	},
 	{
 		"answers": [
-			{ "content": "فيل", "meaning": "" },
+			{ "content": "فيل", "meaning": "حجم؟" },
 			{ "content": "تيس", "meaning": "" },
 			{ "content": "جمل", "meaning": "" },
 			{ "content": "ثور", "meaning": "" }
 		],
 		"solution": "فيل"
+	},
+	{
+		"answers": [
+			{ "content": "عنز", "meaning": "أنثى الماعز/المعزة/العنزة" },
+			{ "content": "تيس", "meaning": "ذكر المعزة/الماعز/العنزة" },
+			{ "content": "جمل", "meaning": "ذكر الناقة" },
+			{ "content": "ثور", "meaning": "ذكر البقرة" }
+		],
+		"solution": "عنز"
 	},
 	{
 		"answers": [
@@ -4287,7 +4315,7 @@
 		"answers": [
 			{ "content": "قطر", "meaning": "" },
 			{ "content": "الكويت", "meaning": "" },
-			{ "content": "السعودية", "meaning": "" },
+			{ "content": "السعودية", "meaning": "دستور مختلف" },
 			{ "content": "البحرين", "meaning": "" }
 		],
 		"solution": "السعودية"
@@ -5205,7 +5233,7 @@
 		"answers": [
 			{ "content": "مكة", "meaning": "" },
 			{ "content": "المدينة", "meaning": "" },
-			{ "content": "الأقصى", "meaning": "" },
+			{ "content": "الأقصى", "meaning": "مسجد؟" },
 			{ "content": "القدس", "meaning": "" }
 		],
 		"solution": "الأقصى"
@@ -5794,5 +5822,32 @@
 			{ "content": "نهار", "meaning": "" }
 		],
 		"solution": "ساعة"
+	},
+	{
+		"answers": [
+			{ "content": "النبراس", "meaning": "المصباحُ" },
+			{ "content": "التنور", "meaning": "الإضاءة شاملة" },
+			{ "content": "المشكاة", "meaning": "مَا يُحْمَلُ عَلَيْهِ أَوْ يُوضَعُ فِيهِ المِصْبَاحُ أَوِ القِنْدِيلُ" },
+			{ "content": "المصباح", "meaning": "" }
+		],
+		"solution": "التنور"
+	},
+	{
+		"answers": [
+			{ "content": "نطفة", "meaning": "" },
+			{ "content": "علقة", "meaning": "" },
+			{ "content": "مضعة", "meaning": "" },
+			{ "content": "بويضة", "meaning": "" }
+		],
+		"solution": "بويضة"
+	},
+	{
+		"answers": [
+			{ "content": "التاريخ", "meaning": "" },
+			{ "content": "الجغرافيا", "meaning": "" },
+			{ "content": "الفلك", "meaning": "" },
+			{ "content": "القمر", "meaning": "البقية علوم ومواد" }
+		],
+		"solution": "القمر"
 	}
 ]

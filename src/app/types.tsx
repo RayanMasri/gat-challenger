@@ -51,4 +51,6 @@ export interface AnomalyAnswerType {
 export interface AnomalyQuestionType {
 	answers: AnomalyAnswerType[];
 	solution: string | null;
+	perception?: string;
+	categories?: string[];
 }
