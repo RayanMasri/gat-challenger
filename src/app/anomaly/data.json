@@ -19,12 +19,13 @@
 	},
 	{
 		"answers": [
-			{ "content": "رمح", "meaning": "" },
+			{ "content": "رمح", "meaning": "الباقية أشياء مائلة" },
 			{ "content": "قوس", "meaning": "" },
 			{ "content": "محراب", "meaning": "" },
 			{ "content": "قبة", "meaning": "" }
 		],
-		"solution": "محراب"
+		"perception": "unsure",
+		"solution": "رمح"
 	},
 	{
 		"answers": [
@@ -42,6 +43,8 @@
 			{ "content": "فتوة", "meaning": "الشَّبابُ بين طَوْرَيِ المراهقة والرُّجولة" },
 			{ "content": "شيخوخة", "meaning": "مَرْحَلَةٌ عُمْرِ تَبْدَأُ مِنْ سِنِّ الْخَمْسِينَ فَما فَوْق" }
 		],
+		"perception": "unsure",
+
 		"solution": "فتوة"
 	},
 	{
@@ -51,7 +54,9 @@
 			{ "content": "فتوة", "meaning": "الشَّبابُ بين طَوْرَيِ المراهقة والرُّجولة" },
 			{ "content": "مشيب", "meaning": "سِنُّ الشَّيْبِ" }
 		],
-		"solution": "مشيب"
+		"perception": "unsure",
+
+		"solution": "نبوة"
 	},
 	{
 		"answers": [
@@ -114,12 +119,12 @@
 			{ "content": "قصاص", "meaning": "" },
 			{ "content": "قضاء", "meaning": "" }
 		],
-		"solution": "سجن"
+		"solution": "قضاء"
 	},
 	{
 		"answers": [
 			{ "content": "شاب", "meaning": "" },
-			{ "content": "الغلبة", "meaning": "" },
+			{ "content": "الغلبة", "meaning": "الغلبه شخص كبير مغلوب على امره" },
 			{ "content": "كهل", "meaning": "" },
 			{ "content": "طفل", "meaning": "" }
 		],
@@ -208,9 +213,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "أحد", "meaning": "" },
-			{ "content": "ثور", "meaning": "" },
-			{ "content": "الرحمة", "meaning": "" },
+			{ "content": "أحد", "meaning": "جبل أحد" },
+			{ "content": "ثور", "meaning": "جبل ثور" },
+			{ "content": "الرحمة", "meaning": "جبل الرحمة - جبل عرفات" },
 			{ "content": "المدينة", "meaning": "" }
 		],
 		"solution": "المدينة"
@@ -244,9 +249,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "أخلاّء", "meaning": "" },
-			{ "content": "نُدماء", "meaning": "" },
-			{ "content": "رُفقاء", "meaning": "" },
+			{ "content": "أخلاّء", "meaning": "خليل: صديق خالص" },
+			{ "content": "نُدماء", "meaning": " الرَّفِيقُ الْمُصَاحِبُ" },
+			{ "content": "رُفقاء", "meaning": "صفة لشخص" },
 			{ "content": "شُرفاء", "meaning": "" }
 		],
 		"solution": "شُرفاء"
@@ -263,7 +268,7 @@
 	{
 		"answers": [
 			{ "content": "أرز", "meaning": "" },
-			{ "content": "ملح", "meaning": "" },
+			{ "content": "ملح", "meaning": "الباقي يستخرج من نبات" },
 			{ "content": "طحين", "meaning": "" },
 			{ "content": "سكر", "meaning": "" }
 		],
@@ -343,11 +348,12 @@
 	},
 	{
 		"answers": [
-			{ "content": "أسماء", "meaning": "" },
-			{ "content": "زينب", "meaning": "" },
-			{ "content": "صفية", "meaning": "" },
-			{ "content": "قتيبة", "meaning": "" }
+			{ "content": "أسماء", "meaning": "شدوالأطيار وزغاريد النساء في الأفراح" },
+			{ "content": "زينب", "meaning": "- شجر حَسَن المظهر طيِّب الرائحة" },
+			{ "content": "صفية", "meaning": "نقيَّة، والخالصة من كلّ شائبة" },
+			{ "content": "قتيبة", "meaning": "المعى, وما استدار من البطن" }
 		],
+		"categories": ["name-based"],
 		"solution": "قتيبة"
 	},
 	{
@@ -434,7 +440,7 @@
 	{
 		"answers": [
 			{ "content": "أنْ", "meaning": "" },
-			{ "content": "لم", "meaning": "" },
+			{ "content": "لم", "meaning": "أداة جزم, والباقية أدوات نصب" },
 			{ "content": "لن", "meaning": "" },
 			{ "content": "كيْ", "meaning": "" }
 		],
@@ -541,7 +547,7 @@
 	},
 	{
 		"answers": [
-			{ "content": "اقتفاء", "meaning": "" },
+			{ "content": "اقتفاء", "meaning": "تتبع أثر" },
 			{ "content": "اضطرار", "meaning": "" },
 			{ "content": "اكتفاء", "meaning": "" },
 			{ "content": "احتياج", "meaning": "" }
@@ -551,9 +557,9 @@
 	{
 		"answers": [
 			{ "content": "الآخرة", "meaning": "" },
-			{ "content": "العاجلة", "meaning": "" },
+			{ "content": "العاجلة", "meaning": "الدُّنيا، خِلاف الآخرة" },
 			{ "content": "الحيوان", "meaning": "" },
-			{ "content": "الآجلة", "meaning": "" }
+			{ "content": "الآجلة", "meaning": "الآخرة، دار البقاء بعد الموت" }
 		],
 		"solution": "العاجلة"
 	},
@@ -586,10 +592,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "الإملاق", "meaning": "" },
+			{ "content": "الإملاق", "meaning": "الافْتِقار، الفَقْر، الإعْواز" },
 			{ "content": "الشقاق", "meaning": "" },
-			{ "content": "السغب", "meaning": "" },
-			{ "content": "العوز", "meaning": "" }
+			{ "content": "السغب", "meaning": "مُصاب بالإعياء من شدّة الجوع" },
+			{ "content": "العوز", "meaning": "قلة الشيء عند الشخص مع احتياجه إليه" }
 		],
 		"solution": "الشقاق"
 	},
@@ -623,7 +629,7 @@
 	{
 		"answers": [
 			{ "content": "التأتأة", "meaning": "" },
-			{ "content": "التمتمة", "meaning": "" },
+			{ "content": "التمتمة", "meaning": "ثقل التاء على لسان المتكلم" },
 			{ "content": "اللدغة", "meaning": "" },
 			{ "content": "اللثمة", "meaning": "" }
 		],
@@ -631,10 +637,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "التنزيل", "meaning": "" },
+			{ "content": "التنزيل", "meaning": "القرآن الكريم" },
 			{ "content": "القرآن", "meaning": "" },
 			{ "content": "التوراة", "meaning": "" },
-			{ "content": "الذكر", "meaning": "" }
+			{ "content": "الذكر", "meaning": "القرآن الكريم" }
 		],
 		"solution": "التوراة"
 	},
@@ -685,9 +691,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "الخفاش", "meaning": "" },
-			{ "content": "الدلفين", "meaning": "" },
-			{ "content": "الحوت", "meaning": "" },
+			{ "content": "الخفاش", "meaning": "من الثدييات" },
+			{ "content": "الدلفين", "meaning": "من الثدييات البحرية" },
+			{ "content": "الحوت", "meaning": "من الثدييات البحرية" },
 			{ "content": "القرش", "meaning": "" }
 		],
 		"solution": "القرش"
@@ -724,7 +730,7 @@
 			{ "content": "الرياض", "meaning": "" },
 			{ "content": "الدوحة", "meaning": "" },
 			{ "content": "المنامة", "meaning": "" },
-			{ "content": "القاهرة", "meaning": "" }
+			{ "content": "القاهرة", "meaning": "البقية عواصم خليجية" }
 		],
 		"solution": "القاهرة"
 	},
@@ -766,9 +772,9 @@
 	},
 	{
 		"answers": [
-			{ "content": "السدل", "meaning": "" },
-			{ "content": "التلفع", "meaning": "" },
-			{ "content": "الاضطباع", "meaning": "" },
+			{ "content": "السدل", "meaning": "إرخاء الثوب" },
+			{ "content": "التلفع", "meaning": " الاشتمال بالثوب والتغطي به" },
+			{ "content": "الاضطباع", "meaning": " ادخال الرداء تحت المنكب الأيمن ثم إلقائه على الأيسر" },
 			{ "content": "الاضطجاع", "meaning": "" }
 		],
 		"solution": "الاضطجاع"
@@ -789,6 +795,7 @@
 			{ "content": "مصر", "meaning": "" },
 			{ "content": "اليمن", "meaning": "" }
 		],
+		"perception": "unsure",
 		"solution": "الكويت"
 	},
 	{
@@ -821,9 +828,9 @@
 	{
 		"answers": [
 			{ "content": "الصقر", "meaning": "" },
-			{ "content": "البازي", "meaning": "" },
+			{ "content": "البازي", "meaning": " نوع من الصقور" },
 			{ "content": "النسر", "meaning": "" },
-			{ "content": "الشاهين", "meaning": "" }
+			{ "content": "الشاهين", "meaning": "اسم للصقر" }
 		],
 		"solution": "النسر"
 	},
@@ -849,7 +856,7 @@
 		"answers": [
 			{ "content": "الضبط", "meaning": "" },
 			{ "content": "الإعجام", "meaning": "" },
-			{ "content": "السبق", "meaning": "" },
+			{ "content": "السبق", "meaning": "فالكلمات الأخرى 'الضبط' و'الإعجام' و'الإهمال' ترتبط بشكل أو بآخر بأخطاء أو إشكاليات. السبق ليس له علاقة مباشرة بالأخطاء." },
 			{ "content": "الإهمال", "meaning": "" }
 		],
 		"solution": "السبق"
@@ -857,8 +864,8 @@
 	{
 		"answers": [
 			{ "content": "الضرغام", "meaning": "" },
-			{ "content": "السبع", "meaning": "" },
-			{ "content": "الحيدر", "meaning": "" },
+			{ "content": "السبع", "meaning": "لَبُؤة، أنثى الأسد" },
+			{ "content": "الحيدر", "meaning": "أَسَدٌ" },
 			{ "content": "الوعل", "meaning": "" }
 		],
 		"solution": "الوعل"
@@ -893,7 +900,7 @@
 	{
 		"answers": [
 			{ "content": "العصر", "meaning": "" },
-			{ "content": "الظهيرة", "meaning": "" },
+			{ "content": "الظهيرة", "meaning": "الظُّهْرُ " },
 			{ "content": "الغروب", "meaning": "" },
 			{ "content": "الغسق", "meaning": "" }
 		],
@@ -1102,9 +1109,10 @@
 			{ "content": "بحر", "meaning": "" },
 			{ "content": "بحيرة", "meaning": "" },
 			{ "content": "نهر", "meaning": "" },
-			{ "content": "بئر", "meaning": "" }
+			{ "content": "بئر", "meaning": "مكان ماء محصور وضيق" }
 		],
-		"solution": "بحر"
+		"perception": "unsure",
+		"solution": "بئر"
 	},
 	{
 		"answers": [
@@ -1135,17 +1143,17 @@
 	},
 	{
 		"answers": [
-			{ "content": "بديع", "meaning": "" },
+			{ "content": "بديع", "meaning": "أحد علوم البلاغة الثلاثة" },
 			{ "content": "وديع", "meaning": "" },
-			{ "content": "بيان", "meaning": "" },
-			{ "content": "معانٍ", "meaning": "" }
+			{ "content": "بيان", "meaning": "أحد علوم البلاغة الثلاثة" },
+			{ "content": "معانٍ", "meaning": "معاني - أحد علوم البلاغة الثلاثة" }
 		],
 		"solution": "وديع"
 	},
 	{
 		"answers": [
 			{ "content": "بدين", "meaning": "" },
-			{ "content": "متين", "meaning": "" },
+			{ "content": "متين", "meaning": "شديد صلب قوي" },
 			{ "content": "قوي", "meaning": "" },
 			{ "content": "شديد", "meaning": "" }
 		],
@@ -1167,6 +1175,8 @@
 			{ "content": "بطيخ", "meaning": "" },
 			{ "content": "خوخ", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
+
 		"solution": "برتقال"
 	},
 	{
@@ -1266,15 +1276,18 @@
 			{ "content": "خيار", "meaning": "" },
 			{ "content": "عنب", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
+
 		"solution": "عنب"
 	},
 	{
 		"answers": [
 			{ "content": "بطاطا", "meaning": "" },
-			{ "content": "طماطم", "meaning": "" },
+			{ "content": "طماطم", "meaning": "الباقي ينمو في الأرض" },
 			{ "content": "فجل", "meaning": "" },
 			{ "content": "جزر", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
 		"solution": "طماطم"
 	},
 	{
@@ -1297,11 +1310,13 @@
 	},
 	{
 		"answers": [
-			{ "content": "بطيخ", "meaning": "" },
+			{ "content": "بطيخ", "meaning": "البقية لديهم أكثر من جزء داخلي" },
 			{ "content": "رمّان", "meaning": "" },
 			{ "content": "عنب", "meaning": "" },
 			{ "content": "برتقال", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
+
 		"solution": "بطيخ"
 	},
 	{
@@ -1544,7 +1559,7 @@
 			{ "content": "ثجّ", "meaning": "" },
 			{ "content": "حجّ", "meaning": "" },
 			{ "content": "مجّ", "meaning": "" },
-			{ "content": "عجّ", "meaning": "" }
+			{ "content": "عجّ", "meaning": "البقية من أعمال الحج على قول النبي (أفضل الحج العج والثج)" }
 		],
 		"solution": "مجّ"
 	},
@@ -1597,7 +1612,7 @@
 		"answers": [
 			{ "content": "جامعة", "meaning": "" },
 			{ "content": "معهد", "meaning": "" },
-			{ "content": "مدرسة", "meaning": "" },
+			{ "content": "مدرسة", "meaning": "تشمل" },
 			{ "content": "كلية", "meaning": "" }
 		],
 		"solution": "مدرسة"
@@ -1618,6 +1633,7 @@
 			{ "content": "جسر", "meaning": "" },
 			{ "content": "وادٍ", "meaning": "" }
 		],
+		"perception": "unsure",
 		"solution": "وادٍ"
 	},
 	{
@@ -1690,6 +1706,7 @@
 			{ "content": "سفح", "meaning": "" },
 			{ "content": "لمح", "meaning": "" }
 		],
+		"perception": "unsure",
 		"solution": "لمح"
 	},
 	{
@@ -2122,6 +2139,8 @@
 			{ "content": "برتقال", "meaning": "" },
 			{ "content": "موز", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
+
 		"solution": "برتقال"
 	},
 	{
@@ -2252,13 +2271,13 @@
 	},
 	{
 		"answers": [
-			{ "content": "درع", "meaning": "" },
-			{ "content": "سيف", "meaning": "" },
-			{ "content": "ترس", "meaning": "" },
-			{ "content": "قوس", "meaning": "" }
+			{ "content": "درع", "meaning": "ما يقي الجسم - Armor" },
+			{ "content": "سيف", "meaning": "سلاح للضرب" },
+			{ "content": "ترس", "meaning": "سلاح للدفاع" },
+			{ "content": "قوس", "meaning": "سلاح للرمي" }
 		],
 		"perception": "unsure",
-		"solution": "ترس"
+		"solution": "درع"
 	},
 	{
 		"answers": [
@@ -2546,6 +2565,8 @@
 			{ "content": "كمثرى", "meaning": "" },
 			{ "content": "برتقال", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
+
 		"solution": "برتقال"
 	},
 	{
@@ -3102,12 +3123,12 @@
 	{
 		"answers": [
 			{ "content": "سهم", "meaning": "" },
-			{ "content": "درع", "meaning": "" },
-			{ "content": "ترس", "meaning": "دائرة مسننة في الصناعة Gear" },
+			{ "content": "درع", "meaning": "ما يقي الجسم - Armor" },
+			{ "content": "ترس", "meaning": "Shield - خشبة للدفاع والضرب" },
 			{ "content": "سيف", "meaning": "" }
 		],
 		"perception": "unsure",
-		"solution": "ترس"
+		"solution": "درع"
 	},
 	{
 		"answers": [
@@ -4651,6 +4672,8 @@
 			{ "content": "برتقال", "meaning": "" },
 			{ "content": "طماطم", "meaning": "" }
 		],
+		"categories": ["fruit-based"],
+
 		"solution": "برتقال"
 	},
 	{
@@ -5849,5 +5872,24 @@
 			{ "content": "القمر", "meaning": "البقية علوم ومواد" }
 		],
 		"solution": "القمر"
+	},
+	{
+		"answers": [
+			{ "content": "الماء", "meaning": "" },
+			{ "content": "الغذاء", "meaning": "" },
+			{ "content": "الشمس", "meaning": "" },
+			{ "content": "القمر", "meaning": "" }
+		],
+		"solution": "الغذاء"
+	},
+	{
+		"answers": [
+			{ "content": "توت", "meaning": "" },
+			{ "content": "رمان", "meaning": "" },
+			{ "content": "برتقال", "meaning": "" },
+			{ "content": "فراولة", "meaning": "الفراولة تنمو على الأرض" }
+		],
+		"categories": ["fruit-based"],
+		"solution": "فراولة"
 	}
 ]

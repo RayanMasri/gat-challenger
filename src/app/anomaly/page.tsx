@@ -8,6 +8,8 @@ import { AiOutlineCheck, AiOutlineClose, AiOutlineLink } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
 import { BiSolidBrain } from 'react-icons/bi';
 
+const getMarked = () => JSON.parse(localStorage.getItem('anomaly-marked') || '[]');
+
 function shuffle(array: any[]) {
 	let currentIndex = array.length,
 		randomIndex;
@@ -113,8 +115,6 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 		return shuffle(answers);
 	};
 
-	const getMarked = () => JSON.parse(localStorage.getItem('anomaly-marked') || '[]');
-
 	const isDifficult = () => getMarked().includes(index);
 
 	const [state, setState] = useState<{
@@ -174,6 +174,28 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 		window.open(url, '_blank');
 	};
 
+	const changeStatusTuple = (key: string, value: number) => {
+		let status = getStatus();
+
+		// Change key to desired value
+		let correspondent = status[index];
+		status[index] = {
+			...correspondent,
+			[key]: correspondent[key] + value,
+		};
+
+		correspondent = status[index];
+
+		// Apply changes to local storage
+		localStorage.setItem('status-anomaly', JSON.stringify(status));
+
+		// Apply changes to context
+		setState({
+			...state,
+			status: correspondent,
+		});
+	};
+
 	return (
 		<div className='w-full flex flex-row mb-2 px-2 items-center' style={{ direction: 'rtl' }}>
 			<div className='h-full bg-[#25253E] py-[2px] w-[128px] text-2xl rounded flex items-center justify-center flex-col'>
@@ -212,11 +234,29 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 						<div className='w-full h-[2px] bg-gray-100 my-1'>&nbsp;</div>
 						<div className='w-full flex justify-between flex-row items-center px-2 text-red-300'>
 							<div>{state.status.incorrect}</div>
-							<AiOutlineClose />
+							<AiOutlineClose
+								className='transition-all hover:opacity-50'
+								onMouseDown={(event) => {
+									if (event.button == 0) {
+										changeStatusTuple('incorrect', 1);
+									} else {
+										changeStatusTuple('incorrect', -1);
+									}
+								}}
+							/>
 						</div>
 						<div className='w-full flex justify-between flex-row items-center px-2 text-green-300 mt-1'>
 							<div>{state.status.correct}</div>
-							<AiOutlineCheck />
+							<AiOutlineCheck
+								className='transition-all hover:opacity-50'
+								onMouseDown={(event) => {
+									if (event.button == 0) {
+										changeStatusTuple('correct', 1);
+									} else {
+										changeStatusTuple('correct', -1);
+									}
+								}}
+							/>
 						</div>
 					</div>
 				) : (
@@ -301,6 +341,8 @@ const Question: FC<QuestionProps> = ({ info, index, status, onSubmit }) => {
 const Page = () => {
 	let { context, setContext } = useContext(Context);
 
+	const getDefaultMaximum = () => data.filter((item) => item.solution != null).length;
+
 	const [state, _setState] = useState<{
 		filterMinimumValue: number;
 		pace: [number | null, number | null];
@@ -311,6 +353,9 @@ const Page = () => {
 		elapsed: number;
 		trueInitial: number;
 		trueElapsed: number;
+		filterIncorrect: boolean;
+		filterDifficult: boolean;
+		maximum: number;
 	}>({
 		filterMinimumValue: 0,
 		pace: [null, null],
@@ -321,6 +366,9 @@ const Page = () => {
 		elapsed: 0,
 		trueInitial: Date.now(),
 		trueElapsed: 0,
+		filterIncorrect: false,
+		filterDifficult: false,
+		maximum: getDefaultMaximum(),
 	});
 
 	const _state = useRef(state);
@@ -333,22 +381,57 @@ const Page = () => {
 	const main: React.RefObject<HTMLInputElement> = useRef(null);
 	let status = getStatus();
 
+	const getFilters = () => {
+		return JSON.parse(localStorage.getItem('anomaly-filters') || '{}');
+	};
+
+	const setFilters = (incorrect: boolean, difficult: boolean, maximum: number) => {
+		let filters = getFilters();
+
+		filters.incorrect = incorrect;
+		filters.difficult = difficult;
+		filters.maximum = maximum;
+
+		localStorage.setItem('anomaly-filters', JSON.stringify(filters));
+	};
+
 	const getFilteredIndices = (threshold: number = 0) => {
 		let status = getStatus();
+		let marked = getMarked();
 
 		let indices: number[] = [];
-		data.map((_, index) => {
+		data.map((question, index) => {
 			let tuple: AnomalyStatusTuple = status[index];
-			if (tuple == undefined) {
-				return;
-			}
+			if (tuple == undefined || question.solution == null) return;
 
-			let matched = tuple.correct + tuple.incorrect >= (threshold || state.filterMinimumValue);
+			//  || ()
+			// incorrect && difficult ? incorrect == 0 && not difficult :
+
+			let matched =
+				tuple.correct + tuple.incorrect < (threshold || state.filterMinimumValue) ||
+				(state.filterIncorrect && state.filterDifficult
+					? tuple.incorrect == 0 && !marked.includes(index)
+					: (tuple.incorrect == 0 && state.filterIncorrect) || (!marked.includes(index) && state.filterDifficult)) ||
+				((state.filterIncorrect || state.filterDifficult) && tuple.correct + tuple.incorrect > (threshold || state.filterMinimumValue));
+
 			if (matched) indices.push(index);
 		});
-		console.log(indices);
+
+		console.log('Got indices');
 
 		return indices;
+	};
+
+	const getShown = () => getFilteredIndices().length - (getDefaultMaximum() - state.maximum);
+
+	const setMaximum = () => {
+		const maximum = data.length - getFilteredIndices().length;
+		setState({
+			...state,
+			maximum: maximum,
+		});
+
+		setFilters(state.filterIncorrect, state.filterDifficult, maximum);
 	};
 
 	const onFilterMinimum = (threshold: number) => {
@@ -397,7 +480,7 @@ const Page = () => {
 		}
 	};
 
-	const getRemaining = () => data.length - getFilteredIndices().length;
+	const getRemaining = () => state.maximum - getFilteredIndices().length;
 
 	const formatSeconds = (seconds: number) => {
 		let minutes = Math.floor(seconds / 60);
@@ -432,7 +515,6 @@ const Page = () => {
 	const onBlur = () => {
 		setState({
 			..._state.current,
-
 			blur: Date.now(),
 		});
 	};
@@ -447,6 +529,7 @@ const Page = () => {
 
 	useEffect(() => {
 		let value = parseInt(localStorage.getItem('filter-minimum') || '0');
+		let filters = getFilters();
 
 		window.addEventListener('focus', onFocus);
 		window.addEventListener('blur', onBlur);
@@ -456,6 +539,9 @@ const Page = () => {
 		setState({
 			...state,
 			filterMinimumValue: value,
+			maximum: filters.maximum || getDefaultMaximum(),
+			filterIncorrect: filters.incorrect || false,
+			filterDifficult: filters.difficult || false,
 		});
 
 		setTimeout(function () {
@@ -494,6 +580,12 @@ const Page = () => {
 		};
 	}, []);
 
+	useEffect(() => {
+		onFilterMinimum(state.filterMinimumValue);
+
+		setFilters(state.filterIncorrect, state.filterDifficult, state.maximum);
+	}, [state.filterIncorrect, state.filterDifficult]);
+
 	return (
 		<div className='w-full h-screen top-0 left-0 fixed overflow-y-scroll gap-y-2 flex flex-col bg-[#171819]' ref={main}>
 			<div className='w-full py-2 px-2 bg-[#5EA4D7] z-10 sticky top-0 flex flex-row justify-between items-center gap-x-2'>
@@ -522,6 +614,7 @@ const Page = () => {
 					</div>
 					<div className='flex flex-col w-fit h-full bg-[#25253E] justify-start items-center rounded py-2 box-border'>
 						{/* <div className='mr-2 text-1xl mb-2'>Status</div> */}
+
 						<div className='text-1xl'>Status</div>
 						<div className='w-full h-[2px] bg-gray-100 my-[4px]'>&nbsp;</div>
 
@@ -542,6 +635,16 @@ const Page = () => {
 							>
 								Clear
 							</div>
+						</div>
+					</div>
+					<div className={`flex flex-col w-[250px] bg-[#25253E] justify-start items-center rounded py-2 h-full transition-all`}>
+						<div>Filters</div>
+						<div className='w-full h-[2px] bg-gray-100 my-[4px]'>&nbsp;</div>
+
+						<div className='flex flex-col justify-center items-center h-full w-full'>
+							<div onClick={() => setState({ ...state, filterIncorrect: !state.filterIncorrect })}>{state.filterIncorrect ? 'Disable' : 'Enable'} incorrect filter</div>
+							<div onClick={() => setState({ ...state, filterDifficult: !state.filterDifficult })}>{state.filterDifficult ? 'Disable' : 'Enable'} difficult filter</div>
+							<div onClick={() => setMaximum()}>Set maximum to {data.length - getFilteredIndices().length}</div>
 						</div>
 					</div>
 				</div>
@@ -574,8 +677,7 @@ const Page = () => {
 
 						<div className='flex flex-col justify-center items-center h-full w-full'>
 							<div>
-								Rate: {((getFilteredIndices().length / data.filter((item) => item.solution != null).length) * 100).toFixed(2)}% ({getFilteredIndices().length}/
-								{data.filter((item) => item.solution != null).length})
+								Rate: {((getShown() / state.maximum) * 100).toFixed(2)}% ({getShown()}/{state.maximum})
 							</div>
 						</div>
 					</div>

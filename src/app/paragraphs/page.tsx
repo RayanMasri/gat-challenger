@@ -75,6 +75,31 @@ const getStatus = () => {
 
 	let parsed: StatusTuple[][] = JSON.parse(result);
 
+	// // Removal
+	// let indices: number[] = [];
+	// parsed.map((tuples, index) => {
+	// 	let exists = data.some((question: AnomalyQuestionType) => compareArrays(question.answers.map((e) => e.content).sort(), tuple.answers.sort()) && question.solution == tuple.solution);
+	// 	// If tuple is present in status, but not present in data.json, remove from model
+	// 	if (!exists) indices.push(index);
+	// });
+	// parsed = parsed.filter((_, index) => !indices.includes(index));
+
+	// // Addition
+	// for (let i = 0; i < data.length; i++) {
+	// 	let question = data[i];
+	// 	let exists = parsed.some((tuple: AnomalyStatusTuple) => compareArrays(question.answers.map((e) => e.content).sort(), tuple.answers.sort()) && question.solution == tuple.solution);
+
+	// 	// If question is not present in status, but present in data.json, add to model
+	// 	if (!exists) {
+	// 		parsed.splice(i, 0, {
+	// 			correct: 0,
+	// 			incorrect: 0,
+	// 			answers: question.answers.map((e) => e.content).sort(),
+	// 			solution: question.solution,
+	// 		});
+	// 	}
+	// }
+
 	// Fill in gaps
 	parsed = parsed.map((paragraph, index) => {
 		if (paragraph.length != data[index].questions.length) {
@@ -401,7 +426,6 @@ const Paragraph: FC<PProps> = ({ collapsed, paragraph, paragraphIndex }) => {
 						{paragraph.questions.map((question, questionIndex) => {
 							// Hide normal questions
 							if (question.status == 'normal') return;
-
 							return (
 								<QuestionType
 									paragraphIndex={paragraphIndex}

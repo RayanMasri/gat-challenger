@@ -10,11 +10,11 @@ export interface QuestionType {
 
 export interface ParagraphType {
 	title: string;
-	url: string;
+	url: string | null;
 	index: number;
 	paragraph: string;
-	notes?: string;
 	questions: QuestionType[];
+	notes?: string;
 }
 
 export interface ModelType {
