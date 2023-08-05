@@ -101,7 +101,7 @@ const getStatus = () => {
 	// }
 
 	// Fill in gaps
-	parsed = parsed.map((paragraph, index) => {
+	let _parsed = parsed.map((paragraph, index) => {
 		if (paragraph.length != data[index].questions.length) {
 			let difference = data[index].questions.length - paragraph.length;
 			if (difference < 0) {
@@ -119,11 +119,16 @@ const getStatus = () => {
 
 		return paragraph;
 	});
+
+	if (JSON.stringify(_parsed) != JSON.stringify(parsed)) {
+		console.log('Changed');
+		localStorage.setItem('status', JSON.stringify(_parsed));
+	}
 	// data.map((paragraph) => {
 	// 	return new Array(paragraph.questions.length).fill([0, 0]);
 	// })
 
-	return parsed;
+	return _parsed;
 };
 
 const QuestionType: FC<QProps> = ({ question, paragraphIndex, status, evaluate, onChange, onAffect }) => {
@@ -426,12 +431,30 @@ const Paragraph: FC<PProps> = ({ collapsed, paragraph, paragraphIndex }) => {
 						{paragraph.questions.map((question, questionIndex) => {
 							// Hide normal questions
 							if (question.status == 'normal') return;
+
+							let status = state.status == undefined ? [0, 0] : state.status[questionIndex];
+
+							if (state.status == undefined) {
+								console.log(`Is undefined`);
+							}
+
+							if (!status) {
+								console.log(`Index not found`);
+								if (status != undefined && status.length == 0) {
+									console.log('Empty list');
+								}
+							}
+
+							status = status || [0, 0];
+
+							// if(state)
+
 							return (
 								<QuestionType
 									paragraphIndex={paragraphIndex}
 									question={question}
 									evaluate={state.evaluation}
-									status={state.status[questionIndex]}
+									status={status}
 									onChange={(answerIndex) => onChange(questionIndex, answerIndex)}
 									onAffect={(choiceIndex, additive) => onAffect(questionIndex, choiceIndex, additive)}
 								/>

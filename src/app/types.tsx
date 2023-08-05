@@ -8,6 +8,10 @@ export interface QuestionType {
 	index?: number;
 }
 
+export interface SkillQuestionType extends QuestionType {
+	id: number;
+}
+
 export interface ParagraphType {
 	title: string;
 	url: string | null;
@@ -21,7 +25,7 @@ export interface ModelType {
 	name: string;
 	video?: string;
 	instant_evaluation?: boolean;
-	questions: QuestionType[];
+	questions: SkillQuestionType[];
 }
 
 export interface StatusTuple extends Array<number | number> {

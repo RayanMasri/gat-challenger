@@ -412,9 +412,11 @@ const Page = () => {
 				(state.filterIncorrect && state.filterDifficult
 					? tuple.incorrect == 0 && !marked.includes(index)
 					: (tuple.incorrect == 0 && state.filterIncorrect) || (!marked.includes(index) && state.filterDifficult)) ||
-				((state.filterIncorrect || state.filterDifficult) && tuple.correct + tuple.incorrect > (threshold || state.filterMinimumValue));
+				(state.maximum != getDefaultMaximum() && (state.filterIncorrect || state.filterDifficult) && tuple.correct + tuple.incorrect > (threshold || state.filterMinimumValue));
 
-			if (matched) indices.push(index);
+			if (matched) {
+				indices.push(index);
+			}
 		});
 
 		console.log('Got indices');
@@ -426,6 +428,7 @@ const Page = () => {
 
 	const setMaximum = () => {
 		const maximum = data.length - getFilteredIndices().length;
+
 		setState({
 			...state,
 			maximum: maximum,
@@ -483,6 +486,7 @@ const Page = () => {
 	const getRemaining = () => state.maximum - getFilteredIndices().length;
 
 	const formatSeconds = (seconds: number) => {
+		seconds = Math.abs(seconds);
 		let minutes = Math.floor(seconds / 60);
 		let hours = minutes / 60;
 
@@ -544,6 +548,7 @@ const Page = () => {
 			filterDifficult: filters.difficult || false,
 		});
 
+		let interval: NodeJS.Timer;
 		setTimeout(function () {
 			if (questions.current == null) return console.log('Failed to scroll, question div is null');
 			if (main.current == null) return console.log('Failed to scroll, main div is null');
@@ -571,7 +576,9 @@ const Page = () => {
 			}
 		}, 10);
 
-		let interval = setInterval(onTimer, 1000);
+		setTimeout(() => {
+			interval = setInterval(onTimer, 1000);
+		}, 100);
 
 		return () => {
 			clearInterval(interval);
@@ -588,6 +595,7 @@ const Page = () => {
 
 	return (
 		<div className='w-full h-screen top-0 left-0 fixed overflow-y-scroll gap-y-2 flex flex-col bg-[#171819]' ref={main}>
+			{getFilteredIndices().length}
 			<div className='w-full py-2 px-2 bg-[#5EA4D7] z-10 sticky top-0 flex flex-row justify-between items-center gap-x-2'>
 				<div className='flex flex-row justify-center items-center w-min gap-x-2 h-full'>
 					<div className='flex flex-col w-fit h-full bg-[#25253E] justify-center items-center rounded py-2'>

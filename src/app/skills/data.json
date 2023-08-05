@@ -3686,8 +3686,9 @@
 			{
 				"question": "سباحة : نشاط",
 				"answers": ["حرارة : ذوبان", "سرعة : ركض", "عبوس : بكاء", "غطس : شجاعة"],
-				"true": "غطس : شجاعة",
-				"status": "inconsistent && confirmed",
+				"true": "حرارة : ذوبان",
+				"notes": "السباحة تؤدي إلى النشاط, والحرارة تؤدي إلى الذوبان",
+				"status": "incorrect",
 				"skill": "verbal-analogy"
 			},
 			{ "question": "باب : خشب", "answers": ["زجاج : نافذة", "بقول : فول", "بقرة : حليب", "نور : نار"], "true": "نور : نار", "status": "difficult", "skill": "verbal-analogy" },
@@ -3930,7 +3931,7 @@
 			{ "question": "حج : طواف", "answers": ["إسلام : صوم", "رمضان : عمرة", "مسجد : صلاة", "ذهب : زكاة"], "true": "إسلام : صوم", "status": "difficult", "skill": "verbal-analogy" },
 			{ "question": "صيدلي : دواء", "answers": ["طبيب : سماعة", "حب : أخلاق", "مهندس : بناء", "حداد : حديدة"], "true": "مهندس : بناء", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "حصان : حدوة", "answers": ["جسر : أعمدة", "بعير : ظلف", "سيارة : عجلة", "إنسان : نعل"], "true": "بعير : ظلف", "status": "normal", "skill": "verbal-analogy" },
-			{ "question": "سباحة : نشاط", "answers": ["غطس : شجاعة", "حرارة : ذوبان", "سرعة : ركض", "عبوس : بكاء"], "true": "غطس : شجاعة", "status": "normal", "skill": "verbal-analogy" },
+			{ "question": "سباحة : نشاط", "answers": ["غطس : شجاعة", "حرارة : ذوبان", "سرعة : ركض", "عبوس : بكاء"], "true": "حرارة : ذوبان", "status": "normal", "skill": "verbal-analogy" },
 			{
 				"question": "السابع : الثامن",
 				"answers": ["المناقشة : الإهمال", "النجاح : الاجتهاد", "الأسد : الشبل", "الوضوء : الصلاة"],
@@ -9235,8 +9236,8 @@
 			},
 			{
 				"question": "كلما زادت ........ الإنسان عن حاجاته زادت ...........",
-				"answers": ["آمال - الأمة", "ثروة - عيوبه", "قوة - اتصالاته", "ثروة ـ همومه"],
-				"true": "ثروة ـ همومه",
+				"answers": ["آمال - آلامه", "ثروة - عيوبه", "قوة - اتصالاته", "ثروة ـ همومه"],
+				"true": "آمال - آلامه",
 				"status": "normal",
 				"skill": "sentence-completion"
 			},
@@ -13670,8 +13671,8 @@
 		"questions": [
 			{ "question": "قدم : حذاء", "answers": ["نظارة : عين", "يد : قفاز", "إشارة : تقاطع", "سماعة : أذن"], "true": "يد : قفاز", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "عطس : حمد", "answers": ["ذنب : استغفار", "قلم : كتاب", "مصباح : ضوء", "تبذير : كمال"], "true": "ذنب : استغفار", "status": "normal", "skill": "verbal-analogy" },
-			{ "question": "كبريت : نار", "answers": ["ضوء : قمر", "ساعة : عقارب", "طوفان : بحر", "سرعة : حادث"], "true": "سرعة : حادث", "status": "normal", "skill": "verbal-analogy" },
-			{ "question": "مجرة : فضاء", "answers": ["نجم : ليل", "جزيرة : محيط", "سهول : وادي", "أرض : سماء"], "true": "جزيرة : محيط", "status": "normal", "skill": "verbal-analogy" },
+			{ "question": "كبريت : نار", "answers": ["ضوء : قمر", "ساعة : عقارب", "طوفان : بحر", "سرعة : حادث"], "true": "سرعة : حادث", "status": "difficult", "skill": "verbal-analogy" },
+			{ "question": "مجرة : فضاء", "answers": ["نجم : ليل", "جزيرة : محيط", "سهول : وادي", "أرض : سماء"], "true": "جزيرة : محيط", "status": "difficult", "skill": "verbal-analogy" },
 			{ "question": "خطاط : قلم", "answers": ["ميت : شهرة", "ملاكم : قفاز", "عليل : كليل", "صعود : هبوط"], "true": "ملاكم : قفاز", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "عزير : اليهود", "answers": ["بوذي : البقر", "مكة : المسلمين", "بيت : دار", "عيسى : النصارى"], "true": "عيسى : النصارى", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "حصان : حدوة", "answers": ["سيارة : عجلة", "إنسان : نعل", "جسر : أعمدة", "بعير : ظلف"], "true": "بعير : ظلف", "status": "normal", "skill": "verbal-analogy" },
@@ -13685,7 +13686,7 @@
 			{ "question": "حذاء : قدم", "answers": ["عين : نظارة", "قدم : خلخال", "خاتم : ذهب", "قبعة : رأس"], "true": "قبعة : رأس", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "عشوراء : محرم", "answers": ["مطر : برد", "نهار : عمل", "ذبول : خريف", "مجرة : كون"], "true": "ذبول : خريف", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "منبه : نائم", "answers": ["بوق : مشاة", "حديد : سيارة", "حذاء : قدم", "صافرة : حكم"], "true": "بوق : مشاة", "status": "normal", "skill": "verbal-analogy" },
-			{ "question": "ممرض : مستشفى", "answers": ["مضيف : طائرة", "مال : مصرف", "صداع : رأس", "عادم : محرك"], "true": "مضيف : طائرة", "status": "normal", "skill": "verbal-analogy" },
+			{ "question": "ممرض : مستشفى/مشفى", "answers": ["مضيف : طائرة", "مال : مصرف", "صداع : رأس", "عادم : محرك"], "true": "مضيف : طائرة", "status": "difficult", "skill": "verbal-analogy" },
 			{ "question": "سحيق : عميق", "answers": ["جميل : قليل", "عائم : قائم", "عليل : كليل", "نائم : صائم"], "true": "عليل : كليل", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "ورد : عطر", "answers": ["باب : خشب", "صيدلية : دواء", "قمح : سنبلة", "صوف : رداء"], "true": "صوف : رداء", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "أفل : غاب", "answers": ["كرم : بخل", "أخذ : أعطى", "أبان : أفصح", "أصلح : أفسد"], "true": "أبان : أفصح", "status": "normal", "skill": "verbal-analogy" },
@@ -13694,6 +13695,8 @@
 			{ "question": "معصية : ندم", "answers": ["طائر : ريش", "شبع : تخمة", "كتلة : حجم", "حزن : إخفاق"], "true": "شبع : تخمة", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "عقد : عام", "answers": ["شعاع : شمس", "مرض : جرثومة", "قلم : حبر", "مجرة : كوكب"], "true": "مجرة : كوكب", "status": "normal", "skill": "verbal-analogy" },
 			{ "question": "نزاهة : فساد", "answers": ["عناية : رعاية", "سرقة : كذب", "نقاهة : راحة", "حقيقة : خيال"], "true": "حقيقة : خيال", "status": "normal", "skill": "verbal-analogy" },
+			{ "question": "مصنع : عمال", "answers": ["عرس : وليمة", "معمل : تحليل", "تصميم : مهندس", "خلية : نحل"], "true": "خلية : نحل", "status": "missing", "skill": "verbal-analogy" },
+			{ "question": "عامل : مصنع", "answers": ["قاضي : عدل", "سمك : بحر", "ناقة : صحراء", "ربان : سفينة"], "true": "ربان : سفينة", "status": "missing", "skill": "verbal-analogy" },
 			{ "question": "كل شيء إذا قل رخص إلا العلم إذا كثر غلا", "answers": ["شيء", "غلا", "العلم", "قل"], "true": "قل", "status": "normal", "skill": "contextual-error" },
 			{ "question": "ما لا يمكننا تغييره ينبغي تدميره", "answers": ["ما", "تدميره", "يمكننا", "ينبغي"], "true": "تدميره", "status": "normal", "skill": "contextual-error" },
 			{
@@ -13714,7 +13717,7 @@
 				"question": "إذا ظل الإنسان بلا عمل تحول العمل الذي يعيشه إلى مشكلات كبيرة.",
 				"answers": ["الإنسان", "كبيرة", "العمل", "ظل"],
 				"true": "العمل",
-				"status": "normal",
+				"status": "difficult",
 				"skill": "contextual-error"
 			},
 			{
@@ -13742,9 +13745,9 @@
 			},
 			{
 				"question": "كلما زادت ........ الإنسان عن حاجاته زادت .............",
-				"answers": ["قوة - اتصالاته", "آمال - الأمة", "ثروة ـ همومه", "ثروة - عيوبه"],
-				"true": "ثروة ـ همومه",
-				"status": "normal",
+				"answers": ["قوة - اتصالاته", "آمال - آلامه", "ثروة ـ همومه", "ثروة - عيوبه"],
+				"true": "آمال - آلامه",
+				"status": "incorrect",
 				"skill": "sentence-completion"
 			},
 			{
@@ -13758,7 +13761,7 @@
 				"question": "جاهدوا ...... كما تجاهدون ..........",
 				"answers": ["عدوكم - أعدائكم", "أهواءكم ـ أعداءكم", "أنفسكم - أقربائكم", "أهوائكم - أموالكم"],
 				"true": "أهواءكم ـ أعداءكم",
-				"status": "normal",
+				"status": "difficult",
 				"skill": "sentence-completion"
 			},
 			{
@@ -13795,6 +13798,35 @@
 				"true": "حاسمة - الحكماء",
 				"status": "normal",
 				"skill": "sentence-completion"
+			},
+			{
+				"question": "نحِّ إلى نفسك العلم حتى تلزمه و تألفه و يكون هو لهوك و لذتك و سلوتك.",
+				"answers": ["لهوك", "نح", "سلوتك", "نفسك"],
+				"true": "نح",
+				"status": "missing && difficult",
+				"skill": "contextual-error"
+			},
+			{
+				"question": "الحياة لا تخلو من العيوب، فالسعيد من زادت عيوبه و دقت.",
+				"answers": ["الحياة", "العيوب", "زادت", "فالسعيد"],
+				"true": "زادت",
+				"status": "missing && difficult",
+				"skill": "contextual-error"
+			},
+			{
+				"question": "الماء يحمل السفن أو يغرقها مثل التفاؤل يحفِّز الإنسان أو يعرضه للاستسلام  ما لم يكن متشائما",
+				"answers": ["الماء", "السفن", "للإستسلام", "متشائمًا"],
+				"true": "متشائمًا",
+				"status": "missing && incorrect",
+				"notes": "يعرضه للإستسلام ما لم يكن متفائلًا",
+				"skill": "contextual-error"
+			},
+			{
+				"question": " إنَّ العمل يحتاج إلى إرادة و إذا لم تتغلب الإرادة على العقل فإنها تنهار ،و تفشل.",
+				"answers": ["العقل", "الإدارة", "تنهار", "العمل"],
+				"true": "العقل",
+				"status": "missing && difficult",
+				"skill": "contextual-error"
 			}
 		]
 	},
@@ -13954,7 +13986,6 @@
 			{ "question": "شاشه : فيلم", "answers": ["تلفاز : برنامج", "...", "...", "..."], "true": "تلفاز : برنامج", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "غذاء : جسم", "answers": ["حي : قلب", "تربه : نبته", "زوجه : رجل", "..."], "true": "تربه : نبته", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "اختراع : مخترع", "answers": ["عسل : نحل", "أنبوب : سباك", "سياره : قائد", "..."], "true": "عسل : نحل", "status": "new", "skill": "verbal-analogy" },
-			{ "question": "تفويض : توكيل", "answers": ["طلب : نداء", "...", "...", "..."], "true": "طلب : نداء", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "وريد : دم", "answers": ["سلك : كهرباء", "رأس : مخ", "...", "..."], "true": "سلك : كهرباء", "status": "new", "skill": "verbal-analogy" },
 			{
 				"question": "نجار : منشار",
@@ -14021,7 +14052,6 @@
 				"status": "new",
 				"skill": "verbal-analogy"
 			},
-			{ "question": "عمل : نهار", "answers": ["صوم : رمضان", "...", "...", "..."], "true": "صوم : رمضان", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "ثبوت : رسوخ", "answers": ["شروق : قدوم", "هدم : قدم", "ركون : اعتماد", "..."], "true": "ركون : اعتماد", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "ثعبان : زحف", "answers": ["انسان : مشي", "اسد : اطراف", "...", "..."], "true": "انسان : مشي", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "سيف : صارم", "answers": ["طفل : شاب", "عسل : نقي", "نفَس : نفِس", "ثابت : جنان"], "true": "عسل : نقي", "status": "new", "skill": "verbal-analogy" },
@@ -14280,7 +14310,6 @@
 			{ "question": "طبيب : مستشفى", "answers": ["طفل : ملعب", "خادمة : بيت", "مزارع : معمل", "اللاعب : فصل"], "true": "خادمة : بيت", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "بطيخ : رمان", "answers": ["عنب : برتقال", "بطيخ : شوكيّات", "جزر : تفاح", "موز : خسّ"], "true": "عنب : برتقال", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "كرسي : خشب", "answers": ["ألواح : سرير", "حرير : صوف", "ثوب : قطن", "مدن : قرى"], "true": "ثوب : قطن", "status": "new", "skill": "verbal-analogy" },
-			{ "question": "حليب : كالسيوم", "answers": ["طحين : ألياف", "تمر : سكر", "موز : طعام", "بروتين : لحم"], "true": "تمر : سكر", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "إذعان : خضوع", "answers": ["تألب : هدوء", "استقامة : انحراف", "ذبّ : دفع", "إرشاد : إغواء"], "true": "ذبّ : دفع", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "قراءة : وعي", "answers": ["معرفة : سفر", "ثقافة : اطلاع", "دراسة : مذاكرة", "اجتهاد: إنجاز"], "true": "اجتهاد: إنجاز", "status": "new", "skill": "verbal-analogy" },
 			{ "question": "ماء : ثلج", "answers": ["نخلة : رطب", "زبدة : لبن", "صوت : كلمة", "عجين : خبز"], "true": "عجين : خبز", "status": "new", "skill": "verbal-analogy" },
@@ -15914,6 +15943,14 @@
 				"notes": "اخيار",
 				"true": "اشرار",
 				"status": "new && incorrect",
+				"skill": "contextual-error"
+			},
+			{
+				"question": "لا يستطيع أن يعيش الانسان بلا خوف ، لكنه سوف يخشى ان يتالم مما يرغب.",
+				"answers": ["يخشى", "خوف", "الإنسان", "يتألم"],
+				"notes": "خوف",
+				"true": "رغبة؟",
+				"status": "new && unsure",
 				"skill": "contextual-error"
 			}
 		]
