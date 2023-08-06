@@ -1,32 +1,13 @@
 'use client';
 
 import React, { FC, useContext, useState, useEffect, useRef } from 'react';
-// import data from './data.json';
-import data from './new-data.json';
+import data from './data.json';
 
 import { ModelType, SkillQuestionType, StatusTupleVerbose } from '../types';
 // import { useContext } from '../context';
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
 import clsx from 'clsx';
-
-// import Image from 'next/image';
-// import gpt from './chatgpt.svg';
-
-// interface PProps {
-// 	paragraph: ParagraphType;
-// 	paragraphIndex: number;
-// 	collapsed: boolean;
-// }
-
-// interface QProps {
-// 	question: SkillQuestionType;
-// 	evaluate: boolean;
-// 	status: number[];
-// 	paragraphIndex: number;
-// 	onChange: (index: number) => void;
-// 	onAffect: (index: number, additive: number) => void;
-// }
 
 const showIncorrect = false;
 
@@ -68,91 +49,6 @@ function shuffle(array: any[]) {
 	return array;
 }
 
-// const getRandomAnswer = (excluded: string[], paragraphIndex: number) => {
-// 	// Get all answers
-// 	let all = data[paragraphIndex].questions
-// 		.map((question) => question.answers)
-// 		.flat()
-// 		.filter((answer) => answer.trim() != '-');
-
-// 	// Remove excluded answer
-// 	all = all.filter((item) => !excluded.includes(item));
-
-// 	return all[Math.floor(Math.random() * all.length)];
-// };
-
-const getDefaultGlobalStatus = () => {
-	return JSON.stringify(
-		data.map((model) => {
-			return model.questions.map((question) => {
-				return {
-					correct: 0,
-					incorrect: 0,
-					question: question.question,
-					answer: question.true,
-				};
-			});
-		})
-	);
-};
-
-const getStatus = () => {
-	let result: string | null = localStorage.getItem('status-skills');
-
-	if (result == null || result == undefined || result.trim() == 'null' || result.trim() == '') {
-		return JSON.parse(getDefaultGlobalStatus());
-	}
-
-	let parsed: StatusTupleVerbose[][] = JSON.parse(result);
-
-	return parsed;
-};
-
-const refreshStatus = () => {
-	let parsed: StatusTupleVerbose[][] = getStatus();
-
-	let previous: StatusTupleVerbose[][] = [...parsed];
-
-	parsed = parsed.map((model, index) => {
-		// Removal
-		let indices: number[] = [];
-		for (let i = 0; i < model.length; i++) {
-			let tuple = model[i];
-			let exists = data[index].questions.some((question: SkillQuestionType) => question.question == tuple.question && question.true == tuple.answer);
-
-			// If tuple is present in status, but not present in data.json, remove from model
-			if (!exists) indices.push(i);
-		}
-		model = model.filter((_, index) => !indices.includes(index));
-
-		// Addition
-		for (let i = 0; i < data[index].questions.length; i++) {
-			let question: SkillQuestionType = data[index].questions[i];
-
-			let exists = model.some((tuple: StatusTupleVerbose) => question.question == tuple.question && question.true == tuple.answer);
-			if (question.question == 'منطقة : أمير') {
-				console.log(exists);
-			}
-			// If question is not present in status, but present in data.json, add to model
-			if (!exists) {
-				model.push({
-					correct: 0,
-					incorrect: 0,
-					question: question.question,
-					answer: question.true,
-				});
-			}
-		}
-
-		return model;
-	});
-
-	if (JSON.stringify(previous) != JSON.stringify(parsed)) {
-		console.log(`Applied changes to status when fetching status`);
-		localStorage.setItem('status-skills', JSON.stringify(parsed));
-	}
-};
-
 interface StatusType {
 	[id: number]: [number, number];
 }
@@ -171,13 +67,13 @@ function StatusContextProvider(props: any) {
 // Context logic
 interface ContextType {
 	collapsed: number[];
-	status: StatusTupleVerbose[][];
+	// status: StatusTupleVerbose[][];
 	threshold: number;
 	glass: boolean;
 }
 let object: ContextType = {
 	collapsed: [],
-	status: getStatus(),
+	// status: getStatus(),
 	threshold: -1,
 	glass: true,
 };
@@ -430,22 +326,7 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 	const isCollapsed = () => context.collapsed.includes(index);
 
 	const resetSolutions = () => {
-		let status = getStatus();
-
-		status[index] = data[index].questions.map((question: SkillQuestionType) => {
-			return {
-				correct: 0,
-				incorrect: 0,
-				question: question.question,
-				answer: question.true,
-			};
-		});
-
-		setContext({
-			...context,
-			status: status,
-		});
-		localStorage.setItem('status-skills', JSON.stringify(status));
+		// Map through id's in model and change status accordingly
 	};
 
 	const evaluateQuestions = (target: number[], selected?: SelectedMap) => {
@@ -580,7 +461,7 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 	}, [status]);
 
 	return (
-		<div className='w-full h-min bg-gray-800 p-2'>
+		<div className={`w-full h-min bg-gray-800 p-2 transition-all ${state.waiting != 0 ? 'opacity-20 pointer-events-none bg-gray-200' : 'opacity-100 bg-gray-800 pointer-events-all'}`}>
 			<div className='text-5xl w-full flex justify-center items-center text-center mb-5 flex-row relative pt-2'>
 				<div className='absolute h-full top-0 left-0 flex justify-center items-center text-[14px] text-black'>
 					<div className='bg-cyan-300 rounded p-2 hover:opacity-50 transition-all' onClick={resetSolutions}>
@@ -709,16 +590,7 @@ const Page = () => {
 					<div className='mr-2'>Filter paragraph by minimum:</div>
 					<input type='number' min='0' className='text-black' onChange={(event) => onFilterMinimum(parseInt(event.target.value))} />
 				</div>
-				<div className='flex flex-row w-fit'>
-					<div
-						className='mr-2 hover:opacity-50 active:opacity-30 transition-all bg-green-300'
-						onClick={() => {
-							refreshStatus();
-						}}
-					>
-						Refresh Status
-					</div>
-				</div>
+
 				<div className='flex flex-row w-fit'>
 					<div
 						className='mr-2 hover:opacity-50 active:opacity-30 transition-all bg-green-300'

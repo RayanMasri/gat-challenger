@@ -664,10 +664,10 @@
 	},
 	{
 		"answers": [
-			{ "content": "الجمل سفينة الصحراء", "meaning": "" },
+			{ "content": "الجمل سفينة الصحراء", "meaning": "بأنه يستخدم للسفر" },
 			{ "content": "الإبحار يحتاج لرياح", "meaning": "" },
 			{ "content": "الصيد مهنة شاقة", "meaning": "" },
-			{ "content": "البحر مترامي الأطراف", "meaning": "" }
+			{ "content": "البحر مترامي الأطراف", "meaning": "الباقي يتحدث عن لقب الشيء ومهمته, إلا البحر مترامي وصف له" }
 		],
 		"solution": "البحر مترامي الأطراف"
 	},
@@ -3591,9 +3591,19 @@
 	{
 		"answers": [
 			{ "content": "طلحة", "meaning": "" },
-			{ "content": "حمزة", "meaning": "أسد" },
+			{ "content": "حمزة", "meaning": "" },
+			{ "content": "معاذ", "meaning": "الأسماء البقية لفظها تأنيث وتنتهي بالتاء المربوطة" },
+			{ "content": "أسامة", "meaning": "" }
+		],
+		"categories": ["name-based"],
+		"solution": "معاذ"
+	},
+	{
+		"answers": [
+			{ "content": "معاوية", "meaning": "" },
+			{ "content": "حمزة", "meaning": "" },
 			{ "content": "معاذ", "meaning": "" },
-			{ "content": "أسامة", "meaning": "أسد" }
+			{ "content": "أسامة", "meaning": "" }
 		],
 		"categories": ["name-based"],
 		"solution": "معاذ"
@@ -3665,7 +3675,7 @@
 		"answers": [
 			{ "content": "عبد العزيز", "meaning": "" },
 			{ "content": "بغداد", "meaning": "" },
-			{ "content": "حضر موت", "meaning": "" },
+			{ "content": "حضر موت", "meaning": "؟" },
 			{ "content": "تأبّط شرَّا", "meaning": "اسم شخص" }
 		],
 		"solution": "بغداد"
@@ -4526,7 +4536,7 @@
 	{
 		"answers": [
 			{ "content": "كان", "meaning": "" },
-			{ "content": "كأنّ", "meaning": "" },
+			{ "content": "كأنّ", "meaning": "الباقي من كان واخواتها" },
 			{ "content": "ليس", "meaning": "" },
 			{ "content": "بات", "meaning": "" }
 		],
@@ -4555,7 +4565,7 @@
 			{ "content": "كتاب", "meaning": "" },
 			{ "content": "دفتر", "meaning": "" },
 			{ "content": "ورقة", "meaning": "" },
-			{ "content": "سطر", "meaning": "" }
+			{ "content": "سطر", "meaning": "شامل داخل البقية" }
 		],
 		"solution": "سطر"
 	},
@@ -4617,7 +4627,7 @@
 		"answers": [
 			{ "content": "كرم", "meaning": "" },
 			{ "content": "جود", "meaning": "" },
-			{ "content": "بخل", "meaning": "" },
+			{ "content": "بخل", "meaning": "الباقي صفات إيجابية" },
 			{ "content": "قوّة", "meaning": "" }
 		],
 		"solution": "بخل"
@@ -5912,5 +5922,24 @@
 			{ "content": "نار", "meaning": "الفحم يأتي من الخشب والخشب يأتي من الشجر" }
 		],
 		"solution": "نار"
+	},
+	{
+		"answers": [
+			{ "content": "وفاء", "meaning": "" },
+			{ "content": "فداء", "meaning": "الأضحيَّةُ" },
+			{ "content": "تضحية", "meaning": "" },
+			{ "content": "صداقة", "meaning": "" }
+		],
+		"solution": "صداقة"
+	},
+	{
+		"answers": [
+			{ "content": "رداء", "meaning": "" },
+			{ "content": "حذاء", "meaning": "" },
+			{ "content": "ساعة", "meaning": "يمكن تكون ساعة حائط, أو هي آلة والبقية جماد, أو أنها للزينة مخصصة" },
+			{ "content": "نظارة", "meaning": "" }
+		],
+		"perception": "unsure",
+		"solution": "ساعة"
 	}
 ]
