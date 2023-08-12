@@ -169,9 +169,9 @@
 	{
 		"answers": [
 			{ "content": "أبرم", "meaning": "أَحكمه ودبَّره. جعله يمضي" },
-			{ "content": "غدر", "meaning": "" },
+			{ "content": "غدر", "meaning": "أظلم" },
 			{ "content": "نكث", "meaning": "نقضَه ونبذَه" },
-			{ "content": "نقض", "meaning": "" }
+			{ "content": "نقض", "meaning": "أفسده ونبذه" }
 		],
 		"solution": "أبرم"
 	},
@@ -736,11 +736,12 @@
 	},
 	{
 		"answers": [
-			{ "content": "الزفير", "meaning": "" },
+			{ "content": "الزفير", "meaning": "يمكن ليس صوت؟" },
 			{ "content": "الصرير", "meaning": "" },
 			{ "content": "الهديل", "meaning": "" },
 			{ "content": "الخرير", "meaning": "" }
 		],
+		"perception": "somewhat unsure",
 		"solution": "الزفير"
 	},
 	{
@@ -1911,12 +1912,12 @@
 	{
 		"answers": [
 			{ "content": "حزام", "meaning": "" },
-			{ "content": "حقيبة", "meaning": "" },
+			{ "content": "حقيبة", "meaning": "الباقي ملابس" },
 			{ "content": "ثوب", "meaning": "" },
 			{ "content": "حذاء", "meaning": "" }
 		],
 		"perception": "unsure",
-		"solution": "ثوب"
+		"solution": "حقيبة"
 	},
 	{
 		"answers": [
@@ -2072,7 +2073,7 @@
 		"answers": [
 			{ "content": "خديجة", "meaning": "" },
 			{ "content": "زينب", "meaning": "" },
-			{ "content": "عتيقة", "meaning": "" },
+			{ "content": "عتيقة", "meaning": "الباقي من زوجات النبي" },
 			{ "content": "حفصة", "meaning": "" }
 		],
 		"categories": ["name-based"],
@@ -3232,6 +3233,7 @@
 			{ "content": "قهوة", "meaning": "" },
 			{ "content": "نعناع", "meaning": "" }
 		],
+		"perception": "unsure",
 		"solution": "نعناع"
 	},
 	{
@@ -3537,7 +3539,7 @@
 	{
 		"answers": [
 			{ "content": "طاعون", "meaning": "" },
-			{ "content": "صداع", "meaning": "" },
+			{ "content": "صداع", "meaning": "الباقي أمراض معدية" },
 			{ "content": "جذام", "meaning": "داء يصيب الجلد والأعصاب الطَّرفية" },
 			{ "content": "جدري", "meaning": "مرض فَيْروسيّ معدٍ، يتميز بطفح جلديٍّ " }
 		],
@@ -4362,12 +4364,12 @@
 	{
 		"answers": [
 			{ "content": "قطن", "meaning": "" },
-			{ "content": "زيتون", "meaning": "" },
+			{ "content": "زيتون", "meaning": "الباقي لونه ابيض" },
 			{ "content": "ياسمين", "meaning": "" },
-			{ "content": "لبن", "meaning": "اللبن يستخرج من حيوان أما الباقي من نبات" }
+			{ "content": "لبن", "meaning": "" }
 		],
 		"perception": "unsure",
-		"solution": "لبت"
+		"solution": "زيتون"
 	},
 	{
 		"answers": [
@@ -4579,9 +4581,18 @@
 	},
 	{
 		"answers": [
-			{ "content": "كرة", "meaning": "" },
+			{ "content": "كرة", "meaning": "الباقي آلات" },
 			{ "content": "مروحية", "meaning": "" },
 			{ "content": "دراجة", "meaning": "" },
+			{ "content": "سيارة", "meaning": "" }
+		],
+		"solution": "كرة"
+	},
+	{
+		"answers": [
+			{ "content": "كرة", "meaning": "الباقي آلات" },
+			{ "content": "مروحة", "meaning": "" },
+			{ "content": "عجلة", "meaning": "" },
 			{ "content": "سيارة", "meaning": "" }
 		],
 		"solution": "كرة"
@@ -4726,12 +4737,13 @@
 	},
 	{
 		"answers": [
-			{ "content": "لَحْن", "meaning": "" },
+			{ "content": "لَحْن", "meaning": "لحَّن الأُغْنِيَةَ :وضَع لها صوتًا موسيقيًّا مناسبًا تُغَنَّى به" },
 			{ "content": "طَرَب", "meaning": "الطَّرَبُ : خِفَّةٌ وهِزَّةٌ تثير النَّفْسَ لفرحٍ أَو حُزْنٍ أَو ارتياح" },
-			{ "content": "شَجَن", "meaning": "شَجَنَتِ الحَمَامَةُ : نَاحَتْ، تَحَزَّنَتْ بِتَرْدِيدِ صَوْتِهَا" },
+			{ "content": "شَجَن", "meaning": "حَزِنَ" },
 			{ "content": "صَدْح", "meaning": "صدَح الطَّائرُ :صاح، غرَّد ورفع صَوْتهَ فأطرب" }
 		],
-		"solution": "لَحْن"
+		"perception": "unsure",
+		"solution": "شَجَن"
 	},
 	{
 		"answers": [
@@ -5393,7 +5405,7 @@
 	{
 		"answers": [
 			{ "content": "موت", "meaning": "" },
-			{ "content": "مرض", "meaning": "" },
+			{ "content": "مرض", "meaning": "الباقي معناها الموت وتدل على النهاية" },
 			{ "content": "قتل", "meaning": "" },
 			{ "content": "هلاك", "meaning": "" }
 		],
@@ -5912,5 +5924,143 @@
 			{ "content": "نار", "meaning": "الفحم يأتي من الخشب والخشب يأتي من الشجر" }
 		],
 		"solution": "نار"
+	},
+	{
+		"answers": [
+			{ "content": "سراج", "meaning": "" },
+			{ "content": "نجم", "meaning": "" },
+			{ "content": "شمس", "meaning": "" },
+			{ "content": "شمعة", "meaning": "الباقي يشتغل بغاز" }
+		],
+		"perception": "unsure",
+		"solution": "شمعة"
+	},
+	{
+		"answers": [
+			{ "content": "ألم", "meaning": "" },
+			{ "content": "كمد", "meaning": "حزِن حُزْنًا شديدًا" },
+			{ "content": "حزن", "meaning": "" },
+			{ "content": "حبور", "meaning": " سروراً، فَرَحاً، بَهْجَةً،" }
+		],
+		"solution": "حبور"
+	},
+	{
+		"answers": [
+			{ "content": "عسل", "meaning": "" },
+			{ "content": "حليب", "meaning": "" },
+			{ "content": "بيض", "meaning": "" },
+			{ "content": "سكر", "meaning": "الباقي يستخرج من حيوان" }
+		],
+		"solution": "سكر"
+	},
+
+	{
+		"answers": [
+			{ "content": "الفيافي", "meaning": "جمع فيفاء وهي الصحراء" },
+			{ "content": "هتان", "meaning": "الباقي من أسماء الصحراء" },
+			{ "content": "القفار", "meaning": "جمع قفر وهي الصحراء" },
+			{ "content": "بيداء", "meaning": "الصحراء" }
+		],
+		"solution": "هتان"
+	},
+
+	{
+		"answers": [
+			{ "content": "حج", "meaning": "" },
+			{ "content": "صلاة", "meaning": "" },
+			{ "content": "صوم", "meaning": "" },
+			{ "content": "صدق", "meaning": "الباقي عبادات" }
+		],
+		"solution": "صدق"
+	},
+
+	{
+		"answers": [
+			{ "content": "نافذة", "meaning": "الباقي من أثاث البيت" },
+			{ "content": "سرير", "meaning": "" },
+			{ "content": "خزانة", "meaning": "" },
+			{ "content": "كرسي", "meaning": "" }
+		],
+		"solution": "نافذة"
+	},
+
+	{
+		"answers": [
+			{ "content": "الخيدع", "meaning": "" },
+			{ "content": "التيس", "meaning": "" },
+			{ "content": "الوجار", "meaning": "الباقي من ذكور حيوانات" },
+			{ "content": "اليعسوب", "meaning": "" }
+		],
+		"solution": "الوجار"
+	},
+
+	{
+		"answers": [
+			{ "content": "الشروق", "meaning": "" },
+			{ "content": "الأصيل", "meaning": "الوقت من أقصى العصر إلى المغرب" },
+			{ "content": "العتمة", "meaning": " الثلث الأول من الليل بعد غياب الشفق الأحمر. الباقي من أسماء ساعات النهار " },
+			{ "content": "العشي", "meaning": "آخر النهار من الزوال إلى الغروب" }
+		],
+		"solution": "العتمة"
+	},
+
+	{
+		"answers": [
+			{ "content": "الوليمة", "meaning": "" },
+			{ "content": "العقيقة", "meaning": ":الذبيحةُ" },
+			{ "content": "المأدبة", "meaning": "الطعامِ يُصْنع لدعوة" },
+			{ "content": "عكلى", "meaning": "الباقي من أسماء الأطعمة" }
+		],
+		"solution": "عكلى"
+	},
+
+	{
+		"answers": [
+			{ "content": "سفك", "meaning": "من أسماء السيوف" },
+			{ "content": "مُهَند", "meaning": "" },
+			{ "content": "مصمم", "meaning": "السيْفُ القاطِعُ يمرُّ في العِظَامِ ويمْضي في الضريبة" },
+			{ "content": "...", "meaning": "" }
+		],
+		"solution": "سفك"
+	},
+
+	{
+		"answers": [
+			{ "content": "السمام", "meaning": "" },
+			{ "content": "الأصمع", "meaning": "" },
+			{ "content": "السيد", "meaning": "" },
+			{ "content": "الليث", "meaning": "من أسماء الذئب" }
+		],
+		"solution": "الليث"
+	},
+
+	{
+		"answers": [
+			{ "content": "ابريل", "meaning": "" },
+			{ "content": "أكتوبر", "meaning": "" },
+			{ "content": "محرم", "meaning": "أشهر ميلادية" },
+			{ "content": "نوفمبر", "meaning": "" }
+		],
+		"solution": "محرم"
+	},
+
+	{
+		"answers": [
+			{ "content": "أبو بكر الصديق", "meaning": "" },
+			{ "content": "علي بن أبي طالب", "meaning": "" },
+			{ "content": "خالد بن الوليد", "meaning": "الخلفاء الراشدون" },
+			{ "content": "عثمان بن عفان", "meaning": "" }
+		],
+		"solution": "خالد بن الوليد"
+	},
+
+	{
+		"answers": [
+			{ "content": "هجمة", "meaning": "الهَجْمَةُ من الإِبل: العددُ العظيمُ منها لا يبلغ المائة" },
+			{ "content": "عكنان", "meaning": "" },
+			{ "content": "عرجلة", "meaning": "جماعات الإبل" },
+			{ "content": "عكرة", "meaning": "العَكرَةُ : قطيع من الإبل" }
+		],
+		"solution": "عرجلة"
 	}
 ]

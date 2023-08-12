@@ -26,13 +26,18 @@ export async function POST(request: Request) {
 	let file = `${process.cwd()}/data/${id}.json`;
 
 	let result = JSON.parse(await readFile(file));
-
-	let newIds = data
+	let ids = data
 		.map((m) => m.questions)
 		.flat()
-		.map((q) => q.id)
-		.filter((id) => !Object.keys(result).includes(id.toString()));
+		.map((q) => q.id);
 
+	let newIds = ids.filter((id) => !Object.keys(result).includes(id.toString()));
+	let duplicates = ids.filter((id, index) => ids.indexOf(id) != index);
+
+	if (duplicates.length != 0) {
+		console.log(`Found ${duplicates.length} duplicate(s)`);
+		console.log(JSON.stringify(duplicates, null, 2));
+	}
 	if (newIds.length != 0) {
 		console.log(`Found ${newIds.length} new IDs`);
 

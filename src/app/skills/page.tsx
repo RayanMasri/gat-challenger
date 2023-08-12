@@ -10,6 +10,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import clsx from 'clsx';
 
 const showIncorrect = false;
+const normalExclusive = true;
 
 const setStatus = (newStatus: { [id: number]: [number, number] }) => {
 	return new Promise((resolve, reject) => {
@@ -68,11 +69,21 @@ function StatusContextProvider(props: any) {
 interface ContextType {
 	collapsed: number[];
 	// status: StatusTupleVerbose[][];
+	timer: {
+		start: number;
+		questions: number;
+		index: number;
+	};
 	threshold: number;
 	glass: boolean;
 }
 let object: ContextType = {
 	collapsed: [],
+	timer: {
+		start: 0,
+		questions: 0,
+		index: -1,
+	},
 	// status: getStatus(),
 	threshold: -1,
 	glass: true,
@@ -396,6 +407,7 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 
 	const onSubmit = () => {
 		let difference = Math.abs(Object.keys(state.selected).length - info.questions.length);
+
 		if (difference != 0 && state.error == '') {
 			setState({
 				...state,
@@ -403,6 +415,32 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 			});
 			return;
 		}
+
+		if (context.timer.index == index) {
+			let elapsed = Date.now() - context.timer.start;
+			let times = JSON.parse(localStorage.getItem('skill-times') || '{}');
+			let id = index.toString();
+
+			if (!Object.keys(times).includes(id)) {
+				times[id] = [];
+			}
+
+			times[id].push([context.timer.start, elapsed]);
+
+			console.log(`Added new time info for model ${index} to existing ${times[id].length - 1} time(s)`);
+
+			localStorage.setItem('skill-times', JSON.stringify(times));
+
+			setContext({
+				...context,
+				timer: {
+					start: 0,
+					questions: 0,
+					index: -1,
+				},
+			});
+		}
+
 		// if (
 		// 	state.selected
 		// 		.filter((_, _index) => info.questions[_index].status != 'normal' && (showIncorrect ? context.status[index][_index].incorrect > 0 : true))
@@ -450,6 +488,17 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 		});
 	};
 
+	const startTimer = () => {
+		setContext({
+			...context,
+			timer: {
+				start: Date.now(),
+				questions: info.questions.length,
+				index: index,
+			},
+		});
+	};
+
 	useEffect(() => {
 		if (state.waiting != 0) {
 			console.log(`Set context: Decreasing waiting status from ${state.waiting} to ${state.waiting - 1}`);
@@ -463,9 +512,12 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 	return (
 		<div className={`w-full h-min bg-gray-800 p-2 transition-all ${state.waiting != 0 ? 'opacity-20 pointer-events-none bg-gray-200' : 'opacity-100 bg-gray-800 pointer-events-all'}`}>
 			<div className='text-5xl w-full flex justify-center items-center text-center mb-5 flex-row relative pt-2'>
-				<div className='absolute h-full top-0 left-0 flex justify-center items-center text-[14px] text-black'>
+				<div className='absolute h-full top-0 left-0 flex flex-row justify-center items-center text-[14px] text-black'>
 					<div className='bg-cyan-300 rounded p-2 hover:opacity-50 transition-all' onClick={resetSolutions}>
 						Reset solutions
+					</div>
+					<div className='bg-cyan-300 rounded p-2 hover:opacity-50 transition-all ml-2' onClick={startTimer}>
+						Start timer [{info.questions.length} question(s)]
 					</div>
 				</div>
 				<div
@@ -526,28 +578,32 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 };
 
 const Page = () => {
-	const [state, setState] = useState({
-		headerFixed: false,
-		headerOffset: 0,
+	const [state, _setState] = useState({
+		timerInterval: null,
+		timer: '',
 	});
 	let { context, setContext } = useContext(Context);
 	let { context: statusContext, setContext: setStatusContext } = useContext(StatusContext);
-
+	const _state = useRef(state);
+	const setState = (data: any) => {
+		_setState(data);
+		_state.current = data;
+	};
 	const main = useRef(null);
 
 	const onFilterMinimum = (threshold: number) => {
-		// let status = getStatus();
-
 		let collapsed: number[] = [];
 
 		data.map((model, index) => {
-			let questions = model.questions.filter((q) => q.status != 'normal');
+			let questions = model.questions.filter((q) =>
+				normalExclusive
+					? q.status
+							.split('&&')
+							.map((e) => e.trim())
+							.includes('normal')
+					: q.status != 'normal'
+			);
 
-			// let viable = data[index].questions.filter((question) => question.status != 'normal');
-			// let questions = status[index].filter(
-			// 	(question: StatusTupleVerbose) => viable.filter((_question: SkillQuestionType) => _question.question == question.question && _question.true == question.answer).length != 0
-			// );
-			// let collapse = questions.every((question: StatusTupleVerbose) => question.correct + question.incorrect > threshold);
 			let collapse = questions.every((question: SkillQuestionType) => statusContext[question.id].reduce((a, b) => a + b, 0) > threshold);
 			console.log(`Status of ${index} is ${collapse ? 'collapsed' : 'not collapsed'} with threshold ${threshold}`);
 			if (collapse) collapsed.push(index);
@@ -560,7 +616,16 @@ const Page = () => {
 		});
 	};
 
-	// let status = getStatus();
+	const parseTimer = (start: number, questions: number) => {
+		let alloted = questions * 30; // in seconds
+		console.log(alloted);
+		let passed = alloted - (Date.now() - start) / 1000;
+
+		let minutes = Math.floor(passed / 60);
+		let seconds = Math.floor(passed % 60);
+
+		return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+	};
 
 	useEffect(() => {
 		fetch('/api/get', {
@@ -577,32 +642,71 @@ const Page = () => {
 		// saveStatus(1);
 	}, []);
 
+	useEffect(() => {
+		if (context.timer.start == 0) {
+			if (state.timerInterval) {
+				clearInterval(state.timerInterval);
+				setState({
+					...state,
+					timerInterval: null,
+					timer: '',
+				});
+			}
+			return;
+		}
+
+		let { start, questions } = context.timer;
+		let interval = setInterval(() => {
+			setState({
+				..._state.current,
+				timer: parseTimer(start, questions),
+			});
+		}, 10000);
+
+		setState({
+			...state,
+			timerInterval: interval,
+			timer: parseTimer(start, questions),
+		});
+	}, [context.timer.start]);
+
+	const timerDisplay = React.useMemo(
+		() => <div className='mr-2 h-full'>{state.timerInterval != null ? <div className='w-fit'>{state.timer}</div> : '-- No current timer --'}</div>,
+		[state.timer, state.timerInterval]
+	);
+
 	return (
 		<div className='w-full h-screen top-0 left-0 fixed overflow-y-scroll gap-y-2 flex flex-col bg-blue-900' ref={main}>
 			<div
-				className={clsx(`w-full h-min py-5 px-2 bg-purple-900 z-10 sticky top-0 flex flex-row`)}
+				className={clsx(`w-full h-min py-5 px-2 bg-purple-900 z-10 sticky top-0 flex flex-row justify-between items-center`)}
 				// style={{
 				// 	top: state.headerFixed ? 0 : -state.headerOffset,
 				// 	transition: '0.05s',
 				// }}
 			>
-				<div className='flex flex-row w-fit'>
-					<div className='mr-2'>Filter paragraph by minimum:</div>
-					<input type='number' min='0' className='text-black' onChange={(event) => onFilterMinimum(parseInt(event.target.value))} />
-				</div>
-
-				<div className='flex flex-row w-fit'>
-					<div
-						className='mr-2 hover:opacity-50 active:opacity-30 transition-all bg-green-300'
-						onClick={() => {
-							setContext({
-								...context,
-								glass: !context.glass,
-							});
-						}}
-					>
-						{context.glass ? 'Disable ' : 'Enable '}&nbsp;glass
+				<div className='flex flex-row h-full items-center justify-start'>
+					<div className='flex flex-row w-fit items-center h-full justify-center'>
+						<div className='mr-2'>Minimum Filter</div>
+						<input className='border-none outline-none rounded text-black' type='number' min='0' onChange={(event) => onFilterMinimum(parseInt(event.target.value))} />
 					</div>
+
+					<div className='flex flex-row w-fit'>
+						<div
+							className='mr-2 hover:opacity-50 active:opacity-30 transition-all bg-green-500 rounded p-1 ml-1'
+							onClick={() => {
+								setContext({
+									...context,
+									glass: !context.glass,
+								});
+							}}
+						>
+							{context.glass ? 'Disable' : 'Enable'}&nbsp;glass
+						</div>
+					</div>
+				</div>
+				<div>
+					{timerDisplay}
+					{/* <TimerDisplay interval={state.timerInterval} timer={state.timer} /> */}
 				</div>
 			</div>
 			{/* <div className='w-full h-full flex flex-col gap-y-2 mt-20'> */}
@@ -610,7 +714,14 @@ const Page = () => {
 				{Object.keys(statusContext).length != 0
 					? data.map((model, index) => {
 							if (
-								model.questions.filter((question: SkillQuestionType) => question.status != 'normal').length == 0 ||
+								model.questions.filter((question: SkillQuestionType) =>
+									normalExclusive
+										? question.status
+												.split('&&')
+												.map((e) => e.trim())
+												.includes('normal')
+										: question.status != 'normal'
+								).length == 0 ||
 								(showIncorrect && !model.questions.map((q) => statusContext[q.id]).some((e) => e[0] > 0))
 							) {
 								return;
@@ -618,7 +729,15 @@ const Page = () => {
 
 							model.questions = model.questions.filter((question) => {
 								let tuple = statusContext[question.id];
-								return question.status != 'normal' || (showIncorrect && tuple[0] > 0);
+								return (
+									(normalExclusive
+										? question.status
+												.split('&&')
+												.map((e) => e.trim())
+												.includes('normal')
+										: question.status != 'normal') ||
+									(showIncorrect && tuple[0] > 0)
+								);
 							});
 
 							return <Model info={model} index={index} instant_evaluation={model.instant_evaluation} />;
