@@ -1352,7 +1352,7 @@
 			{ "content": "بنكرياس", "meaning": "" },
 			{ "content": "كبد", "meaning": "" },
 			{ "content": "صدر", "meaning": "" },
-			{ "content": "طحال(كلية)", "meaning": "" }
+			{ "content": "طحال", "meaning": "كلية" }
 		],
 		"solution": "صدر"
 	},
@@ -1559,8 +1559,8 @@
 		"answers": [
 			{ "content": "ثجّ", "meaning": "" },
 			{ "content": "حجّ", "meaning": "" },
-			{ "content": "مجّ", "meaning": "" },
-			{ "content": "عجّ", "meaning": "البقية من أعمال الحج على قول النبي (أفضل الحج العج والثج)" }
+			{ "content": "مجّ", "meaning": "البقية من أعمال الحج على قول النبي (أفضل الحج العج والثج)" },
+			{ "content": "عجّ", "meaning": "" }
 		],
 		"solution": "مجّ"
 	},
@@ -6151,5 +6151,14 @@
 		],
 		"perception": "unsure",
 		"solution": "مها"
+	},
+	{
+		"answers": [
+			{ "content": "بنكرياس", "meaning": "" },
+			{ "content": "كبد", "meaning": "" },
+			{ "content": "صدر", "meaning": "" },
+			{ "content": "كلية", "meaning": "" }
+		],
+		"solution": "صدر"
 	}
 ]
