@@ -11,6 +11,12 @@ import clsx from 'clsx';
 
 const showIncorrect = false;
 const normalExclusive = true;
+function parseSeconds(_seconds: number): [string, string] {
+	let minutes = Math.floor(_seconds / 60);
+	let seconds = Math.floor(_seconds % 60);
+
+	return [minutes.toString(), seconds.toString().padStart(2, '0')];
+}
 
 const setStatus = (newStatus: { [id: number]: [number, number] }) => {
 	return new Promise((resolve, reject) => {
@@ -273,20 +279,17 @@ ${info.answers.filter((e) => e != '...').join('\n')}
 			<div className='w-full grid grid-cols-2 gap-3 pt-2'>
 				{state.answers.map(([answer, _index]) => {
 					return (
-						<div className='w-full bg-green-800 rounded-lg py-2 text-right flex flex-row text-2xl justify-between items-center'>
+						<div
+							className='w-full bg-green-800 rounded-lg py-2 text-right flex flex-row text-2xl justify-between items-center hover:opacity-90 transition-all'
+							onClick={() => {
+								onChange(_index);
+								setState({ ...state, selected: _index });
+							}}
+						>
 							{/* <div className='ml-3'>{evaluate ? answer == question.true ? <AiOutlineCheck /> : index == state.selected ? <AiOutlineClose /> : '' : ''}</div> */}
 							<div className='flex flex-row items-center w-full'>
 								{/* <div>{answer}</div> */}
-								<input
-									type='radio'
-									className='w-[18px] h-[18px] mx-2'
-									checked={state.selected == _index}
-									onChange={() => {}}
-									onClick={() => {
-										onChange(_index);
-										setState({ ...state, selected: _index });
-									}}
-								/>
+								<input type='radio' className='w-[18px] h-[18px] mx-2 pointer-events-none' checked={state.selected == _index} />
 								<div className='w-full break-words max-w-[850px] flex flex-row'>
 									{answer}
 									{evaluate && answer == info.true ? <div className='mr-3 text-gray-400 text-[16px]'>{info.notes}</div> : ''}
@@ -509,6 +512,15 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 		}
 	}, [status]);
 
+	const getTime = () => {
+		let times = JSON.parse(localStorage.getItem('skill-times') || '{}');
+		return times[index];
+	};
+
+	const getFastest = () => {
+		return getTime().sort((a: [number, number], b: [number, number]) => a[1] - b[1])[0][1] / 1000;
+	};
+
 	return (
 		<div className={`w-full h-min bg-gray-800 p-2 transition-all ${state.waiting != 0 ? 'opacity-20 pointer-events-none bg-gray-200' : 'opacity-100 bg-gray-800 pointer-events-all'}`}>
 			<div className='text-5xl w-full flex justify-center items-center text-center mb-5 flex-row relative pt-2'>
@@ -543,6 +555,16 @@ const Model: FC<ModelProps> = ({ info, index, instant_evaluation }) => {
 				<div>{info.name}</div>
 				&nbsp;
 				<div> - {index}</div>
+				<div className='absolute h-full top-0 right-0 flex flex-row justify-end text-right items-center text-[14px] text-white'>
+					{getTime() ? (
+						<div>
+							<div>Fastest Time: {parseSeconds(getFastest()).join(':')}</div>
+							<div>Fastest pace: {(info.questions.length / (getFastest() / 60)).toFixed(2)} q/m</div>
+						</div>
+					) : (
+						''
+					)}
+				</div>
 			</div>
 			{!isCollapsed() ? (
 				<div className='flex flex-col w-full pb-5'>
@@ -621,10 +643,9 @@ const Page = () => {
 		console.log(alloted);
 		let passed = alloted - (Date.now() - start) / 1000;
 
-		let minutes = Math.floor(passed / 60);
-		let seconds = Math.floor(passed % 60);
+		let [minutes, seconds] = parseSeconds(passed);
 
-		return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+		return `${minutes}:${seconds}`;
 	};
 
 	useEffect(() => {

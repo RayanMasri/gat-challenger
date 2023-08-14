@@ -7,7 +7,7 @@ import json
 # async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # await context.bot.send_message(chat_id=update.effective_chat.id, text="I'm a bot, please talk to me!")
 
-anomaly = True
+anomaly = False
 
 def get_next_id():
     with open('../src/app/skills/data.json', 'r', encoding='utf8') as file:

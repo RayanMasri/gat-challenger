@@ -11,7 +11,7 @@
 	{
 		"answers": [
 			{ "content": "ماء", "meaning": "" },
-			{ "content": "نار", "meaning": "" },
+			{ "content": "نار", "meaning": "الباقي سوائل" },
 			{ "content": "عسل", "meaning": "" },
 			{ "content": "زيت", "meaning": "" }
 		],
@@ -2411,10 +2411,11 @@
 		"answers": [
 			{ "content": "ذهب", "meaning": "" },
 			{ "content": "فضة", "meaning": "" },
-			{ "content": "نحاس", "meaning": "" },
+			{ "content": "نحاس", "meaning": "الباقي يباع كزينه" },
 			{ "content": "ألماس", "meaning": "" }
 		],
-		"solution": "ألماس"
+		"perception": "unsure",
+		"solution": "نحاس"
 	},
 	{
 		"answers": [
@@ -6062,5 +6063,93 @@
 			{ "content": "عكرة", "meaning": "العَكرَةُ : قطيع من الإبل" }
 		],
 		"solution": "عرجلة"
+	},
+	{
+		"answers": [
+			{ "content": "كفالة", "meaning": "" },
+			{ "content": "ضمان", "meaning": "" },
+			{ "content": "وكالة", "meaning": "" },
+			{ "content": "رهان", "meaning": "" }
+		],
+		"solution": "رهان"
+	},
+	{
+		"answers": [
+			{ "content": "باب", "meaning": "" },
+			{ "content": "شجرة", "meaning": "" },
+			{ "content": "سقف", "meaning": "" },
+			{ "content": "نافذة", "meaning": "" }
+		],
+		"solution": "شجرة"
+	},
+	{
+		"answers": [
+			{ "content": "برد", "meaning": "" },
+			{ "content": "ثلج", "meaning": "" },
+			{ "content": "صقيع", "meaning": "" },
+			{ "content": "جليد", "meaning": "" }
+		],
+		"perception": "unsure",
+		"solution": "صقيع"
+	},
+	{
+		"answers": [
+			{ "content": "شرق", "meaning": "" },
+			{ "content": "غرب", "meaning": "" },
+			{ "content": "ليل", "meaning": "" },
+			{ "content": "نجم", "meaning": "" }
+		],
+		"perception": "unsure",
+		"solution": "ليل"
+	},
+	{
+		"answers": [
+			{ "content": "تنقل", "meaning": "لان البقيه تستخدم في العملية التعليمية" },
+			{ "content": "تحدي", "meaning": "" },
+			{ "content": "توجيه", "meaning": "" },
+			{ "content": "تدارس", "meaning": "" }
+		],
+		"solution": "تنقل",
+		"notes": "لان البقيه تستخدم في العملية التعليمية"
+	},
+
+	{
+		"answers": [
+			{ "content": "اخلاء", "meaning": "" },
+			{ "content": "ندماء", "meaning": "" },
+			{ "content": "رفقاء", "meaning": "" },
+			{ "content": "شرفاء", "meaning": "" }
+		],
+		"solution": "شرفاء"
+	},
+
+	{
+		"answers": [
+			{ "content": "ازرار", "meaning": "" },
+			{ "content": "رداء", "meaning": "" },
+			{ "content": "ثوب", "meaning": "" },
+			{ "content": "قفاز", "meaning": "" }
+		],
+		"solution": "قفاز"
+	},
+	{
+		"answers": [
+			{ "content": "اغتسال", "meaning": "" },
+			{ "content": "تنظيف", "meaning": "" },
+			{ "content": "تيمم", "meaning": "" },
+			{ "content": "وضوء", "meaning": "" }
+		],
+		"perception": "unsure",
+		"solution": "تنظيف"
+	},
+	{
+		"answers": [
+			{ "content": "مها", "meaning": "المَهَاةُ :بقرةٌ وحشيَّة إفريقيّة" },
+			{ "content": "ريم", "meaning": "الرَّيمُ : ظبي خالص البياض" },
+			{ "content": "غزال", "meaning": "" },
+			{ "content": "ظبي", "meaning": "" }
+		],
+		"perception": "unsure",
+		"solution": "مها"
 	}
 ]
