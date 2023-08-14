@@ -16326,7 +16326,7 @@
 				"question": "مستشفى : مرضى",
 				"answers": ["مسجد : مصابيح", "مكتبة : رفوف", "غابة : أشجار", "ملعب : كراسي"],
 				"true": "غابة : أشجار",
-				"status": "normal",
+				"status": "normal && difficult",
 				"skill": "verbal-analogy",
 				"id": 2878
 			},
@@ -16347,7 +16347,15 @@
 				"skill": "verbal-analogy",
 				"id": 2881
 			},
-			{ "question": "لين : فظاظة", "answers": ["فظاظة : شك", "شجاعة : هزال", "رأفة : عطف", "موت : حياة"], "true": "موت : حياة", "status": "normal", "skill": "verbal-analogy", "id": 2882 },
+			{
+				"question": "لين : فظاظة",
+				"answers": ["فظاظة : شك", "شجاعة : هزال", "رأفة : عطف", "موت : حياة"],
+				"true": "موت : حياة",
+				"notes": "علاقة تضاد. فَظَاظَة : خُشُونَةً فِي الْكَلاَمِ، سُوءَ الْخُلُقِ",
+				"status": "normal",
+				"skill": "verbal-analogy",
+				"id": 2882
+			},
 			{
 				"question": "زراعة : فلاح",
 				"answers": ["سرقة : لص", "خياطة : إبرة", "حرب : جندي", "كرة : لاعب"],
@@ -16378,7 +16386,7 @@
 				"question": "عندما يقال بأن الشعر هو جوهر الحياة بالنسبة للشاعر فذلك لأنه يمثل حريته أمام العالم وهي جوهرة الإنسان حيث يصعب عليه أن يشعر بوجوده دون أن يشعر بالعالم.",
 				"answers": ["بالعالم", "يصعب", "حريته", "جوهر"],
 				"true": "بالعالم",
-				"status": "normal",
+				"status": "normal && difficult",
 				"skill": "contextual-error",
 				"id": 2886
 			},
@@ -16527,9 +16535,23 @@
 				"skill": "verbal-analogy",
 				"id": 2905
 			},
-			{ "question": "رائحة : شم", "answers": ["نظر : مشهد", "خشونة : لمس", "تذوق : لسان", "أذن : صياح"], "true": "خشونة : لمس", "status": "normal", "skill": "verbal-analogy", "id": 2906 },
+			{
+				"question": "رائحة : شم",
+				"answers": ["نظر : مشهد", "خشونة : لمس", "تذوق : لسان", "أذن : صياح"],
+				"true": "خشونة : لمس",
+				"status": "normal && difficult",
+				"skill": "verbal-analogy",
+				"id": 2906
+			},
 			{ "question": "عقار : أرض", "answers": ["بناء : فناء", "فاكهة : خضار", "سلاح : رمح", "بحر : نهر"], "true": "سلاح : رمح", "status": "normal", "skill": "verbal-analogy", "id": 2907 },
-			{ "question": "رجال : نساء", "answers": ["سراج : نار", "نجوم : سماء", "رهط : قوم", "حرب : سلم"], "true": "حرب : سلم", "status": "normal", "skill": "verbal-analogy", "id": 2908 },
+			{
+				"question": "رجال : نساء",
+				"answers": ["سراج : نار", "نجوم : سماء", "رهط : قوم", "حرب : سلم"],
+				"true": "حرب : سلم",
+				"status": "normal && difficult",
+				"skill": "verbal-analogy",
+				"id": 2908
+			},
 			{ "question": "مريض : عافية", "answers": ["عاجز : رعاية", "سؤال : معرفة", "شاب : قوة", "شفاء : ترياق"], "true": "عاجز : رعاية", "status": "normal", "skill": "verbal-analogy", "id": 2909 },
 			{
 				"question": "جوال : رسالة",
@@ -16568,7 +16590,7 @@
 				"question": "البطالة داء وخيم ومرض هياب يعرض الأمة الإسلامية لمشاكل اقتصادية مريرة",
 				"answers": ["هياب", "مريرة", "وخيم", "يعرض"],
 				"true": "هياب",
-				"status": "normal",
+				"status": "normal && difficult",
 				"skill": "contextual-error",
 				"id": 2915
 			},
@@ -16592,7 +16614,7 @@
 				"question": "الناس تتساوى عند المحن فإذا نزل البلاء تباينوا.",
 				"answers": ["تباينوا", "المحن", "البلاء", "تتساوى"],
 				"true": "المحن",
-				"status": "normal",
+				"status": "normal && difficult",
 				"skill": "contextual-error",
 				"id": 2918
 			},
@@ -16655,18 +16677,40 @@
 				"question": "ركض : إنهاك",
 				"answers": ["نجاح : سرور", "علم : معرفة", "خطوبه : زواج", "وداع : اشتياق"],
 				"true": "خطوبه : زواج",
-				"status": "normal",
+				"status": "normal && difficult",
 				"skill": "verbal-analogy",
 				"id": 2927
 			},
 			{ "question": "كتاب : صفحه", "answers": ["سنه : يوم", "ليل : نوم", "دهر : زمن", "خيط : ثوب"], "true": "سنه : يوم", "status": "normal", "skill": "verbal-analogy", "id": 2928 },
-			{ "question": "خطوبة : زواج", "answers": ["وداع : اشتياق", "دفع : ميزة", "إحرام : حج", "كلام : سكون"], "true": "إحرام : حج", "status": "normal", "skill": "verbal-analogy", "id": 2929 },
-			{ "question": "غل : حقد", "answers": ["رجاء : خوف", "تفاؤل : تسامح", "أرض : سماء", "تنازل : تسامح"], "true": "تنازل : تسامح", "status": "normal", "skill": "verbal-analogy", "id": 2930 },
+			{
+				"question": "خطوبة : زواج",
+				"answers": ["وداع : اشتياق", "دفع : ميزة", "إحرام : حج", "كلام : سكون"],
+				"true": "إحرام : حج",
+				"status": "normal && difficult",
+				"skill": "verbal-analogy",
+				"id": 2929
+			},
+			{
+				"question": "غل : حقد",
+				"answers": ["رجاء : خوف", "تفاؤل : تسامح", "أرض : سماء", "تنازل : تسامح"],
+				"true": "تنازل : تسامح",
+				"notes": "الغل هو الحقد",
+				"status": "normal",
+				"skill": "verbal-analogy",
+				"id": 2930
+			},
 			{ "question": "قمح : شعير", "answers": ["فهم : إدراك", "أرز : ذرة", "سماء : نجمة", "قص : لصق"], "true": "أرز : ذرة", "status": "normal", "skill": "verbal-analogy", "id": 2931 },
 			{ "question": "سيارة : وقود", "answers": ["إنسان : غذاء", "قمر : نور", "شمس : ضوء", "ثوب : عثة"], "true": "إنسان : غذاء", "status": "normal", "skill": "verbal-analogy", "id": 2932 },
 			{ "question": "عقوق : بر", "answers": ["أرض : فضاء", "سماء : فضاء", "واقعي : خيالي", "ألباب : عقول"], "true": "واقعي : خيالي", "status": "normal", "skill": "verbal-analogy", "id": 2933 },
 			{ "question": "لمس : شم", "answers": ["سيارة : طريق", "شرق : اتجاه", "شمال : غرب", "سعر : ثمن"], "true": "شمال : غرب", "status": "normal", "skill": "verbal-analogy", "id": 2934 },
-			{ "question": "معهد : تعليم", "answers": ["سجن : عقوبة", "رمح : سيف", "جهد : راحه", "طمأنينة : سلام"], "true": "سجن : عقوبة", "status": "normal", "skill": "verbal-analogy", "id": 2935 },
+			{
+				"question": "معهد : تعليم",
+				"answers": ["سجن : عقوبة", "رمح : سيف", "جهد : راحه", "طمأنينة : سلام"],
+				"true": "سجن : عقوبة",
+				"status": "normal && difficult",
+				"skill": "verbal-analogy",
+				"id": 2935
+			},
 			{ "question": "نحلة : عسل", "answers": ["حليب : بقرة", "حذاء : نعل", "سعيد : فرحان", "دجاجه : بيضه"], "true": "دجاجه : بيضه", "status": "normal", "skill": "verbal-analogy", "id": 2936 },
 			{ "question": "صحن : قدر", "answers": ["قص : لصق", "خصر : حزام", "جزيرة : شاطئ", "قمح : شعير"], "true": "قمح : شعير", "status": "normal", "skill": "verbal-analogy", "id": 2937 },
 			{
@@ -16686,7 +16730,15 @@
 				"skill": "verbal-analogy",
 				"id": 2939
 			},
-			{ "question": "نخلة : أشجار", "answers": ["رخام : صخور", "يوم : أسابيع", "شعر : نثر", "بط : أوز"], "true": "رخام : صخور", "status": "normal", "skill": "verbal-analogy", "id": 2940 },
+			{
+				"question": "نخلة : أشجار",
+				"answers": ["رخام : صخور", "يوم : أسابيع", "شعر : نثر", "بط : أوز"],
+				"true": "رخام : صخور",
+				"notes": "الرخام جمع رُخامة: (البيئة والجيولوجيا) نوعٌ من الحجر",
+				"status": "normal",
+				"skill": "verbal-analogy",
+				"id": 2940
+			},
 			{
 				"question": "اكتشف العلماء طريقة جديدة لعلاج آلام الرأس عن طريق قياس ضغط الدماغ، ولكن هذا الأمر قد يستلزم إحداث ثقب في الدماغ في الحالات السهلة",
 				"answers": ["الدماغ", "ثقب", "السهلة", "الحالات"],
