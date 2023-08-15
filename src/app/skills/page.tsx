@@ -120,11 +120,13 @@ const Question: FC<QuestionProps> = ({ info, index, model, evaluate, onChange })
 		answers: [string, number][];
 		tuple: [number, number];
 		waiting: boolean; // Waits for status to be set when editing tuple
+		marked: boolean;
 	}>({
 		selected: -1,
 		answers: shuffle(info.answers.map((answer, index) => [answer, index])),
 		tuple: status[info.id],
 		waiting: false,
+		marked: false,
 	});
 	// useEffect(() => {});
 
@@ -231,7 +233,15 @@ ${info.answers.filter((e) => e != '...').join('\n')}
 				{/* <div className='w-full bg-red-900'>{question.question}</div> */}
 				{/* <div className='w-full break-words px-20'>{question.question}</div> */}
 				{/* <div className='w-full break-words px-36'>{question.question}</div> */}
-				<div className='w-full break-words px-36'>
+				<div
+					className={`w-full break-words px-36 hover:opacity-50 transition-all ${state.marked ? 'text-purple-600' : 'text-cyan-100'}`}
+					onClick={() => {
+						setState({
+							...state,
+							marked: !state.marked,
+						});
+					}}
+				>
 					{/* نشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسشنشسيتمنشسينمتشسينمتسش */}
 					{info.question}
 				</div>
