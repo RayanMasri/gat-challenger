@@ -6160,5 +6160,14 @@
 			{ "content": "كلية", "meaning": "" }
 		],
 		"solution": "صدر"
+	},
+	{
+		"answers": [
+			{ "content": "فداء", "meaning": "" },
+			{ "content": "تضحية", "meaning": "" },
+			{ "content": "صداقة", "meaning": "الباقي بمعنى تضحية" },
+			{ "content": "وفاء", "meaning": "" }
+		],
+		"solution": "صداقة"
 	}
 ]

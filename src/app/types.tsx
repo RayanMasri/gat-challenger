@@ -6,6 +6,7 @@ export interface QuestionType {
 	notes?: string;
 	selected?: boolean;
 	index?: number;
+	id?: number;
 }
 
 export interface SkillQuestionType extends QuestionType {

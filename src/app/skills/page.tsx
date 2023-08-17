@@ -10,7 +10,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import clsx from 'clsx';
 
 const showIncorrect = false;
-const normalExclusive = true;
+const normalExclusive = false;
 function parseSeconds(_seconds: number): [string, string] {
 	let minutes = Math.floor(_seconds / 60);
 	let seconds = Math.floor(_seconds % 60);

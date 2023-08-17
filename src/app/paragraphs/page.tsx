@@ -265,7 +265,13 @@ ${question.answers
 			<div className='w-full grid grid-cols-2 gap-3 pt-2'>
 				{state.answers.map(([answer, index]) => {
 					return (
-						<div className='w-full bg-green-800 rounded-lg py-2 text-right flex flex-row text-2xl justify-between items-center'>
+						<div
+							className='w-full bg-green-800 rounded-lg py-2 text-right flex flex-row text-2xl justify-between items-center hover:opacity-90 transition-all'
+							onClick={() => {
+								onChange(index);
+								setState({ ...state, selected: index });
+							}}
+						>
 							{/* <div className='ml-3'>{evaluate ? answer == question.true ? <AiOutlineCheck /> : index == state.selected ? <AiOutlineClose /> : '' : ''}</div> */}
 							<div className='flex flex-row items-center w-full'>
 								{/* <div>{answer}</div> */}
@@ -274,10 +280,10 @@ ${question.answers
 									className='w-[18px] h-[18px] mx-2'
 									checked={state.selected == index}
 									onChange={() => {}}
-									onClick={() => {
-										onChange(index);
-										setState({ ...state, selected: index });
-									}}
+									// 	onClick={() => {
+									// 		onChange(index);
+									// 		setState({ ...state, selected: index });
+									// 	}}
 								/>
 								<div className='w-full break-words max-w-[850px] flex flex-row'>
 									{answer}
