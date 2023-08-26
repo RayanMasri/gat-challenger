@@ -1,6 +1,6 @@
 'use client';
 
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useRef, useState, useEffect } from 'react';
 import data from '../paragraphs/data.json';
 import { BsAsterisk } from 'react-icons/bs';
 import { ParagraphType, QuestionType, StatusTuple } from '../types';
@@ -49,10 +49,17 @@ const Question: FC<QProps> = ({ question }) => {
 		return question.id == undefined ? -1 : question.id;
 	};
 
-	const [state, setState] = useState({
+	const [state, _setState] = useState({
 		shown: false,
 		marks: getMarksById(getId()),
+		timeout: null,
 	});
+
+	const _state = useRef(state);
+	const setState = (data: any) => {
+		_setState(data);
+		_state.current = data;
+	};
 
 	const mark = (addition: number) => {
 		setState({
@@ -67,6 +74,26 @@ const Question: FC<QProps> = ({ question }) => {
 		setMarks(marks);
 	};
 
+	const toggle = () => {
+		let changed = !state.shown;
+
+		if (state.timeout != null) clearTimeout(state.timeout);
+
+		if (changed) {
+			setState({
+				...state,
+				shown: changed,
+				timeout: setTimeout(() => {
+					setState({
+						..._state.current,
+						shown: false,
+					});
+				}, 3000),
+			});
+			return;
+		}
+		setState({ ...state, shown: changed });
+	};
 	return (
 		<div className='w-full flex flex-col mb-2' style={{ direction: 'rtl' }}>
 			<div className='w-full text-center text-cyan-100 text-2xl flex flex-col justify-center items-center relative h-min'>
@@ -82,7 +109,7 @@ const Question: FC<QProps> = ({ question }) => {
 					<BsAsterisk className='mt-[5px] mr-1 hover:opacity-50 transition-all' onClick={() => mark(-1)} />
 				</div>
 
-				<div className='w-full break-words px-36 hover:opacity-50 transition-all' onClick={() => setState({ ...state, shown: !state.shown })}>
+				<div className='w-full break-words px-36 hover:opacity-50 transition-all' onClick={toggle}>
 					{question.question}
 				</div>
 
@@ -99,6 +126,31 @@ const Question: FC<QProps> = ({ question }) => {
 };
 
 const Paragraph: FC<PProps> = ({ paragraph, questions }) => {
+	// const getClusteredParagraph = () => {
+	// 	let content: string = paragraph.paragraph;
+	// 	let matches: string[] = [...content.matchAll(/\d-\s/g)].map((e) => e[0]);
+	// 	let indices: number[] = matches.map((e: string) => content.indexOf(e));
+
+	// 	let slices: string[] = [];
+	// 	indices.reduce((a, b) => {
+	// 		if (a == 0) return b;
+	// 		slices.push(content.slice(a, b));
+	// 		return b;
+	// 	}, 0);
+
+	// 	return slices.map((slice) => {
+	// 		let number = slice.slice(0, 3);
+	// 		let rest = slice.slice(3);
+
+	// 		return (
+	// 			<div>
+	// 				<div className='text-red-900'>{number}</div>
+	// 				<div>{rest}</div>
+	// 			</div>
+	// 		);
+	// 	});
+	// };
+
 	return (
 		<div className='w-full h-min bg-gray-800 p-2'>
 			<div className='text-5xl w-full flex justify-center items-center text-center mb-5 flex-row relative pt-2'>
@@ -108,6 +160,7 @@ const Paragraph: FC<PProps> = ({ paragraph, questions }) => {
 			</div>
 			<div className='flex flex-col w-full pb-5'>
 				<div className='text-2xl text-center p-3 text-gray-300 border border-white rounded-lg my-3'>{paragraph.paragraph}</div>
+				{/* <div className='text-2xl text-center p-3 text-gray-300 border border-white rounded-lg my-3'>{getClusteredParagraph()}</div> */}
 				<div className='flex flex-col'>
 					{questions.map((question) => {
 						return <Question question={question} />;
