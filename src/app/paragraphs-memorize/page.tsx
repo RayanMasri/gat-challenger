@@ -31,12 +31,15 @@ function shuffle(array: any[]) {
 	return array;
 }
 
+// const localId = 'p-memorize-marks';
+const localId = 'p-memorize-marks-elaqa';
+
 const getMarks = () => {
-	return JSON.parse(localStorage.getItem('p-memorize-marks') || '{}');
+	return JSON.parse(localStorage.getItem(localId) || '{}');
 };
 
 const setMarks = (data: object) => {
-	localStorage.setItem('p-memorize-marks', JSON.stringify(data));
+	localStorage.setItem(localId, JSON.stringify(data));
 };
 
 const getMarksById = (id: number) => {
@@ -104,7 +107,11 @@ const Question: FC<QProps> = ({ question }) => {
 						})}
 					</div>
 				</div>
-				<div className={`${state.marks == 0 ? 'hidden' : 'flex'} h-full absolute top-0 right-0 w-full max-w-[200px] flex-row justify-start items-start text-purple-600`}>
+				<div
+					className={`${state.marks == 0 ? 'hidden' : 'flex'} h-full absolute top-0 right-0 w-full max-w-[200px] flex-row justify-start items-start ${
+						localId.includes('elaqa') ? 'text-[#fbbf24]' : 'text-purple-600'
+					}`}
+				>
 					<div>{state.marks}</div>
 					<BsAsterisk className='mt-[5px] mr-1 hover:opacity-50 transition-all' onClick={() => mark(-1)} />
 				</div>
@@ -195,11 +202,22 @@ export default function Page() {
 				</div>
 			</div>
 			<div className='w-full h-full flex flex-col gap-y-2'>
-				{data.map((paragraph, index) => {
+				{shuffle(data).map((paragraph, index) => {
+					if (paragraph.index >= 232 && paragraph.index <= 299) return '';
 					// let questions = paragraph.questions.filter((question) => question.status != 'normal');
 					// if (questions.length == 0) return '';
 					let questions = shuffle(paragraph.questions);
-					return <Paragraph paragraph={paragraph} questions={questions} />;
+
+					questions = questions.filter((question) => {
+						return question.status.includes('elaqa') || question.question.includes('علاقة') || question.question.includes('علاقه');
+					});
+
+					questions = questions.filter((question) => {
+						let marks = getMarksById(question.id);
+						return marks > 0;
+					});
+
+					return questions.length > 0 ? <Paragraph paragraph={paragraph} questions={questions} /> : '';
 				})}
 			</div>
 		</div>
