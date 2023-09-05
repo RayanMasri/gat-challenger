@@ -23,7 +23,7 @@
 			{ "question": "محفز : مثبط", "answers": ["رباط : عقال", "مقوي : منشط", "حرية : قيد", "غل : حسد"], "true": "حرية : قيد", "status": "normal", "skill": "verbal-analogy", "id": 11 },
 			{ "question": "مزلاج : قفل", "answers": ["سطح : درج", "سور : غرفة", "فناء : بقاء", "قمح : شعير"], "true": "قمح : شعير", "status": "normal", "skill": "verbal-analogy", "id": 12 },
 			{ "question": "إشارة : سيارات", "answers": ["منارة : سفن", "إنارة : طريق", "نفق : مشاه", "برج : اتصالات"], "true": "منارة : سفن", "status": "normal", "skill": "verbal-analogy", "id": 13 },
-			{ "question": "ماء : ثلج", "answers": ["خبز : دقيق", "زبيب : عنب", "رسالة : ظرف", "تفاح : عصير"], "true": "تفاح : عصير", "status": "normal", "skill": "verbal-analogy", "id": 14 },
+			{ "question": "ماء : ثلج", "answers": ["خبز : دقيق", "زبيب : عنب", "رسالة : ظرف", "تفاح : عصير"], "true": "تفاح : عصير", "status": "difficult", "skill": "verbal-analogy", "id": 14 },
 			{
 				"question": "صناعة ألعاب الأطفال يجب أن تكون بأدنى مستوى لأنها تذهب إلى أناس لا يعرفون عيوب الصناعة.",
 				"answers": ["الصناعة", "أدنى", "تذهب", "مستوى"],
@@ -1294,7 +1294,7 @@
 				"question": "العولمة هي إخراج الشيء من ........ المحدود إلى ........ العالم بأسره",
 				"answers": ["مكانه - كل", "حيزه - آفاق", "العقل - غير", "موقعه - سماء"],
 				"true": "حيزه - آفاق",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 218
 			},
@@ -1382,7 +1382,7 @@
 				"question": "خلية : نحل",
 				"answers": ["حضيرة : أغنام", "برتقال : فاكهة", "طائرة : ركاب", "سور : بيت"],
 				"true": "حضيرة : أغنام",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 236
 			},
@@ -1482,7 +1482,7 @@
 				"question": "المبالغة والغلو مظهران من مظاهر ........ الموضوعية، والاعتدال في .......",
 				"answers": ["الذل - الطريق", "نقصان - التفكير", "التواضع - الرقي", "السلام - التفكير"],
 				"true": "نقصان - التفكير",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 256
 			},
@@ -1569,7 +1569,7 @@
 				"question": "نبتة : تراب",
 				"answers": ["سحابة : سماء", "رسالة : بريد", "بقالة : تموين", "وجبة : طعام"],
 				"true": "سحابة : سماء",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 268
 			},
@@ -1578,7 +1578,7 @@
 				"answers": ["خفاش : طيور", "زواحف : أفعى", "نحاس : معادن", "طماطم : خضروات"],
 				"true": "نحاس : معادن",
 				"notes": "الخفاش من الثدييات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 269
 			},
@@ -1616,7 +1616,7 @@
 				"answers": ["خفاش : طيور", "زواحف : أفعى", "شجرة : برتقال", "صبر : أخلاق"],
 				"true": "صبر : أخلاق",
 				"notes": "الخفاش من الثدييات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 278
 			},
@@ -1667,7 +1667,7 @@
 				"question": "سأل الحكيم أيهما أفضل الأغنياء أم العلماء؟ قال العلماء وقال ألا ترى أن الأغنياء يذهبون إلى مجالس العلماء أقل مما يذهب العلماء إلى",
 				"answers": ["الأغنياء", "أفضل", "مجالس", "أقل"],
 				"true": "أقل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 286
 			},
@@ -2606,7 +2606,14 @@
 				"skill": "verbal-analogy",
 				"id": 450
 			},
-			{ "question": "طائر : ريش", "answers": ["جمل : شعر", "حراشف : ثعبان", "صوف : خروف", "انسان : قماش"], "true": "انسان : قماش", "status": "incorrect", "skill": "verbal-analogy", "id": 451 },
+			{
+				"question": "طائر : ريش",
+				"answers": ["جمل : شعر", "حراشف : ثعبان", "صوف : خروف", "انسان : قماش"],
+				"true": "انسان : قماش",
+				"status": "SUPER incorrect",
+				"skill": "verbal-analogy",
+				"id": 451
+			},
 			{ "question": "محكمة : قاضي", "answers": ["ميل : هيام", "مسرح : ممثل", "مهندس : خريطة", "خطيب : منبر"], "true": "مسرح : ممثل", "status": "normal", "skill": "verbal-analogy", "id": 452 },
 			{ "question": "نقود : شراء", "answers": ["عصا : شجرة", "حكمة : تجربة", "ثلاجة : تبريد", "ماء : عطش"], "true": "ثلاجة : تبريد", "status": "normal", "skill": "verbal-analogy", "id": 453 },
 			{
@@ -3035,7 +3042,8 @@
 			{ "question": "مدينة : دولة", "answers": ["حبر : قلم", "عمود : غرفة", "يوم : شهر", "صوت : مذياع"], "true": "يوم : شهر", "status": "missing", "skill": "verbal-analogy", "id": 525 },
 			{ "question": "جريدة : مقال", "answers": ["مؤلف : قصة", "كتاب : خطاب", "موظف : شركة", "كلمة : حرف"], "true": "كلمة : حرف", "status": "missing", "skill": "verbal-analogy", "id": 526 },
 			{ "question": "نمر : ضبع", "answers": ["سيف : مهند", "برتقال : موز", "أسد : شبل", "ليث : عرين"], "true": "برتقال : موز", "status": "missing", "skill": "verbal-analogy", "id": 527 },
-			{ "question": "إطلاقًا : دائمًا", "answers": ["حسن : قبح", "جمال : نظافة", "سعادة : أنس", "لمعان : بريق"], "true": "حسن : قبح", "status": "missing", "skill": "verbal-analogy", "id": 528 },
+			{ "question": "إطلاقًا : دائمًا", "answers": ["حسن : قبح", "جمال : نظافة", "سعادة : أنس", "لمعان : بريق"], "true": "حسن : قبح", "status": "missing && difficult", "skill": "verbal-analogy", "id": 528 },
+			{ "question": "مرضى : مستشفى", "answers": ["طلاب : فصل"], "true": "طلاب : فصل", "status": "missing && difficult", "skill": "verbal-analogy", "id": 4815 },
 			{
 				"question": " خطبة : حماس",
 				"answers": ["ذكر : طمأنينة", "أباد : أزال", "هدم : بناء", "حلم : رعونة"],
@@ -4628,7 +4636,7 @@
 				"question": "دراجة : سير",
 				"answers": ["كبريت : نور", "مصباح : ضوء", "شمس : قمر", "متر : قياس"],
 				"true": "متر : قياس",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 806
 			},
@@ -4668,13 +4676,14 @@
 		"questions": [
 			{
 				"question": "وضوء : اسباغ",
-				"answers": ["وريد : دم", "عريان : ثوب", "صلاة : خشوع", "مطر : نماء"],
+				"answers": ["حج : إحرام", "شباب : فتوة", "غسل : طهارة", "صلاة : خشوع"],
 				"true": "صلاة : خشوع",
-				"status": "normal && difficult",
+				"notes": "الحج لا يتقبل إلى بالإحرام. الوضوء والصلاة يتقبلون دون اسباغ وخشوع. الاسباغ هو الوضوء على أكمل وجه",
+				"status": "super difficult",
 				"skill": "verbal-analogy",
 				"id": 814
 			},
-			{ "question": "فاكهة : عصير", "answers": ["أخلاق : صبر", "كأس : ماء", "سوار : فضة", "ذهب : خاتم"], "true": "ذهب : خاتم", "status": "normal", "skill": "verbal-analogy", "id": 815 },
+			{ "question": "فاكهة : عصير", "answers": ["أخلاق : صبر", "كأس : ماء", "سوار : فضة", "ذهب : خاتم"], "true": "ذهب : خاتم", "status": "difficult", "skill": "verbal-analogy", "id": 815 },
 			{ "question": "فهرس : بحث", "answers": ["طريق : سفر", "طيار : طيارة", "قصة : خاتمة", "عنوان : كتاب"], "true": "طريق : سفر", "status": "normal", "skill": "verbal-analogy", "id": 816 },
 			{ "question": "وبر : إبل", "answers": ["قشرة : برتقالة", "نوم : يقظة", "فم : أسنان", "فرو : أسد"], "true": "قشرة : برتقالة", "status": "normal", "skill": "verbal-analogy", "id": 817 },
 			{ "question": "هلال : بدر", "answers": ["دودة : جرادة", "بذرة : شجرة", "جنين : فطيم", "حصاد : زراعة"], "true": "بذرة : شجرة", "status": "normal", "skill": "verbal-analogy", "id": 818 },
@@ -4692,7 +4701,7 @@
 				"question": "دعاء : استجابة",
 				"answers": ["نضج : خبرة", "دواء : استفادة", "الجوع : الصوم", "طبيب : عطار"],
 				"true": "دواء : استفادة",
-				"status": "normal",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 829
 			},
@@ -4716,7 +4725,7 @@
 				"question": "المقاومة على الوصول إلى القمة إنجاز، والإنجاز الآخر هو الوصول إلى القمة.",
 				"answers": ["المقاومة", "القمة", "الإنجاز", "الوصول"],
 				"true": "المقاومة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 832
 			},
@@ -4783,7 +4792,7 @@
 				"question": "لكل شيء رأس ورأس المعروف ............",
 				"answers": ["إمساكه", "تأخيره", "تركه", "تعجيله"],
 				"true": "تعجيله",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 842
 			},
@@ -4823,7 +4832,7 @@
 				"question": "تعصب الرأي يغلق باب ............ ويقوم بتزكية نار ......... بين أبناء المجتمع.",
 				"answers": ["التعاون - الصراع", "الحوار - الفتنة", "الترابط - الفتنة", "الحوار - التعاضد"],
 				"true": "الحوار - الفتنة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 847
 			}
@@ -4837,7 +4846,7 @@
 				"answers": ["خوخ : توت", "تفاح : موز", "فراولة : كمثرى", "بطيخ : شمام"],
 				"true": "بطيخ : شمام",
 				"notes": "الليمون والبرتقال فئة نباتات وحمضيات. والقرع والبطيخ فئة نباتات وقرعيات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 848
 			},
@@ -4856,7 +4865,7 @@
 				"question": "أصنام : أوثان",
 				"answers": ["كتب : أوراق", "دروب : طرق", "رأس : أنف", "رماح : سيوف"],
 				"true": "دروب : طرق",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 853
 			},
@@ -4872,7 +4881,7 @@
 				"question": "سيف : غمد",
 				"answers": ["رجل : مكتب", "نقود : ظرف", "ميت : قبر", "خنجر : معركة"],
 				"true": "ميت : قبر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 855
 			},
@@ -4880,7 +4889,7 @@
 				"question": "فقير : زكاة",
 				"answers": ["تأليف : جائزة", "مدرب : فريق", "طبيب : مريض", "متفوق : تقدير"],
 				"true": "متفوق : تقدير",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 856
 			},
@@ -4978,7 +4987,7 @@
 				"answers": ["نظيف : طاهر", "ماء : طين", "نقاء : صفاء", "صحو : غائم"],
 				"true": "صحو : غائم",
 				"notes": "كَدَرِ الْمَاءِ : عَدَمِ صَفَائِهِ, يومٌ صَحْوٌ، وسماءٌ صحوٌ: ليس فيهما غيم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 870
 			},
@@ -6298,7 +6307,7 @@
 				"question": "من يفتقد ...... ذاته، والاعتماد على قدراته يهرب من .......",
 				"answers": ["لتقدير - التعاون", "لإدراك - العمل", "لفهم - الحقيقة", "لمعرفة - المسؤولية"],
 				"true": "لمعرفة - المسؤولية",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1107
 			},
@@ -6306,7 +6315,7 @@
 				"question": "اهتمت دولتنا بالتعليم وأول ذلك المعلم، فهو طالب علم يبحث عن ....... وإثراء علمه، فضلا عن أنه صاحب ....... عظيمة.",
 				"answers": ["مصلحته - وجهة", "جاه - صفة", "حقيقة - رسالة", "التقدم - صورة"],
 				"true": "حقيقة - رسالة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1108
 			}
@@ -7431,7 +7440,7 @@
 				"question": "آبار : بترول",
 				"answers": ["مدرسة : معلم", "معجم : كلمة", "دفتر : حقيبة", "طفل : شاب"],
 				"true": "معجم : كلمة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1316
 			},
@@ -7744,7 +7753,7 @@
 				"question": "أسمنت : خرسانة",
 				"answers": ["فطور : غداء", "نجم : رماد", "حطب : نار", "طحين : خبز"],
 				"true": "طحين : خبز",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1364
 			},
@@ -7938,7 +7947,7 @@
 				"question": "مستشفى : جناح",
 				"answers": ["بنك : نقود", "أرض : جبال", "مسجد : مصابيح", "مكتبة : أرفف"],
 				"true": "أرض : جبال",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1404
 			},
@@ -8127,7 +8136,7 @@
 				"question": "تبذير : اسراف",
 				"answers": ["بخل : شح", "مدرسة : طالب", "حصن : منيع", "مقص : قماش"],
 				"true": "بخل : شح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1439
 			},
@@ -9567,7 +9576,7 @@
 				"question": "ممثل : مسرح",
 				"answers": ["جندي : ميدان", "مدير : موظف", "الموت : النشور", "قائد : جيش"],
 				"true": "جندي : ميدان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1698
 			},
@@ -9596,7 +9605,7 @@
 				"question": "قلم : كتابة",
 				"answers": ["عقل : ضبط", "قائد : جيش", "مقص : حياكة", "قطع : سكين"],
 				"true": "مقص : حياكة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1706
 			},
@@ -9909,7 +9918,7 @@
 				"question": "التطعيم هو عبارة عن ......... يأخذه الإنسان فيعمل على .............. من الأمراض الأخرى",
 				"answers": ["ترياق - الابتعاد", "مصل - التقليل", "لقاح - حمايته", "دواء - الوقاية"],
 				"true": "لقاح - حمايته",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1757
 			},
@@ -9917,7 +9926,7 @@
 				"question": "الضفدع ليس لديه رقبة لذلك لا يستطيع تدوير .............. ولا ............ باتجاه الأرض",
 				"answers": ["رأسه - يثنيه", "رقبته - يمدها", "عنقه - يوصلها", "رجليه - يضمها"],
 				"true": "رأسه - يثنيه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1758
 			},
@@ -9941,7 +9950,7 @@
 				"question": "إن التلخيص هو استخراج ...... والتوضيح عنها بـ ........",
 				"answers": ["الأفكار - إيجاز", "البلاغيات - فن", "العناصر - إسهاب", "النقاط - وضوح"],
 				"true": "الأفكار - إيجاز",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1761
 			},
@@ -10015,7 +10024,7 @@
 				"question": "سمع : حواس",
 				"answers": ["اختبار : سؤال", "يوم : أسبوع", "شوط : مباراة", "خطبة : أسبوع"],
 				"true": "يوم : أسبوع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1777
 			},
@@ -10250,7 +10259,7 @@
 				"question": "إن الاتقان في ........ يجعل الانسان ذو قيمة كبيرة و ............ إلى أن يجعله محبوبا بين الناس",
 				"answers": ["الزراعة - يصل", "العمل - يؤدي", "التعليم - يؤدي", "التجارة - يصل"],
 				"true": "العمل - يؤدي",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1814
 			},
@@ -10274,7 +10283,7 @@
 				"question": "الفقر واليتم لا ....... الفرد من النجاح فإن ابن تيمية نشأ يتيما ومع ذلك وصل إلى قمة النجاح وقد يصل إلى ذلك من تعرض لنفس ......... ",
 				"answers": ["يمنعان - صعوباته", "يحرمان - فقره", "يمنعان - نشأته", "يعيقان - صفاته"],
 				"true": "يمنعان - نشأته",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1817
 			},
@@ -10529,7 +10538,7 @@
 				"question": "اللسان عضو صغير، به يكشف ........ عن علل الجسد و ........ عن مرض السفاهة",
 				"answers": ["الخبراء - الشعراء", "الأطباء ـ الحكماء", "الأطباء ـ المجانين", "المرضى ـ الفلاسفة"],
 				"true": "الأطباء ـ الحكماء",
-				"status": "normal",
+				"status": "incorrect",
 				"skill": "sentence-completion",
 				"id": 1852
 			},
@@ -10545,7 +10554,7 @@
 				"question": "اللحد : القبر",
 				"answers": ["القفاز : الامتناع", "الثوب : الستر", "السماعة : اللقاء", "النظارة : الانتباه"],
 				"true": "الثوب : الستر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1854
 			},
@@ -10574,7 +10583,7 @@
 				"question": "شمس : ضوء",
 				"answers": ["سلم : حريق", "بترول : طاقة", "قلب : دم", "سحاب : غيوم"],
 				"true": "بترول : طاقة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1860
 			},
@@ -10669,7 +10678,7 @@
 		"name": "الأفيال والكوارث",
 		"questions": [
 			{ "question": "قدم : عرج", "answers": ["عين : نظر", "أسنان : لمس", "أنف : لحمية", "أذن : سمع"], "true": "أنف : لحمية", "status": "normal", "skill": "verbal-analogy", "id": 1876 },
-			{ "question": "صخب : هدوء", "answers": ["مد : جزر", "ليل : نهار", "عبد : حر", "شرى : باع"], "true": "عبد : حر", "status": "normal && difficult", "skill": "verbal-analogy", "id": 1877 },
+			{ "question": "صخب : هدوء", "answers": ["مد : جزر", "ليل : نهار", "عبد : حر", "شرى : باع"], "true": "عبد : حر", "status": "difficult", "skill": "verbal-analogy", "id": 1877 },
 			{
 				"question": "طفاية حريق : نار",
 				"answers": ["علم : جهل", "مروحة : نار", "أطراف : قدم", "تقدم : حضارة"],
@@ -10690,7 +10699,7 @@
 				"question": "محرم : صفر",
 				"answers": ["جمعة : سبت", "مغرب : عشاء", "سعي : طواف", "شتاء : صيف"],
 				"true": "جمعة : سبت",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1880
 			},
@@ -10700,7 +10709,7 @@
 				"answers": ["إقامة : ظعن", "صلاة : قصر", "مغادرة : رحيل", "غربة : سفر"],
 				"true": "إقامة : ظعن",
 				"notes": "الركوب - مثل الركوب على الخيل, الترجل - المشي على الرجل. ظعن - الرحيل والمغادرة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1882
 			},
@@ -10727,7 +10736,7 @@
 				"question": "طالب : توجيه",
 				"answers": ["سقف : طموح", "جبيرة : غرزة", "معلم : فصل", "سيارة : وقود"],
 				"true": "سيارة : وقود",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1887
 			},
@@ -10796,7 +10805,7 @@
 				"question": "من دخل ..... بلا زاد، فكأنما ركب البحر بلا .....",
 				"answers": ["المنزل - قارب", "المدينة - مجداف", "القبر - سفينة", "الطريق - شراع"],
 				"true": "القبر - سفينة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1898
 			},
@@ -11032,7 +11041,7 @@
 				"question": "جريدة : صحيفة",
 				"answers": ["رمح : سيف", "سيف : مهند", "مجلة : كاتب", "مجلة : سلسلة"],
 				"true": "سيف : مهند",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1931
 			},
@@ -11053,7 +11062,7 @@
 				"question": "من كان عنده علم كثير عليه عدم .......... بنفسه فإن العلم ساحل ما .......... أكثر مما تناله",
 				"answers": ["الكبر - تحصله", "الزهو - تدركه", "الزهو - يفوتك", "الافتخار - تدركه"],
 				"true": "الزهو - يفوتك",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1938
 			},
@@ -11061,7 +11070,7 @@
 				"question": "إن بـ ..... التاريخ الإسلامي نعلم كيف ...... عصر صدر الإسلام والخلفاء الراشدين من بعده موجبات الوحدة.",
 				"answers": ["قراءة - وحد", "فهم - كان", "حفظ - اكتشف", "استقراء - استوفى"],
 				"true": "استقراء - استوفى",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1939
 			},
@@ -11069,7 +11078,7 @@
 				"question": "يعتقد علماء ........ أن جلوس الأطفال أمام التلفاز مدة طويلة يسبب لهم سوء ..........",
 				"answers": ["التغذية - الأمان", "الصحة - السمنة", "الصحة - النظر", "النفس - الصحة"],
 				"true": "النفس - الصحة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1940
 			},
@@ -11101,7 +11110,7 @@
 				"question": "كشف علماء ...... على أن الحد من ساعات مشاهدة التلفاز للأطفال يقلل من احتمال إصابتهم بـ .......",
 				"answers": ["الصحة - السمنة", "الصحة - العمى", "الصيدلة - الأنيميا", "السمنة - التغذية"],
 				"true": "الصحة - السمنة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1944
 			},
@@ -11139,7 +11148,7 @@
 				"question": "ما أجمل أن ....... لغة المحبة وتكون .......الحب هي العُليا",
 				"answers": ["نتقن - قدرة", "تندثر - نغمة", "تنتشر - كلمة", "تسود - روح"],
 				"true": "تسود - روح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1948
 			},
@@ -11147,7 +11156,7 @@
 				"question": "ما كان .... في شيء إلا زانه، ولا .... من شيء إلا شانه.",
 				"answers": ["الصدق - الكذب", "المزاح - الكلام", "الرفق - نزع", "الفحش - الحياء"],
 				"true": "الرفق - نزع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 1949
 			},
@@ -11179,7 +11188,7 @@
 				"question": "حب : اتباع",
 				"answers": ["فوضى : سلامة", "ذل : انتقام", "إعجاب : تقليد", "بغض : خوف"],
 				"true": "إعجاب : تقليد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1953
 			},
@@ -11209,11 +11218,12 @@
 				"question": "زجاجة : عطر",
 				"answers": ["سحابة : مطر", "قمر : ضوء", "سراب : ماء", "فراش : نوم"],
 				"true": "سحابة : مطر",
-				"status": "normal && difficult",
+				"status": "super difficult",
 				"skill": "verbal-analogy",
 				"id": 1962
 			},
 			{ "question": "خروف : صوف", "answers": ["طائر : ريش", "جمل : لبدة", "أسد : شعر", "برد : معطف"], "true": "طائر : ريش", "status": "normal", "skill": "verbal-analogy", "id": 1963 },
+			{ "question": "خروف : صوف", "answers": ["بقر : شعر", "جمل : لبدة", "أسد : شعر", "برد : معطف"], "true": "بقر : شعر", "status": "difficult", "skill": "verbal-analogy", "id": 4816 },
 			{
 				"question": "غارم : زكاة",
 				"answers": ["طبخ : زيت", "سيارة : ماء", "رجل : تجارة", "مريض : فحص"],
@@ -11228,7 +11238,7 @@
 				"answers": ["واسع : عميق", "حليم : صادق", "كريم : بخيل", "طويل : ممتد"],
 				"true": "كريم : بخيل",
 				"notes": "مثلم: مكسور من حافته",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1965
 			},
@@ -11381,7 +11391,7 @@
 				"question": "وسامة : دمامة",
 				"answers": ["سعادة : هناء", "رطوبة : جفاف", "عقل : رزانة", "حلم : رعونة"],
 				"true": "رطوبة : جفاف",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1985
 			},
@@ -11403,7 +11413,7 @@
 				"question": "طويل : ممتد",
 				"answers": ["حليم : كريم", "واسع : عميق", "جواد : كريم", "كبير : ممتد"],
 				"true": "جواد : كريم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1993
 			},
@@ -11474,7 +11484,7 @@
 				"question": "يجب تقوية ثقة الطفل واحترام شخصيته لكي تتقلص فروضه ويقلل من رفضه أقرانه",
 				"answers": ["يقلل", "رفضه", "فروضه", "تتقلص"],
 				"true": "يقلل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2008
 			},
@@ -11522,11 +11532,11 @@
 				"question": "ثانية : دقيقة",
 				"answers": ["قرن : عقد", "ضحى : يوم", "قمر : سماء", "ساعة : دقيقة"],
 				"true": "ضحى : يوم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2016
 			},
-			{ "question": "سحابة : مطر", "answers": ["نحلة : عسل", "فراش : نوم", "وقود : سيارة", "شحن : بطارية"], "true": "نحلة : عسل", "status": "normal", "skill": "verbal-analogy", "id": 2017 },
+			{ "question": "سحابة : مطر", "answers": ["جراح : علمية", "اسطبل : ثور", "نحلة : عسل", "فراش : نوم"], "true": "نحلة : عسل", "status": "incorrect", "skill": "verbal-analogy", "id": 2017 },
 			{ "question": "حادثة : رواية", "answers": ["خطة : حرب", "دائرة : شمس", "شجاع : جبان", "ذكي : ساذج"], "true": "خطة : حرب", "status": "incorrect", "skill": "verbal-analogy", "id": 2018 },
 			{ "question": "طفل : شاب", "answers": ["مراهقة : طفولة", "خير : بركة", "ضحكة : ابتسامه", "رطب : تمر"], "true": "رطب : تمر", "status": "normal", "skill": "verbal-analogy", "id": 2019 },
 			{ "question": "ذنب : استغفار", "answers": ["جوع : أكل", "إصلاح : تعليم", "نعمة : شكر", "هدم : بناء"], "true": "نعمة : شكر", "status": "normal", "skill": "verbal-analogy", "id": 2020 },
@@ -11536,7 +11546,7 @@
 				"question": "ثريا : قبة",
 				"answers": ["إنسان : عقل", "منارة : سلالم", "منبر : جامع", "إمام : مأموم"],
 				"true": "منبر : جامع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2023
 			},
@@ -11858,7 +11868,7 @@
 				"question": "مناعة : تطعيم",
 				"answers": ["بيت : منزل", "نجاح : اجتهاد", "إهمال : رسوب", "عمل : كسب"],
 				"true": "نجاح : اجتهاد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2078
 			},
@@ -12199,7 +12209,7 @@
 				"question": "يجب على الإنسان أن يكون قادرا على .......... علاقات بين الفرد وأسرته والفرد ومجتمعه لتصبح حياته ............",
 				"answers": ["إنشاء - فوضوية", "تكوين - متوازنة", "توسيع - متكاملة", "تكوين - متشابكة"],
 				"true": "تكوين - متوازنة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2127
 			},
@@ -12236,7 +12246,7 @@
 				"question": "سعي : تحصيل",
 				"answers": ["دموع : بكاء", "تربية : صلاح", "اشتياق : وداع", "متعة : سفر"],
 				"true": "تربية : صلاح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2136
 			},
@@ -12245,7 +12255,7 @@
 				"question": "ضرب : ألم",
 				"answers": ["ضحك : ابتسم", "نوم : كسل", "سفر : متعة", "سيارة : ركوب"],
 				"true": "سفر : متعة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2138
 			},
@@ -12254,7 +12264,7 @@
 				"question": "فرح : سعيد",
 				"answers": ["إيثار : أثرة", "جاني : متهم", "إساءة : إيذاء", "صعب : سهل"],
 				"true": "إساءة : إيذاء",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2140
 			},
@@ -12723,6 +12733,7 @@
 				"question": "غالبا ما يعود العقاب البدني بالسلبية على الطفل مما يجعله هادئا ومقاوما للتوجيهات",
 				"answers": ["بالسلبية", "مقاوما", "هادئا", "العقاب"],
 				"true": "هادئا",
+				"notes": "عصبيا. مقاوما للتوجيهات يعني ما يسمع الكلام",
 				"status": "incorrect",
 				"skill": "contextual-error",
 				"id": 2226
@@ -12731,7 +12742,8 @@
 				"question": "يحتاج الإنسان إلى الحزم في شؤونه التربوية حتى لا يضيع ماله ويحتاج إلى الناس",
 				"answers": ["الحزم", "ماله", "لا يضيع", "التربوية"],
 				"true": "التربوية",
-				"status": "normal && difficult",
+				"notes": "المادية/الاقتصادية",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2227
 			},
@@ -12739,7 +12751,7 @@
 				"question": "يعود النهر للبحر جاريا كما يعود بخل الإنسان له سريعا",
 				"answers": ["سريعا", "النهر", "جاريا", "بخل"],
 				"true": "بخل",
-				"status": "normal && difficult",
+				"status": "super difficult",
 				"skill": "contextual-error",
 				"id": 2228
 			},
@@ -12801,7 +12813,7 @@
 				"question": "تشغيل : انطلاق",
 				"answers": ["جرس : مدرسة", "غروب : إفطار", "عمال : مصنع", "تحدث : اتصال"],
 				"true": "غروب : إفطار",
-				"status": "normal",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2240
 			},
@@ -12813,7 +12825,15 @@
 				"skill": "verbal-analogy",
 				"id": 2241
 			},
-			{ "question": "تنقية : هواء", "answers": ["بيئة : تلوث", "تحرير : مقال", "ركاب : حافلة", "صيد : سمك"], "true": "تحرير : مقال", "status": "normal", "skill": "verbal-analogy", "id": 2242 },
+			{
+				"question": "تنقية : هواء",
+				"answers": ["بيئة : تلوث", "تحرير : مقال", "ركاب : حافلة", "صيد : سمك"],
+				"true": "تحرير : مقال",
+				"status": "difficult",
+				"notes": "علاقة ضرورة للشيء. التحرير هو تعديل المقال وكتابته",
+				"skill": "verbal-analogy",
+				"id": 2242
+			},
 			{ "question": "مروحة : هواء", "answers": ["نحلة : عسل", "وقود : سيارة", "سفينة : بحر", "شحن : بطارية"], "true": "نحلة : عسل", "status": "normal", "skill": "verbal-analogy", "id": 2243 },
 			{
 				"question": "اقتراب : ابتعاد",
@@ -12894,7 +12914,7 @@
 				"question": "إدارة : مهارة",
 				"answers": ["رسالة : ظرف", "الوطيس : التنور", "لياقة : رياضة", "صياد : شبكة"],
 				"true": "لياقة : رياضة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2258
 			},
@@ -12902,7 +12922,7 @@
 				"question": "قلم : حبر",
 				"answers": ["كلمة : حرف", "مدفع : قذيفة", "نافذة : غرفة", "حوت : بحر"],
 				"true": "مدفع : قذيفة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2259
 			},
@@ -12911,7 +12931,7 @@
 				"question": "أبراج : جوزاء",
 				"answers": ["أنهار : نيل", "أهرامات : مصر", "شعير : حبوب", "شاحنة : ناقلات"],
 				"true": "أنهار : نيل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2261
 			},
@@ -12925,7 +12945,7 @@
 				"question": "نجار : خشب",
 				"answers": ["خباز : خبز", "صياد : شبكة", "خياط : قماش", "خريطة : مهندس"],
 				"true": "خياط : قماش",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2268
 			},
@@ -12933,7 +12953,7 @@
 				"question": "سؤال : جواب",
 				"answers": ["ابتسامة : ضحك", "دراسة : ذكاء", "قراءة : استيعاب", "راتب : مكافئة"],
 				"true": "قراءة : استيعاب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2269
 			},
@@ -13245,7 +13265,7 @@
 				"question": "سعادة : بهجة",
 				"answers": ["نبات : غيث", "سرور : مسرة", "مرح : سخط", "فرح : رضا"],
 				"true": "سرور : مسرة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2322
 			},
@@ -13265,7 +13285,7 @@
 				"question": "إقبال : إدبار",
 				"answers": ["ليل : نهار", "مد : جزر", "سلبي : إيجابي", "إيجابي : سلبي"],
 				"true": "إيجابي : سلبي",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2328
 			},
@@ -13417,7 +13437,7 @@
 				"question": "السمنة ........... صحية وتتحول إلى ............ عند الأطفال",
 				"answers": ["مشكلة - حل", "آفة - نقمة", "أزمة - قلق", "علة - صحة"],
 				"true": "آفة - نقمة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2349
 			},
@@ -13425,7 +13445,7 @@
 				"question": "إن بـ ..... التاريخ الإسلامي نعلم كيف ...... عصر صدر الإسلام والخلفاء الراشدين من بعده موجبات الوحدة.",
 				"answers": ["استقراء - استوفى", "فهم - كان", "قراءة - وحد", "حفظ - اكتشف"],
 				"true": "استقراء - استوفى",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2350
 			},
@@ -13441,7 +13461,7 @@
 				"question": "البأس من المزاح ولكن في جو من ...... والمرح ولكن يشترط عدم المزاح في الأمور الدينية وألا يكون المزاح يسقط ....... والوقار.",
 				"answers": ["الإنس - الوقار", "المودة - الهيبة", "الألفة - الصدق", "المرح - شخصيتك"],
 				"true": "المودة - الهيبة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2352
 			},
@@ -13536,7 +13556,7 @@
 				"question": "جريدة : صحيفة",
 				"answers": ["سيف : مهند", "مجلة : سلسلة", "مطوية : ملحق", "كتاب : دفتر"],
 				"true": "سيف : مهند",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2368
 			},
@@ -13662,7 +13682,7 @@
 				"question": "حبر : قلم",
 				"answers": ["مرض : دواء", "وقود : سيارة", "طعام : فطور", "زئبق : ترمومتر"],
 				"true": "زئبق : ترمومتر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2391
 			},
@@ -13834,7 +13854,7 @@
 				"question": "يسعى الإعلاميون إلى كسب الأخبار بسرعة عالية ",
 				"answers": ["كسب", "الإعلاميون", "عالية", "الأخبار"],
 				"true": "كسب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2424
 			},
@@ -13866,7 +13886,7 @@
 				"question": "إن استخدام معجون أسنان الفلورايد يساعد على الحفاظ على سلامة اللسان والفك ",
 				"answers": ["استخدام", "الحفاظ", "معجون", "اللسان"],
 				"true": "اللسان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2428
 			},
@@ -13898,7 +13918,7 @@
 				"question": "عصير : برتقال",
 				"answers": ["سبيكة : ذهب", "صلابة : حجارة", "خشب : نجارة", "فضة : خاتم"],
 				"true": "سبيكة : ذهب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2432
 			},
@@ -13907,7 +13927,7 @@
 				"question": "كساد : تجارة",
 				"answers": ["بيع : شراء", "صلاح : أعمال", "ربح : خسارة", "دين : حاجز"],
 				"true": "صلاح : أعمال",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"notes": "الصلاح وصف للأعمال (قد تكون صالحة أو فاسدة) والكساد وصف للتجارة وهو فترة انخفاض شديد في الاقتصاد",
 				"skill": "verbal-analogy",
 				"id": 2434
@@ -13936,7 +13956,7 @@
 				"answers": ["غنى : ثراء", "أباء : رفض", "ذل : خنوع", "عتيق : قديم"],
 				"true": "ذل : خنوع",
 				"notes": "جميع الإجابات ترادف, لكن الذل والخنوع (خَنَعَ لِرئِيسِهِ : خَضَعَ لَهُ وَذَلَّ) سلبية مثل الفقر والإملاق. غنى : ثراء وعتيق : قديم ليست سلبية, وأباء : رفض أفعال",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2439
 			},
@@ -14005,7 +14025,7 @@
 				"question": "لا تفتح بابا يعييك ......، ولا ترسل ....... يعجزك رده",
 				"answers": ["فتحه - وردا", "فتحه - معروفا", "قفله ـ سهما", "سده ـ سهما"],
 				"true": "سده ـ سهما",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"notes": "يعييك بمعنى عيي أي عجز",
 				"skill": "sentence-completion",
 				"id": 2452
@@ -14075,7 +14095,7 @@
 				"question": "جاهدوا ...... كما تجاهدون ..........",
 				"answers": ["أهواءكم ـ أعداءكم", "أنفسكم - أقربائكم", "عدوكم - أعدائكم", "أهوائكم - أموالكم"],
 				"true": "أهواءكم ـ أعداءكم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2460
 			},
@@ -14091,7 +14111,7 @@
 				"question": "كلما زادت ........ الإنسان عن حاجاته زادت ...........",
 				"answers": ["آمال - آلامه", "ثروة - عيوبه", "قوة - اتصالاته", "ثروة ـ همومه"],
 				"true": "آمال - آلامه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2462
 			},
@@ -14099,7 +14119,7 @@
 				"question": "الابتسامة للحياة ....... العقل، وتبدد ........ الثقيلة",
 				"answers": ["تنشط ـ الهموم", "تخفف - الأمور", "تقوي - الأوزان", "تقوي ـ الأمور"],
 				"true": "تنشط ـ الهموم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2463
 			},
@@ -14123,7 +14143,7 @@
 				"question": "عشوراء : محرم",
 				"answers": ["مطر : برد", "مجرة : كون", "نهار : عمل", "ذبول : خريف"],
 				"true": "ذبول : خريف",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2466
 			},
@@ -14141,7 +14161,7 @@
 				"question": "عزير : اليهود",
 				"answers": ["مكة : المسلمين", "بوذي : البقر", "عيسى : النصارى", "بيت : دار"],
 				"true": "عيسى : النصارى",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2470
 			},
@@ -14150,7 +14170,7 @@
 				"question": "أفل : غاب",
 				"answers": ["أب, ان : أفصح", "كرم : بخل", "أخذ : أعطى", "أصلح : أفسد"],
 				"true": "أبان : أفصح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"notes": "أفَلَ النَّجمُ :غاب واستتر",
 				"skill": "verbal-analogy",
 				"id": 2472
@@ -14171,14 +14191,14 @@
 				"question": "مجرة : فضاء",
 				"answers": ["سهول : وادي", "جزيرة : محيط", "أرض : سماء", "نجم : ليل"],
 				"true": "جزيرة : محيط",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2478
 			},
 			{ "question": "غرور : نفور", "answers": ["حب : زواج", "نجاح : اجتهاد", "قناعة : سعادة", "ذكاء : حرص"], "true": "قناعة : سعادة", "status": "normal", "skill": "verbal-analogy", "id": 2479 },
 			{ "question": "حصان : حدوة", "answers": ["جسر : أعمدة", "سيارة : عجلة", "إنسان : نعل", "بعير : ظلف"], "true": "إنسان : نعل", "status": "normal", "skill": "verbal-analogy", "id": 2480 },
 			{ "question": "كل يوم يمضي من حياتك فإنه يجعلك أقرب إلى هدفك", "answers": ["يمضي", "حياتك", "أقرب", "هدفك"], "true": "هدفك", "status": "normal", "skill": "contextual-error", "id": 2481 },
-			{ "question": "كلما زاد الأخذ من البئر قل عطاؤها", "answers": ["قل", "زاد", "عطاؤها", "الأخذ"], "true": "قل", "status": "normal && difficult", "skill": "contextual-error", "id": 2482 },
+			{ "question": "كلما زاد الأخذ من البئر قل عطاؤها", "answers": ["قل", "زاد", "عطاؤها", "الأخذ"], "true": "قل", "status": "difficult", "skill": "contextual-error", "id": 2482 },
 			{
 				"question": "إذا ظل الإنسان بلا عمل تحول العمل الذي يعيشه إلى مشكلات كبيرة.",
 				"answers": ["ظل", "كبيرة", "الإنسان", "العمل"],
@@ -14191,7 +14211,7 @@
 				"question": "ما لا يمكننا تغييره ينبغي تدميره",
 				"answers": ["يمكننا", "تدميره", "ما", "ينبغي"],
 				"true": "تدميره",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2484
 			},
@@ -14318,7 +14338,7 @@
 				"question": "واه : ضعيف",
 				"answers": ["يركض : يجري", "مساحة : محيط", "يمشى : ينام", "عرض : طول"],
 				"true": "يركض : يجري",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"notes": "قَلْبٌ واهٍ: ضعيف",
 				"skill": "verbal-analogy",
 				"id": 2501
@@ -14366,7 +14386,7 @@
 				"question": "بندقية : رصاصة",
 				"answers": ["سيارة : طائرة", "علم : جهل", "جامعة : مستشفى", "واحة : نخلة"],
 				"true": "واحة : نخلة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2510
 			},
@@ -14453,7 +14473,7 @@
 				"question": "يجب على الآباء أن يحافظوا على تاريخهم للأجيال السابقة واللاحقة",
 				"answers": ["يحافظوا", "الآباء", "السابقة", "واللاحقة"],
 				"true": "السابقة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2521
 			},
@@ -14477,7 +14497,7 @@
 				"question": "إذا اعترضتك رياح العواصف فامش قليلا ثم عاود المسير",
 				"answers": ["المسير", "رياح", "فامش", "اعترضتك"],
 				"true": "فامش",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2524
 			},
@@ -14536,7 +14556,7 @@
 				"question": "اختراع : براءة",
 				"answers": ["منتج : مصنع", "مسودة : كاتب", "هندسة : مشاريع", "نجاح : شهادة"],
 				"true": "نجاح : شهادة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2532
 			},
@@ -14559,7 +14579,7 @@
 				"question": "الفراغ .......... للشباب كما أن ...... الأب الدائم عن الأسرة مضر بها",
 				"answers": ["مفيد ـ غياب", "مفسدة ـ انشغال", "محرقة ـ اهتمام", "مهلكة ـ حضور"],
 				"true": "مفسدة ـ انشغال",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2541
 			},
@@ -14606,7 +14626,7 @@
 				"question": "بنك : مال",
 				"answers": ["كلية : جامعة", "كلب : مزرعة", "مستشفى : مرضى", "كتاب : ورق"],
 				"true": "مستشفى : مرضى",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2547
 			},
@@ -14614,7 +14634,7 @@
 				"question": "تاريخ : جغرافيا",
 				"answers": ["مدرسة : فصل", "أدب : نحو", "شراء : تملك", "مدرسة : علم"],
 				"true": "أدب : نحو",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2548
 			},
@@ -14632,7 +14652,7 @@
 				"question": "خوف : ملاذ",
 				"answers": ["براعة : اتقان", "ضياع : استرشاد", "هزيل : مريض", "سيطرة : قوة"],
 				"true": "ضياع : استرشاد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2552
 			},
@@ -14668,7 +14688,7 @@
 				"answers": ["مكاسب : أعمال", "راحة : مودة", "أمل : اطمئنان", "أمن : خوف"],
 				"true": "أمن : خوف",
 				"notes": "الرهبة هو الخوف ويمنعك من فعل الشيء, والرغبة يجعلك تريد فعل الشيء. العلاقة تضاد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2558
 			},
@@ -14677,7 +14697,7 @@
 				"question": "طباخ : قدر",
 				"answers": ["حداد : مطرقة", "صحفي : صحيفة", "عقيم : أبناء", "مسؤول : شركة"],
 				"true": "حداد : مطرقة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2560
 			},
@@ -14696,7 +14716,7 @@
 				"answers": ["حجر : حائط", "نقود : بنك", "دجاج : وكر", "طعام : قدر"],
 				"true": "طعام : قدر",
 				"notes": "مكانية وأيضًا المحبرة والقدر من الأدوات المنزلية",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2563
 			},
@@ -14829,7 +14849,7 @@
 				"question": "عملة : جنية",
 				"answers": ["دينار : درهم", "لباس : قميص", "ألماس : منجم", "جدول : نهر"],
 				"true": "لباس : قميص",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2579
 			},
@@ -14837,7 +14857,7 @@
 				"question": "آثار : متحف",
 				"answers": ["طبيب : مستشفى", "سيارات : مواقف", "عصفور : عش", "قصيدة : ديوان"],
 				"true": "قصيدة : ديوان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2580
 			},
@@ -14845,7 +14865,7 @@
 				"question": "ثعبان : زواحف",
 				"answers": ["سيف : أسلحة", "غزال : صحاري", "تفاح : فاكهة", "نسر : صقور"],
 				"true": "سيف : أسلحة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2581
 			},
@@ -14913,7 +14933,7 @@
 				"question": "حصان : سرج",
 				"answers": ["جمل : سنام", "سيارة : مقعد", "فرس : صهوة", "حمار : بردعة"],
 				"true": "حمار : بردعة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2596
 			},
@@ -14997,7 +15017,7 @@
 				"question": "نظرة الأطفال حادة رقيقة لذلك تجدهم يبتعدون عن الأشخاص الجدد الذين يثيرون شكوكهم",
 				"answers": ["رقيقة", "الأشخاص", "شكوكهم", "يبتعدون"],
 				"true": "رقيقة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2608
 			},
@@ -15005,7 +15025,7 @@
 				"question": "الاكتئاب يجعل الإنسان يتأمل الحزن ويريد التخلص من الحياة",
 				"answers": ["يريد", "الحياة", "يتأمل", "الحزن"],
 				"true": "يتأمل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2609
 			},
@@ -15053,7 +15073,7 @@
 				"question": "المملكة العربية السعودية ............ بـ ........... ضيوف الرحمن",
 				"answers": ["تفتخر - خدمة", "تناشد - راحة", "تنادي - حب", "تتباهى - إكرام"],
 				"true": "تفتخر - خدمة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2615
 			},
@@ -15069,7 +15089,7 @@
 				"question": "عند رؤية ما ................... الضالون لنصرة دينهم تجعلنا ................ أنفسنا على هذا الكسل والهوان",
 				"answers": ["يفعله - نقدر", "يعده - نحث", "يبذله - نلوم", "يعمله - نهين"],
 				"true": "يبذله - نلوم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2617
 			},
@@ -15099,7 +15119,7 @@
 				"question": "إعجاب : تقليد",
 				"answers": ["حرص : خوف", "حب : كراهية", "توزيع : طباعة", "بغض : بعد"],
 				"true": "بغض : بعد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2621
 			},
@@ -15107,7 +15127,7 @@
 				"question": "فستان : مصمم",
 				"answers": ["قائد : فكرة", "أخلاق : مربون", "قصر : مهندس", "سلعة : بائع"],
 				"true": "قصر : مهندس",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2622
 			},
@@ -15123,7 +15143,7 @@
 				"question": "مبنى : أعمدة",
 				"answers": ["سور : قصر", "أسرة : والدين", "شارع : أبراج", "صحراء : جبل"],
 				"true": "أسرة : والدين",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2624
 			},
@@ -15232,7 +15252,7 @@
 				"question": "كن حكيما من غير ...... وشديدا من غير .......",
 				"answers": ["حدث - قوة", "خطر - امتداح", "أقدم - زاول", "تحيز - عنف"],
 				"true": "تحيز - عنف",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2642
 			},
@@ -15333,7 +15353,7 @@
 				"question": "حقبة : فترة",
 				"answers": ["حشد : جماعة", "مجتمع : قبيلة", "حاز : نال", "معصية : كفارة"],
 				"true": "حشد : جماعة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2654
 			},
@@ -15360,7 +15380,7 @@
 				"question": "زميل : رفيق",
 				"answers": ["خال : عم", "أخ : شقيق", "جديد : تليد", "والد : عم"],
 				"true": "أخ : شقيق",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2658
 			},
@@ -15424,7 +15444,7 @@
 				"question": "أفضل وسيلة لتحقيق أحلامك هي أن تستيقظ من الانشغال.",
 				"answers": ["لتحقيق", "تستيقظ", "الانشغال", "أفضل"],
 				"true": "الانشغال",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2671
 			},
@@ -15658,7 +15678,7 @@
 				"question": "حواس : سمع",
 				"answers": ["اختبار : سؤال", "أسبوع : سبت", "شهر : عام", "ثانية : دقيقة"],
 				"true": "أسبوع : سبت",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2710
 			},
@@ -15668,7 +15688,7 @@
 				"question": "سماء : نجوم",
 				"answers": ["عصفور : عش", "كأس : زجاج", "بحر : حيتان", "قمر : صخور"],
 				"true": "بحر : حيتان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2713
 			},
@@ -15686,7 +15706,7 @@
 				"question": "أرض : تخطيط",
 				"answers": ["تعليم : تربية", "بناية : تشييد", "نجاح : فشل", "توجيه : إرشاد"],
 				"true": "بناية : تشييد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2717
 			},
@@ -15821,7 +15841,7 @@
 				"question": "ظمأ : عطش",
 				"answers": ["جوع : طعام", "حصن : منيع", "مدح : ثناء", "ذهاب : إياب"],
 				"true": "مدح : ثناء",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2741
 			},
@@ -15830,7 +15850,7 @@
 				"question": "صدق : كسب",
 				"answers": ["حقيقة : كسب", "جد : اجتهاد", "قلب : خفقان", "تأني : نجاة"],
 				"true": "تأني : نجاة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2743
 			},
@@ -15932,7 +15952,7 @@
 				"question": "نتيجة : شهادة",
 				"answers": ["شيب : هرم", "يحبو : يمشي", "صحيفة : خبر", "شباب : مراهقة"],
 				"true": "شيب : هرم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2756
 			},
@@ -15980,7 +16000,7 @@
 				"question": "سؤال : جواب",
 				"answers": ["سباحة : رياضة", "نوم : يقظة", "حلاوة : سكر", "صمت : لغة"],
 				"true": "نوم : يقظة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2767
 			},
@@ -16046,7 +16066,7 @@
 				"question": "تسعى الدول إلى الاهتمام بالأجيال و............. النوعية لذا تحرص الدول ........... على إصلاح برامجها التعليمية",
 				"answers": ["الكفايات - المتقدمة", "حاجات - كبرى", "الأطفال - النامية", "الشخصيات - المتعلمة"],
 				"true": "الكفايات - المتقدمة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2777
 			},
@@ -16088,7 +16108,7 @@
 				"question": "خيل : إسطبل",
 				"answers": ["مختبر : محلول", "قدر : طبخ", "فواكه : سلة", "غصن : شجرة"],
 				"true": "فواكه : سلة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2786
 			},
@@ -16099,7 +16119,7 @@
 				"question": "أضاء : أظلم",
 				"answers": ["هدأ : انطلق", "نجح : فاز", "تنفس : اختناق", "انجز : اشتغل"],
 				"true": "تنفس : اختناق",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2790
 			},
@@ -16108,7 +16128,7 @@
 				"question": "طائرة : وقود",
 				"answers": ["وردة : رحيق", "بهائم : علف", "سرعة : طريق", "معلم : علم"],
 				"true": "بهائم : علف",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2792
 			},
@@ -16220,7 +16240,7 @@
 				"question": "لا تتأثر بـ ......... السيء الموجه إليك فإنه يؤذي ............. ولا يؤذيك.",
 				"answers": ["الحديث - ناقله", "الكلام - ينفعك", "الوصف - قائله", "الحث - صاحبه"],
 				"true": "الوصف - قائله",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2806
 			},
@@ -16244,7 +16264,7 @@
 				"question": "صحيفة : خبر",
 				"answers": ["تمر : نخلة", "جامعة : شهادة", "فضة : نقود", "تقرير : مجلة"],
 				"true": "جامعة : شهادة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2811
 			},
@@ -16260,7 +16280,7 @@
 				"question": "رقى : صعد",
 				"answers": ["ينام : يستيقظ", "يرجو : يخاف", "طاعة : معصية", "يقرأ : يتلو"],
 				"true": "يقرأ : يتلو",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2813
 			},
@@ -16269,7 +16289,7 @@
 				"question": "ذئب : عواء",
 				"answers": ["ماء : خرير", "ريح : صرير", "شجر : حفيف", "حصان : صهيل"],
 				"true": "حصان : صهيل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2815
 			},
@@ -16294,7 +16314,7 @@
 				"question": "شمس : مجرة",
 				"answers": ["ثلج : بَرد", "كوكب : كويكب", "قدم : أطراف", "تذوق : حواس"],
 				"true": "قدم : أطراف",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2818
 			},
@@ -16302,7 +16322,7 @@
 				"question": "ذائع : شائع",
 				"answers": ["حديث : جديد", "بؤس : يأس", "تمام : نقصان", "عناد : امتناع"],
 				"true": "حديث : جديد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2819
 			},
@@ -16624,7 +16644,7 @@
 				"question": "مستشفى : مرضى",
 				"answers": ["مسجد : مصابيح", "مكتبة : رفوف", "غابة : أشجار", "ملعب : كراسي"],
 				"true": "غابة : أشجار",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2878
 			},
@@ -16684,7 +16704,7 @@
 				"question": "عندما يقال بأن الشعر هو جوهر الحياة بالنسبة للشاعر فذلك لأنه يمثل حريته أمام العالم وهي جوهرة الإنسان حيث يصعب عليه أن يشعر بوجوده دون أن يشعر بالعالم.",
 				"answers": ["بالعالم", "يصعب", "حريته", "جوهر"],
 				"true": "بالعالم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2886
 			},
@@ -16837,7 +16857,7 @@
 				"question": "رائحة : شم",
 				"answers": ["نظر : مشهد", "خشونة : لمس", "تذوق : لسان", "أذن : صياح"],
 				"true": "خشونة : لمس",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2906
 			},
@@ -16846,7 +16866,7 @@
 				"question": "رجال : نساء",
 				"answers": ["سراج : نار", "نجوم : سماء", "رهط : قوم", "حرب : سلم"],
 				"true": "حرب : سلم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2908
 			},
@@ -16889,7 +16909,7 @@
 				"answers": ["هياب", "مريرة", "وخيم", "يعرض"],
 				"true": "هياب",
 				"notes": "داء وخيم - مرض خطير ومضر, مرض هياب - مرض خائف (ما تصير المفروض خطير أو مضر مثل الماضية), مشاكل مريرة - مشاكلة قوية مخيفة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2915
 			},
@@ -16913,7 +16933,7 @@
 				"question": "الناس تتساوى عند المحن فإذا نزل البلاء تباينوا.",
 				"answers": ["تباينوا", "المحن", "البلاء", "تتساوى"],
 				"true": "المحن",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 2918
 			},
@@ -16984,7 +17004,7 @@
 				"question": "ركض : إنهاك",
 				"answers": ["نجاح : سرور", "علم : معرفة", "خطوبه : زواج", "وداع : اشتياق"],
 				"true": "خطوبه : زواج",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2927
 			},
@@ -16993,7 +17013,7 @@
 				"question": "خطوبة : زواج",
 				"answers": ["وداع : اشتياق", "دفع : ميزة", "إحرام : حج", "كلام : سكون"],
 				"true": "إحرام : حج",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2929
 			},
@@ -17014,7 +17034,7 @@
 				"question": "معهد : تعليم",
 				"answers": ["سجن : عقوبة", "رمح : سيف", "جهد : راحه", "طمأنينة : سلام"],
 				"true": "سجن : عقوبة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2935
 			},
@@ -17025,7 +17045,7 @@
 				"answers": ["رجاء : خوف", "رجوع : تقهقر", "بيع : قبول", "فوز : ندم"],
 				"true": "رجوع : تقهقر",
 				"notes": "تَقَهْقَرَ الرَّجُلُ : رَجَعَ إلى الوَراءِ",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2938
 			},
@@ -17253,7 +17273,7 @@
 				"answers": ["قصيدة : بيت", "جذع : غصن", "وجه : جسد", "فواكه : تفاح"],
 				"true": "قصيدة : بيت",
 				"notes": "جذع هو الساق",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 2968
 			},
@@ -17355,7 +17375,7 @@
 				"question": "عندما أقوم ببناء فريق فإنني ... دائما عن أناس .... الفوز وإذا لم أعثر على أي منهم فإنني ابحث عن أناس يكرهون الهزيمة.",
 				"answers": ["ابحث - يكرهون", "أريد - يطمحون", "اسعى - يحبون", "ابحث - يحبون"],
 				"true": "ابحث - يحبون",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 2984
 			},
@@ -17478,7 +17498,7 @@
 				"question": "الوسيلة الحقيقية التي يخدع بها المرء نفسه أن يظن أنه أغبى من الآخرين.",
 				"answers": ["الحقيقية", "الوسيلة", "يظن", "أغبى"],
 				"true": "أغبى",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3010
 			},
@@ -17486,7 +17506,7 @@
 				"question": "الشخص اللئيم يبحث عن إنجازات الناس ويتتبع عوراتهم.",
 				"answers": ["إنجازات", "اللئيم", "يبحث", "عوراتهم"],
 				"true": "إنجازات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3011
 			},
@@ -17668,7 +17688,7 @@
 				"answers": ["مشفى : طبيب", "سيارة : مكينة", "سفينة : ميناء", "مدرج : مشجع"],
 				"true": "مدرج : مشجع",
 				"notes": "يمكن لأن القطار يحتوي مقاعد كثيرة كما المدرج يحتوي مثاعد كثيرة, وهنالك أكثر من راكب في القطار, وأكثر من مشجع في المدرج",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3039
 			},
@@ -17822,7 +17842,7 @@
 				"question": "الشياه : البقر",
 				"answers": ["عمل : نوم", "زحل : عطارد", "سيف : مهند", "الفول : العدس"],
 				"true": "الفول : العدس",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3059
 			},
@@ -18055,7 +18075,7 @@
 				"question": "دعامة : سقف",
 				"answers": ["جدار : بيت", "وتد : جبل", "جذع : شجرة", "وتد : رواق"],
 				"true": "جذع : شجرة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3095
 			},
@@ -18073,7 +18093,7 @@
 				"question": "ملاحظة : تحليل",
 				"answers": ["تحفيظ : تلقين", "مقارنة : استنتاج", "أهداف : تحقيق", "ركض : جري"],
 				"true": "مقارنة : استنتاج",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3098
 			},
@@ -18086,7 +18106,7 @@
 				"answers": ["عسر : يسر", "تسهيل : تيسير", "إصلاح : تعليم", "هدم : تعمير"],
 				"true": "تسهيل : تيسير",
 				"notes": "العلاقة ترادف ومرات تأتي الإعدام نوع من القتل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3103
 			},
@@ -18229,7 +18249,7 @@
 				"question": "زراعة : فلاح",
 				"answers": ["حرب : جندي", "ثقافة : صحيفة", "خياط : إبره", "كره : لاعب"],
 				"true": "حرب : جندي",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3122
 			},
@@ -18259,7 +18279,7 @@
 				"answers": ["قال : أشاع", "أقبل : أدبر", "ربح : خسارة", "دنا : قرب"],
 				"true": "دنا : قرب",
 				"notes": "أقبل يعني يقبل الأمر ويقدم عليه, أدبر يعني يولي وجهه عن الأمر أي ابتعد عنه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3129
 			},
@@ -18268,7 +18288,7 @@
 				"answers": ["هدم : معول", "حفر : أزميل", "ملعقة : أكل", "كهرباء : إضاءة"],
 				"true": "ملعقة : أكل",
 				"notes": "الكهرباء مصدر الإضاءة, لكن لا تستخدم للإضاءة بل لتوفير الطاقة للمصباح الذي هو يقوم بالإضاءة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3130
 			},
@@ -18276,7 +18296,7 @@
 				"question": "طعام : ضيف",
 				"answers": ["سرير : مستشفى", "دفن : ميت", "فندق : نزيل", "دواء : طبيب"],
 				"true": "دفن : ميت",
-				"status": "normal && DIFFICULT",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3131
 			},
@@ -18285,7 +18305,7 @@
 				"question": "وزارة : بيان",
 				"answers": ["تقرير : مجلة", "جفاف : فقر", "مدرسة : شهادة", "جريدة : إصدار"],
 				"true": "مدرسة : شهادة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3133
 			},
@@ -18293,7 +18313,7 @@
 				"question": "كتابة : قلم",
 				"answers": ["شحن : باخره", "ساعة : وقت", "صحيفة : إعلام", "تكبير : عدسة"],
 				"true": "تكبير : عدسة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3134
 			},
@@ -18328,7 +18348,7 @@
 				"question": "إذا اشتد الحبل انقطع وإذا اشتد الظلام ......",
 				"answers": ["انخفض", "رجع", "ارتفع", "انقشع"],
 				"true": "انقشع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"notes": "انقشعت بمعنى نْكَشَفَتْ، زَالَتْ. الليل إذا اشتد ظلامه ينكشف ويصبح صباحًا",
 				"skill": "sentence-completion",
 				"id": 3139
@@ -18354,7 +18374,7 @@
 				"question": "إن العرب يتصفون بالكرم والجود وما كان ......... من ذلك في شعرهم وقصائدهم حيث كانوا يذكرون محامدهم ومناقب .....",
 				"answers": ["أبعد - ضيوفهم", "أبرز - مواليهم", "أوضح - أجوادهم", "أهدى - كرمهم"],
 				"true": "أوضح - أجوادهم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3142
 			},
@@ -18384,7 +18404,7 @@
 				"question": "مذياع : بث",
 				"answers": ["أسد : حيوانات", "أقحوان : زهور", "مطبعة : نشر", "سيارة : طائرة"],
 				"true": "مطبعة : نشر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3146
 			},
@@ -18392,7 +18412,7 @@
 				"question": "خشونة : لمس",
 				"answers": ["لسان : تذوق", "نشاز : سمع", "بصر : عين", "أذن : إنصات"],
 				"true": "نشاز : سمع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3147
 			},
@@ -18432,7 +18452,7 @@
 				"question": "طِيب : زجاجة",
 				"answers": ["قصب : سكر", "محراب : مسجد", "بيت : سكان", "غصن : شجرة"],
 				"true": "محراب : مسجد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3158
 			},
@@ -18440,7 +18460,7 @@
 				"question": "نخلة : تمر",
 				"answers": ["أغصان : شجرة", "شحم : دهن", "ليل : قمر", "طين : ماء"],
 				"true": "شحم : دهن",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3159
 			},
@@ -18530,7 +18550,7 @@
 				"question": "المساجد ........ تربوية يجب .......... بها لكي تقوم بدورها",
 				"answers": ["معاهد - الإهمال", "أماكن - الاهتمام", "مدارس - البعد", "مراكز - العناية"],
 				"true": "مراكز - العناية",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3171
 			},
@@ -18553,7 +18573,7 @@
 				"question": "السباحة : رياضة",
 				"answers": ["الغصن :  الجذع", "الساق : القدم", "الفرد : المجتمع", "الجبل : السد"],
 				"true": "الفرد : المجتمع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3175
 			},
@@ -18563,7 +18583,7 @@
 				"answers": ["ساعة : يد", "رأس : قبعة", "سماعة : أذن", "قدم : حذاء"],
 				"true": "سماعة : أذن",
 				"notes": "علاقة تستخدم ل, وخاصة بالحواس",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3177
 			},
@@ -18571,7 +18591,7 @@
 				"question": "مدرب : لاعب",
 				"answers": ["عاطل : عمل", "مهندس : مبنى", "أم : طفل", "مريض : طبيب"],
 				"true": "أم : طفل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3178
 			},
@@ -18581,7 +18601,7 @@
 				"question": "كرسي : أثاث",
 				"answers": ["حمضيات : برتقال", "كأس : آنية", "قوس : سهم", "سلاح : سيف"],
 				"true": "كأس : آنية",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3181
 			},
@@ -18597,7 +18617,7 @@
 				"question": "قفز : وثب",
 				"answers": ["مشقة : صعوبة", "أمان : وجل", "شكر : زيادة", "نور : ظلام"],
 				"true": "مشقة : صعوبة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3183
 			},
@@ -18615,7 +18635,7 @@
 				"answers": ["مجرة : كوكب", "قلم : حبر", "شعاع : شمس", "مرض : جرثومة"],
 				"true": "مجرة : كوكب",
 				"notes": "العقد فيه أكثر من عام, والمجرة فيها أكثر من كوكب. أما القلم لديه كمية محدودة من الحبر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3185
 			},
@@ -18633,7 +18653,7 @@
 				"question": "ظمأ : عطش",
 				"answers": ["هدوء : سبات", "سعي : تحصيل", "خشوع : قنوت", "حائط : جدار"],
 				"true": "حائط : جدار",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3189
 			},
@@ -18641,7 +18661,7 @@
 				"question": "مستقبل : واعد",
 				"answers": ["ذكريات : مؤلمة", "عيد : فرح", "ضحك : ابتسامة", "حيوية : شباب"],
 				"true": "عيد : فرح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3190
 			},
@@ -18765,7 +18785,7 @@
 				"question": "نفط : سواد",
 				"answers": ["يسمع : ينصت", "اللحم : اللذة", "سور : إحاطة", "قطن : خفة"],
 				"true": "قطن : خفة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3210
 			},
@@ -18777,7 +18797,7 @@
 				"question": "شرطة : أمن",
 				"answers": ["علم : نور", "معلم : فصل", "حريق : إطفاء", "تنظيم : مرور"],
 				"true": "علم : نور",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3215
 			},
@@ -18855,7 +18875,7 @@
 				"question": "طبيب : مستشفى",
 				"answers": ["طفل : ملعب", "عامل : معمل", "عالم : مسجد", "صحفي : صحيفة"],
 				"true": "صحفي : صحيفة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3225
 			},
@@ -18872,7 +18892,7 @@
 				"question": "محرر : صحيفة",
 				"answers": ["كتاب : فهرس", "معجم : مؤلفون", "موظف : شركة", "مقال : كتابة"],
 				"true": "موظف : شركة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3228
 			},
@@ -18916,7 +18936,7 @@
 				"question": "عصير : برتقال",
 				"answers": ["خشب : نجارة", "صلابة : حجارة", "سبيكة : ذهب", "فضة : خاتم"],
 				"true": "سبيكة : ذهب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3235
 			},
@@ -19048,7 +19068,7 @@
 				"question": "شيخوخة : عمر",
 				"answers": ["غروب : يوم", "فجر : ضحى", "غروب : ليل", "نضج : ثمرة"],
 				"true": "غروب : يوم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3255
 			},
@@ -19057,7 +19077,7 @@
 				"question": "كأس : شراب",
 				"answers": ["خاتم : فص", "صوف : فرو", "طعام : مائدة", "بري : قلم"],
 				"true": "خاتم : فص",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3257
 			},
@@ -19066,7 +19086,7 @@
 				"question": "صفعة : احمرار",
 				"answers": ["ثلج : برودة", "سفر: متعة", "انتشار : تسريب", "هرولة : تخفيف"],
 				"true": "ثلج : برودة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3259
 			},
@@ -19074,7 +19094,7 @@
 				"question": "نادي : عضو",
 				"answers": ["كتيبة : جندي", "مدرسة : فصل", "لاعب : فريق", "جمعية : منظمة"],
 				"true": "كتيبة : جندي",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3260
 			},
@@ -19093,7 +19113,7 @@
 				"question": "دخان : اختناق",
 				"answers": ["حقد : رياء", "عقار : أرض", "سعادة : حبور", "تدريب : اتقان"],
 				"true": "تدريب : اتقان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3265
 			},
@@ -19102,7 +19122,7 @@
 				"question": "كلام : لسان",
 				"answers": ["حبر : قلم", "أنف : سيلان", "دموع : عين", "مدفع : طلقة"],
 				"true": "دموع : عين",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3267
 			},
@@ -19110,7 +19130,7 @@
 				"question": "طائرة : طيار",
 				"answers": ["فيلم : مخرج", "سائق : دراجة", "طريق : مشاة", "كلمة : شاعر"],
 				"true": "فيلم : مخرج",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3268
 			},
@@ -19118,7 +19138,7 @@
 				"question": "عين : جاسوس",
 				"answers": ["يد : أخ", "مطر : نماء", "بيت : سطح", "رأس : زعيم"],
 				"true": "رأس : زعيم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3269
 			},
@@ -19183,7 +19203,7 @@
 				"question": "الإرادة و.............. عوامل ...................للنجاح في أي عمل",
 				"answers": ["الجهد - العمل", "العمل - مساعدة", "الاجتهاد - مقررة", "التدريب - مساعدة"],
 				"true": "التدريب - مساعدة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3278
 			},
@@ -19240,7 +19260,7 @@
 				"question": "ضرس : أسنان",
 				"answers": ["رؤية : عين", "ذراع : جسم", "فصل : مدرسة", "رأس : ذراع"],
 				"true": "ذراع : جسم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3288
 			},
@@ -19306,7 +19326,7 @@
 				"question": "جرجير : ورقيات",
 				"answers": ["نفط : وقود", "فاكهة : تفاح", "طائرة : مواصلات", "توت : خوخ"],
 				"true": "طائرة : مواصلات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3300
 			},
@@ -19332,7 +19352,7 @@
 				"question": "مهارة : إدارة",
 				"answers": ["مساعدة : قوة", "هدوء : بساطة", "بداية : نهاية", "تمرين : لياقة"],
 				"true": "تمرين : لياقة",
-				"status": "normal && difficult",
+				"status": "super difficult",
 				"skill": "verbal-analogy",
 				"id": 3304
 			},
@@ -19343,7 +19363,7 @@
 				"question": "حاسوب : شاشة",
 				"answers": ["فصل : طلاب", "فأرة : لوحة مفاتيح", "عام : شهر", "مبنى : باب"],
 				"true": "مبنى : باب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3308
 			},
@@ -19352,7 +19372,7 @@
 				"question": "فستق : بندق",
 				"answers": ["لوز : موز", "نمر : فهد", "بحر : لؤلؤ", "قرفة : فلفل"],
 				"true": "قرفة : فلفل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3310
 			},
@@ -19537,7 +19557,7 @@
 				"question": "مدح : ثناء",
 				"answers": ["شعر : نثر", "وعد : عهد", "وعد : رعد", "هرولة : جري"],
 				"true": "وعد : عهد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3342
 			},
@@ -19555,7 +19575,7 @@
 				"question": "تبختر : مشي",
 				"answers": ["نحيب : بكاء", "بكاء : دموع", "تكبر : تواضع", "قبح : جمال"],
 				"true": "نحيب : بكاء",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3346
 			},
@@ -19631,7 +19651,7 @@
 				"question": "حفل تاريخ الفكر الإسلامي بعدد وافر من الأسماء ....... التي تركت علامات مضيئة في ........... الحضارة الإسلامية",
 				"answers": ["المشهورة - تأخرت", "العظيمة - مسيرة", "البارزة - مستقبل", "المغمورة - أفشلت"],
 				"true": "العظيمة - مسيرة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3359
 			},
@@ -19663,7 +19683,7 @@
 				"question": "يجب على الفرد أن ....... الإسعافات الأولية من أجل ....... المنزلية",
 				"answers": ["يتعلم - السلامة", "يدرك - الأمان", "يمارس - الحماية", "يعرف - الرعاية"],
 				"true": "يتعلم - السلامة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3363
 			},
@@ -19716,7 +19736,7 @@
 				"question": "طيب : أنف",
 				"answers": ["تنقل : قطار", "صاحب : محبة", "صلاح : أعمال", "العمل : تعاون"],
 				"true": "تنقل : قطار",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3369
 			},
@@ -19741,7 +19761,7 @@
 				"question": "أهملت : قصرت",
 				"answers": ["تغاضت : أسرعت", "حاجب : عين", "ابتسامه : ضحك", "مات : هلك"],
 				"true": "مات : هلك",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3372
 			},
@@ -19908,7 +19928,7 @@
 				"skill": "contextual-error",
 				"id": 3396
 			},
-			{ "question": "من كرمت عليه عينه هان عليه ماله", "answers": ["عينه", "عليه", "ماله", "هان"], "true": "عينه", "status": "normal && difficult", "skill": "contextual-error", "id": 3397 },
+			{ "question": "من كرمت عليه عينه هان عليه ماله", "answers": ["عينه", "عليه", "ماله", "هان"], "true": "عينه", "status": "difficult", "skill": "contextual-error", "id": 3397 },
 			{
 				"question": "أحزم الحازمين من عرف الأمر بعد وقوعه فاحترس منه.",
 				"answers": ["الحازمين", "عرف", "بعد", "أحزم"],
@@ -19921,7 +19941,7 @@
 				"question": "الكلام بذكر الله -عز وجل- حسن والتروي في نعم الله عبادة عظيمة",
 				"answers": ["عظيمة", "التروي", "نعم", "حسن"],
 				"true": "التروي",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3399
 			},
@@ -19974,7 +19994,7 @@
 				"question": "شعبان : رمضان",
 				"answers": ["السبت : الأحد", "ثاني : رابع", "طباعة : توزيع", "خشن : ناعم"],
 				"true": "السبت : الأحد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3405
 			},
@@ -19984,7 +20004,7 @@
 				"question": "شتاء : ربيع",
 				"answers": ["نوم : يقظة", "سبت : أسبوع", "فصل : كتاب", "شفع : وتر"],
 				"true": "شفع : وتر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3408
 			},
@@ -20072,7 +20092,7 @@
 				"question": "إن الإنسان يواجه في الحياة ............. لكن لا ينجح فيها إلا ..........",
 				"answers": ["متاعب - المذاكر", "صعوبات - المثابر", "مخاطر - المؤمن", "مؤامرات - الطيب"],
 				"true": "صعوبات - المثابر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3426
 			},
@@ -20096,7 +20116,7 @@
 				"question": "يجب أن نعمل على استثمار .......... للعمل على .............. المجتمع وتقدمه",
 				"answers": ["المشاريع - ترابط", "التجارب - توقف", "الطاقات - نمو", "الشباب - تقدم"],
 				"true": "الطاقات - نمو",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3429
 			}
@@ -20112,7 +20132,7 @@
 				"question": "صرامة : قسوة",
 				"answers": ["شاطئ : ميناء", "دجى : ليل", "ظلم : غدر", "صراخ : ازعاج"],
 				"true": "صراخ : ازعاج",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3433
 			},
@@ -20138,7 +20158,7 @@
 				"question": "بصل : ثوم",
 				"answers": ["مسجد : مدينة", "رعاية : يتيم", "بنزين : ديزل", "منزل : طفل"],
 				"true": "بنزين : ديزل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3437
 			},
@@ -20146,7 +20166,7 @@
 				"question": "سكينة : طمأنينة",
 				"answers": ["استغراب : تعجب", "ذهاب : إياب", "وردة : حقل", "رجل : صالح"],
 				"true": "استغراب : تعجب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3438
 			},
@@ -20163,7 +20183,7 @@
 				"question": "عقل : تفكير",
 				"answers": ["ماء : بحر", "وريد : ضخ", "رجل : مشي", "صقر : مخلب"],
 				"true": "رجل : مشي",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3441
 			},
@@ -20172,7 +20192,7 @@
 				"answers": ["أسد : افتراس", "أسد : صقر", "غنى : ترف", "تمرين : قوة"],
 				"true": "أسد : صقر",
 				"notes": "فئة صفات إيجابية وفئة حيوانات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3442
 			},
@@ -20318,7 +20338,7 @@
 				"question": "إن ......الجيد هو الذي يعرف جودة ......",
 				"answers": ["التاجر - الصنع", "المشتري - الشيء", "الصانع - الثمر", "المزارع - الثمر"],
 				"true": "المزارع - الثمر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3461
 			}
@@ -20341,7 +20361,7 @@
 				"question": "كهرباء : إضاءة",
 				"answers": ["يد : بطش", "ثمرة : شجرة", "نخلة : تمر", "باب : بيت"],
 				"true": "نخلة : تمر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3465
 			},
@@ -20359,7 +20379,7 @@
 				"question": "دنا : قرب",
 				"answers": ["شاع : ذاع", "شرى : اشترى", "فصل : وصل", "واسع : عميق"],
 				"true": "شاع : ذاع",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3468
 			},
@@ -20368,7 +20388,7 @@
 				"answers": ["يمشي - قوة", "ينتشر - ضعف", "ينتقل - عموم", "ينتقل - سيطرة"],
 				"true": "ينتقل - سيطرة",
 				"notes": "سيطرة تأتي مع نفوذه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3469
 			},
@@ -20438,7 +20458,7 @@
 				"question": "قفز : وثب",
 				"answers": ["صعوبة : مشقة", "ساخر : مضحك", "أحجم : أقدم", "وجل : أمان"],
 				"true": "صعوبة : مشقة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3478
 			},
@@ -20446,7 +20466,7 @@
 				"question": "زاخر : مليء",
 				"answers": ["نظير : شبيه", "حقير : سفيه", "ساخر : مضحك", "أحمق : سخيف"],
 				"true": "نظير : شبيه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3479
 			},
@@ -20455,7 +20475,7 @@
 				"question": "بيت : حائط",
 				"answers": ["جسم : عقل", "غمد : سيف", "عش : طائر", "معصم : سوار"],
 				"true": "جسم : عقل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3481
 			},
@@ -20463,7 +20483,7 @@
 				"question": "تراب : طين",
 				"answers": ["جمل : وبر", "زبيب : عنب", "تذكرة : سفر", "طحين : عجين"],
 				"true": "طحين : عجين",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3482
 			},
@@ -20512,7 +20532,7 @@
 				"question": "عنب : زبيب",
 				"answers": ["توت : كرز", "تفاح : مربى", "حليب : زبدة", "عش : طائر"],
 				"true": "تفاح : مربى",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3488
 			},
@@ -20520,7 +20540,7 @@
 				"question": "عرى : روابط",
 				"answers": ["إبريق : شاي", "ترامي : تباعد", "دليل : إجراءات", "فوق : أسفل"],
 				"true": "ترامي : تباعد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3489
 			},
@@ -20529,7 +20549,7 @@
 				"question": "سفن : ميناء",
 				"answers": ["سيارات : شوارع", "محطات : قطار", "جمال : صحراء", "أبقار : حظيرة"],
 				"true": "أبقار : حظيرة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3491
 			},
@@ -20537,7 +20557,7 @@
 				"question": "صنارة : شبكة",
 				"answers": ["ميزان : وزن", "شراع : سفينة", "فاكس : هاتف", "تفاح : موز"],
 				"true": "فاكس : هاتف",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3492
 			},
@@ -20545,7 +20565,7 @@
 				"question": "كرسي : أثاث",
 				"answers": ["حمضيات : برتقال", "قوس : سهم", "كأس : آنية", "سلاح : سيف"],
 				"true": "كأس : آنية",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3493
 			},
@@ -20654,7 +20674,7 @@
 				"question": "هدوء : سكينة",
 				"answers": ["بذل : عطاء", "أعطى : بخل", "نذل : بذل", "ماء : نهر"],
 				"true": "بذل : عطاء",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3506
 			},
@@ -20678,7 +20698,7 @@
 				"question": "عمامة : رجل",
 				"answers": ["خمار : امرأة", "نطاق : خصر", "حذاء : قدم", "غترة : عقال"],
 				"true": "خمار : امرأة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3516
 			},
@@ -20695,7 +20715,7 @@
 				"question": "بالجد والاجتهاد نحقق المنى وبالصبر نصل للمبتغى وبقوة العزائم نجلب المغارم.",
 				"answers": ["بالجد", "الاجتهاد", "المغارم", "بالصبر"],
 				"true": "المغارم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3519
 			},
@@ -20759,7 +20779,7 @@
 				"question": "يقول الحكماء أن ..... صفة محمودة، ولكن لو تحولت إلى ..... تصبح صفة ذميمة",
 				"answers": ["عداوة - الطيبة", "الشجاعة - طيش", "الكرم - سخاء", "النوم - الراحة"],
 				"true": "الشجاعة - طيش",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3527
 			}
@@ -20781,7 +20801,7 @@
 				"question": "ديوان : قصائد",
 				"answers": ["معهد : طلاب", "محكمة : قاض", "فاهم : رابح", "أطلس : خرائط"],
 				"true": "أطلس : خرائط",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3530
 			},
@@ -20791,7 +20811,7 @@
 				"question": "عقد : عام",
 				"answers": ["شهر : يوم", "شعب : دولة", "برى : القلم", "حقيبة : كتاب"],
 				"true": "شهر : يوم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3533
 			},
@@ -20819,7 +20839,7 @@
 				"question": "سر : جهر",
 				"answers": ["مائل : ظل", "طويل : ممتد", "غضب : حلم", "قراءة : كتابة"],
 				"true": "غضب : حلم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3539
 			},
@@ -20867,7 +20887,7 @@
 			{ "question": "ملابس : قماش", "answers": ["عمل : إنفاق", "سيف : رمح", "نفط : بنزين", "مصباح : زجاج"], "true": "مصباح : زجاج", "status": "normal", "skill": "verbal-analogy", "id": 3547 },
 			{ "question": "جدب : مجاعة", "answers": ["فقر : صحة", "طوفان : غرق", "ضغط : انفجار", "كذب : إفك"], "true": "طوفان : غرق", "status": "normal", "skill": "verbal-analogy", "id": 3548 },
 			{ "question": "معلم : مدرسة", "answers": ["منقذ : شاطئ", "خياط : ريشة", "غزال : غابة", "مبنى : مهندس"], "true": "منقذ : شاطئ", "status": "normal", "skill": "verbal-analogy", "id": 3549 },
-			{ "question": "ضجيج : سكون", "answers": ["ضوء : ظلم", "كرم : بخل", "ظل : شمس", "طفل : كهل"], "true": "كرم : بخل", "status": "normal && difficult", "skill": "verbal-analogy", "id": 3550 },
+			{ "question": "ضجيج : سكون", "answers": ["ضوء : ظلم", "كرم : بخل", "ظل : شمس", "طفل : كهل"], "true": "كرم : بخل", "status": "difficult", "skill": "verbal-analogy", "id": 3550 },
 			{ "question": "مدح : ثناء", "answers": ["وعد : عهد", "هرولة : جري", "شعر : نثر", "عمل : عبادة"], "true": "وعد : عهد", "status": "normal", "skill": "verbal-analogy", "id": 3551 },
 			{ "question": "حافلة : قطار", "answers": ["كوخ : خيمة", "حرب : معركة", "نافذة : غرفة", "خس : خضروات"], "true": "كوخ : خيمة", "status": "normal", "skill": "verbal-analogy", "id": 3552 },
 			{
@@ -20883,7 +20903,7 @@
 				"question": "ليث : أسد",
 				"answers": ["جمل : ناقة", "حمار : أتان", "سيف : رمح", "حسام : مهند"],
 				"true": "حسام : مهند",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3555
 			},
@@ -21029,7 +21049,7 @@
 				"question": "لا يوجد ....... في هذه الحياة إلا في ........ الجاهلون",
 				"answers": ["رسوب - أعمال", "نجاح - عقول", "التميز - أحلام", "فشل - أذهان"],
 				"true": "فشل - أذهان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3575
 			},
@@ -21083,7 +21103,7 @@
 				"question": "حاسوب : شاشة",
 				"answers": ["مبنى : باب", "فصل : طلاب", "فأرة : لوحة مفاتيح", "عام : شهر"],
 				"true": "مبنى : باب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3582
 			},
@@ -21094,7 +21114,7 @@
 				"question": "جرجير : ورقيات",
 				"answers": ["توت : خوخ", "طائرة : مواصلات", "فاكهة : تفاح", "نفط : وقود"],
 				"true": "طائرة : مواصلات",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3586
 			},
@@ -21106,7 +21126,7 @@
 				"question": "نعاس : نوم",
 				"answers": ["كلب : جرو", "عجل : ثور", "عصفورة : حمامة", "حشرة : يرقة"],
 				"true": "عجل : ثور",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3591
 			},
@@ -21213,7 +21233,7 @@
 				"answers": ["إقامة : ظعن", "صلاة : قصر", "غربة : سفر", "مغادرة : رحيل"],
 				"true": "إقامة : ظعن",
 				"notes": "الركوب - مثل الركوب على الخيل, الترجل - المشي على الرجل. ظعن - الرحيل والمغادرة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3608
 			},
@@ -21223,13 +21243,13 @@
 				"question": "حرائق : أذى",
 				"answers": ["خسائر : شركة", "ابداع : تأمل", "تساؤلات : ظنون", "انهيار : خسائر"],
 				"true": "انهيار : خسائر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3611
 			},
 			{ "question": "بنّاء : تشييد", "answers": ["أذن : سماع", "قلم : قراءة", "تبريد : عصير", "طبيب : عطار"], "true": "أذن : سماع", "status": "normal", "skill": "verbal-analogy", "id": 3612 },
 			{ "question": "أم : طفل", "answers": ["تربة : نبات", "رجل : زوجة", "شركة : موظف", "سمك : جمبري"], "true": "تربة : نبات", "status": "normal", "skill": "verbal-analogy", "id": 3613 },
-			{ "question": "ظلف : ماعز", "answers": ["خف : بعير", "حذوة : فرس", "كعب : رجل", "ناب : فيل"], "true": "خف : بعير", "status": "normal && difficult", "skill": "verbal-analogy", "id": 3614 },
+			{ "question": "ظلف : ماعز", "answers": ["خف : بعير", "حذوة : فرس", "كعب : رجل", "ناب : فيل"], "true": "خف : بعير", "status": "difficult", "skill": "verbal-analogy", "id": 3614 },
 			{ "question": "حدود : دولة", "answers": ["دافئ : حار", "يمين : يسار", "قلادة : عنق", "سيارة : شاحنة"], "true": "قلادة : عنق", "status": "normal", "skill": "verbal-analogy", "id": 3615 },
 			{ "question": "صبح : نهار", "answers": ["شهيق : زفير", "غسق : ليل", "شمس : قمر", "نجم : سماء"], "true": "غسق : ليل", "status": "normal", "skill": "verbal-analogy", "id": 3616 },
 			{
@@ -21253,7 +21273,7 @@
 				"question": "جمل : ناقة",
 				"answers": ["حصان : أتان", "عقرب : حية", "حمار : أتان", "حمار : مهر"],
 				"true": "حمار : أتان",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3619
 			},
@@ -21318,7 +21338,7 @@
 				"question": "أنا أحب أن أعيش لنفسي ولغيري و ....... أحلامي ....... وأحلام الآخرين",
 				"answers": ["أحقق - أنقذ", "فأحطم - وأحقق", "فأكره - وأكره", "أهندس - ابني"],
 				"true": "أحقق - أنقذ",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3628
 			}
@@ -21351,7 +21371,7 @@
 				"question": "نظير : شبيه",
 				"answers": ["حقير : سفيه", "طويل : قصير", "ريادة : قيادة", "وسخ : نظيف"],
 				"true": "ريادة : قيادة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3633
 			},
@@ -21413,7 +21433,7 @@
 				"skill": "contextual-error",
 				"id": 3648
 			},
-			{ "question": "ظلم القريب أشد ألما من ظلم الأخ", "answers": ["أشد", "ألما", "القريب", "الأخ"], "true": "الأخ", "status": "normal && difficult", "skill": "contextual-error", "id": 3649 },
+			{ "question": "ظلم القريب أشد ألما من ظلم الأخ", "answers": ["أشد", "ألما", "القريب", "الأخ"], "true": "الأخ", "status": "difficult", "skill": "contextual-error", "id": 3649 },
 			{
 				"question": "سيحتقرك الناس إذا لم تتحدث عنهم في غيبتهم وتجنبت الخوض في أعراضهم.",
 				"answers": ["غيبتهم", "سيحتقرك", "أعراضهم", "الناس"],
@@ -21517,7 +21537,7 @@
 				"question": "لا تجادل ......... فيغلبك، ولا ......... فيؤذيك",
 				"answers": ["سفيها - قويا", "ملحدا - ضعيفا", "بليغا - سفيها", "ضعيفا - نادما"],
 				"true": "بليغا - سفيها",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3663
 			},
@@ -21547,7 +21567,7 @@
 				"question": "معول : هدم",
 				"answers": ["منجل : حصاد", "محراث : سقاية", "أكل : ملعقة", "سيارة : محرك"],
 				"true": "منجل : حصاد",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3666
 			},
@@ -21572,7 +21592,7 @@
 				"question": "شجر : سدر",
 				"answers": ["طيور : نسر", "كوخ : قصر", "بناية : ترميم", "جندي : جيش"],
 				"true": "طيور : نسر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3669
 			},
@@ -21589,7 +21609,7 @@
 				"question": "جهل : علم",
 				"answers": ["نصر : قوة", "ابن : أب", "حصاد : زراعة", "واحد : اثنان"],
 				"true": "حصاد : زراعة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3672
 			},
@@ -21608,7 +21628,7 @@
 				"question": "طالب : موظف",
 				"answers": ["سكين : لحم", "حب : قلب", "بحر : شرطي", "ثمر : مزرعة"],
 				"true": "ثمر : مزرعة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3677
 			},
@@ -21632,7 +21652,7 @@
 				"question": "من أيقظ نفسه وألبسها لباس التحفظ آيس صديقه من كيده له، وقطع عنه أطماع الماكرين به",
 				"answers": ["نفسه", "آيس", "صديقه", "أطماع"],
 				"true": "صديقه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3680
 			},
@@ -21640,7 +21660,7 @@
 				"question": "إن لم يجد المجرم سبيلا للسرقة ظن أنه لص",
 				"answers": ["لص", "للسرقة", "المجرم", "سبيلا"],
 				"true": "لص",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3681
 			},
@@ -21752,7 +21772,7 @@
 				"question": "أفل : غاب",
 				"answers": ["كرم : بخل", "أخذ : أعطى", "أبان : أفصح", "أصلح : أفسد"],
 				"true": "أبان : أفصح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"notes": "أفَلَ النَّجمُ :غاب واستتر",
 				"skill": "verbal-analogy",
 				"id": 3701
@@ -21762,7 +21782,7 @@
 				"question": "غاية : وسيلة",
 				"answers": ["هدف : مأرب", "إدارة : تخطيط", "خريطة : أطلس", "رسم : بناء"],
 				"true": "إدارة : تخطيط",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3703
 			},
@@ -21770,7 +21790,7 @@
 				"question": "معصية : ندم",
 				"answers": ["طائر : ريش", "شبع : تخمة", "كتلة : حجم", "حزن : إخفاق"],
 				"true": "شبع : تخمة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3704
 			},
@@ -21778,7 +21798,7 @@
 				"question": "عقد : عام",
 				"answers": ["شعاع : شمس", "مرض : جرثومة", "قلم : حبر", "مجرة : كوكب"],
 				"true": "مجرة : كوكب",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3705
 			},
@@ -21836,7 +21856,7 @@
 				"skill": "contextual-error",
 				"id": 3716
 			},
-			{ "question": "كلما زاد الأخذ من البئر قل عطاؤها", "answers": ["زاد", "الأخذ", "قل", "عطاؤها"], "true": "قل", "status": "normal && difficult", "skill": "contextual-error", "id": 3717 },
+			{ "question": "كلما زاد الأخذ من البئر قل عطاؤها", "answers": ["زاد", "الأخذ", "قل", "عطاؤها"], "true": "قل", "status": "difficult", "skill": "contextual-error", "id": 3717 },
 			{
 				"question": "أن تصدق كذبة سمعتها ألف مرة أصعب من تصدق حقيقة لم تسمعها من قبل",
 				"answers": ["كذبة", "تصدق", "أصعب", "حقيقة"],
@@ -21889,7 +21909,7 @@
 				"question": "الابتسامة للحياة ....... العقل، وتبدد ........ الثقيلة",
 				"answers": ["تقوي ـ الأمور", "تنشط ـ الهموم", "تزيد - الهموم", "تحسن - الأمور"],
 				"true": "تنشط ـ الهموم",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "sentence-completion",
 				"id": 3724
 			},
@@ -21954,7 +21974,7 @@
 				"question": "شم : حواس",
 				"answers": ["أذن : سمع", "صلاة : تكبير", "عبور : مرور", "طائرة : نقل"],
 				"true": "طائرة : نقل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3731
 			},
@@ -21962,7 +21982,7 @@
 				"question": "كر : فر",
 				"answers": ["ألم : وجع", "السلام : الإباء", "الشاهد : المشهود", "ليل : نهار"],
 				"true": "ليل : نهار",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3732
 			},
@@ -21971,7 +21991,7 @@
 				"question": "فقرة : عبارة",
 				"answers": ["شبكية : قرنية", "طبلة : أذن", "كتاب : هامش", "أنملة : أصبع"],
 				"true": "كتاب : هامش",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3734
 			},
@@ -21980,7 +22000,7 @@
 				"question": "محبة : مودة",
 				"answers": ["حكمة : صبر", "صدق : شهامة", "وفاء : كرم", "شح : بخل"],
 				"true": "شح : بخل",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3736
 			},
@@ -21988,7 +22008,7 @@
 				"question": "حسنة : سيئة",
 				"answers": ["حسد : زوال", "هداية : عذاب", "سخط : رضا", "عمل : فشل"],
 				"true": "سخط : رضا",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3737
 			},
@@ -21996,7 +22016,7 @@
 				"question": "اللحد : القبر",
 				"answers": ["السماعة : اللقاء", "الثوب : الستر", "القفاز : الامتناع", "النظارة : الانتباه"],
 				"true": "الثوب : الستر",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3738
 			},
@@ -22023,7 +22043,7 @@
 				"question": "شمس : ضوء",
 				"answers": ["سحاب : غيوم", "سلم : حريق", "قلب : دم", "بترول : طاقة"],
 				"true": "بترول : طاقة",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3744
 			},
@@ -22031,7 +22051,7 @@
 				"question": "نهج : طريق",
 				"answers": ["ثواب : رداء", "ضجيج : إزعاج", "رنين : صهيل", "نباح : صراخ"],
 				"true": "ثواب : رداء",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 3745
 			},
@@ -22047,7 +22067,7 @@
 				"question": "إذا لم تنجح فلن تعمل بجد، فما الفشل إلا هزيمة مؤقتة توجد لك فرص النجاح",
 				"answers": ["تنجح", "الفشل", "النجاح", "تعمل"],
 				"true": "تنجح",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3747
 			},
@@ -22095,7 +22115,7 @@
 				"question": "إذا قدمت معروفا لصاحبك فاحذر أن تمن عليه، وإن قدم إليك معروفا فاحذر أن تتركه",
 				"answers": ["تمن", "تتركه", "قدم", "معروفا"],
 				"true": "تتركه",
-				"status": "normal && difficult",
+				"status": "difficult",
 				"skill": "contextual-error",
 				"id": 3753
 			},
@@ -22610,7 +22630,7 @@
 				"question": "جبريل : إسرائيل",
 				"answers": ["يونس : ذو النون", "إسرافيل : أيوب", "هاروت : ماروت", "يونس : هود"],
 				"true": "إسرافيل : أيوب",
-				"status": "new",
+				"status": "new && difficult",
 				"skill": "verbal-analogy",
 				"id": 3873
 			},
@@ -24672,6 +24692,66 @@
 				"skill": "verbal-analogy",
 				"status": "missing && difficult",
 				"id": 4802
+			},
+			{
+				"question": "ألف : مئه ( عشرون الف : الفين )",
+				"answers": ["عشره : خمسة", "اثنان:  واحد", "عشرون الف : الف", "ستون الف :  ستة آلاف"],
+				"true": "ستون الف :  ستة آلاف",
+				"status": "new && incorrect",
+				"skill": "arbitrary",
+				"id": 4804
+			},
+			{ "question": "مرّ : حلو", "answers": ["زيتون : عسل", "حقير : عسير", "قصير : طويل", "برتقال : ليمون"], "true": "قصير : طويل", "skill": "verbal-analogy", "status": "missing", "id": 4806 },
+			{
+				"question": "زجاجة : عطر",
+				"answers": ["عسل : نحل", "فراش : نوم", "قمر : ضوء", "سراب : ماء"],
+				"true": "قمر : ضوء",
+				"skill": "verbal-analogy",
+				"status": "missing && incorrect",
+				"id": 4808
+			},
+			{
+				"question": "هفوة : سقطة",
+				"answers": ["لحظة : فترة", "ليل : نهار", "الأمعاء : المعدة", "مسدد : موفق"],
+				"true": "مسدد : موفق",
+				"skill": "verbal-analogy",
+				"status": "missing && difficult",
+				"id": 4809
+			},
+			{
+				"question": "الملك : جبريل",
+				"answers": ["مدرسة : طالب", "مدرس : معلم", "الرسول : محمد", "ذهب : خاتم"],
+				"true": "الرسول : محمد",
+				"skill": "verbal-analogy",
+				"notes": "الملك جمع للملائكة, جبريل أحد الملائكة, ومحمد أحد الرسل",
+				"status": "missing && difficult",
+				"id": 4810
+			},
+			{
+				"question": "زجاجة : عطر",
+				"answers": ["فراش : نوم", "سراب : ماء", "سحابة : مطر", "فيافي : قفاز"],
+				"true": "سحابة : مطر",
+				"skill": "verbal-analogy",
+				"notes": "العطر داخل الزجاجة",
+				"status": "missing",
+				"id": 4812
+			},
+			{
+				"question": "زجاجة : عطر",
+				"answers": ["عسل : نحل", "فراش : نوم", "قمر : ضوء", "سراب : ماء"],
+				"true": "قمر : ضوء",
+				"skill": "verbal-analogy",
+				"status": "missing && incorrect",
+				"notes": "علاقة يخرج منها",
+				"id": 4811
+			},
+			{
+				"question": "حارس : مرمى",
+				"answers": ["رمضان : شعبان", "عام : سنة", "قصة: رواية", "شهر : وقت"],
+				"true": "قصة: رواية",
+				"skill": "verbal-analogy",
+				"status": "missing && incorrect",
+				"id": 4814
 			}
 		]
 	},
@@ -26621,6 +26701,14 @@
 				"skill": "sentence-completion",
 				"status": "missing",
 				"id": 4798
+			},
+			{
+				"question": "اعداد الادويه في تزايد ..... الا ان التركيز ..... على الجانب الربحي",
+				"answers": ["ملحوظ - ينصب", "حاد - يطغى", "مستمر - ادنى", "مضطرد - الدولي"],
+				"true": "ملحوظ - ينصب",
+				"status": "new && difficult",
+				"skill": "arbitrary",
+				"id": 4805
 			}
 		]
 	},
@@ -27326,7 +27414,7 @@
 				"answers": ["يُكرّرون", "النّاس", "دفعوا", "نعمة"],
 				"true": "نعمة",
 				"notes": "نقمة",
-				"status": "new && incorrect",
+				"status": "new && super incorrect",
 				"skill": "contextual-error",
 				"id": 4324
 			},
@@ -28486,7 +28574,7 @@
 				"true": "الخاصة",
 				"notes": "المكتبات الخاصة التي في البيوت",
 				"skill": "contextual-error",
-				"status": "missing && incorrect",
+				"status": "missing && super incorrect",
 				"id": 4777
 			},
 			{
@@ -28514,6 +28602,30 @@
 				"skill": "contextual-error",
 				"status": "missing",
 				"id": 4800
+			},
+			{
+				"question": "إن انخفاض الاسعار يسبب هاجساً لدى الناس مما جعل الحكومة تتحرك لمواجهة الاحتكار",
+				"answers": ["انخفاض", "هاجسًا", "الحكومة", "الاحتكار"],
+				"true": "انخفاض",
+				"status": "new && difficult",
+				"skill": "arbitrary",
+				"id": 4803
+			},
+			{
+				"question": "من يعرف قيمة الأماني حقاً لن يتمنى غير المال",
+				"answers": ["يعرف", "الأماني", "يتمنى", "المال"],
+				"true": "المال",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 4807
+			},
+			{
+				"question": "إذا أردت أن تعيش طويلاً وببدن سليم فأخضع رغباتك لشهواتك.",
+				"answers": ["أردت", "فأخضع", "رغباتك", "لشهواتك"],
+				"true": "لشهواتك",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 4813
 			}
 		]
 	}
