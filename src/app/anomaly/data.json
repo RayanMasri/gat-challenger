@@ -124,16 +124,6 @@
 	},
 	{
 		"answers": [
-			{ "content": "حكم", "meaning": "" },
-			{ "content": "سجن", "meaning": "" },
-			{ "content": "قصاص", "meaning": "" },
-			{ "content": "قضاء", "meaning": "" }
-		],
-		"solution": "قضاء",
-		"id": 12
-	},
-	{
-		"answers": [
 			{ "content": "شاب", "meaning": "" },
 			{ "content": "الغلبة", "meaning": "الغلبه شخص كبير مغلوب على امره" },
 			{ "content": "كهل", "meaning": "" },
@@ -6812,12 +6802,1113 @@
 	},
 	{
 		"answers": [
+			{ "content": "حكم", "meaning": "" },
+			{ "content": "سجن", "meaning": "السجن نوع من حكم" },
+			{ "content": "قصاص", "meaning": "القصاص نوع من حكم" },
+			{ "content": "قضاء", "meaning": "رجالُ القضاء: الهيئةُ التي يُوكَلُ إليها بحثُ الخصومات للفصل فيها طبقاً للقوانين. القضاء هو من يصدر الحكم" }
+		],
+		"solution": "قضاء",
+		"status": "missing && incorrect",
+		"id": 677
+	},
+	{
+		"answers": [
+			{ "content": "تمدد", "meaning": " اِسْتَلْقَى تَمَدَّدَ على السَّرير. راحة" },
+			{ "content": "نوم", "meaning": "هو التحول من حالة العيش إلى الموت الأصغر. باقي الخيارات جميعها مرتاح لكن وأنت صاحي" },
+			{ "content": "راحة", "meaning": "" },
+			{ "content": "استرخاء", "meaning": "نفس الراحة" }
+		],
+		"solution": "نوم",
+		"status": "missing && incorrect",
+		"id": 678
+	},
+	{
+		"answers": [
+			{ "content": "الاجتهاد", "meaning": "الباقي جميعه يدون في ورق" },
+			{ "content": "البيانات", "meaning": "" },
+			{ "content": "الشهادة", "meaning": "" },
+			{ "content": "المعلومات", "meaning": "" }
+		],
+		"solution": "الاجتهاد",
+		"status": "missing",
+		"id": 679
+	},
+	{
+		"answers": [
+			{ "content": "طفل", "meaning": "" },
+			{ "content": "بطولة", "meaning": "الباقي مراحل عمر الإنسان" },
+			{ "content": "شاب", "meaning": "" },
+			{ "content": "كهل", "meaning": "" }
+		],
+		"solution": "بطولة",
+		"status": "missing",
+		"id": 680
+	},
+	{
+		"answers": [
+			{ "content": "زيت", "meaning": "" },
+			{ "content": "عسل", "meaning": "" },
+			{ "content": "ماء", "meaning": "" },
+			{ "content": "نار", "meaning": "الباقي سوائل" }
+		],
+		"solution": "نار",
+		"status": "missing",
+		"id": 681
+	},
+	{
+		"answers": [
+			{ "content": "قوس", "meaning": "" },
+			{ "content": "محراب", "meaning": "" },
+			{ "content": "قبة", "meaning": "" },
+			{ "content": "رمح", "meaning": "الباقي نصف دائرة, والرمح مستقيم" }
+		],
+		"solution": "رمح",
+		"status": "missing",
+		"id": 682
+	},
+	{
+		"answers": [
+			{ "content": "ضفدع", "meaning": "" },
+			{ "content": "تمساح", "meaning": "" },
+			{ "content": "سلحفاة", "meaning": "" },
+			{ "content": "سمكة", "meaning": "البقية يعيشون في البر والماء" }
+		],
+		"solution": "سمكة",
+		"status": "missing",
+		"id": 683
+	},
+	{
+		"answers": [
+			{ "content": "سكن", "meaning": "بيت" },
+			{ "content": "منزل", "meaning": "" },
+			{ "content": "مكان", "meaning": "يشمل البقية. غير محددة والباقي محدد" },
+			{ "content": "مسجد", "meaning": "" }
+		],
+		"solution": "مكان",
+		"status": "missing && incorrect",
+		"id": 684
+	},
+	{
+		"answers": [
+			{ "content": "مدرسة", "meaning": "" },
+			{ "content": "جامعة", "meaning": "" },
+			{ "content": "مكتبة", "meaning": "" },
+			{ "content": "محاضرة", "meaning": "الباقي أماكن, أما المحاضرة هو درس وليس مكان. مكانها القاعة" }
+		],
+		"solution": "محاضرة",
+		"status": "missing && incorrect",
+		"id": 685
+	},
+	{
+		"answers": [
+			{ "content": "بسمة", "meaning": "الباقي كلها مشاعر. البسمة تعبير ظاهري" },
+			{ "content": "كره", "meaning": "" },
+			{ "content": "حب", "meaning": "" },
+			{ "content": "حزن", "meaning": "" }
+		],
+		"solution": "بسمة",
+		"status": "missing",
+		"id": 686
+	},
+	{
+		"answers": [
+			{ "content": "أمانة", "meaning": "" },
+			{ "content": "إسلام", "meaning": "" },
+			{ "content": "كرم", "meaning": "مقولة: الأمانة من كمال الإيمان وحسن الإسلام. أيضا, الكرم خلق وصفة, أما الباقي أعمال, لكن الأمانة أيضًا صفة فالمقولة تعبر أفضل تعبير." },
+			{ "content": "إيمان", "meaning": "" }
+		],
+		"solution": "كرم",
+		"status": "missing && waiting",
+		"id": 687
+	},
+	{
+		"answers": [
+			{ "content": "رئيس", "meaning": "الرئيس يرأس البقية" },
+			{ "content": "عامل", "meaning": "" },
+			{ "content": "موظف", "meaning": "" },
+			{ "content": "مراجع", "meaning": "" }
+		],
+		"solution": "رئيس",
+		"status": "missing",
+		"id": 688
+	},
+	{
+		"answers": [
+			{ "content": "حراسة", "meaning": "" },
+			{ "content": "حماية", "meaning": "" },
+			{ "content": "عناية", "meaning": "" },
+			{ "content": "وقاية", "meaning": "" }
+		],
+		"solution": "عناية",
+		"status": "missing && incorrect && hundred",
+		"id": 689
+	},
+	{
+		"answers": [
+			{ "content": "صنعاء", "meaning": "عاصمة اليمن" },
+			{ "content": "البصرة", "meaning": "مدينة في العراق" },
+			{ "content": "الرياض", "meaning": "عاصمة السعودية" },
+			{ "content": "المنامة", "meaning": "عاصمة البحرين" }
+		],
+		"solution": "البصرة",
+		"status": "missing",
+		"id": 690
+	},
+	{
+		"answers": [
+			{ "content": "كاميرا", "meaning": "الباقي يعرض الصور والفيديوهات, الكاميرا تلتقط الصور والفيديوهات" },
+			{ "content": "حاسوب", "meaning": "" },
+			{ "content": "تلفاز", "meaning": "" },
+			{ "content": "جوال", "meaning": "" }
+		],
+		"solution": "كاميرا",
+		"status": "missing",
+		"id": 691
+	},
+	{
+		"answers": [
+			{ "content": "كرة السلة", "meaning": "" },
+			{ "content": "كرة الطائرة", "meaning": "" },
+			{ "content": "كرة القدم", "meaning": "الباقي يلعب باليد. في اسئلة الرياضات يجب مراعاة أولًا: إذا كانت فردية (شطرنج, تنس) أو جماعية (كرة قدم, كرة سلة). ثانيًأ: تلعب بالقدم أو باليد" },
+			{ "content": "كرة اليد", "meaning": "" }
+		],
+		"solution": "كرة القدم",
+		"status": "missing",
+		"id": 692
+	},
+	{
+		"answers": [
+			{ "content": "إحسان", "meaning": "" },
+			{ "content": "إسلام", "meaning": "" },
+			{ "content": "إيمان", "meaning": "" },
+			{ "content": "كرم", "meaning": "الباقي من مراتب الدين" }
+		],
+		"solution": "كرم",
+		"status": "missing",
+		"id": 693
+	},
+	{
+		"answers": [
+			{ "content": "الرضى", "meaning": "الباقي ترادف" },
+			{ "content": "السعادة", "meaning": "" },
+			{ "content": "السرور", "meaning": "" },
+			{ "content": "البهجة", "meaning": "" }
+		],
+		"solution": "الرضى",
+		"status": "missing",
+		"id": 694
+	},
+	{
+		"answers": [
+			{ "content": "القرن", "meaning": "أشمل من الباقي" },
+			{ "content": "اليوم", "meaning": "" },
+			{ "content": "الأسبوع", "meaning": "" },
+			{ "content": "الشهر", "meaning": "" }
+		],
+		"solution": "القرن",
+		"status": "missing",
+		"id": 695
+	},
+	{
+		"answers": [
+			{ "content": "اشادات", "meaning": "الباقي ترادف. الاشادات كلام حلو يقال فيك" },
+			{ "content": "ارشادات", "meaning": "" },
+			{ "content": "توجيهات", "meaning": "" },
+			{ "content": "تعليمات", "meaning": "" }
+		],
+		"solution": "اشادات",
+		"status": "missing",
+		"id": 696
+	},
+	{
+		"answers": [
+			{ "content": "الأنف", "meaning": "" },
+			{ "content": "الجناح", "meaning": "الباقي جميعه في وجه الطائر" },
+			{ "content": "العين", "meaning": "" },
+			{ "content": "المنقار", "meaning": "" }
+		],
+		"solution": "الجناح",
+		"status": "missing && incorrect",
+		"id": 697
+	},
+	{
+		"answers": [
+			{ "content": "عمامة", "meaning": "" },
+			{ "content": "غترة", "meaning": "" },
+			{ "content": "شماغ", "meaning": "" },
+			{ "content": "لثمة(لثام)", "meaning": "الباقي يتلبس على الرأس. اللثمة أو اللثام تلف حول الفم وتغطيه" }
+		],
+		"solution": "لثمة(لثام)",
+		"status": "missing",
+		"id": 698
+	},
+	{
+		"answers": [
+			{ "content": "عقد", "meaning": "" },
+			{ "content": "وعد", "meaning": "" },
+			{ "content": "عهد", "meaning": "" },
+			{ "content": "فقد", "meaning": "الباقي ترادف" }
+		],
+		"solution": "فقد",
+		"status": "missing",
+		"id": 699
+	},
+	{
+		"answers": [
+			{ "content": "مستطيل", "meaning": "" },
+			{ "content": "مثلث", "meaning": "له ثلاث أضلاع" },
+			{ "content": "مربع", "meaning": "" },
+			{ "content": "معين", "meaning": "" }
+		],
+		"solution": "مثلث",
+		"status": "missing",
+		"id": 700
+	},
+	{
+		"answers": [
+			{ "content": "دائرة", "meaning": "ليس له أضلاع" },
+			{ "content": "مستطيل", "meaning": "" },
+			{ "content": "مربع", "meaning": "" },
+			{ "content": "مثلث", "meaning": "" }
+		],
+		"solution": "دائرة",
+		"status": "missing",
+		"id": 701
+	},
+	{
+		"answers": [
+			{ "content": "سيارة", "meaning": "" },
+			{ "content": "سفينة", "meaning": "" },
+			{ "content": "قطار", "meaning": "" },
+			{ "content": "صاروخ", "meaning": "البقية وسائل نقل الشائعة. الصاروخ هو أداة سلاح, ويمكن تقول انه وسيلة نقل لكنه ليس شائع" }
+		],
+		"solution": "صاروخ",
+		"status": "missing",
+		"id": 702
+	},
+	{
+		"answers": [
+			{ "content": "عطل", "meaning": "" },
+			{ "content": "خلل", "meaning": "" },
+			{ "content": "المرض", "meaning": "" },
+			{ "content": "الموت", "meaning": "تدل على انتهاء الشيء. الخلل يتصلح, المرض يتعالج, العطل يتصلح أو يتعدل" }
+		],
+		"solution": "الموت",
+		"status": "missing",
+		"id": 703
+	},
+	{
+		"answers": [
+			{ "content": "مشرط", "meaning": "" },
+			{ "content": "مقعد", "meaning": "" },
+			{ "content": "سماعة", "meaning": "" },
+			{ "content": "نور", "meaning": "كلمة عامة. الباقي أشياء محددة" }
+		],
+		"solution": "نور",
+		"status": "missing",
+		"id": 704
+	},
+	{
+		"answers": [
+			{ "content": "محرك", "meaning": "" },
+			{ "content": "نور", "meaning": "كلمة عامة. الباقي أشياء محددة" },
+			{ "content": "دراجة", "meaning": "" },
+			{ "content": "عجلة", "meaning": "" }
+		],
+		"solution": "نور",
+		"status": "missing",
+		"id": 705
+	},
+	{
+		"answers": [
+			{ "content": "تجارة", "meaning": "" },
+			{ "content": "غش", "meaning": "التجارة أساسها الربح والخسارة, لكن لا يجب أن يكون فيها غش" },
+			{ "content": "ربح", "meaning": "" },
+			{ "content": "خسارة", "meaning": "" }
+		],
+		"solution": "غش",
+		"status": "missing && incorrect",
+		"id": 706
+	},
+	{
+		"answers": [
+			{ "content": "هند", "meaning": "" },
+			{ "content": "منال", "meaning": "عند مواجهة أسئلة فيها أسماء حدد إذا كانت مذكر أو مرنث, وإذا كانت كلها مؤنث حدد إذا كانت فيها تاء التأنيث, ,وإن تتطابقت حدد عدد الأحرف. منال فيها أربع أكثر والباقي فيها ثلاثة" },
+			{ "content": "شهد", "meaning": "" },
+			{ "content": "ريم", "meaning": "" }
+		],
+		"solution": "منال",
+		"status": "missing",
+		"id": 707
+	},
+	{
+		"answers": [
+			{ "content": "سيارة", "meaning": "" },
+			{ "content": "طيارة", "meaning": "" },
+			{ "content": "ملعب", "meaning": "مكان على الأرض, الباقي سلاح أو أداة أو آلة" },
+			{ "content": "مضرب", "meaning": "" }
+		],
+		"solution": "ملعب",
+		"status": "missing && incorrect",
+		"id": 708
+	},
+	{
+		"answers": [
+			{ "content": "سنة", "meaning": "" },
+			{ "content": "إجماع", "meaning": "" },
+			{ "content": "قياس", "meaning": "" },
+			{ "content": "نبي", "meaning": "لأنه شخص" }
+		],
+		"solution": "نبي",
+		"status": "missing && incorrect",
+		"id": 709
+	},
+	{
+		"answers": [
+			{ "content": "دين", "meaning": "لأنه تشملها كلهم" },
+			{ "content": "إجماع", "meaning": "" },
+			{ "content": "قياس", "meaning": "" },
+			{ "content": "نبي", "meaning": "" }
+		],
+		"solution": "دين",
+		"status": "missing && incorrect && waiting",
+		"id": 775
+	},
+	{
+		"answers": [
+			{ "content": "مقدمة", "meaning": "المقدمة في بداية الكتاب" },
+			{ "content": "عرض", "meaning": "شرح الكتاب" },
+			{ "content": "فصل", "meaning": "فصل من فصول الكتاب" },
+			{ "content": "باب", "meaning": "الباب من أبواب الكتاب" }
+		],
+		"solution": "عرض",
+		"status": "missing && incorrect",
+		"id": 710
+	},
+	{
+		"answers": [
+			{ "content": "الهواء", "meaning": "ليس له كتلة" },
+			{ "content": "الحديد", "meaning": "" },
+			{ "content": "الزجاج", "meaning": "" },
+			{ "content": "الماء", "meaning": "" }
+		],
+		"solution": "الهواء",
+		"status": "missing",
+		"id": 711
+	},
+	{
+		"answers": [
+			{ "content": "وادي", "meaning": "البقية مجاري مائية. الوادي هو طريق بين جبلين يبني فيه الطرق, يكون فيه مجرى صغير للماء لكنه ليس أساسه بل أساسه أنه طريق طويل بين جبلين" },
+			{ "content": "مسيل", "meaning": "" },
+			{ "content": "النهر", "meaning": "" },
+			{ "content": "مجرى", "meaning": "" }
+		],
+		"solution": "وادي",
+		"status": "missing && incorrect",
+		"id": 712
+	},
+	{
+		"answers": [
+			{ "content": "خسوف", "meaning": "" },
+			{ "content": "براكين", "meaning": "الباقي في السماء" },
+			{ "content": "كسوف", "meaning": "" },
+			{ "content": "برق", "meaning": "" }
+		],
+		"solution": "براكين",
+		"status": "missing",
+		"id": 713
+	},
+	{
+		"answers": [
+			{ "content": "فستان", "meaning": "تلبسه المرأة" },
+			{ "content": "خلخال", "meaning": "تلبسه المرأه حول رجلها" },
+			{ "content": "قميص", "meaning": "لبس الرجل" },
+			{ "content": "عقد", "meaning": "تلبسه المرأة حول عنقها" }
+		],
+		"solution": "قميص",
+		"status": "missing",
+		"id": 714
+	},
+	{
+		"answers": [
+			{ "content": "تنظيف", "meaning": "" },
+			{ "content": "اغتسال", "meaning": "" },
+			{ "content": "تيمم", "meaning": "الباقي بالماء, والتيمم بالتراب" },
+			{ "content": "وضوء", "meaning": "" }
+		],
+		"solution": "تيمم",
+		"status": "missing && incorrect",
+		"id": 715
+	},
+	{
+		"answers": [
+			{ "content": "سياج", "meaning": "السُّور من شوك، أو حائط" },
+			{ "content": "حصن", "meaning": "الحصن يشمل البقية" },
+			{ "content": "جدار", "meaning": "" },
+			{ "content": "سور", "meaning": "" }
+		],
+		"solution": "حصن",
+		"status": "missing",
+		"id": 716
+	},
+	{
+		"answers": [
+			{ "content": "سور", "meaning": "" },
+			{ "content": "سراج", "meaning": "مصباح, الباقي جميعها مباني" },
+			{ "content": "جدار", "meaning": "" },
+			{ "content": "حصن", "meaning": "" }
+		],
+		"solution": "سراج",
+		"status": "missing && incorrect",
+		"id": 717
+	},
+	{
+		"answers": [
+			{ "content": "تحدي", "meaning": "" },
+			{ "content": "تدارس", "meaning": "" },
+			{ "content": "توجيه", "meaning": "" },
+			{ "content": "تنقل", "meaning": "الباقي مرتبط بالتعليم" }
+		],
+		"solution": "تنقل",
+		"status": "missing && incorrect",
+		"id": 718
+	},
+	{
+		"answers": [
+			{ "content": "الماء", "meaning": "" },
+			{ "content": "الغذاء", "meaning": "الباقي جميعها في الطبيعة" },
+			{ "content": "القمر", "meaning": "" },
+			{ "content": "الشمس", "meaning": "" }
+		],
+		"solution": "الغذاء",
+		"status": "missing && incorrect",
+		"id": 719
+	},
+	{
+		"answers": [
+			{ "content": "تلال", "meaning": "" },
+			{ "content": "صخور", "meaning": "" },
+			{ "content": "نجوم", "meaning": "الباقي كلها مرتفعات أو حجارة أو على الأرض" },
+			{ "content": "هضاب", "meaning": "" }
+		],
+		"solution": "نجوم",
+		"status": "missing",
+		"id": 720
+	},
+	{
+		"answers": [
+			{ "content": "طبيب", "meaning": "" },
+			{ "content": "طالب", "meaning": "الباقي وظائف أو مهن بعد التعليم" },
+			{ "content": "مدرب", "meaning": "" },
+			{ "content": "معلم", "meaning": "" }
+		],
+		"solution": "طالب",
+		"status": "missing",
+		"id": 721
+	},
+	{
+		"answers": [
+			{ "content": "عمر", "meaning": "" },
+			{ "content": "داوود", "meaning": "الباقي أسماء عربية. داوود أسم عبري (ديفد)" },
+			{ "content": "خالد", "meaning": "" },
+			{ "content": "علي", "meaning": "" }
+		],
+		"solution": "داوود",
+		"status": "missing && incorrect",
+		"id": 722
+	},
+	{
+		"answers": [
+			{ "content": "مصافحة", "meaning": "" },
+			{ "content": "مصارعة", "meaning": "قتال وضرب بين اثنين" },
+			{ "content": "طلاق", "meaning": "" },
+			{ "content": "زواج", "meaning": "" }
+		],
+		"solution": "مصارعة",
+		"status": "missing && incorrect",
+		"id": 723
+	},
+	{
+		"answers": [
+			{ "content": "نشيج", "meaning": "البكاء مع أنفاس سريعة" },
+			{ "content": "عويل", "meaning": "البكاء بصراخ وصوت عالي" },
+			{ "content": "نحيب", "meaning": "البكاء مع أنفاس متقطعة" },
+			{ "content": "بكاء", "meaning": "يشمل البقية لأنهم أشكال من البكاء" }
+		],
+		"solution": "بكاء",
+		"status": "missing && incorrect",
+		"id": 724
+	},
+	{
+		"answers": [
+			{ "content": "صداقة", "meaning": "الباقي ترادف. وهم أيضا من الحاجات التي تقتضيها الصداقة وتمارسها" },
 			{ "content": "فداء", "meaning": "" },
 			{ "content": "تضحية", "meaning": "" },
-			{ "content": "صداقة", "meaning": "الباقي بمعنى تضحية" },
 			{ "content": "وفاء", "meaning": "" }
 		],
 		"solution": "صداقة",
-		"id": 676
+		"status": "missing",
+		"id": 725
+	},
+	{
+		"answers": [
+			{ "content": "سراج", "meaning": "كنية للشمس" },
+			{ "content": "شمس", "meaning": "" },
+			{ "content": "النجوم", "meaning": "" },
+			{ "content": "شموع", "meaning": "الباقي أجرام سماوية" }
+		],
+		"solution": "شموع",
+		"status": "missing && incorrect",
+		"id": 726
+	},
+	{
+		"answers": [
+			{ "content": "شُعب", "meaning": "" },
+			{ "content": "نجم البحر", "meaning": "" },
+			{ "content": "مرجان", "meaning": "" },
+			{ "content": "غواص", "meaning": "شخص" }
+		],
+		"solution": "غواص",
+		"status": "missing",
+		"id": 727
+	},
+	{
+		"answers": [
+			{ "content": "الأحد", "meaning": "" },
+			{ "content": "الخميس", "meaning": "البقية متتاليين" },
+			{ "content": "الثلاثاء", "meaning": "" },
+			{ "content": "الاثنين", "meaning": "" }
+		],
+		"solution": "الخميس",
+		"status": "missing",
+		"id": 728
+	},
+	{
+		"answers": [
+			{ "content": "يقفز", "meaning": "" },
+			{ "content": "يطير", "meaning": "الباقي على الأرض" },
+			{ "content": "يجري( يركض)", "meaning": "" },
+			{ "content": "يمشي", "meaning": "" }
+		],
+		"solution": "يطير",
+		"status": "missing",
+		"id": 729
+	},
+	{
+		"answers": [
+			{ "content": "مشي", "meaning": "" },
+			{ "content": "قفز", "meaning": "" },
+			{ "content": "ركض", "meaning": "" },
+			{ "content": "طيران", "meaning": "الباقي على الأرض" }
+		],
+		"solution": "طيران",
+		"status": "missing",
+		"id": 730
+	},
+	{
+		"answers": [
+			{ "content": "رسم", "meaning": "" },
+			{ "content": "كتابة", "meaning": "" },
+			{ "content": "قراءة", "meaning": "الباقي باليد, القراءة بالنظر" },
+			{ "content": "نسخ", "meaning": "" }
+		],
+		"solution": "قراءة",
+		"status": "missing",
+		"id": 731
+	},
+	{
+		"answers": [
+			{ "content": "كتب", "meaning": "" },
+			{ "content": "رسم", "meaning": "" },
+			{ "content": "نسخ", "meaning": "" },
+			{ "content": "قرأ", "meaning": "الباقي باليد, القراءة بالنظر" }
+		],
+		"solution": "قرأ",
+		"status": "missing",
+		"id": 732
+	},
+	{
+		"answers": [
+			{ "content": "عمامة", "meaning": "الباقي يلبس على الجسد" },
+			{ "content": "سروال", "meaning": "" },
+			{ "content": "قميص", "meaning": "" },
+			{ "content": "ثوب", "meaning": "" }
+		],
+		"solution": "عمامة",
+		"status": "missing && incorrect",
+		"id": 733
+	},
+	{
+		"answers": [
+			{ "content": "بيض", "meaning": "" },
+			{ "content": "حليب", "meaning": "" },
+			{ "content": "سكر", "meaning": "الباقي منتج يأخذ من الحيوانات" },
+			{ "content": "عسل", "meaning": "" }
+		],
+		"solution": "سكر",
+		"status": "missing && incorrect",
+		"id": 734
+	},
+	{
+		"answers": [
+			{ "content": "طواف", "meaning": "ليس من أركان الإسلام, الحج من أركان الإسلام" },
+			{ "content": "دعاء", "meaning": "" },
+			{ "content": "صدقة", "meaning": "" },
+			{ "content": "زكاة", "meaning": "من أركان الإسلام" }
+		],
+		"solution": "زكاة",
+		"status": "missing && incorrect",
+		"id": 735
+	},
+	{
+		"answers": [
+			{ "content": "أنف", "meaning": "" },
+			{ "content": "عين", "meaning": "" },
+			{ "content": "ذقن", "meaning": "الباقي كلها أعضاء ومرتبطة بالحواس أيضًا" },
+			{ "content": "فم", "meaning": "" }
+		],
+		"solution": "ذقن",
+		"status": "missing",
+		"id": 736
+	},
+	{
+		"answers": [
+			{ "content": "عمومة", "meaning": "العم والعمة" },
+			{ "content": "بنوة", "meaning": "الابن" },
+			{ "content": "خؤولة", "meaning": "الخال والخالة" },
+			{ "content": "أبوة", "meaning": "الأب" }
+		],
+		"solution": "بنوة",
+		"status": "missing && incorrect",
+		"id": 737
+	},
+	{
+		"answers": [
+			{ "content": "محرك", "meaning": "" },
+			{ "content": "سيارة", "meaning": "تشمل البقية" },
+			{ "content": "عجلات", "meaning": "" },
+			{ "content": "مقود", "meaning": "" }
+		],
+		"solution": "سيارة",
+		"status": "missing",
+		"id": 738
+	},
+	{
+		"answers": [
+			{ "content": "في", "meaning": "" },
+			{ "content": "إلا", "meaning": "الباقي حروف جر, إلا أداة استثناء" },
+			{ "content": "عن", "meaning": "" },
+			{ "content": "على", "meaning": "" }
+		],
+		"solution": "إلا",
+		"status": "missing",
+		"id": 739
+	},
+	{
+		"answers": [
+			{ "content": "حافلة", "meaning": "" },
+			{ "content": "سيارة", "meaning": "" },
+			{ "content": "دراجة", "meaning": "جميعها وسائل نقل, لكن البقية تحتاج إلى موتور" },
+			{ "content": "قطار", "meaning": "" }
+		],
+		"solution": "دراجة",
+		"status": "missing",
+		"id": 740
+	},
+	{
+		"answers": [
+			{ "content": "دفتر", "meaning": "" },
+			{ "content": "حاسوب", "meaning": "جهاز والباقي أدوات" },
+			{ "content": "قلم", "meaning": "" },
+			{ "content": "مسطرة", "meaning": "" }
+		],
+		"solution": "حاسوب",
+		"status": "missing",
+		"id": 741
+	},
+	{
+		"answers": [
+			{ "content": "كتاب", "meaning": "" },
+			{ "content": "مسطرة", "meaning": "" },
+			{ "content": "حاسب","meaning": "جهاز والباقي أدوات"  },
+			{ "content": "قلم", "meaning": "" }
+		],
+		"solution": "حاسب",
+		"status": "missing",
+		"id": 742
+	},
+	{
+		"answers": [
+			{ "content": "زرافة", "meaning": "الباقي نستخدمهم للنقل" },
+			{ "content": "ناقة", "meaning": "" },
+			{ "content": "أتان", "meaning": "أنثى الحمار" },
+			{ "content": "فرس", "meaning": "" }
+		],
+		"solution": "زرافة",
+		"status": "missing && incorrect",
+		"id": 743
+	},
+	{
+		"answers": [
+			{ "content": "معلم", "meaning": "وظيفة في المرحلة الثانوية" },
+			{ "content": "أستاذ مشارك", "meaning": "وظيفة في الجامعة" },
+			{ "content": "أستاذ", "meaning": "وظيفة في الجامعة" },
+			{ "content": "أستاذ مساعد", "meaning": "وظيفة في الجامعة" }
+		],
+		"solution": "معلم",
+		"status": "missing && incorrect",
+		"id": 744
+	},
+	{
+		"answers": [
+			{ "content": "تمثيل", "meaning": "" },
+			{ "content": "تشبيه", "meaning": "" },
+			{ "content": "تسويف", "meaning": "تأجيل المهام. الباقي من البلاغة" },
+			{ "content": "تقريب", "meaning": "" }
+		],
+		"solution": "تسويف",
+		"status": "missing",
+		"id": 745
+	},
+	{
+		"answers": [
+			{ "content": "التخويف", "meaning": "الباقي من البلاغة" },
+			{ "content": "التقريب", "meaning": "" },
+			{ "content": "التمثيل", "meaning": "" },
+			{ "content": "التشبيه", "meaning": "" }
+		],
+		"solution": "التخويف",
+		"status": "missing",
+		"id": 746
+	},
+	{
+		"answers": [
+			{ "content": "ثمين", "meaning": "" },
+			{ "content": "باهظ", "meaning": "" },
+			{ "content": "كثير", "meaning": "الباقي ترادف. كثير بمعنى كثير الكمية" },
+			{ "content": "غالي", "meaning": "" }
+		],
+		"solution": "كثير",
+		"status": "missing",
+		"id": 747
+	},
+	{
+		"answers": [
+			{ "content": "طحين", "meaning": "" },
+			{ "content": "بر", "meaning": "البر هو الخبز, الباقي يستخدم لصنع البر" },
+			{ "content": "عجين", "meaning": "" },
+			{ "content": "دقيق", "meaning": "" }
+		],
+		"solution": "بر",
+		"status": "missing && incorrect",
+		"id": 748
+	},
+	{
+		"answers": [
+			{ "content": "مجلة", "meaning": "" },
+			{ "content": "بحث", "meaning": "" },
+			{ "content": "كتب", "meaning": "" },
+			{ "content": "مكتبة", "meaning": "مكان. الباقي جميعه يوجد في المكتبة" }
+		],
+		"solution": "مكتبة",
+		"status": "missing",
+		"id": 749
+	},
+	{
+		"answers": [
+			{ "content": "مجلة", "meaning": "" },
+			{ "content": "جريدة", "meaning": "" },
+			{ "content": "صحيفة", "meaning": "" },
+			{ "content": "وسيلة", "meaning": "الباقي ترادف" }
+		],
+		"solution": "وسيلة",
+		"status": "missing",
+		"id": 750
+	},
+	{
+		"answers": [
+			{ "content": "نفقة", "meaning": "الباقي بمعنى إهداء وإعطاء. النفقة بمعنى الصرف وليس الإهداء" },
+			{ "content": "عطية", "meaning": "" },
+			{ "content": "هبة", "meaning": "" },
+			{ "content": "هدية", "meaning": "" }
+		],
+		"solution": "نفقة",
+		"status": "missing && incorrect",
+		"id": 751
+	},
+	{
+		"answers": [
+			{ "content": "ظهر", "meaning": "" },
+			{ "content": "فجر", "meaning": "" },
+			{ "content": "عصر", "meaning": "" },
+			{ "content": "ليل", "meaning": "الباقي صلوات" }
+		],
+		"solution": "ليل",
+		"status": "missing",
+		"id": 752
+	},
+	{
+		"answers": [
+			{ "content": "الجود", "meaning": "البقية أشخاص, والحود صفة" },
+			{ "content": "المحسن", "meaning": "" },
+			{ "content": "الكريم", "meaning": "" },
+			{ "content": "شجاع", "meaning": "" }
+		],
+		"solution": "الجود",
+		"status": "missing && incorrect",
+		"id": 753
+	},
+	{
+		"answers": [
+			{ "content": "الجواد", "meaning": "الكريم" },
+			{ "content": "المحسن", "meaning": "كريم ويعطي" },
+			{ "content": "الكريم", "meaning": "" },
+			{ "content": "شجاع", "meaning": "لأن الباقي فيها عطاء وكرم" }
+		],
+		"solution": "شجاع",
+		"status": "missing && incorrect",
+		"id": 776
+	},
+	{
+		"answers": [
+			{ "content": "المحسن", "meaning": "" },
+			{ "content": "المسيء", "meaning": "صفة سليبة" },
+			{ "content": "المسامح", "meaning": "" },
+			{ "content": "المعاتب", "meaning": "العتاب يكون للحب ليس من الزعل" }
+		],
+		"solution": "المسيء",
+		"status": "missing",
+		"id": 754
+	},
+	{
+		"answers": [
+			{ "content": "لسن", "meaning": "فصيح في الكلام" },
+			{ "content": "بليغ", "meaning": "فصيح" },
+			{ "content": "فصيح", "meaning": "" },
+			{ "content": "مهذار", "meaning": "بيمزح كثير" }
+		],
+		"solution": "مهذار",
+		"status": "missing",
+		"id": 755
+	},
+	{
+		"answers": [
+			{ "content": "رواية", "meaning": "" },
+			{ "content": "أقصوصة", "meaning": "" },
+			{ "content": "قصة", "meaning": "" },
+			{ "content": "أدب", "meaning": "تشمل البقية" }
+		],
+		"solution": "أدب",
+		"status": "missing",
+		"id": 756
+	},
+	{
+		"answers": [
+			{ "content": "تَم", "meaning": "الباقي فعل أمر, تم فعل ماضي" },
+			{ "content": "نَم", "meaning": "" },
+			{ "content": "قـُم", "meaning": "" },
+			{ "content": "صُم", "meaning": "" }
+		],
+		"solution": "تَم",
+		"status": "missing",
+		"id": 757
+	},
+	{
+		"answers": [
+			{ "content": "مقود", "meaning": "" },
+			{ "content": "سيارة", "meaning": "تشمل الباقي" },
+			{ "content": "محرك", "meaning": "" },
+			{ "content": "عجلات", "meaning": "" }
+		],
+		"solution": "سيارة",
+		"status": "missing",
+		"id": 758
+	},
+	{
+		"answers": [
+			{ "content": "نور", "meaning": "كلمة عامة. الباقي محدد" },
+			{ "content": "مقود", "meaning": "" },
+			{ "content": "عجلة", "meaning": "" },
+			{ "content": "محرك", "meaning": "" }
+		],
+		"solution": "نور",
+		"status": "missing",
+		"id": 759
+	},
+	{
+		"answers": [
+			{ "content": "باب", "meaning": "" },
+			{ "content": "سقف", "meaning": "" },
+			{ "content": "جدار", "meaning": "" },
+			{ "content": "شجرة", "meaning": "الباقي من أجزاء المبنى" }
+		],
+		"solution": "شجرة",
+		"status": "missing",
+		"id": 760
+	},
+	{
+		"answers": [
+			{ "content": "بذخ", "meaning": "بمعنى الإسراف والتبذير وهو شيء سلبي" },
+			{ "content": "نماء", "meaning": "" },
+			{ "content": "زيادة", "meaning": "" },
+			{ "content": "تجارة", "meaning": "" }
+		],
+		"solution": "بذخ",
+		"status": "missing && incorrect",
+		"id": 761
+	},
+	{
+		"answers": [
+			{ "content": "فيضان", "meaning": "" },
+			{ "content": "فوران", "meaning": "الفوران ليس شرط أنه يحتاج حرارة فقد تفور ماء من الأرض" },
+			{ "content": "غليان", "meaning": "" },
+			{ "content": "انصهار", "meaning": "الباقي جميعه يحدث للماء, الانصهار للحديث" }
+		],
+		"solution": "انصهار",
+		"status": "missing",
+		"id": 762
+	},
+	{
+		"answers": [
+			{ "content": "طواف", "meaning": "" },
+			{ "content": "رمي", "meaning": "" },
+			{ "content": "سعي", "meaning": "" },
+			{ "content": "حج", "meaning": "يشمل البقية" }
+		],
+		"solution": "حج",
+		"status": "missing",
+		"id": 763
+	},
+	{
+		"answers": [
+			{ "content": "سفر", "meaning": "" },
+			{ "content": "فندق", "meaning": "" },
+			{ "content": "راحة", "meaning": "" },
+			{ "content": "سياحة", "meaning": "السياحة تشمل البقية" }
+		],
+		"solution": "سياحة",
+		"status": "missing && waiting",
+		"id": 777
+	},
+	{
+		"answers": [
+			{ "content": "نجم", "meaning": "" },
+			{ "content": "غرب", "meaning": "" },
+			{ "content": "ليل", "meaning": "الباقي يستخدمون لتحديد الاتحاه" },
+			{ "content": "شرق", "meaning": "" }
+		],
+		"solution": "ليل",
+		"status": "missing",
+		"id": 764
+	},
+	{
+		"answers": [
+			{ "content": "حذاء", "meaning": "" },
+			{ "content": "ساعة", "meaning": "الساعة تحيط اليد, الباقي يغطي. الساعة أيضا آلة والباقي ليس آلة" },
+			{ "content": "نظارة", "meaning": "" },
+			{ "content": "رداء", "meaning": "" }
+		],
+		"solution": "ساعة",
+		"status": "missing",
+		"id": 765
+	},
+	{
+		"answers": [
+			{ "content": "عمارة", "meaning": "" },
+			{ "content": "شقة", "meaning": "" },
+			{ "content": "غرفة", "meaning": "تكون جزء من جميع البقية" },
+			{ "content": "بيت", "meaning": "" }
+		],
+		"solution": "غرفة",
+		"status": "missing",
+		"id": 766
+	},
+	{
+		"answers": [
+			{ "content": "العين", "meaning": "عضو خارجي. في أسئلة الأعضاء حدد إذا كانت خارجية أو داخلية, أيضًا إذا كان عضو تنفسي أو عضو هضمي" },
+			{ "content": "الكبد", "meaning": "" },
+			{ "content": "الرئتين", "meaning": "" },
+			{ "content": "القلب", "meaning": "" }
+		],
+		"solution": "العين",
+		"status": "missing",
+		"id": 767
+	},
+	{
+		"answers": [
+			{ "content": "حشد", "meaning": "" },
+			{ "content": "قادات", "meaning": "الباقي ترادف" },
+			{ "content": "سرب", "meaning": "" },
+			{ "content": "جماعة", "meaning": "" }
+		],
+		"solution": "قادات",
+		"status": "missing",
+		"id": 768
+	},
+	{
+		"answers": [
+			{ "content": "طريق", "meaning": "" },
+			{ "content": "منهاج (نهج)", "meaning": "" },
+			{ "content": "درب", "meaning": "" },
+			{ "content": "وضوح", "meaning": "الباقي ترادف" }
+		],
+		"solution": "وضوح",
+		"status": "missing",
+		"id": 769
+	},
+	{
+		"answers": [
+			{ "content": "نهج", "meaning": "" },
+			{ "content": "طريق", "meaning": "" },
+			{ "content": "وضوح", "meaning": "الباقي ترادف" },
+			{ "content": "سبيل", "meaning": "" }
+		],
+		"solution": "وضوح",
+		"status": "missing",
+		"id": 770
+	},
+	{
+		"answers": [
+			{ "content": "استعلاء", "meaning": "التكبر. صفة سليبة والباقي إيجابية. أيضًا الباقي ترادف" },
+			{ "content": "طاعة", "meaning": "طاعة ولي الأمر" },
+			{ "content": "ولاء", "meaning": "ولاء للشركة" },
+			{ "content": "انتماء", "meaning": "" }
+		],
+		"solution": "استعلاء",
+		"status": "missing && incorrect",
+		"id": 771
+	},
+	{
+		"answers": [
+			{ "content": "استحقاق", "meaning": "" },
+			{ "content": "استجداء", "meaning": "طلب المعونة والسماعدة" },
+			{ "content": "استنجاد", "meaning": "طلب المساعدة" },
+			{ "content": "استعطاف", "meaning": "طلب المساعدة" }
+		],
+		"solution": "استنجاد",
+		"status": "missing && incorrect && closed",
+		"id": 772
+	},
+	{
+		"answers": [
+			{ "content": "قسم", "meaning": "" },
+			{ "content": "بت", "meaning": "بَتَّ الأمْرَ : أنْفَذَهُ، أمْضاهُ" },
+			{ "content": "حسم", "meaning": "حسم الأمرَ لصالحه: أنهاه بما فيه مصلحته،" },
+			{ "content": "عزم", "meaning": "عزَم الشَّخصُ : صبر وثبت وجدَّ في أمره" }
+		],
+		"solution": "قسم",
+		"status": "missing && incorrect && closed",
+		"id": 773
+	},
+	{
+		"answers": [
+			{ "content": "خدعة", "meaning": "" },
+			{ "content": "هزيمة", "meaning": "الباقي قريبة المعنى" },
+			{ "content": "مكيدة", "meaning": "" },
+			{ "content": "مصيدة", "meaning": "" }
+		],
+		"solution": "هزيمة",
+		"status": "missing",
+		"id": 774
 	}
 ]

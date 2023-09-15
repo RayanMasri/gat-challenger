@@ -4,6 +4,7 @@ with open('./data.json', 'r', encoding='utf8') as file:
 
 questions = [model["questions"] for model in data]
 questions = [subitem for item in questions for subitem in item]
+print(len(questions))
 
 
 tags = {
@@ -15,6 +16,9 @@ def parse_question(_question):
     answer = re.sub('(\.)|(\s)|\:|"', "", _question["true"])
 
     tag = question + answer
+    tag = re.sub('[أاآ]', "ا", tag)
+    tag = re.sub('[ةه]', "ة", tag)
+    tag = re.sub('[ئيى]', "ي", tag)
 
 
     # if _question["skill"] != "sentence-completion": return ""
@@ -30,7 +34,6 @@ for question in questions:
         tags[tag] = [question]
 
 # del tags
-print(len(question))
 print(len(tags.keys()))
 items = list(sorted(tags.items(), key=lambda e: len(e[1]), reverse=True))
 # items = items[0:10]
