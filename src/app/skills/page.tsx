@@ -751,7 +751,8 @@ const Page = () => {
 												.split('&&')
 												.map((e) => e.trim())
 												.includes('normal')
-										: question.status != 'normal'
+										: // : question.status != 'normal'
+										  question.status.includes('super')
 								).length == 0 ||
 								(showIncorrect && !model.questions.map((q) => statusContext[q.id]).some((e) => e[0] > 0))
 							) {
@@ -766,7 +767,8 @@ const Page = () => {
 												.split('&&')
 												.map((e) => e.trim())
 												.includes('normal')
-										: question.status != 'normal') ||
+										: // : question.status != 'normal') ||
+										  question.status.includes('super')) ||
 									(showIncorrect && tuple[0] > 0)
 								);
 							});

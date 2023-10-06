@@ -4,48 +4,68 @@ with open('./data.json', 'r', encoding='utf8') as file:
 
 questions = [model["questions"] for model in data]
 questions = [subitem for item in questions for subitem in item]
-print(len(questions))
 
-
-tags = {
+unchosen_all = {
 
 }
 
+chosen = []
+
+def clean(text):
+    text = re.sub('[أاآ]', "ا", text)
+    text = re.sub('[ةه]', "ة", text)
+    text = re.sub('[ئيى]', "ي", text)
+    return re.sub('(\.)|(\s)|\:|"|-', "", text)
+
 def parse_question(_question):
-    question = re.sub('(\.)|(\s)|\:|"', "", _question["question"])
-    answer = re.sub('(\.)|(\s)|\:|"', "", _question["true"])
 
-    tag = question + answer
-    tag = re.sub('[أاآ]', "ا", tag)
-    tag = re.sub('[ةه]', "ة", tag)
-    tag = re.sub('[ئيى]', "ي", tag)
+    question = clean(_question["question"])
+    answer = clean(_question["true"])
 
+    answers = list(map(clean, _question["answers"]))
 
-    # if _question["skill"] != "sentence-completion": return ""
-
-    return tag
-
+    return [question, answer, answers]
+print(clean("طائرة : راكب"))
 for question in questions:
-    tag = parse_question(question)
-    # print(tag)
-    if tag in list(tags.keys()):
-        tags[tag] = tags[tag] + [question]
-    else:
-        tags[tag] = [question]
+    if ':' not in question['true']: continue
+    [title, answer, answers] = parse_question(question)
 
-# del tags
-print(len(tags.keys()))
-items = list(sorted(tags.items(), key=lambda e: len(e[1]), reverse=True))
-# items = items[0:10]
 
-x = ""
-for i in range(len(items)):
-    question = items[i][1][0]
-    title = question["question"]
-    answer = question["true"]
-    x += f'{i + 1} - {title} ({answer}) - [{len(items[i][1])} تكرارات]\n'
-    # print()
+    chosen.append(answer)
 
-pyperclip.copy(x)
+    for i in range(len(answers)):
+        unchosen_answer = answers[i]
+        if unchosen_answer in chosen or unchosen_answer == answer: continue
+        if unchosen_answer not in list(unchosen_all.keys()):
+            # if unchosen_answer != clean(question["answers"][i]):
+            #     print(unchosen_answer)
+            #     print(question["answers"][i])
+            #     print(answers)
+            #     print(list(map(clean, question["answers"])))
+            #     print(question["answers"])
+            unchosen_all[unchosen_answer] = [1, question["answers"][i]]
+        else:
+            alloted = unchosen_all[unchosen_answer]
+            
+            unchosen_all[unchosen_answer] = [alloted[0] + 1, alloted[1]]
 
-# questions = [question["question"]]
+# Remove chosen
+print(len(list(unchosen_all.keys())))
+keys = list(unchosen_all.keys())
+for i in range(len(keys)):
+    if keys[i] in chosen:
+        del unchosen_all[keys[i]]
+    
+print(len(list(unchosen_all.keys())))
+print("طايرةراكب" in chosen)
+print("طايرةراكب" in list(unchosen_all.keys()))
+with open('johncena.json', 'w', encoding='utf8') as file:
+    file.write(json.dumps(unchosen_all, ensure_ascii=False))
+string = ""
+
+result = sorted(list(unchosen_all.values()), key=lambda e: e[0], reverse=True)
+
+for item in result:
+    string += f'"{item[1]}" - مكرر {item[0]}\n'
+
+pyperclip.copy(string)
