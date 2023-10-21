@@ -672,7 +672,7 @@
 				"question": "زيادة : نماء",
 				"answers": ["تصالح : تخاصم", "تقهقر : تقدم", "شروق : غروب", "شفافية : وضوح"],
 				"true": "شفافية : وضوح",
-				"status": "normal",
+				"status": "incorrect",
 				"skill": "verbal-analogy",
 				"id": 106
 			},
@@ -696,7 +696,9 @@
 			{ "question": "حركة : سكون", "answers": ["حرية : قيد", "ميل : هيام", "غي : ضلال", "توجيه : إرشاد"], "true": "حرية : قيد", "status": "normal", "skill": "verbal-analogy", "id": 117 },
 			{ "question": "تنقية : هواء", "answers": ["دكان : سوق", "تبريد : ثلاجة", "صيد : سمك", "طحن : قمح"], "true": "طحن : قمح", "status": "normal", "skill": "verbal-analogy", "id": 118 },
 			{ "question": "فطنة : غباوة", "answers": ["قوة : ضعف", "تفكير : استنباط", "دعاء : نداء", "رجاء : أمل"], "true": "قوة : ضعف", "status": "normal", "skill": "verbal-analogy", "id": 119 },
-			{ "question": "تهور : ندم", "answers": ["استماع : فهم", "صيام : سحور", "تفكر : خضوع", "صلاة : ركوع"], "true": "استماع : فهم", "status": "normal", "skill": "verbal-analogy", "id": 120 },
+			{ "question": "تهور : ندم", "answers": ["استماع : فهم", "صيام : سحور", "تفكر : خضوع", "صلاة : ركوع"], "true": "استماع : فهم",
+			"notes": "الخضوع هو الذل, التفكر في نعم الله لا يذلك ويهينك",
+			"status": "difficult", "skill": "verbal-analogy", "id": 120 },
 			{
 				"question": "متزن : أخرق",
 				"answers": ["متسرع : متهور", "جاهل : عالم", "محاباة : مداراة", "تصحيف : تحريف"],
@@ -3434,7 +3436,7 @@
 				"answers": ["صداقة : حقد", "تكبر : ازدراء", "مودة : محبة", "فطنة : ذكاء"],
 				"true": "تكبر : ازدراء",
 				"notes": "عندما يكون شخص لي عدو, سوف أخاصمه. وعندما يتكبر الشخص, ينتج عن ذلك ازدراء وهو احتقار من الناس",
-				"status": "incorrect",
+				"status": "incorrect && difficult",
 				"skill": "verbal-analogy",
 				"id": 462
 			},
@@ -4301,7 +4303,9 @@
 			{ "question": "غواصة : ماء", "answers": ["شجرة : ثمرة", "صقر : هواء", "صحراء : جمال", "محكمة : قضاة"], "true": "صقر : هواء", "status": "normal", "skill": "verbal-analogy", "id": 596 },
 			{ "question": "كتاب : كلمات", "answers": ["حبر : قلم", "يد : أصابع", "مكتب : مبنى", "ود : كره"], "true": "يد : أصابع", "status": "normal", "skill": "verbal-analogy", "id": 597 },
 			{ "question": "قوة : ضعف", "answers": ["فشل : نجاح", "شاب : عجوز", "زعم : قال", "انتصار : هزيمة"], "true": "انتصار : هزيمة", "status": "incorrect", "skill": "verbal-analogy", "id": 598 },
-			{ "question": "خطبة : ذكر", "answers": ["غضب : غيظ", "مدح : ذم", "تهنئة : مهاتفة", "مقال : وعظ"], "true": "مقال : وعظ", "status": "incorrect", "skill": "verbal-analogy", "id": 599 },
+			{ "question": "خطبة : ذكر", "answers": ["غضب : غيظ", "مدح : ذم", "تهنئة : مهاتفة", "مقال : وعظ"], "true": "مقال : وعظ", 
+			"notes": "ينتج عنها أو به",
+			"status": "incorrect && difficult", "skill": "verbal-analogy", "id": 599 },
 			{
 				"question": "استصغار : احتقار",
 				"answers": ["قرآن : تجويد", "تعظيم : تقدير", "بارد : حار", "احترام : تكريم"],
@@ -4642,7 +4646,7 @@
 				"question": "سفينة : مرساة",
 				"answers": ["شجرة : جذور", "قصر : سور", "حوت : خياشيم", "سيارة : عجلات"],
 				"true": "شجرة : جذور",
-				"status": "incorrect",
+				"status": "super incorrect",
 				"skill": "verbal-analogy",
 				"id": 662
 			},
@@ -4667,9 +4671,10 @@
 			},
 			{
 				"question": "صحفي : صحيفة",
-				"answers": ["محاضر : جامعة", "معلم : درس", "مستشفى : مريض", "قهوة : مقهى"],
+				"answers": ["محاضر : جامعة", "معلم : درس", "بائع : مسواك", "قهوة : مقهى"],
 				"true": "محاضر : جامعة",
-				"status": "normal",
+				"status": "difficult",
+				"notes": "الصحيفة قد تكون الورق أو المكان حسب الخيارات تمشي",
 				"skill": "verbal-analogy",
 				"id": 668
 			},
@@ -5451,7 +5456,8 @@
 				"question": "إمساك : إنفاق",
 				"answers": ["صرامة : تجاهل", "إعانة : إغاثة", "إعانة : نكران", "بلاء : معافاة"],
 				"true": "بلاء : معافاة",
-				"status": "incorrect && difficult",
+				"notes": "تضاد سلبي : إيجابي",
+				"status": "super incorrect && super difficult",
 				"skill": "verbal-analogy",
 				"id": 805
 			},
@@ -6190,7 +6196,9 @@
 			{ "question": "يتيم : لطف", "answers": ["مريض : مستشفى", "والد : مساعدة", "مريض : مرض", "جاهل : تعليم"], "true": "جاهل : تعليم", "status": "unsure", "skill": "verbal-analogy", "id": 943 },
 			{ "question": "أخفى : خبأ", "answers": ["جاور : قرب", "أظهر : أضمر", "أنكر : اعترف", "لعب : استمتاع"], "true": "جاور : قرب", "status": "normal", "skill": "verbal-analogy", "id": 944 },
 			{ "question": "ممرض : طبيب", "answers": ["مذيع : مخرج", "معلم : طالب", "مدرب : فرقه", "صدى : صوت"], "true": "مذيع : مخرج", "status": "normal", "skill": "verbal-analogy", "id": 945 },
-			{ "question": "طفل : أم", "answers": ["تعليم : معلم", "حنان : تربية", "موطن : موقد", "خوف : بكاء"], "true": "تعليم : معلم", "status": "normal", "skill": "verbal-analogy", "id": 946 },
+			{ "question": "طفل : أم", "answers": ["تعليم : معلم", "حنان : تربية", "موطن : موقد", "خوف : بكاء"], "true": "تعليم : معلم",
+			"notes": "يحتاج إلى",
+			"status": "difficult", "skill": "verbal-analogy", "id": 946 },
 			{ "question": "نجوم : سماء", "answers": ["موج : بحر", "عمل : شهادة", "علماء : أرض", "برتقال : فاكهة"], "true": "موج : بحر", "status": "normal", "skill": "verbal-analogy", "id": 947 },
 			{
 				"question": " نجوم : سماء",
@@ -6237,7 +6245,7 @@
 				"skill": "verbal-analogy",
 				"id": 956
 			},
-			{ "question": "خبَّأ : أخفى", "answers": ["لعب : لهى", "جاور : قرب", "فكر : أبدع", "تأمل : برع"], "true": "لعب : لهى", "status": "missing", "skill": "verbal-analogy", "id": 957 },
+			{ "question": "خبَّأ : أخفى", "answers": ["لعب : لهى", "جاور : قرب", "فكر : أبدع", "تأمل : برع"], "true": "لعب : لهى", "status": "missing && difficult", "skill": "verbal-analogy", "id": 957 },
 			{
 				"question": "انظر إلى الرجل حين يعمل فإن لسانه يغترف لك مما في قلبه حلو وحامض وعذب وأجاج وغير ذلك ويبين لك طعم قلبه اغتراف لسانه.",
 				"answers": ["طعم", "وأجاج", "يعمل", "وحامض"],
@@ -8006,7 +8014,7 @@
 				"skill": "verbal-analogy",
 				"id": 1259
 			},
-			{ "question": "حسنة : سيئة", "answers": ["إنظار : إمهال", "عال : شاهق", "طفل : شاب", "سخط : رضا"], "true": "سخط : رضا", "status": "normal", "skill": "verbal-analogy", "id": 1260 },
+			{ "question": "حسنة : سيئة", "answers": ["إنظار : إمهال", "عال : شاهق", "هداية : عذاب", "سخط : رضا"], "true": "سخط : رضا", "status": "difficult", "notes": "الهداية عكسها ضلال", "skill": "verbal-analogy", "id": 1260 },
 			{
 				"question": "شبيه : نظير",
 				"answers": ["مصر : أهرام", "مقص : قماش", "اجتهاد : نجاح", "محاكاة : تقليد"],
@@ -8018,7 +8026,7 @@
 			{ "question": "مذياع : صوت", "answers": ["صوت : صورة", "رعد : مطر", "تلفاز : راديو", "سحاب : برق"], "true": "سحاب : برق", "status": "normal", "skill": "verbal-analogy", "id": 1262 },
 			{ "question": "عمامة : رجل", "answers": ["خمار : امرأة", "نطاق : خصر", "حذاء : قدم", "غترة : عقال"], "true": "خمار : امرأة", "status": "difficult", "skill": "verbal-analogy", "id": 1263 },
 			{ "question": "عطاء : بذل ", "answers": ["رضا : سخط", "هدوء : سكينة", "شرى : اشترى", "عتيق : حديث"], "true": "هدوء : سكينة", "status": "normal", "skill": "verbal-analogy", "id": 1264 },
-			{ "question": "حمام : هديل", "answers": ["ريح : صرير", "ذئب : مواء", "ثغاء : شاة", "رعد : شديد"], "true": "ريح : صرير", "status": "incorrect", "skill": "verbal-analogy", "id": 1265 },
+			{ "question": "حمام : هديل", "answers": ["ريح : صرير", "ذئب : مواء", "ثغاء : شاة", "رعد : شديد"], "true": "ريح : صرير", "status": "super incorrect", "skill": "verbal-analogy", "id": 1265 },
 			{
 				"question": "إقلاع : تحليق",
 				"answers": ["يوم : أسبوع", "تشغيل : انطلاق", "اتصال : تحدث", "ليل : نهار"],
@@ -8657,7 +8665,7 @@
 			{ "question": "بيت : مطبخ", "answers": ["باب : مزلاج", "فناء : مجلس", "سطح : درج", "باب : غرفة"], "true": "باب : مزلاج", "status": "normal", "skill": "verbal-analogy", "id": 1366 },
 			{ "question": "عربي : إنجليزي", "answers": ["هلال : بدر", "قمح : ذرة", "حياة : موت", "ملح : سكر"], "true": "قمح : ذرة", "status": "normal", "skill": "verbal-analogy", "id": 1367 },
 			{ "question": "عقار : أرض", "answers": ["سلاح : رمح", "فاكهة : خضار", "بحر : نهر", "بناء : فناء"], "true": "سلاح : رمح", "status": "difficult", "skill": "verbal-analogy", "id": 1368 },
-			{ "question": "نطفة : علقة", "answers": ["طائر : عش", "صلاة : وضوء", "نفط : زيت", "طفل : صبي"], "true": "طفل : صبي", "status": "incorrect", "skill": "verbal-analogy", "id": 1369 },
+			{ "question": "نطفة : علقة", "answers": ["طائر : عش", "صلاة : وضوء", "نفط : زيت", "طفل : صبي"], "true": "طفل : صبي", "status": "incorrect && difficult", "skill": "verbal-analogy", "id": 1369 },
 			{
 				"question": "حياة : موت",
 				"answers": ["برد : ثلاجة", "إيثار : أنانية", "قاس : شديد", "سخونة : مدفأة"],
@@ -8685,7 +8693,7 @@
 				"id": 1373
 			},
 			{ "question": "شرطي : أمن", "answers": ["تعليم : معهد", "قاضي : عدل", "شيخ : عبادة", "حاكم : دولة"], "true": "قاضي : عدل", "status": "normal", "skill": "verbal-analogy", "id": 1374 },
-			{ "question": "كان : صار", "answers": ["نحو : كتابة", "حدث : زمان", "سيارة : قطار", "طباعة : تأليف"], "true": "سيارة : قطار", "status": "normal", "skill": "verbal-analogy", "id": 1375 },
+			{ "question": "كان : صار", "answers": ["نحو : كتابة", "حدث : زمان", "سيارة : قطار", "طباعة : تأليف"], "true": "سيارة : قطار", "status": "incorrect", "skill": "verbal-analogy", "id": 1375 },
 			{ "question": "مصرف : مال", "answers": ["شراء : نقود", "علم : كتب", "مولد : طاقة", "ماء : نهر"], "true": "مولد : طاقة", "status": "normal", "skill": "verbal-analogy", "id": 1376 },
 			{ "question": "نجم : ليل", "answers": ["قمر : شهر", "صلاة : مسجد", "شمس : نهار", "شمس : قمر"], "true": "شمس : نهار", "status": "normal", "skill": "verbal-analogy", "id": 1377 },
 			{ "question": "عقل : تفكير", "answers": ["عين : إبصار", "قلب : حب", "لسان : ذوق", "أذن : سماع"], "true": "قلب : حب", "status": "normal", "skill": "verbal-analogy", "id": 1378 },
@@ -10329,7 +10337,7 @@
 				"question": "احتياط : تساهل",
 				"answers": ["استباق : تغاضي", "تجنب : ابتعاد", "تتبع : مراقبة", "احذر : تنبه"],
 				"true": "استباق : تغاضي",
-				"notes": "الاحتياط أخذ الحذر عكسها المتساهل يعني عدم أخذ الخذر والتساهل. الاستباق سباق الناس لحد الوصول للخير, التغاضي بمعنى التغافل والتخطي",
+				"notes": "الاحتياط أخذ الحذر عكسها المتساهل يعني عدم أخذ الخذر والتساهل. الاستباق هو السعي للشيء, والتغاضي هو الإهمال وعدم السعي",
 				"status": "difficult",
 				"skill": "verbal-analogy",
 				"id": 1677
@@ -10632,7 +10640,7 @@
 			},
 			{ "question": "حشد : جماعة", "answers": ["أذن : سمع", "تفكر : يقين", "سرب : طيور", "صفوة : نخبة"], "true": "صفوة : نخبة", "status": "normal", "skill": "verbal-analogy", "id": 1724 },
 			{ "question": "صحن : قدر", "answers": ["قص : لصق", "سيف : سهم", "حذاء : قدم", "أسد : ليث"], "true": "سيف : سهم", "status": "normal", "skill": "verbal-analogy", "id": 1725 },
-			{ "question": "ورد : ذبول", "answers": ["عنب : زبيب", "الثلاثاء : الأربعاء", "وجه : شحوب", "كسور : عظم"], "true": "وجه : شحوب", "status": "normal", "skill": "verbal-analogy", "id": 1726 },
+			{ "question": "ورد : ذبول", "answers": ["عنب : زبيب", "الثلاثاء : الأربعاء", "وجه : شحوب", "كسور : عظم"], "true": "وجه : شحوب", "status": "difficult", "skill": "verbal-analogy", "id": 1726 },
 			{ "question": "قناع : إخفاء", "answers": ["ثوب : ستر", "حماية : بيت", "رؤية : عين", "فك : كلام"], "true": "ثوب : ستر", "status": "normal", "skill": "verbal-analogy", "id": 1727 },
 			{ "question": "قمر : خسوف", "answers": ["ثراء : فاقة", "جريدة : إصدار", "وجه : شحوب", "وزارة : بيان"], "true": "وجه : شحوب", "skill": "verbal-analogy", "status": "missing", "id": 4971 },
 			{
@@ -11753,7 +11761,7 @@
 				"skill": "verbal-analogy",
 				"id": 1885
 			},
-			{ "question": "خيل : اسطبل", "answers": ["سيف : غمد", "خناسه : كناس", "رجل : مكتب", "تسعير : الجحيم"], "true": "سيف : غمد", "status": "normal", "skill": "verbal-analogy", "id": 1886 },
+			{ "question": "خيل : اسطبل", "answers": ["سيف : غمد", "خناسه : كناس", "رجل : مكتب", "تسعير : الجحيم"], "true": "سيف : غمد", "status": "incorrect", "skill": "verbal-analogy", "id": 1886 },
 			{
 				"question": "طالب : توجيه",
 				"answers": ["سقف : طموح", "جبيرة : غرزة", "معلم : فصل", "سيارة : وقود"],
@@ -12108,7 +12116,7 @@
 				"question": "يعتقد علماء ........ أن جلوس الأطفال أمام التلفاز مدة طويلة يسبب لهم سوء ..........",
 				"answers": ["التغذية - الأمان", "الصحة - السمنة", "الصحة - النظر", "النفس - الصحة"],
 				"true": "النفس - الصحة",
-				"status": "incorrect",
+				"status": "super incorrect",
 				"skill": "sentence-completion",
 				"id": 1940
 			},
@@ -12258,8 +12266,8 @@
 				"question": "غارم : زكاة",
 				"answers": ["طبخ : زيت", "سيارة : ماء", "رجل : تجارة", "مريض : فحص"],
 				"true": "مريض : فحص",
-				"notes": "الغارم هو المدين الذي لا يستطيع أداء ما عليه, والزكاة تعتبر من الديون",
-				"status": "incorrect",
+				"notes": "الغارم هو المدين الذي لا يستطيع أداء ما عليه, والزكاة تعتبر من الديون. علاقة احتاج",
+				"status": "incorrect && difficult",
 				"skill": "verbal-analogy",
 				"id": 1964
 			},
@@ -16403,7 +16411,7 @@
 				"answers": ["عدل : خيانة", "قرب : بعد", "جفاف : فقر", "كذب : إفك"],
 				"true": "قرب : بعد",
 				"notes": "خصب بمعنى كثير العشب والنماء, جدب بمعنى يبسَ لاحتباس الماء عنهُ - العلاقة تضاد",
-				"status": "incorrect",
+				"status": "incorrect && difficult",
 				"skill": "verbal-analogy",
 				"id": 2657
 			},
@@ -16448,7 +16456,7 @@
 				"answers": ["صيت : شهرة", "حسب : وجاهه", "هروب : تثبيت", "إدبار : رجوع"],
 				"true": "حسب : وجاهه",
 				"notes": "حسب هو النسب والوجاهة مكانة, النسب يعطيك مكانة والمركز يعطيك نفوذ. صيت هو الشهرة",
-				"status": "incorrect",
+				"status": "super incorrect",
 				"skill": "verbal-analogy",
 				"id": 2665
 			},
@@ -18100,7 +18108,7 @@
 				"answers": ["بعيد : قريب", "أمين : مخادع", "جاف : خشن", "شعر : نثر"],
 				"true": "بعيد : قريب",
 				"notes": "الأمين عكسه خائن, الخيار مضلل لا ياتي أبدًا في القدرات",
-				"status": "incorrect",
+				"status": "super incorrect",
 				"skill": "verbal-analogy",
 				"id": 2925
 			},
@@ -18118,7 +18126,7 @@
 				"question": "خطوبة : زواج",
 				"answers": ["وداع : اشتياق", "دفع : ميزة", "إحرام : حج", "كلام : سكون"],
 				"true": "إحرام : حج",
-				"status": "difficult",
+				"status": "incorrect",
 				"skill": "verbal-analogy",
 				"id": 2929
 			},
@@ -18127,7 +18135,7 @@
 				"answers": ["رجاء : خوف", "تفاؤل : تسامح", "أرض : سماء", "تنازل : تسامح"],
 				"true": "تنازل : تسامح",
 				"notes": "الغل هو الحقد. التنازل عن الحق هو التسامح فيه, التفاؤل هو حسن الظن غير التسامح",
-				"status": "incorrect",
+				"status": "super incorrect",
 				"skill": "verbal-analogy",
 				"id": 2930
 			},
@@ -18150,7 +18158,7 @@
 				"answers": ["رجاء : خوف", "رجوع : تقهقر", "بيع : قبول", "فوز : ندم"],
 				"true": "رجوع : تقهقر",
 				"notes": "تَقَهْقَرَ الرَّجُلُ : رَجَعَ إلى الوَراءِ",
-				"status": "difficult",
+				"status": "super difficult",
 				"skill": "verbal-analogy",
 				"id": 2938
 			},
@@ -18168,7 +18176,7 @@
 				"answers": ["رخام : صخور", "يوم : أسابيع", "شعر : نثر", "بط : أوز"],
 				"true": "رخام : صخور",
 				"notes": "الرخام جمع رُخامة: (البيئة والجيولوجيا) نوعٌ من الحجر",
-				"status": "incorrect",
+				"status": "super incorrect",
 				"skill": "verbal-analogy",
 				"id": 2940
 			},
@@ -24564,12 +24572,14 @@
 				"question": "يأس : أمل",
 				"answers": ["قنوط : رجاء", "ترجي : هلع", "طويل : ممتد", "..."],
 				"true": "قنوط : رجاء",
-				"status": "new && difficult",
+				"status": "new && super difficult",
 				"notes": "قنوط بمعنى يأس وإحباط, ورجاء بمعنى أمل",
 				"skill": "verbal-analogy",
 				"id": 4364
 			},
-			{ "question": "رحمه : عفو", "answers": ["جائزة : فوز", "رضى : قبول", "كرم : جود", "بعد : قرب"], "true": "رضى : قبول", "status": "new", "skill": "verbal-analogy", "id": 4365 },
+			{ "question": "رحمه : عفو", "answers": ["جائزة : فوز", "رضى : قبول", "كرم : جود", "بعد : قرب"], "true": "رضى : قبول",
+			"notes": "الرحمة ينتج عنها عفو, الرضا ينتج عنه قبول. أظن الرضا هو بشكل عام, والقبول في أمور خاصة",
+			"status": "new && incorrect", "skill": "verbal-analogy", "id": 4365 },
 			{
 				"question": "إنهيار : زلزال",
 				"answers": ["دمار : حرب", "سقوط : جاذبية", "إعصار : بركان", "عاصفة : عطش"],
@@ -24730,7 +24740,9 @@
 				"id": 4412,
 				"notes": "العائلة جزء اساسي فيها الابن ما اقدر اشيله وكذلك الادب جزء منه الشعر والنثر"
 			},
-			{ "question": "طعم : حلو", "answers": ["دليل : إثبات", "حوت : عنبر", "لون : خافت", "صوت : جهوري"], "true": "صوت : جهوري", "status": "new", "skill": "arbitrary", "id": 4416 },
+			{ "question": "طعم : حلو", "answers": ["دليل : إثبات", "حوت : عنبر", "لون : خافت", "صوت : جهوري"], "true": "صوت : جهوري", 
+			"notes": "اللون يكون باهت, الضوء يكون خافت",
+			"status": "new && difficult", "skill": "arbitrary", "id": 4416 },
 			{ "question": "غبي : ذكي", "answers": ["غنى فقر", "موت : حياة", "كبير : ضخم", "..."], "true": "موت : حياة", "status": "new", "skill": "arbitrary", "id": 4417 },
 			{ "question": "النبي : الصلاة", "answers": ["جبن : بقر", "غيوم : سماء", "ليل : ظلام", "..."], "true": "ليل : ظلام", "status": "new", "skill": "arbitrary", "id": 4418 },
 			{ "question": "صوم : نهار", "answers": ["صدقه : رمضان", "فطور : صباح", "نور : ضياء", "..."], "true": "فطور : صباح", "status": "new", "skill": "arbitrary", "id": 4419 },
@@ -24857,8 +24869,8 @@
 				"question": "عصيان : تمرد",
 				"answers": ["مرح : سخط", "انصياع : انقياد", "تهور : خسارة", "شؤم : فأل"],
 				"true": "انصياع : انقياد",
-				"notes": "ترادف. الشؤم هو التشاؤم عكسه الفأل هو التفاؤل.",
-				"status": "missing && difficult",
+				"notes": "ترادف. الشؤم هو التشاؤم عكسه الفأل هو التفاؤل الانصياع والانقياد يعني تلبية الأوامر.",
+				"status": "missing && super difficult",
 				"skill": "arbitrary",
 				"id": 4463
 			},
@@ -24867,7 +24879,7 @@
 				"answers": ["رائع : هائل", "قوي : ضعيف", "ورقة : كتاب", "برتقال : نبات"],
 				"true": "قوي : ضعيف",
 				"notes": "وعر يعني صعب",
-				"status": "missing && difficult",
+				"status": "missing && super difficult",
 				"skill": "arbitrary",
 				"id": 4464
 			},
@@ -24994,7 +25006,7 @@
 				"true": "جفاء :لين",
 				"skill": "verbal-analogy",
 				"notes": "الجفاء هي المعاملة القاسية",
-				"status": "missing",
+				"status": "missing && difficult",
 				"id": 4488
 			},
 			{
@@ -25010,7 +25022,7 @@
 				"answers": ["سيارة : ناقلة", "نحو : كتابة", "نسخ : قراءة", "حدث : زمان"],
 				"true": "سيارة : ناقلة",
 				"skill": "verbal-analogy",
-				"status": "missing && incorrect",
+				"status": "missing && super incorrect",
 				"id": 4490
 			},
 			{
@@ -25533,7 +25545,7 @@
 				"true": "وقت : ساعة",
 				"skill": "verbal-analogy",
 				"notes": "المنتج يحتاج إلى دعاية, والوقت يحتاج إلى ساعة لمعرفته",
-				"status": "missing",
+				"status": "missing && difficult",
 				"id": 4557
 			},
 			{
@@ -25568,15 +25580,16 @@
 				"true": "صاع : قمح",
 				"notes": "صاع مقياس مثل الكيل وغيره",
 				"skill": "verbal-analogy",
-				"status": "missing && difficult",
+				"status": "missing && super difficult",
 				"id": 4754
 			},
 			{
 				"question": "قراءة : استيعاب",
 				"answers": ["قرب : بعد", "سطر : دفتر", "حفظ : مراجعة", "دراسة:ذكاء"],
 				"true": "حفظ : مراجعة",
+				"notes": "يحتاج إلى",
 				"skill": "verbal-analogy",
-				"status": "missing && difficult",
+				"status": "missing && super difficult",
 				"id": 4755
 			},
 			{
@@ -25610,7 +25623,7 @@
 				"true": "تربية : معلم",
 				"notes": "التربية تحتاج إلى معلم",
 				"skill": "verbal-analogy",
-				"status": "missing && incorrect",
+				"status": "missing && incorrect && difficult",
 				"id": 4760
 			},
 			{
@@ -25627,7 +25640,7 @@
 				"true": "مهارة:إتقان",
 				"notes": "المهارة في العمل تؤدي إلى إتقانه مثلًا شخص لديه مهارة في الأعمال اليدوية أصبح عمله متقن يدويًا",
 				"skill": "verbal-analogy",
-				"status": "missing",
+				"status": "missing && difficult",
 				"id": 4762
 			},
 			{
@@ -25674,7 +25687,7 @@
 				"true": "هزال : جوع",
 				"notes": "فاقة: فقر. الحريق ناتج عن النار, والهزال والضعف ناتج عن الجوع",
 				"skill": "verbal-analogy",
-				"status": "missing && incorrect",
+				"status": "missing && incorrect && difficult",
 				"id": 4770
 			},
 			{
@@ -25693,7 +25706,7 @@
 				"true": "جريدة:صحيفة",
 				"skill": "verbal-analogy",
 				"notes": "السوابق هي الأحداث, الوقائع هي الأحداث بشكل عام في الماضي والحاضر والمستقبل",
-				"status": "missing && incorrect",
+				"status": "missing && incorrect && difficult",
 				"id": 4780
 			},
 			{
@@ -25712,7 +25725,7 @@
 				"true": "عودة: رجوع",
 				"skill": "verbal-analogy",
 				"notes": "حماقة: غباء, لؤم: حقير دنيء خسيس سافل قذر",
-				"status": "missing && incorrect",
+				"status": "missing && incorrect && difficult",
 				"id": 4783
 			},
 			{
@@ -27792,10 +27805,14 @@
 				"question": "صلابة :حجر",
 				"answers": ["قساوة : حجر", "حلاوة :سكر", "مرونة :ورق"],
 				"true": "مرونة :ورق",
+				"notes": "النماذج الجديدة: صلابة:حجر = مرونة:ورق. النماذج القديمة: حلاوة:سكر = لمعان:ذهب. دائمًا ناخذ مرونة ورق, لمعان ذهب أصلا ما هي فالخيارات حق الجديد",
 				"skill": "verbal-analogy",
 				"status": "missing && super difficult && closed",
 				"id": 5586
 			},
+			{"question":"حلاوة : سكر","answers":["لمعان : ذهب","مرونة : ورقة","جمال:  فتنه","حجر : قساوة"],"true":"لمعان : ذهب",
+			"notes": "النماذج الجديدة: صلابة:حجر = مرونة:ورق. النماذج القديمة: حلاوة:سكر = لمعان:ذهب. دائمًا ناخذ مرونة ورق, لمعان ذهب أصلا ما هي فالخيارات حق الجديد",
+			"skill":"verbal-analogy","status":"missing && incorrect","id":5889},
 			{ "question": "الأم : ولادة", "answers": ["الاذن : سمع"], "true": "الاذن : سمع", "skill": "verbal-analogy", "status": "missing", "id": 5587 },
 			{
 				"question": "إسراف : تبذير",
@@ -27965,7 +27982,7 @@
 			{ "question": "مرتبة: سرير", "answers": ["مقعد: سيارة", "طائر: جناحان"], "true": "مقعد: سيارة", "skill": "verbal-analogy", "status": "missing", "id": 5650 },
 			{ "question": "قصر : شقة", "answers": ["شارع: بيت", "باب: غرفة", "مدينة :  قرية"], "true": "مدينة :  قرية", "skill": "verbal-analogy", "status": "missing", "id": 5651 },
 			{ "question": "كبير:صغير", "answers": ["سمين :نحيف", "كبير: عريض", "كثير: كبير"], "true": "سمين :نحيف", "skill": "verbal-analogy", "status": "missing", "id": 5652 },
-			{ "question": "خائف :مرعوب", "answers": ["يمشي: يجري"], "true": "يمشي: يجري", "skill": "verbal-analogy",  "notes": "مرحلية", "status": "missing && difficult", "id": 5653 },
+			{ "question": "خائف :مرعوب", "answers": ["يمشي: يجري"], "true": "يمشي: يجري", "skill": "verbal-analogy", "notes": "مرحلية", "status": "missing && difficult", "id": 5653 },
 			{
 				"question": "الاشتياق : الوله ( شوق :وله )",
 				"answers": ["الحب :العشق", "البخل :الشح", "سحاب :مطر", "الأمل : الألم"],
@@ -27975,8 +27992,24 @@
 				"status": "missing && difficult",
 				"id": 5654
 			},
-			{ "question": "سيلان :دم", "answers": ["مجرى : ماء", "حجر: رخام", "سفر :قطار", "عمل:تجارة"], "true": "مجرى : ماء", "skill": "verbal-analogy", "notes": "ممكن تجي جيران : ماء", "status": "missing && difficult", "id": 5655 },
-			{ "question": "سيلان : دم", "answers": ["حجر : رخام", "مجرى : ماء", "عمل : تجارة", "ظرف : رسالة"], "true": "مجرى : ماء", "skill": "verbal-analogy", "notes": "ممكن تجي جيران : ماء", "status": "missing && difficult", "id": 5656 },
+			{
+				"question": "سيلان :دم",
+				"answers": ["مجرى : ماء", "حجر: رخام", "سفر :قطار", "عمل:تجارة"],
+				"true": "مجرى : ماء",
+				"skill": "verbal-analogy",
+				"notes": "ممكن تجي جيران : ماء",
+				"status": "missing && difficult",
+				"id": 5655
+			},
+			{
+				"question": "سيلان : دم",
+				"answers": ["حجر : رخام", "مجرى : ماء", "عمل : تجارة", "ظرف : رسالة"],
+				"true": "مجرى : ماء",
+				"skill": "verbal-analogy",
+				"notes": "ممكن تجي جيران : ماء",
+				"status": "missing && difficult",
+				"id": 5656
+			},
 			{ "question": "حليم: عفو", "answers": ["كريم : مال"], "true": "كريم : مال", "skill": "verbal-analogy", "status": "missing", "id": 5657 },
 			{
 				"question": "بهجة :انشراح",
@@ -27999,7 +28032,14 @@
 			},
 			{ "question": "مذياع : صوت", "answers": ["صورة : تلفاز", "سحاب : برق"], "true": "سحاب : برق", "skill": "verbal-analogy", "status": "missing", "id": 5663 },
 			{ "question": "وزن : قيراط", "answers": ["مسافة :متر", "فستان : لباس", "غش : خداع", "طول :ميزان"], "true": "مسافة :متر", "skill": "verbal-analogy", "status": "missing", "id": 5664 },
-			{ "question": "نوم : سبات", "answers": ["برد:  زمهرير", "سحاب : ندى", "سفينة : زورق", "شمس : اشراق"], "true": "برد:  زمهرير", "skill": "verbal-analogy", "status": "missing && difficult", "id": 5665 },
+			{
+				"question": "نوم : سبات",
+				"answers": ["برد:  زمهرير", "سحاب : ندى", "سفينة : زورق", "شمس : اشراق"],
+				"true": "برد:  زمهرير",
+				"skill": "verbal-analogy",
+				"status": "missing && difficult",
+				"id": 5665
+			},
 			{ "question": "عمل : نهار", "answers": ["صوم: رمضان"], "true": "صوم: رمضان", "skill": "verbal-analogy", "status": "missing", "id": 5666 },
 			{ "question": "اختبارات : تصحيح (مقال :تصحيح )", "answers": ["مبنى :ترميم"], "true": "مبنى :ترميم", "skill": "verbal-analogy", "status": "missing", "id": 5667 },
 			{
@@ -28020,12 +28060,24 @@
 			{ "question": "تواضع : رفعة", "answers": ["عدوى : مرض", "طعام : سمنة"], "true": "عدوى : مرض", "skill": "verbal-analogy", "status": "missing", "id": 5675 },
 			{ "question": "واحد : اثنين", "answers": ["ليل :نهار", "شمال : غرب", "شرق : شمال", "سبت : أحد"], "true": "سبت : أحد", "skill": "verbal-analogy", "status": "missing", "id": 5676 },
 			{ "question": "بناء : طوب", "answers": ["اجتهاد :نجاح", "قطار : عربة"], "true": "قطار : عربة", "skill": "verbal-analogy", "status": "missing", "id": 5677 },
-			{ "question": "بلح : تمر (رطب : تمر )", "answers": ["خريف : شتاء", "شوال  : شعبان", "سبت : أحد"], "true": "سبت : أحد", "skill": "verbal-analogy",
-			"notes": "مراحل التمر: طلع - بلح - بسر - رطب - تمر. لو كانت شتاء : خريف تكون صح. سبت : أحد مافي غيرها",
-			"status": "missing && difficult", "id": 5678 },
-			{ "question": "مبسم : وجه", "answers": ["تفكير : عقل", "رمش : عين", "يد :ظفر", "صدر : ضلع"], "true": "رمش : عين", "skill": "verbal-analogy", 
-			"notes": "المبسم هي المنطقة في الوجه التي تحتوي ابتسامه, فالعلاقة موجود في أو مكانه. التفكير عملية تتم في العقل",
-			"status": "missing && incorrect", "id": 5679 },
+			{
+				"question": "بلح : تمر (رطب : تمر )",
+				"answers": ["خريف : شتاء", "شوال  : شعبان", "سبت : أحد"],
+				"true": "سبت : أحد",
+				"skill": "verbal-analogy",
+				"notes": "مراحل التمر: طلع - بلح - بسر - رطب - تمر. لو كانت شتاء : خريف تكون صح. سبت : أحد مافي غيرها",
+				"status": "missing && difficult",
+				"id": 5678
+			},
+			{
+				"question": "مبسم : وجه",
+				"answers": ["تفكير : عقل", "رمش : عين", "يد :ظفر", "صدر : ضلع"],
+				"true": "رمش : عين",
+				"skill": "verbal-analogy",
+				"notes": "المبسم هي المنطقة في الوجه التي تحتوي ابتسامه, فالعلاقة موجود في أو مكانه. التفكير عملية تتم في العقل",
+				"status": "missing && incorrect",
+				"id": 5679
+			},
 			{
 				"question": "قافلة : بعير",
 				"answers": ["طَرِيق : محطة", "مَطَار : طيارة", "رَكْب : مسافر", "قَطِيع : فيل"],
@@ -28082,12 +28134,24 @@
 				"status": "missing && incorrect",
 				"id": 5690
 			},
-			{ "question": "حليب :لبن", "answers": ["عصير :ماء", "دقيق: خبز", "جبنة :زبدة", "وبر :صوف"], "true": "دقيق: خبز", "skill": "verbal-analogy",
-			"notes": "نصنع منه",
-			"status": "missing", "id": 5691 },
-			{ "question": "حليب : جبن", "answers": ["بئر :ماء", "كتب :علم", "رصاص : حبر", "نار : رماد"], "true": "بئر :ماء", "skill": "verbal-analogy",
-			"notes": "النار نهايته الرماد. الحليب نأخذ منه الجبن, والبئر نأخذ منه الماء",
-			"status": "missing && incorrect", "id": 5692 },
+			{
+				"question": "حليب :لبن",
+				"answers": ["عصير :ماء", "دقيق: خبز", "جبنة :زبدة", "وبر :صوف"],
+				"true": "دقيق: خبز",
+				"skill": "verbal-analogy",
+				"notes": "نصنع منه",
+				"status": "missing",
+				"id": 5691
+			},
+			{
+				"question": "حليب : جبن",
+				"answers": ["بئر :ماء", "كتب :علم", "رصاص : حبر", "نار : رماد"],
+				"true": "بئر :ماء",
+				"skill": "verbal-analogy",
+				"notes": "النار نهايته الرماد. الحليب نأخذ منه الجبن, والبئر نأخذ منه الماء",
+				"status": "missing && incorrect",
+				"id": 5692
+			},
 			{ "question": "الطبيب :الممرض", "answers": ["المدير  :المعلم"], "true": "المدير  :المعلم", "skill": "verbal-analogy", "status": "missing", "id": 5693 },
 			{ "question": "دلو : ماء", "answers": ["كرة : هواء"], "true": "كرة : هواء", "skill": "verbal-analogy", "status": "missing", "id": 5694 },
 			{
@@ -28108,14 +28172,26 @@
 				"status": "missing && incorrect",
 				"id": 5696
 			},
-			{ "question": "نظير: عكس", "answers": ["زوج :بعل", "صلب : قوي", "سما :سمو", "رجل :كهل"], "true": "زوج :بعل", "skill": "verbal-analogy", 
-			"notes": "العلاقة تضاد. الرجل يصبح كهل, الزوج والبعل ترادف لكن البعل للرجل فقط, والزوج للرجل والأنثى",
-			"status": "missing && incorrect", "id": 5697 },
+			{
+				"question": "نظير: عكس",
+				"answers": ["زوج :بعل", "صلب : قوي", "سما :سمو", "رجل :كهل"],
+				"true": "زوج :بعل",
+				"skill": "verbal-analogy",
+				"notes": "العلاقة تضاد. الرجل يصبح كهل, الزوج والبعل ترادف لكن البعل للرجل فقط, والزوج للرجل والأنثى",
+				"status": "missing && incorrect",
+				"id": 5697
+			},
 			{ "question": "فطريات :عفن", "answers": ["رمل: حرارة", "لؤلؤة : شبكة", "عطر : قنينة", "حاوية :قمامة"], "true": "حاوية :قمامة", "skill": "verbal-analogy", "status": "missing", "id": 5698 },
-			{ "question": "قطع : سكين", "answers": ["نقد :أديب", "لؤلؤ :شبكة", "تقليم: قص", "آلة :إيقاع"], "true": "نقد :أديب", "skill": "verbal-analogy",
-			
-			"notes": "لو أتت تقليم : مقص تكون صح. المقروض النقد : الناقد بس تمشي النقد : الأديب",
-			"status": "missing && difficult", "id": 5699 },
+			{
+				"question": "قطع : سكين",
+				"answers": ["نقد :أديب", "لؤلؤ :شبكة", "تقليم: قص", "آلة :إيقاع"],
+				"true": "نقد :أديب",
+				"skill": "verbal-analogy",
+
+				"notes": "لو أتت تقليم : مقص تكون صح. المقروض النقد : الناقد بس تمشي النقد : الأديب",
+				"status": "missing && difficult",
+				"id": 5699
+			},
 			{
 				"question": "كتابة : قلم",
 				"answers": ["لغة :لسان", "محبرة : قرطاسية", "قراءة :معلم", "لغة :لسان"],
@@ -28125,9 +28201,15 @@
 				"status": "missing && incorrect",
 				"id": 5700
 			},
-			{ "question": "نشيج : بكاء", "answers": ["فل : ياسمين", "شمس :نهار", "رجل : كهل", "كآبة : مرأة"], "true": "فل : ياسمين", "skill": "verbal-analogy",
-			"notes": "الياسمين نوع من أنواع الفل",
-			"status": "missing && difficult", "id": 5701 },
+			{
+				"question": "نشيج : بكاء",
+				"answers": ["فل : ياسمين", "شمس :نهار", "رجل : كهل", "كآبة : مرأة"],
+				"true": "فل : ياسمين",
+				"skill": "verbal-analogy",
+				"notes": "الياسمين نوع من أنواع الفل",
+				"status": "missing && difficult",
+				"id": 5701
+			},
 			{
 				"question": "روح : جسد",
 				"answers": ["طبخ : طعام", "طالب : مدرس", "ماء : سمك", "غابة : جبال"],
@@ -28146,14 +28228,49 @@
 				"status": "missing && incorrect",
 				"id": 5703
 			},
-			{ "question": "موظف: مدير", "answers": ["حاجة :عمل", "طفل: مراهق"], "true": "طفل: مراهق", "skill": "verbal-analogy", 
-			"notes": "يصبح",
-			"status": "missing", "id": 5704 },
+			{ "question": "موظف: مدير", "answers": ["حاجة :عمل", "طفل: مراهق"], "true": "طفل: مراهق", "skill": "verbal-analogy", "notes": "يصبح", "status": "missing", "id": 5704 },
 			{ "question": "حصان: صهيل", "answers": ["طير : شقشقة", "أسد: الشجاعة"], "true": "طير : شقشقة", "skill": "verbal-analogy", "status": "missing", "id": 5705 },
 			{ "question": "سهم : أسلحة", "answers": ["درهم: عملات ( ريال :عملات )"], "true": "درهم: عملات ( ريال :عملات )", "skill": "verbal-analogy", "status": "missing", "id": 5706 },
 			{ "question": "حياة : عمل", "answers": ["صلاة : خشوع"], "true": "صلاة : خشوع", "skill": "verbal-analogy", "status": "missing", "id": 5707 },
 			{ "question": "صارم : غلظة", "answers": ["شراء: بيع", "مصلي : وضوء", "ربط : شد", "وقف : التفت"], "true": "ربط : شد", "skill": "verbal-analogy", "status": "missing", "id": 5708 },
-			{ "question": "صوت:كلام", "answers": ["غرفة: بيت(منزل)", "سيارة :عجلة", "دجاجة(ديك): صقر"], "true": "غرفة: بيت(منزل)", "skill": "verbal-analogy", "status": "missing && difficult", "id": 5709 }
+			{
+				"question": "صوت:كلام",
+				"answers": ["غرفة: بيت(منزل)", "سيارة :عجلة", "دجاجة(ديك): صقر"],
+				"true": "غرفة: بيت(منزل)",
+				"skill": "verbal-analogy",
+				"status": "missing && difficult",
+				"id": 5709
+			},
+			{"question":"نجاح : اجتهاد","answers":["عجين : خبز","إهمال :إصابة(جود : سخاء)","تهور : سرعة","شفاء : دواء"],"true":"شفاء : دواء","skill":"verbal-analogy","status":"missing && incorrect","id":5887},
+			{"question":"مهارة : إدارة","answers":["لياقة : رياضة","هدوء :بساطة","قوة : مساعدة"],"true":"لياقة : رياضة","skill":"verbal-analogy","status":"missing","id":5888},
+			{"question":"بطن : أمعاء","answers":["يمين: يسار","رأس : دماغ","دافىء : حار","عقرب : ساعة"],"true":"رأس : دماغ","skill":"verbal-analogy","status":"missing","id":5890},
+			{"question":"سعادة : مسرة","answers":["شقاء : تعاسة","فرح : رضا","شؤم : فأل"],"true":"شقاء : تعاسة","skill":"verbal-analogy","status":"missing","id":5891},
+			{"question":"خاتم : إصبع","answers":["خلخال : رجل","يد : وشم","أسوار : ذراع"],"true":"أسوار : ذراع","skill":"verbal-analogy","status":"missing","id":5892},
+			{"question":"أسود : كالح (حالك /كلاح)","answers":["أخضر :فاتح","أصفر:داهم","أزرق : باهت","أبيض: ناصع"],"true":"أبيض: ناصع","skill":"verbal-analogy","status":"missing && difficult","id":5893},
+			{"question":"صفاء:كدر (سعادة : كدر )","answers":["أعشى:كفيف","مريض:صحيح","سعادة:هناء"],"true":"مريض:صحيح","skill":"verbal-analogy",
+			"notes": "الصفاء عكسها كدر وهو عدم الصفاء, السعادة عكسها كدر وهو الحزن. الأعشى هو ضعيف البصر والكفيف هو الأعمى",
+			"status":"missing && difficult","id":5894},
+			{"question":"نحل : عسل","answers":["قناة :بث ( إذاعة : بث) (دجاجة : بيض)"],"true":"قناة :بث ( إذاعة : بث) (دجاجة : بيض)","skill":"verbal-analogy","status":"missing && difficult","id":5895},
+			{"question":"تبذير: تدبير","answers":["كرم:بخل"],"true":"كرم:بخل","skill":"verbal-analogy","status":"missing && difficult","id":5896},
+			{"question":"صنبور : ماء","answers":["سكينة : قطع","منفاخ : بالون","جرح : دم","منطاد : هواء"],"true":"جرح : دم","skill":"verbal-analogy","status":"missing","id":5897},
+			{"question":"جرح : دم","answers":["تهور :شجاعة","تحفظ :إقدام","صنبور: ماء","صوت:جهورى"],"true":"صنبور: ماء","skill":"verbal-analogy","status":"missing","id":5898},
+			{"question":"كان : صار","answers":["نحو : كتابة","طباعة : تأليف","سيارة : طيارة","حدث : زمان"],"true":"سيارة : طيارة","skill":"verbal-analogy","status":"missing && incorrect","id":5899},
+			{"question":"عداوة: خصومة","answers":["كبرياء: ازدراء","بقايا : حياء","قريب : عزيز"],"true":"كبرياء: ازدراء","skill":"verbal-analogy",
+				"notes": "عندما يكون شخص لي عدو, سوف أخاصمه. وعندما يتكبر الشخص, ينتج عن ذلك ازدراء وهو احتقار من الناس",
+
+"status":"missing","id":5900},
+{"question":"مصحح : اختبارات (مقياس : زلازل)","answers":["تحلية : ماء","صاع : أرز"],"true":"صاع : أرز","skill":"verbal-analogy","status":"missing","id":5901},
+{"question":"خيل: اسطبل","answers":["سيف:غمد","رجل: مكتب","تسعير :الجحيم","خناسة : كناس"],"true":"سيف:غمد","skill":"verbal-analogy",
+"notes": "موظف : مكتب أصح",
+"status":"missing && incorrect","id":5902},
+{"question":"اسطبل: خيل","answers":["غمد : سيف","مكتب  : رجل","غمد : سيف"],"true":"غمد : سيف",
+"notes": "موظف : مكتب أصح",
+
+"skill":"verbal-analogy","status":"missing && incorrect","id":5903},
+{"question":"اسطبل :خيل","answers":["مكتب : رجل","أسد : عرين","غمد  :سيف","غمد  :سيف"],"true":"غمد  :سيف","skill":"verbal-analogy",
+"notes": "موظف : مكتب أصح",
+
+"status":"missing && incorrect","id":5904}
 		]
 	},
 	{
@@ -31075,6 +31192,508 @@
 				"skill": "sentence-completion",
 				"status": "missing",
 				"id": 5562
+			},
+			{
+				"question": "يخرب بعض الناس حياتهم بالقلق على ........والحزن على ..... الماضي والتحسر عليها",
+				"answers": ["أبنائهم-ذكريات", "المستقبل –سلبيات", "الحاضر-مواقف"],
+				"true": "المستقبل –سلبيات",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5710
+			},
+			{
+				"question": "لو كان المال يغني عن ..........، لما تزوجت بنات ...........",
+				"answers": ["النسب – الأغنياء", "الناس-الرجال", "الناس-النساء", "الرجال-الملوك"],
+				"true": "الرجال-الملوك",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5711
+			},
+			{
+				"question": "الصديق الحقيقي...... لا تعرف قيمته إلا في........",
+				"answers": ["كالمصباح - الظلام", "كالمال-الرخاء", "كالسمعة-الضياء"],
+				"true": "كالمصباح - الظلام",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5712
+			},
+			{
+				"question": ".......... الأمور هو .......... في كل شيء .",
+				"answers": ["أصلح- الاعتدال", "أفسد-الزيادة", "رقي- الارتفاع"],
+				"true": "أصلح- الاعتدال",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5713
+			},
+			{
+				"question": "من الجميل أن…….الصغير عندما ……..الكبير.",
+				"answers": ["ينصت-يتحدث", "يفر-………", "يصمت-يسأل"],
+				"true": "ينصت-يتحدث",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5714
+			},
+			{ "question": "……التي لا تقصم ظهرك…….", "answers": ["الحمل- يسليك", "الضربات-تقويك"], "true": "الضربات-تقويك", "skill": "sentence-completion", "status": "missing", "id": 5715 },
+			{
+				"question": "القلوب .......... و الشفاه أقفالها و ......... مفاتيحها لذا فليصن كل إنسان لسانه",
+				"answers": ["أوعية – الألسن", "حافظة – ......."],
+				"true": "أوعية – الألسن",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5716
+			},
+			{
+				"question": "إذا كان هناك .... لا يكون هناك .... في العمل",
+				"answers": ["سرعة  -  إتقان"],
+				"true": "سرعة  -  إتقان",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5717
+			},
+			{
+				"question": "الإفراط في الجود يتبعه ......... والإفراط في ........ يتبعه التذلل",
+				"answers": ["الإسراف-التكبر", "التبذير –التواضع"],
+				"true": "التبذير –التواضع",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5718
+			},
+			{
+				"question": "الإفراط في الجود يوجب ......... والإفراط في ........ يوجب التذلل",
+				"answers": ["التبذير –التواضع", "الإسراف-التكبر"],
+				"true": "التبذير –التواضع",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5719
+			},
+			{
+				"question": "الهجر الجميل هجر بلا ....... ، والصفح الجميل صفح بلا .......... ، والصبر الجميل صبر بلا شكوى",
+				"answers": ["أذى- عتاب", "رجوع - عقاب"],
+				"true": "أذى- عتاب",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5720
+			},
+			{
+				"question": ".....من وسائل الرزق و زيادة المعرفة و الترويح عن النفس و التعرف على ....",
+				"answers": ["التجارة - الحياة", "السفر -  الاصدقاء", "التجارة-الأقارب"],
+				"true": "السفر -  الاصدقاء",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5721
+			},
+			{
+				"question": "المشكلة ليست في .......... التّي تحيط بنا المُشكلَة فِي قدرتنا على ......... معها.",
+				"answers": ["الظروف – التأقلم", "الأسباب – التصرف", "الظروف – التأقلم"],
+				"true": "الظروف – التأقلم",
+				"skill": "sentence-completion",
+				"status": "missing && incorrect",
+				"id": 5722
+			},
+			{ "question": "الحياة سهلة ل....... وليست سهلة لكبار السن", "answers": ["الفرد", "الشاب", "الرجل"], "true": "الشاب", "skill": "sentence-completion", "status": "missing", "id": 5723 },
+			{
+				"question": "الطلاب .......... المنهج في البداية ويعتمدون على المذاكرة في.......... الاخيرة",
+				"answers": ["يهملون-الاسابيع"],
+				"true": "يهملون-الاسابيع",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5724
+			},
+			{
+				"question": "الطالب إذا .......... دراسته يفقد .......... المعلمين له",
+				"answers": ["أهمل- تقدير"],
+				"true": "أهمل- تقدير",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5725
+			},
+			{
+				"question": "إن الطيور تعاني من عمليات اضطهاد ......... مستمرة بسبب الصيد .......... مما أدى إلى سفرها .",
+				"answers": ["بيئية – المعتدل", "بشرية- الجائر"],
+				"true": "بشرية- الجائر",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5726
+			},
+			{
+				"question": "إن الطيور تعاني اضطهادا ............مستمراً ، فأعمال الصيد ..........تلاحقها وتسلبها موائلها الطبيعية .",
+				"answers": ["بشرياً – الجائر"],
+				"true": "بشرياً – الجائر",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5727
+			},
+			{
+				"question": "الطلاب يتنافسون على .......... لأجل الحصول على .......... الوظيفية",
+				"answers": ["الدرجات – الفرص"],
+				"true": "الدرجات – الفرص",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5728
+			},
+			{
+				"question": "يدور في السنوات الاخيرة .......... في العالم حول استثمار الاموال في بحث وتطوير ........ لتحلية المياه.",
+				"answers": ["...... – آلات", "نقاش – تقنيات"],
+				"true": "نقاش – تقنيات",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5729
+			},
+			{ "question": "عندما ترى شخص يمر بأزمة من الأفضل أن تذكره بــ ……..", "answers": ["مزاياه"], "true": "مزاياه", "skill": "sentence-completion", "status": "missing", "id": 5730 },
+			{
+				"question": "التحدي(التحفيز) الداخلي من .............. الإنجاز",
+				"answers": ["معيقات", "محفزات", "سلبيات", "ايجابيات"],
+				"true": "محفزات",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5731
+			},
+			{
+				"question": "التحدي الداخلي يفيد في ........ الإنجاز",
+				"answers": ["سلبيات", "تحفيز", "ايجابيات", "إعاقة"],
+				"true": "تحفيز",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5732
+			},
+			{ "question": "إذا بذلت مجهوداً هذا لا يعني ......... للمطلوب", "answers": ["بذل", "سمو", "حصول"], "true": "حصول", "skill": "sentence-completion", "status": "missing", "id": 5733 },
+			{
+				"question": "المعلم ...........هو الذي يشجع الطلاب ........ويصبحون أشخاصاً مهمين في المستقبل",
+				"answers": ["يحرص – يأمل", "إمكانية - .....", "المخلص – ليجتهدوا", "الذكي – يسعى"],
+				"true": "المخلص – ليجتهدوا",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5734
+			},
+			{
+				"question": "المعلم ……… هو الذي يشجع طلابه........... ويجعلهم مثل أولاده .",
+				"answers": ["الذكي - .........", "المخلص –ليجتهدوا"],
+				"true": "المخلص –ليجتهدوا",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5735
+			},
+			{
+				"question": "لا تأخذ العلم من ........... حتى وإن وثقت في معرفتك خذه من .............. فلا استخدم معرفتي إلا في الحياة العملية .",
+				"answers": ["المعلم- القلم", "الكتب-  المعلم", "الحاسب-ذكائي", "المصادر – الحاسب"],
+				"true": "الكتب-  المعلم",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5736
+			},
+			{
+				"question": "إن ........يمكن استغلالها بساعات الفراغ مع .......... والاستمتاع في نفس الوقت",
+				"answers": ["السفر – المتعة", "القراءة – الفائدة", "الرحلة - ........"],
+				"true": "القراءة – الفائدة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5737
+			},
+			{
+				"question": "عمل القليل من …… خير من وقت كثير من الفراغ الذي ……..",
+				"answers": ["الجيد - يُفسد"],
+				"true": "الجيد - يُفسد",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5738
+			},
+			{
+				"question": "العلم (التمدين ) يعمل على صقل ........ الخشنة ، وتهذيب ...... الجافية.",
+				"answers": ["السجايا – المزايا", "الطباع - النفوس", "العادات -  ......", "الفنون – الناس"],
+				"true": "الطباع - النفوس",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5739
+			},
+			{
+				"question": "السفينة تجري في البحر ب ...... لأنهم ........",
+				"answers": ["ملاحينها  - يعدلونها", "تجارها - .......", "عمالها – ينظفونها", "ركابها – يفرحونها"],
+				"true": "ملاحينها  - يعدلونها",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5740
+			},
+			{
+				"question": "أكثر شيء الناس محسودة عليه هو ......... و ........... ولو أنها متوزعة بالتساوي بين الناس لحدث خلل في المجتمع",
+				"answers": ["العلم – الأموال", "المال – الثروات", "الأموال – المواريث", "الجاه - ........"],
+				"true": "المال – الثروات",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5741
+			},
+			{
+				"question": "........... تتحاسد عليه الناس ولو وزعت ......... بشكل متساوي بين الناس لحدث خلل وادى إلى اختلاف بنية المجتمع .",
+				"answers": ["المستويات – اختلاف", "المال – الثروات", "النسب – الاعتبارات"],
+				"true": "المال – الثروات",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5742
+			},
+			{ "question": ".......... هو من ....... الله", "answers": ["العالم- يخشى"], "true": "العالم- يخشى", "skill": "sentence-completion", "status": "missing", "id": 5743 },
+			{
+				"question": "يجب المحافظة على اركان …. لأنها …. الثابتة",
+				"answers": ["الصلاة-السنن", "الدين-العقيدة", "الدين-العقيدة"],
+				"true": "الدين-العقيدة",
+				"skill": "sentence-completion",
+				"status": "missing && incorrect",
+				"id": 5744
+			},
+			{ "question": "نذهب إلى الطبيب بشكل .........", "answers": ["دوري", "يومي", "وقائي", "منتظم"], "true": "دوري", "skill": "sentence-completion", "status": "missing", "id": 5745 },
+			{
+				"question": "إذا فعلت خيراً لا أحد يعلمه إلا أنت والخالق فإن الله يجازيك على قدر .......... (صيغة مشابهة )",
+				"answers": ["نيتك"],
+				"true": "نيتك",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5746
+			},
+			{
+				"question": "الوفاء إذا كان ........ لا يعرفه إلا غير الله وصاحب الشأن سيأخذ أجره على ....... وليس النية فقط.",
+				"answers": ["مضمر – القصد", "رغبة- حيلة"],
+				"true": "مضمر – القصد",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5747
+			},
+			{
+				"question": "المسابقة في..... هي....... الحقيقي",
+				"answers": ["الميادين-..........", "الخيرات-الفوز"],
+				"true": "الخيرات-الفوز",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5748
+			},
+			{
+				"question": "الكرماء يسعون في …..... ويتجنبون ….",
+				"answers": ["الفضائل - الرذائل", "المحاسن - المكاره"],
+				"true": "الفضائل - الرذائل",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5749
+			},
+			{ "question": "صاحب من إذا وعد ........ واذا اؤْتُمِنَ............", "answers": ["انجز -  وفى"], "true": "انجز -  وفى", "skill": "sentence-completion", "status": "missing", "id": 5750 },
+			{
+				"question": "نقف….. امام عظمة الله تعالى في خلق الكون، (جزء ناقص وبه فراغ آخر ) (99.9 )",
+				"answers": ["عاجزين - .........."],
+				"true": "عاجزين - ..........",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5751
+			},
+			{ "question": "الحرب ......وبلاء ، وتؤدي إلى....", "answers": ["فتنة- المصائب", "فتح- قتل"], "true": "فتنة- المصائب", "skill": "sentence-completion", "status": "missing", "id": 5752 },
+			{
+				"question": "أناقة فكرك من أناقة ......... فلا ترفع صوتك ولكن ارفع صوت ........",
+				"answers": ["لسانك – أفعالك"],
+				"true": "لسانك – أفعالك",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5753
+			},
+			{
+				"question": "إذا كانت حوادث السيارات مسؤولية .... فإن رجل المرور مسؤول عنه ...... و رجل الامن المكلف بذلك و الجميع مكلف بما في ذلك",
+				"answers": ["الجميع - وديًا", "الرجل - شخصيًا", "الكل - فردًا", "الجميع - رسميًا"],
+				"true": "الجميع - رسميًا",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5754
+			},
+			{
+				"question": "اثبتت الدراسات ...... ان قراءة النص بشكل جيد يساعد على فهمه ، وان المتعلمين تغيروا ولم يكتفوا بقراءة النص فقط بل اهتموا ب.....",
+				"answers": ["الحديثة - تحليله"],
+				"true": "الحديثة - تحليله",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5755
+			},
+			{
+				"question": "ثورة تقنية المعلومات والاتصالات .......... ابداع إنساني مشترك لكن ..... البشرية تدفع الى الاستحواذ على ثمارها و حرمان الآخرين منها",
+				"answers": ["صدى - النزعة", "ثورة – حسد", "اجتماع - الطبيعة", "نتاج - الأنانية"],
+				"true": "نتاج - الأنانية",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5756
+			},
+			{ "question": "احذر ….. الدنيا و….. عن الله", "answers": ["تلهيك-تشغلك"], "true": "تلهيك-تشغلك", "skill": "sentence-completion", "status": "missing", "id": 5757 },
+			{
+				"question": "الإنسان يجب أن يتصف ب........ الحسنة وعليه أن يحد من ..........",
+				"answers": ["الأخلاق - النفاق"],
+				"true": "الأخلاق - النفاق",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5758
+			},
+			{
+				"question": "لا ......... أحدا ما دمت لا تستطيع ........ به",
+				"answers": ["غائبة – رغبة", "تعد - الوفاء"],
+				"true": "تعد - الوفاء",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5759
+			},
+			{
+				"question": "الإهمال يقتل أي علاقة مهما كانت قوية و ........... يصنع أي علاقة مهما كانت مستحيلة",
+				"answers": ["الإهتمام"],
+				"true": "الإهتمام",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5760
+			},
+			{
+				"question": "لا يكون ......... الا ب..........",
+				"answers": ["الفقر – الجوع", "الازدهار- الاستقرار"],
+				"true": "الازدهار- الاستقرار",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5761
+			},
+			{ "question": "يتألم….عندما يرى النعمة لدى……", "answers": ["الحاسد-  الآخرين"], "true": "الحاسد-  الآخرين", "skill": "sentence-completion", "status": "missing", "id": 5762 },
+			{
+				"question": "اغفر .... الصغيرة لأنك أيضاً عندك ..... عظيمة",
+				"answers": ["الأخطاء-حسنات", "المساوئ-سيئات"],
+				"true": "المساوئ-سيئات",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5763
+			},
+			{
+				"question": "يعد العمران ........من مظاهر ...........البشرية",
+				"answers": ["مظهراً – الحضارة"],
+				"true": "مظهراً – الحضارة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5764
+			},
+			{
+				"question": "تسعى الشركات إلى...... المستهلك عن طريق زياده ..... المنتج",
+				"answers": ["جذب - جودة", ".......-  حرارة", "......- أسعار"],
+				"true": "جذب - جودة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5765
+			},
+			{
+				"question": "لا ...... الا مش شعر بنقص و لا ...... إلا مش شعر بهوان في نفسه",
+				"answers": ["يتكبر - يتطاول", "يحزن-  يسخر"],
+				"true": "يتكبر - يتطاول",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5766
+			},
+			{
+				"question": "الدنيا بخير ما دمت ........ ليأكل غيرك بعد أن ........ ما غرسه غيرك ( من قبلك )",
+				"answers": ["تغرس – أكلت"],
+				"true": "تغرس – أكلت",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5767
+			},
+			{
+				"question": "ليس صديقك من كان معك في الأوقات...... بل من كان معك في الأوقات.......",
+				"answers": ["السعيدة-  العصيبة"],
+				"true": "السعيدة-  العصيبة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5768
+			},
+			{
+				"question": "تسعى الدول إلى....... العلاقات فيما بينهم ، لكي .........الاقتصاد",
+				"answers": ["تحسين - يزدهر", "....... -  يركد", "يقل ( يضعف )", "....... – يتدهور"],
+				"true": "تحسين - يزدهر",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5769
+			},
+			{
+				"question": "تسعى الشركات إلى ....... المستهلك عن طريق زيادة .......... المنتج .",
+				"answers": [".......... – أسعار", "...........- حرارة", "جذب-جودة"],
+				"true": "جذب-جودة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5770
+			},
+			{
+				"question": "التوازن النفسي للإنسان ……… إذا كانت البيئة غير سوية",
+				"answers": ["متذبذب", "يتكاثر", "يقل"],
+				"true": "يقل",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5771
+			},
+			{
+				"question": "في إفريقيا يوجد مراعٍ شاسعة .........الغذاء للناس بعد ذلك .........لحقل صيد لأشد الثدييات افتراسا.",
+				"answers": ["تعطي- تطورت", "....... – تحولت", "تهدي - تأهلت", "....... – تحولت"],
+				"true": "....... – تحولت",
+				"skill": "sentence-completion",
+				"status": "missing && incorrect",
+				"id": 5772
+			},
+			{
+				"question": "قطف الثمار هو عبارة عن مخطط منتظم ( محكم ) مبتدئه ........",
+				"answers": ["الحرث", "الغرس", "البذر", "الحرث"],
+				"true": "الحرث",
+				"skill": "sentence-completion",
+				"status": "missing && incorrect",
+				"id": 5773
+			},
+			{
+				"question": "التأليف هو .........عقلك على عقول .........",
+				"answers": ["عرض – الآخرين", "وضع  - الناشرون", "فتح - ........."],
+				"true": "عرض – الآخرين",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5774
+			},
+			{
+				"question": "عندما تكون فريقا ابحث دائما عن أناس ..........الفوز وإن لم تجد ابحث عن أناس يكرهون ..........",
+				"answers": ["يدركون – الفوز", "ينسون – الانتصار", "يكرهون – الهزيمة", "يحبون – الهزيمة"],
+				"true": "يحبون – الهزيمة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5775
+			},
+			{
+				"question": "رد الاساءة بـ …. يجعلك تابعًا ؛ لأن العدو ألزمك بـ ….",
+				"answers": ["بمثلها - أخلاقه"],
+				"true": "بمثلها - أخلاقه",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5776
+			},
+			{ "question": "الطبيب يبذل اقصى جهده في …… المريض ، لكن الشفاء يكون بيد الله", "answers": ["شفاء"], "true": "شفاء", "skill": "sentence-completion", "status": "missing", "id": 5777 },
+			{ "question": "الصمت …….. عند توخي الحذر ،وتوخي النجاة", "answers": ["يقي"], "true": "يقي", "skill": "sentence-completion", "status": "missing", "id": 5778 },
+			{ "question": "الصمت ......... عند توخي النجاة", "answers": ["يقي"], "true": "يقي", "skill": "sentence-completion", "status": "missing", "id": 5779 },
+			{ "question": "السكر ........ صحية و يسبب....... للأطفال", "answers": ["آفة - المرض"], "true": "آفة - المرض", "skill": "sentence-completion", "status": "missing", "id": 5780 },
+			{
+				"question": "تعد المواد الدراسية من الوثائق ........ التي يعدها .......",
+				"answers": ["المهمة – المتخصصون", "الضرورية – المتعلمون", "المهمة – المتعلمون"],
+				"true": "المهمة – المتخصصون",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5781
+			},
+			{
+				"question": "جمل نفسك وطباعك وتعاملك مع الناس ، ........ لذلك ، فالحلم من التحلم والصبر من التصبر و........... الأخيار يساعدك على التطبع بطباعهم .",
+				"answers": ["......... – مناكفة", "........ – مناجزة", "واصبر – مرافقة", "واقتصر – مصاحبة"],
+				"true": "واصبر – مرافقة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5782
+			},
+			{
+				"question": "يجب أن يكون توخي الحذر ......... في البيئات ..........",
+				"answers": ["ثانوي – إنشائية", "مطلوب -  الفوضوية", "رئيس-  المتعاملة"],
+				"true": "مطلوب -  الفوضوية",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5783
+			},
+			{
+				"question": "الطائرات ..... معداتها إذا تعطلت واحدة تستخدم الثانية .",
+				"answers": ["مختلفة", "متكاملة", "متماثلة", "متطابقة"],
+				"true": "متكاملة",
+				"skill": "sentence-completion",
+				"status": "missing",
+				"id": 5784
 			}
 		]
 	},
@@ -34024,6 +34643,644 @@
 				"skill": "contextual-error",
 				"status": "missing",
 				"id": 5396
+			},
+			{
+				"question": "لا يزهدنك في المنكر كفر من كفره، فإنه يشكرك عليه من لم تصطنعه إليه",
+				"answers": ["يزهدنك", "المنكر", "يشكرك", "تصطنعه"],
+				"true": "المنكر",
+				"notes": "التصحيح: المعروف. الزهد يعني أعرض عن الشيء, لا تجعل كفر شخص وعدم شكره لمعروفك يجعلك تعرض عن المعروف",
+				"skill": "contextual-error",
+				"status": "missing && incorrect",
+				"id": 5785
+			},
+			{
+				"question": "الإبداع يبدأ بالخوف ، والتفكير ينتهي عند ذلك بالعمل",
+				"answers": ["الابداع", "بالخوف", "ينتهي", "بالعمل"],
+				"true": "بالخوف",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5786
+			},
+			{ "question": "عندما تمارس الإحسان مع عدوك يحس بالقوة .", "answers": ["عندما", "تمارس", "يحس", "بالقوة"], "true": "بالقوة", "skill": "contextual-error", "status": "missing", "id": 5787 },
+			{
+				"question": "في القضاء افهم ما أدْليَ إليك فلا تتكلم بباطل لا نفاذ له.",
+				"answers": ["افهم", "بباطل", "نفاذ", "القضاء"],
+				"true": "بباطل",
+				"notes": "بحق. لا تتكلم بحق تعرف أنه ما راح يتنفذ. أدلي إليك أي قدم إليك",
+				"skill": "contextual-error",
+				"status": "missing && incorrect",
+				"id": 5788
+			},
+			{
+				"question": "عندما تتعامل مع الذين يجاملونك تستفيد أكثر من تعاملك مع الذين يوافقونك الرأي .",
+				"answers": ["تتعامل", "يجاملونك", "تستفيد", "يوافقونك"],
+				"true": "يجاملونك",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5789
+			},
+			{
+				"question": "ما أضمر أحد شيئاً إلا ظهر في فلتات قلبه وصفحات وجهه",
+				"answers": ["أضمر", "شيئا", "قلبه", "وجهه"],
+				"true": "قلبه",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5790
+			},
+			{
+				"question": "الجمال الحقيقي و...... و فلتات اللسان و ما تخفيه تصرفاتك",
+				"answers": ["الجمال", "فلتات", "اللسان", "تخفيه"],
+				"true": "تخفيه",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5791
+			},
+			{
+				"question": "لا شيء أسوأ من الثبات على الرأي إلا الرجوع إلى الحق",
+				"answers": ["شيء", "أسوأ", "الرأي", "الرجوع"],
+				"true": "أسوأ",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5792
+			},
+			{ "question": "إذا حزنت من شيء فاجعل الحزن صفحات في كتابك", "answers": ["شيء", "فاجعل", "صفحات", "كتابك"], "true": "صفحات", "skill": "contextual-error", "status": "missing", "id": 5793 },
+			{
+				"question": "إن الصواب الذي أنت عليه سيجعلك تتعلم من أخطاءك .",
+				"answers": ["الصواب", "سيجعلك", "تتعلم", "أخطاءك"],
+				"true": "الصواب",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5794
+			},
+			{
+				"question": "الجلوس الخاطئ والعادات الغير صحية والحيوية تزيد من احتمالية الاصابة بالسمنة",
+				"answers": ["الحيوية"],
+				"true": "الحيوية",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5795
+			},
+			{ "question": "يجب عليك الالتزام بالقراءة حتى يصيح جسمك أقوى وأكثر حيوية", "answers": ["بالقراءة"], "true": "بالقراءة", "skill": "contextual-error", "status": "missing", "id": 5796 },
+			{
+				"question": "الحياة المستقرة تساعدنا على تحليل طموحاتنا .",
+				"answers": ["الحياة", "تساعدنا", "تحليل", "طموحاتنا"],
+				"true": "تحليل",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5797
+			},
+			{
+				"question": "لن تشعر بحقارة وجودك في قمم الجبال مالم تكن أسفل الوديان",
+				"answers": ["حقارة", "وجودك", "قمم الجبال", "اسفل الوديان"],
+				"true": "حقارة",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5798
+			},
+			{ "question": "إن كثرة الفراغ ملل وتعب ويجب على الناس أن تعرف قيمة الوقت", "answers": ["تعب"], "true": "تعب", "skill": "contextual-error", "status": "missing", "id": 5799 },
+			{
+				"question": "يشعر الإنسان بالضيق والتعب من أوقات الفراغ بشكل متكرر وذلك لعدم ادراكهم بأهمية الوقت وكيفية استغلاله",
+				"answers": ["الضيق", "التعب", "الفراغ", "الوقت"],
+				"true": "التعب",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5800
+			},
+			{ "question": "رحم الله عبداً تكلّم بخيرٍ فغنم، أو سكت فندم", "answers": ["رحم", "عبدا", "سكت", "فندم"], "true": "فندم", "skill": "contextual-error", "status": "missing", "id": 5801 },
+			{ "question": "رحم الله عبداً قال خيرًا فغنم وسكت فندم", "answers": ["عبدًا", "خيراً", "فغنم", "فندم"], "true": "فندم", "skill": "contextual-error", "status": "missing", "id": 5802 },
+			{
+				"question": "إن كنت تريد النجاح فاذهب مع من يحبون الفوز وان لم تستطع فاذهب مع من يرغبون الهزيمة .",
+				"answers": ["النجاح", "يحبون", "الفوز", "يرغبون"],
+				"true": "يرغبون",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5803
+			},
+			{ "question": "إن الرجل الذى عقد النية على الفوز، لا ينطق بكلمة استطيع", "answers": ["الفوز", "استطيع"], "true": "استطيع", "skill": "contextual-error", "status": "missing", "id": 5804 },
+			{
+				"question": "أصحاب الذاكرة القوية يعانون من متلازمة اللامبالاة وتذكر التفاصيل",
+				"answers": ["الذاكرة", "القوية", "اللامبالاة", "التفاصيل"],
+				"true": "اللامبالاة",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5805
+			},
+			{
+				"question": "محادثة الإخوان حياة القلوب وجلاء النفس وتذكير المتذكر",
+				"answers": ["الإخوان", "حياة", "جلاء", "المتذكر"],
+				"true": "المتذكر",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5806
+			},
+			{
+				"question": "تقوم المناهج الدراسية بربط الطالب بالخيال حتى يكون مستعداً لممارسة حياته العملية",
+				"answers": ["تقوم", "المناهج", "حياته", "بالخيال"],
+				"true": "بالخيال",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5807
+			},
+			{
+				"question": "لا يقلقني إلا أن اعجز عن اخفاء اخطائي، فإن الذي لا يصلح خطأه وقد عرفه.. يكون قد ارتكب خطأً ثانياً.",
+				"answers": ["اخفاء", "يصلح", "يرتكب"],
+				"true": "اخفاء",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5808
+			},
+			{
+				"question": "نفسك أمانة عليك فيجب عليك اخفاؤها عن كل مكروه .",
+				"answers": ["أمانة", "اخفاؤها", "كل", "مكروه"],
+				"true": "اخفاؤها",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5809
+			},
+			{
+				"question": "إن مودة يغنيها تراخي اللقاء ، فإنها فاسدة .",
+				"answers": ["مودة", "يغنيها", "تراخي", "فاسدة"],
+				"true": "يغنيها",
+				"notes": "يفسدها. لو كان المودة يفسدها تراخي اللقاء, يعني يغنيها كثرة اللقاء, فهي فاسدة ومودة وهمية",
+				"skill": "contextual-error",
+				"status": "missing && incorrect",
+				"id": 5810
+			},
+			{
+				"question": "إذا أردت أن تعرف الإيثار الحقيقي انظر كيف يعاملك أعداؤك",
+				"answers": ["تعرف", "الإيثار", "أنظر", "أعداؤك"],
+				"true": "أعداؤك",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5811
+			},
+			{ "question": "الإنسان إذا أصابته مصيبة يجب أن يتصورها أكبر مما هي عليه حتى تهون عليه", "answers": ["أكبر"], "true": "أكبر", "skill": "contextual-error", "status": "missing", "id": 5812 },
+			{
+				"question": "لا يستطيع الإنسان ان يعيش بلا خوف، لكن مَن يَخْشَ أن يتألّم , يتألّمْ ممّا يرغب",
+				"answers": ["يعيش", "خوف", "يتألم", "يرغب"],
+				"true": "يرغب",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5813
+			},
+			{
+				"question": "لا يمكن أن يعيش المرء بلا خوف، ولكن عندما يخشى أن يتألم سوف يتألم مما يرغب",
+				"answers": ["يعيش", "خوف", "يتألم", "يرغب"],
+				"true": "يرغب",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5814
+			},
+			{
+				"question": "لا يستطيع المرء أن يعيش بلا خوف ، لكنه يخشى أن يتألم مما يرغب .",
+				"answers": ["خوف", "يخشى", "يتألم", "يرغب"],
+				"true": "يرغب",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5815
+			},
+			{
+				"question": "ابتعد عن سوء الظن فهو يؤذي وعن التفكير فهو يهدم وعن المقارنة فهي تظلم.",
+				"answers": ["سوء", "التفكير", "المقارنة", "تظلم"],
+				"true": "التفكير",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5816
+			},
+			{ "question": "ابتعد عن سوء الظن والتفكير فإنه ينهكك والمقارنة فإنها تظلمك", "answers": ["التفكير"], "true": "التفكير", "skill": "contextual-error", "status": "missing", "id": 5817 },
+			{
+				"question": "اترك سوء الظن لأنه يؤذي والتفكير لأنه يقتل والمقارنة لأنها تظلم",
+				"answers": ["المقارنة", "التفكير", "سوء الظن"],
+				"true": "التفكير",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5818
+			},
+			{ "question": "الغضب يحبطك و......... ولذلك لابد أن تحسن الظن بالله", "answers": ["الغضب"], "true": "الغضب", "skill": "contextual-error", "status": "missing", "id": 5819 },
+			{
+				"question": "الغضب لا يفيد ولا يحل شيئاً ويجعلك واقفًا في مكانك ولا تتقدم، حاربه بحسن الظن بالله",
+				"answers": ["الغضب", "واقفا"],
+				"true": "الغضب",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5820
+			},
+			{
+				"question": "من عود نفسه علي البذل زاد شغفه للمال وقل إحسانه للناس",
+				"answers": ["البذل", "زاد", "قل", "إحسانه"],
+				"true": "البذل",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5821
+			},
+			{
+				"question": "من عود نفسه على البذل زاد شغفه للمال وزاد إحسانه للناس.",
+				"answers": ["البذل", "زاد", "وزاد", "إحسانه"],
+				"true": "زاد",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5822
+			},
+			{
+				"question": "حق عليك أن تخفي السعادة حتى وإن كنت لا تشعر بها .",
+				"answers": ["تخفي", "السعادة", "تشعر", "بها"],
+				"true": "تخفي",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5823
+			},
+			{
+				"question": "القراءة هي المعرفة في عوالم الاخرين، والاستفادة من تجاربهم",
+				"answers": ["المعرفة", "عوالم", "الآخرين", "والاستفادة"],
+				"true": "المعرفة",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5824
+			},
+			{ "question": "المعلومات تنتقل دقيقة عبر مواقع التواصل الاجتماعي ,", "answers": ["دقيقة", "التواصل"], "true": "دقيقة", "skill": "contextual-error", "status": "missing", "id": 5825 },
+			{
+				"question": "لا نعرف قيمة الملح إلا عندما نضعه ولا نعرف قيمة الأب إلا عندما نحتاج إليه",
+				"answers": ["نضعه", "نعرف", "الأب", "نحتاج"],
+				"true": "نضعه",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5826
+			},
+			{
+				"question": "الطب مهنة صعبة فلذلك العديد من الناس يمتهنونها .",
+				"answers": ["مهنة", "فلذلك", "الناس", "يمتهنونها"],
+				"true": "فلذلك",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5827
+			},
+			{ "question": "يظن الكثير من الناس أن السعادة تكمن في زهد المال", "answers": ["يظن", "الناس", "تكمن", "زهد"], "true": "زهد", "skill": "contextual-error", "status": "missing", "id": 5828 },
+			{ "question": "الوطن هو منزلك الباقي فحافظ عليه", "answers": ["منزلك", "الباقي", "فحافظ", "عليه"], "true": "الباقي", "skill": "contextual-error", "status": "missing", "id": 5829 },
+			{
+				"question": "عندما تكون على حق تستطيع ان تتحكم في اعصابك ، فإذا أصبت فلن تجد غير الكلام الجارح لتفرض رأيك.",
+				"answers": ["أصبت", "لتفرض"],
+				"true": "أصبت",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5830
+			},
+			{
+				"question": "سوء الظن تسبب في قطع كثير من الأرحام و ترك الأصدقاء و يجعلك في دوامة ، لذا فإن من كان عنده حسن ظن عاش في هم.",
+				"answers": ["سوء", "قطع", "حسن"],
+				"true": "حسن",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5831
+			},
+			{
+				"question": "أول شيء يفكر به الشخص إذا أراد مضاعفة دخله، أن يبدأ بتقليل جهده",
+				"answers": ["مضاعفة", "بتقليل"],
+				"true": "بتقليل",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5832
+			},
+			{ "question": "طور من نفسك ونمها لتصنع نجاحك بقلبك", "answers": ["طور", "ونمها", "لتصنع", "بقلبك"], "true": "بقلبك", "skill": "contextual-error", "status": "missing", "id": 5833 },
+			{
+				"question": "معرض الكتاب أتاح خدمة القارئ المتجول للمكفوفين ولذلك فإن هذه الفكرة مقتتها جمعية المكفوفين.",
+				"answers": ["معرض", "أتاح", "الفكرة", "مقتتها"],
+				"true": "مقتتها",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5834
+			},
+			{
+				"question": "جمعية الأيتام ترعى الأيتام وتساعدهم وتؤويهم ، وهذا ما تمقته جمعية الأيتام .",
+				"answers": ["جمعية", "الأيتام", "تساعدهم", "تمقته"],
+				"true": "تمقته",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5835
+			},
+			{
+				"question": "الشباب الطموحين هم الذين لا يحاولون الوصول إلى مستوى أعلى مما هم فيه. (صيغة مشابهة)",
+				"answers": ["الطموحين", "الوصول", "مستوى", "أعلى"],
+				"true": "الطموحين",
+				"notes": "الكسالة. تأكد من الصيغة",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5836
+			},
+			{
+				"question": "الصلاة فريضة محددة بوقت نهائي ، فلا يجب تقديمها ولا تأخيرها",
+				"answers": ["الصلاة", "فريضة", "بوقت", "نهائي"],
+				"true": "نهائي",
+				"notes": "محدد",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5837
+			},
+			{
+				"question": "الصلاة فريضة محددة في وقت نهائي فلا تأخرها وتضيعها",
+				"answers": ["الصلاة", "فريضة", "بوقت", "نهائي"],
+				"true": "نهائي",
+				"notes": "محدد",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5838
+			},
+			{ "question": "شخص يحاول ان يكسب ود الآخرين من خلال التفاعل مع الناس وتحييدهم", "answers": ["تحييدهم"], "true": "تحييدهم",
+			"notes": "التحييد جعل الشيء جانبًا أو عدم جعله أساسي, والتصحيح: التفاعل معهم وتقريبهم",
+			"skill": "contextual-error", "status": "missing", "id": 5839 },
+			{
+				"question": "إن تفاهم الاسرة وارتباطهم مع بعض يسبب التباين فيما بينهم ويحسن علاقاتهم",
+				"answers": ["تفاهم", "وارتباطهم", "التباين", "وتحسين"],
+				"true": "التباين",
+				"notes": "التوافق",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5840
+			},
+			{
+				"question": "ردم الهوة التي بين الآباء والأبناء هي جسر التباين بينهم وتحسين العلاقة بينهم",
+				"answers": ["الهوة", "جسر", "التباين", "وتحسين"],
+				"true": "التباين",
+				"notes": "التوافق. الهوة هي الفجوة",
+
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5841
+			},
+			{
+				"question": "من الغباء ان تتوقع أن أول نجاح لك سيكون تكملة لجميع نجاحاتك",
+				"answers": ["الغباء", "تتوقع", "تكملة", "نجاحاتك"],
+				"true": "تكملة",
+				"notes": "بداية",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5842
+			},
+			{ "question": "جهل سبب المرض يمكننا من معرفة الدواء", "answers": ["المرض", "سبب", "يمكننا", "الدواء"], "true": "يمكننا", 
+			"notes": "لا يمكننا",
+			"skill": "contextual-error", "status": "missing", "id": 5843 },
+			{ "question": "القصة ناتجة عن أحداث وروايات وهي ناتجة عن قصائد طويلة", "answers": ["قصائد", "طويلة"], "true": "قصائد",
+			"notes": "القصة ليس فيها قصائد, والتصحيح: حكايات",
+			"skill": "contextual-error", "status": "missing", "id": 5844 },
+			{
+				"question": "قد يكون في خبايا المصائب حكمة. فعليك القيام على الأمر. واحتساب الأجر من البلاء",
+				"answers": ["خبايا", "حكمة", "القيام", "البلاء"],
+				"true": "القيام",
+				"notes": "التصحيح: الثبات, عند ما تصيبك مصيبك, احسن الظن بالله أن في خباياها حكمه, فاثبت نفسك واحتسب الأجر",
+				"skill": "contextual-error",
+				"status": "missing && hundred",
+				"id": 5845
+			},
+			{ "question": "الحكمة سر لا يفنى بالإنفاق", "answers": ["الحكمة", "سر", "يفنى", "بالإنفاق"], "true": "سر",
+			"notes": "التصحيح: كنز. الحكمة كنز لا يفنى بالإنفاق, أي لا يخلص وييستنفذ من الإنفاق والاستعمال",
+			"skill": "contextual-error", "status": "missing && incorrect", "id": 5846 },
+			{ "question": "المدير بحاجة لتسمية شخص لينتاب عنه عند إيابه", "answers": ["تسمية", "ينتاب", "عند"], "true": "عند", "skill": "contextual-error", "status": "missing", "id": 5847 },
+			{ "question": "تنزح الراوي القصة من البئر", "answers": ["ينزح", "القصة", "البئر"], "true": "البئر",
+			"notes": "عقله أو خياله أو محيطه",
+			"skill": "contextual-error", "status": "missing", "id": 5848 },
+			{ "question": "ينزح الراوي القصة من البئر", "answers": ["ينزح", "القصة", "البئر"], "true": "البئر", 
+			"notes": "عقله أو خياله أو محيطه",
+			"skill": "contextual-error", "status": "missing", "id": 5849 },
+			{
+				"question": "القرارات يجب أخذها بالظن الصحيح و إن أوجعك",
+				"answers": ["القرارات", "الظن", "صحيحة", "أوجعك"],
+				"true": "الظن",
+				"notes": "اليقين",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5850
+			},
+			{
+				"question": "القدرات العقلية العالية تدل على التعليم",
+				"answers": ["القدرات", "العالية", "تدل", "التعليم"],
+				"true": "التعليم",
+				"notes": "الذكاء",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5851
+			},
+			{
+				"question": "احترام الكبير حصل على استنكار من الدين الاسلامي وذم هذا الفعل .",
+				"answers": ["استنكار", "ذم", "الفعل", "احترام"],
+				"true": "احترام",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5852
+			},
+			{ "question": "من ترك فضول النظر منح العمى", "answers": ["ترك", "فضول", "النظر", "العمى"], "true": "العمى", "skill": "contextual-error", "status": "missing", "id": 5853 },
+			{ "question": "الصداقة كالبئر تقل عمقاً كلما أخذت منه.", "answers": ["الصداقة", "البئر", "تقل", "منه"], "true": "تقل", "skill": "contextual-error", "status": "missing", "id": 5854 },
+			{ "question": "الصداقة بئر يقل عمقا كلما اخذت منه", "answers": ["الصداقة", "البئر", "يقل", "منه"], "true": "يقل", "skill": "contextual-error", "status": "missing", "id": 5855 },
+			{
+				"question": "الفرص جزء من الحظ ، فعليك اغتنامها فقد لا تسنح مرة أخرى",
+				"answers": ["الفرص", "الحظ", "تسنح", "أخرى"],
+				"true": "الحظ",
+				"notes": "التصحيح: الحياة. تسنح أي تتاح",
+				"skill": "contextual-error",
+				"status": "missing && incorrect",
+				"id": 5856
+			},
+			{
+				"question": "إذا حدثت لك مصيبة لا تخفي أحدًا لأن الناس تفضح ولا تعذر والله يستر ويغفر.",
+				"answers": ["مصيبة", "تخفي", "تفضح", "تعذر"],
+				"true": "تخفي",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5857
+			},
+			{
+				"question": "إذا وقعت لك مصيبة فلا تخفى أحداً لأن الناس تفضح ولا تعذر ، والله عز وجل يستر ويغفر",
+				"answers": ["المصيبة", "تخفي", "تفضح", "تعذر"],
+				"true": "تخفي",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5858
+			},
+			{
+				"question": "الحامدون يكررون(يكثرون) الثناء على الناس كلما دفعوا عنهم نعمة .",
+				"answers": ["الحامدون", "الثناء", "دفعوا", "نعمة"],
+				"true": "نعمة",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5859
+			},
+			{ "question": "إن الأشخاص العظماء يسعون خلف الشهادات الاجازات", "answers": ["العظماء"], "true": "العظماء", "skill": "contextual-error", "status": "missing", "id": 5860 },
+			{
+				"question": "المسيء في الظن تنقطع علاقاته مع الكل والمحسن في الظن سوف يعيش في هم وتعب",
+				"answers": ["المسيء", "المحسن", "هم"],
+				"true": "المحسن",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5861
+			},
+			{
+				"question": "المسيء في الظن تنقطع علاقاته مع الكل والمحسن في الظن سوف يعيش في هم",
+				"answers": ["المسيء", "المحسن", "الظن", "هم"],
+				"true": "هم",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5862
+			},
+			{ "question": "من كان عند حسن ظن عاش في هم وتعب", "answers": ["حسن"], "true": "حسن", "skill": "contextual-error", "status": "missing", "id": 5863 },
+			{ "question": "انشر مساوئ الناس كما أمرنا النبي صلى الله عليه وسلم", "answers": ["انشر"], "true": "انشر", "skill": "contextual-error", "status": "missing", "id": 5864 },
+			{
+				"question": "انشر معروفك فبذلك تتبع السنة، وتحفظ ماء وجه الفقير، وتأخذ اجر الصدقة بالسر",
+				"answers": ["انشر", "السنة"],
+				"true": "انشر",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5865
+			},
+			{ "question": "كاد الرعد يخطف أبصار المشاهدين إلا واحدا", "answers": ["الرعد", "المشاهدين"], "true": "الرعد", "skill": "contextual-error", "status": "missing", "id": 5866 },
+			{
+				"question": "أقوى الأقوياء من أدب غيره ، والعاجز من عجز عن تأديب نفسه وسعى لتأديب الآخرين .",
+				"answers": ["أقوى", "غيره", "عجز", "لتأديب"],
+				"true": "غيره",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5867
+			},
+			{
+				"question": "إن تقابل السيئة بضدها ، فأنت تحسن العمل وتسعد من يريدك ان تسوء السبيل",
+				"answers": ["تقابل", "تحسن", "وتسعد"],
+				"true": "وتسعد",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5868
+			},
+			{
+				"question": "من كان يتمنى أن ينال الاستمتاع بعد الاضطلاع بالمسؤولية فهو لا يتحمل المسؤولية .",
+				"answers": ["يتمنى", "بعد", "الاضطلاع", "يتحمل"],
+				"true": "بعد",
+				"notes": "التصحيح: قبل. إضطلاع المسؤولية هو إنهاء المسؤولية",
+				"skill": "contextual-error",
+				"status": "missing && hundred && difficult",
+				"id": 5869
+			},
+			{
+				"question": "من يقول أنه ينبغي أن تكون المتعة بعد الاضطلاع بالمسئولية فهو ليس مستعداً(ليس أهلا) لتحمل المسئولية .",
+				"answers": ["ينبغي", "بعد", "الاضطلاع", "تحمل"],
+				"true": "بعد",
+				"skill": "contextual-error",
+				"status": "missing && hundred",
+				"id": 5870
+			},
+			{
+				"question": "أن تموت جوعاً وأنت عزيز خير من أن تعيش غنياً وأنت قوي .",
+				"answers": ["جوعاً", "عزيز", "غنياً", "قوي"],
+				"true": "قوي",
+				"notes": "مهان أو مذلول",
+				"skill": "contextual-error",
+				"status": "missing && hundred",
+				"id": 5871
+			},
+			{
+				"question": "من كان غنيا بالمال فيجب أن يقايض حاجة الآخرين",
+				"answers": ["غنياً", "بالمال", "يقايض", "حاجة"],
+				"true": "يقايض",
+				"notes": "التصحيح: تلبي. قد أتى للمختبر يقايض أو يقيض أو كلمة غيرها لكن جميعها غلط",
+				"skill": "contextual-error",
+				"status": "missing && test-revision",
+				"id": 5872
+			},
+			{ "question": "التواضع يجعلك تستشري من الناس محبتهم", "answers": ["التواضع", "تستشري", "الناس", "محبتهم"], "true": "تستشري", "skill": "contextual-error", 
+			"notes": "التصحيح: تأسر, تستشري كلمة سيئة مثلًا تستشري الأوبئة",
+			"status": "missing", "id": 5873 },
+			{
+				"question": "من تصدر لخدمة العامة، فلا بد أن يتصدق ببعض من ماله على الناس، لأنه لا محالة مشتــوم، حتي وإن واصل الليل بالنهــــار.",
+				"answers": ["مشتوم", "الليل", "واصل", "ماله"],
+				"true": "ماله",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5874
+			},
+			{
+				"question": "البهتان من الأعمال المذمومة وخطأ في حق المسلم فإنه يسبب التخاصم بين الناس وهذا لا يسمي استجوابا.",
+				"answers": ["استجوابا"],
+				"true": "استجوابا",
+				"notes": "الاستجواب هو أخذ حد عشان جريمة",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5875
+			},
+			{
+				"question": "التعامل العدواني يجعل الطفل يستخدم قوته اللفظية لإلقاء الأذى بالآخرين . ((العدوان البدني مع الطفل يظهر في سلوكه ويجعله يستخدم قوته اللفظية في التعدي وإلحاق الأذى بالآخرين .",
+				"answers": ["الطفل", "اللفظية"],
+				"true": "اللفظية",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5876
+			},
+			{
+				"question": "لا تصف شخص بالخطأ ، بل بالفعل ، من الأساليب الذميمة في التربية المعاصرة",
+				"answers": ["شخص", "بالفعل", "الذميمة", "المعاصرة"],
+				"true": "الذميمة",
+				"skill": "contextual-error",
+				"status": "missing && incorrect && unsure",
+				"id": 5877
+			},
+			{ "question": "ألقى الشاعر كلمته العصماء فأبهرت الجمهور وأطربت مسامعهم .", "answers": ["كلمته", "عصماء"], "true": "كلمته", "notes": "قصيدته", "skill": "contextual-error", "status": "missing", "id": 5878 },
+			{ "question": "الشاعر يلقي كلمته العصماء فيحرك نفوس الناس وتطرب الاسماع", "answers": ["كلمته", "العصماء"], "true": "كلمته", "notes": "قصيدته", "skill": "contextual-error", "status": "missing", "id": 5879 },
+			{
+				"question": "كلمة الشاعر العصماء تطرب المسامع وتوعظ الرجال.",
+				"answers": ["كلمة", "الشاعر", "العصماء", "تطرب"],
+				"true": "كلمة",
+				"notes": "قصيدته", 
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5880
+			},
+			{
+				"question": "الشاعر يلقي كلمته العصماء ، فتحرك النفوس ، و تطرب لها الاذان .",
+				"answers": ["كلمته", "العصماء", "تحرك", "تطرب"],
+				"true": "كلمته",
+				"notes": "قصيدته", 
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5881
+			},
+			{
+				"question": "من أخطار النجاح هو أن تعتقد أن المرة الاولي لفشلك هي الدليل علي استمرار النجاح",
+				"answers": ["أخطار", "تعتقد", "المرة", "لفشلك"],
+				"true": "لفشلك",
+				"notes": "نجاحك",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5882
+			},
+			{
+				"question": "يكون النجاح خطراً عندما تعتقد أن سبب فشلك في المرة الأولى سيكون كافياً لاستمرار نجاحك",
+				"answers": ["خطراً", "تعتقد", "المرة", "فشلك"],
+				"true": "فشلك",
+				"notes": "نجاحك",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5883
+			},
+			{
+				"question": "ليس أيسر من هلاك الإنسان من مرافق يقاوم لذاته ( ملاذه ) .",
+				"answers": ["أيسر", "مرافق", "يقاوم", "لذاته"],
+				"true": "يقاوم",
+				"notes": "التصحيح: يدعم/يعزز. أن يكن لديك صاحب يدعم شهواته ولذاته هذا أصعب من الموت والهلاك",
+				"skill": "contextual-error",
+				"status": "missing && incorrect",
+				"id": 5884
+			},
+			{
+				"question": "الواعظ المؤثر من يقل وعظه ويعظم معناه ويكثر خطاه",
+				"answers": ["الواعظ", "يقل", "ويعظم", "ويكثر"],
+				"true": "ويكثر",
+				"notes": "ويقل",
+				"skill": "contextual-error",
+				"status": "missing",
+				"id": 5885
+			},
+			{
+				"question": "زيادة الفكر تظهر في قلة الكلام وقلة الصوت ولكن إذا أردت ان يسمعك الناس فارفع كلماتك",
+				"answers": ["الفكر", "الكلام", "أردت", "كلماتك"],
+				"true": "كلماتك",
+				"notes": "التصحيح: صوتك",
+				"skill": "contextual-error",
+				"status": "missing && difficult && unsure",
+				"id": 5886
 			}
 		]
 	}

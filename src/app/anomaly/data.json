@@ -8672,5 +8672,576 @@
 		"solution": "بنوة",
 		"status": "missing && super incorrect && hundred",
 		"id": 846
-	}
+	},
+	[
+		{
+			"answers": [
+				{ "content": "قطع", "meaning": "" },
+				{ "content": "أنهى", "meaning": "" },
+				{ "content": "بت", "meaning": "" },
+				{ "content": "قسم", "meaning": "" }
+			],
+			"solution": "قسم",
+			"status": "missing",
+			"id": 847
+		},
+		{
+			"answers": [
+				{ "content": "صاروخ", "meaning": "" },
+				{ "content": "قطار", "meaning": "" },
+				{ "content": "سفينة", "meaning": "" },
+				{ "content": "طائرة", "meaning": "" }
+			],
+			"solution": "صاروخ",
+			"status": "missing",
+			"id": 848
+		},
+		{
+			"answers": [
+				{ "content": "حديث", "meaning": "" },
+				{ "content": "جديد", "meaning": "" },
+				{ "content": "تغيير", "meaning": "" }
+			],
+			"solution": "تغيير",
+			"status": "missing",
+			"id": 849
+		},
+		{
+			"answers": [
+				{ "content": "تفاح", "meaning": "" },
+				{ "content": "خوخ", "meaning": "" },
+				{ "content": "خيار", "meaning": "" },
+				{ "content": "فراولة", "meaning": "" }
+			],
+			"solution": "خيار",
+			"status": "missing",
+			"id": 850
+		},
+		{
+			"answers": [
+				{ "content": "تسرع", "meaning": "" },
+				{ "content": "تعجل", "meaning": "" },
+				{ "content": "توقف", "meaning": "" },
+				{ "content": "تمهل", "meaning": "" }
+			],
+			"solution": "توقف",
+			"status": "missing",
+			"id": 851
+		},
+		{
+			"answers": [
+				{ "content": "رف", "meaning": "" },
+				{ "content": "دولاب", "meaning": "" },
+				{ "content": "مكتبة", "meaning": "الباقي جميعه له علاقة بالملابس" },
+				{ "content": "معلاق", "meaning": "شماعة" }
+			],
+			"solution": "مكتبة",
+			"status": "missing && super incorrect",
+			"id": 852
+		},
+		{
+			"answers": [
+				{ "content": "ملعب", "meaning": "" },
+				{ "content": "مضرب", "meaning": "" },
+				{ "content": "دراجة", "meaning": "" },
+				{ "content": "سيارة", "meaning": "" }
+			],
+			"solution": "ملعب",
+			"status": "missing",
+			"id": 853
+		},
+		{
+			"answers": [
+				{ "content": "نفط", "meaning": "" },
+				{ "content": "حديد", "meaning": "" },
+				{ "content": "ذهب", "meaning": "" },
+				{ "content": "نحاس", "meaning": "" }
+			],
+			"solution": "نفط",
+			"status": "missing",
+			"id": 854
+		},
+		{
+			"answers": [
+				{ "content": "نفط", "meaning": "" },
+				{ "content": "فضة", "meaning": "" },
+				{ "content": "نحاس", "meaning": "" },
+				{ "content": "ذهب", "meaning": "" }
+			],
+			"solution": "نفط",
+			"status": "missing",
+			"id": 855
+		},
+		{
+			"answers": [
+				{ "content": "نهض", "meaning": "" },
+				{ "content": "وقع", "meaning": "" },
+				{ "content": "جلس", "meaning": "" },
+				{ "content": "سجد", "meaning": "" }
+			],
+			"solution": "وقع",
+			"status": "missing",
+			"id": 856
+		},
+		{
+			"answers": [
+				{ "content": "خاتم", "meaning": "" },
+				{ "content": "قلادة", "meaning": "" },
+				{ "content": "عدسات", "meaning": "" },
+				{ "content": "نظارات", "meaning": "" }
+			],
+			"solution": "عدسات",
+			"status": "missing",
+			"id": 857
+		},
+		{
+			"answers": [
+				{ "content": "نظارات", "meaning": "" },
+				{ "content": "عدسات", "meaning": "" },
+				{ "content": "سلسال", "meaning": "" },
+				{ "content": "أقراط", "meaning": "" }
+			],
+			"solution": "عدسات",
+			"status": "missing",
+			"id": 858
+		},
+		{
+			"answers": [
+				{ "content": "بَرد", "meaning": "" },
+				{ "content": "ثلج", "meaning": "" },
+				{ "content": "جليد", "meaning": "" },
+				{ "content": "صقيع", "meaning": "طبقة لونه أبيض تتكون على الأرض, الباقي جميعه ثلج" }
+			],
+			"solution": "صقيع",
+			"status": "missing && incorrect",
+			"id": 859
+		},
+		{
+			"answers": [
+				{ "content": "موز", "meaning": "عشب وثمرتها عليها غطاء" },
+				{ "content": "تفاح", "meaning": "" },
+				{ "content": "عنب", "meaning": "" },
+				{ "content": "توت", "meaning": "" }
+			],
+			"solution": "موز",
+			"status": "missing",
+			"id": 860
+		},
+		{
+			"answers": [
+				{ "content": "خفاش", "meaning": "" },
+				{ "content": "عصفور", "meaning": "" },
+				{ "content": "حمام", "meaning": "" },
+				{ "content": "بومة", "meaning": "" }
+			],
+			"solution": "خفاش",
+			"status": "missing",
+			"id": 861
+		},
+		{
+			"answers": [
+				{ "content": "مطحون", "meaning": "" },
+				{ "content": "مخزون", "meaning": "" },
+				{ "content": "مكنون", "meaning": "" },
+				{ "content": "مدفون", "meaning": "" }
+			],
+			"solution": "مطحون",
+			"status": "missing",
+			"id": 862
+		},
+		{
+			"answers": [
+				{ "content": "مدفون", "meaning": "" },
+				{ "content": "مكنون", "meaning": "" },
+				{ "content": "مضمون", "meaning": "" }
+			],
+			"solution": "مضمون",
+			"status": "missing",
+			"id": 863
+		},
+		{
+			"answers": [
+				{ "content": "شاهي (شاي)", "meaning": "" },
+				{ "content": "نعناع", "meaning": "" },
+				{ "content": "عصير", "meaning": "" },
+				{ "content": "زنجبيل", "meaning": "" }
+			],
+			"solution": "عصير",
+			"status": "missing",
+			"id": 864
+		},
+		{
+			"answers": [
+				{ "content": "أتان", "meaning": "" },
+				{ "content": "حصان", "meaning": "" },
+				{ "content": "غزالة", "meaning": "" },
+				{ "content": "اسم آخر للحصان", "meaning": "" }
+			],
+			"solution": "غزالة",
+			"status": "missing",
+			"id": 865
+		},
+		{
+			"answers": [
+				{ "content": "عمود", "meaning": "" },
+				{ "content": "سقف", "meaning": "" },
+				{ "content": "جدار", "meaning": "" },
+				{ "content": "حائط", "meaning": "" }
+			],
+			"solution": "عمود",
+			"status": "missing",
+			"id": 866
+		},
+		{
+			"answers": [
+				{ "content": "الصلاة", "meaning": "" },
+				{ "content": "الدعاء", "meaning": "عبادة لفظية وقولية, البقية عبادات عملية" },
+				{ "content": "الزكاة", "meaning": "" },
+				{ "content": "العمرة", "meaning": "" }
+			],
+			"solution": "الدعاء",
+			"status": "missing && incorrect",
+			"id": 867
+		},
+		{
+			"answers": [
+				{ "content": "أموال", "meaning": "" },
+				{ "content": "دراهم", "meaning": "" },
+				{ "content": "أملاك", "meaning": "" },
+				{ "content": "نقود", "meaning": "" }
+			],
+			"solution": "أملاك",
+			"status": "missing",
+			"id": 868
+		},
+		{
+			"answers": [
+				{ "content": "سالم", "meaning": "" },
+				{ "content": "صلاح", "meaning": "" },
+				{ "content": "سعد", "meaning": "الباقي أربع أحرف" },
+				{ "content": "علي", "meaning": "الياء عليها شدة فالأسم الصحيح عليْي " }
+			],
+			"solution": "سعد",
+			"status": "missing && difficult",
+			"id": 869
+		},
+		{
+			"answers": [
+				{ "content": "مشرط", "meaning": "" },
+				{ "content": "مقص", "meaning": "" },
+				{ "content": "سماعة", "meaning": "" },
+				{ "content": "مقعد", "meaning": "" }
+			],
+			"solution": "مقعد",
+			"status": "missing",
+			"id": 870
+		},
+		{
+			"answers": [
+				{ "content": "تحديث", "meaning": "" },
+				{ "content": "تجديد", "meaning": "" },
+				{ "content": "تنويع", "meaning": "" },
+				{ "content": "تطوير", "meaning": "" }
+			],
+			"solution": "تنويع",
+			"status": "missing",
+			"id": 871
+		},
+		{
+			"answers": [
+				{ "content": "هضاب", "meaning": "" },
+				{ "content": "جبال", "meaning": "" },
+				{ "content": "سواحل", "meaning": "" },
+				{ "content": "أنهار", "meaning": "" }
+			],
+			"solution": "أنهار",
+			"status": "missing",
+			"id": 872
+		},
+		{
+			"answers": [
+				{ "content": "فصيحة", "meaning": "" },
+				{ "content": "صحيفة", "meaning": "" },
+				{ "content": "صريحة", "meaning": "" },
+				{ "content": "حصيفة", "meaning": "" }
+			],
+			"solution": "صريحة",
+			"status": "missing",
+			"id": 873
+		},
+		{
+			"answers": [
+				{ "content": "صحيفة", "meaning": "" },
+				{ "content": "صفيحة", "meaning": "" },
+				{ "content": "حصيفة", "meaning": "" },
+				{ "content": "صريحة", "meaning": "" }
+			],
+			"solution": "صريحة",
+			"status": "missing",
+			"id": 874
+		},
+		{
+			"answers": [
+				{ "content": "اقط", "meaning": "جبن مجفف" },
+				{ "content": "جبن", "meaning": "" },
+				{ "content": "زبيب", "meaning": "" },
+				{ "content": "تفاح", "meaning": "الباقي حصل له عملية تحول" }
+			],
+			"solution": "تفاح",
+			"status": "missing && difficult",
+			"id": 875
+		},
+		{
+			"answers": [
+				{ "content": "مساومة", "meaning": "" },
+				{ "content": "ملاكمة", "meaning": "" },
+				{ "content": "مبارزة", "meaning": "" },
+				{ "content": "مصارعة", "meaning": "" }
+			],
+			"solution": "مساومة",
+			"status": "missing",
+			"id": 876
+		},
+		{
+			"answers": [
+				{ "content": "تدارس", "meaning": "" },
+				{ "content": "تربية", "meaning": "" },
+				{ "content": "تحدي", "meaning": "" },
+				{ "content": "تعليم", "meaning": "" }
+			],
+			"solution": "تحدي",
+			"status": "missing",
+			"id": 877
+		},
+		{
+			"answers": [
+				{ "content": "كمين", "meaning": "" },
+				{ "content": "فخ", "meaning": "" },
+				{ "content": "خديعة", "meaning": "" },
+				{ "content": "هزيمة", "meaning": "" }
+			],
+			"solution": "هزيمة",
+			"status": "missing",
+			"id": 878
+		},
+		{
+			"answers": [
+				{ "content": "الولاء", "meaning": "" },
+				{ "content": "الطاعة", "meaning": "" },
+				{ "content": "الانتماء", "meaning": "" },
+				{ "content": "الاستعلاء", "meaning": "" }
+			],
+			"solution": "الاستعلاء",
+			"status": "missing",
+			"id": 879
+		},
+		{
+			"answers": [
+				{ "content": "مكتب", "meaning": "" },
+				{ "content": "مدرج", "meaning": "" },
+				{ "content": "منجرة", "meaning": "" },
+				{ "content": "مصبغة", "meaning": "" }
+			],
+			"solution": "مدرج",
+			"status": "missing",
+			"id": 880
+		},
+		{
+			"answers": [
+				{ "content": "ثبات", "meaning": "" },
+				{ "content": "سكون", "meaning": "" },
+				{ "content": "توقف", "meaning": "" },
+				{ "content": "هدوء", "meaning": "" }
+			],
+			"solution": "هدوء",
+			"status": "missing",
+			"id": 881
+		},
+		{
+			"answers": [
+				{ "content": "ساق", "meaning": "" },
+				{ "content": "جذع", "meaning": "" },
+				{ "content": "ورقة", "meaning": "" },
+				{ "content": "يرقة", "meaning": "" }
+			],
+			"solution": "يرقة",
+			"status": "missing",
+			"id": 882
+		},
+		{
+			"answers": [
+				{ "content": "حلق", "meaning": "" },
+				{ "content": "عدسات", "meaning": "" },
+				{ "content": "نظارت", "meaning": "" },
+				{ "content": "خلخال", "meaning": "" }
+			],
+			"solution": "عدسات",
+			"status": "missing",
+			"id": 883
+		},
+		{
+			"answers": [
+				{ "content": "قدرة", "meaning": "" },
+				{ "content": "طول", "meaning": "" },
+				{ "content": "ذكاء", "meaning": "" },
+				{ "content": "بدانه", "meaning": "" }
+			],
+			"solution": "بدانه",
+			"status": "missing",
+			"id": 884
+		},
+		{
+			"answers": [
+				{ "content": "نصح", "meaning": "" },
+				{ "content": "عتاب", "meaning": "" },
+				{ "content": "وعظ", "meaning": "" },
+				{ "content": "سمع", "meaning": "" }
+			],
+			"solution": "سمع",
+			"status": "missing",
+			"id": 885
+		},
+		{
+			"answers": [
+				{ "content": "لا تعجل", "meaning": "" },
+				{ "content": "لا تتسرع", "meaning": "" },
+				{ "content": "لا تهدأ", "meaning": "" }
+			],
+			"solution": "لا تهدأ",
+			"status": "missing",
+			"id": 886
+		},
+		{
+			"answers": [
+				{ "content": "تحليل", "meaning": "" },
+				{ "content": "استنتاج", "meaning": "" },
+				{ "content": "اختبار", "meaning": "" },
+				{ "content": "أشعة", "meaning": "" }
+			],
+			"solution": "استنتاج",
+			"status": "missing",
+			"id": 887
+		},
+		{
+			"answers": [
+				{ "content": "متلبس", "meaning": "" },
+				{ "content": "متشكل", "meaning": "" },
+				{ "content": "متعارض", "meaning": "" },
+				{ "content": "مشتبه", "meaning": "" }
+			],
+			"solution": "متعارض",
+			"status": "missing",
+			"id": 888
+		},
+		{
+			"answers": [
+				{ "content": "أقوى", "meaning": "" },
+				{ "content": "أسرع", "meaning": "" },
+				{ "content": "أغنى", "meaning": "" },
+				{ "content": "أقصر", "meaning": "" }
+			],
+			"solution": "أغنى",
+			"status": "missing",
+			"id": 889
+		},
+		{
+			"answers": [
+				{ "content": "حديد", "meaning": "" },
+				{ "content": "نحاس", "meaning": "" },
+				{ "content": "ذهب", "meaning": "" },
+				{ "content": "فضة", "meaning": "" }
+			],
+			"solution": "حديد",
+			"status": "missing",
+			"id": 890
+		},
+		{
+			"answers": [
+				{ "content": "بحر", "meaning": "" },
+				{ "content": "بحيرة", "meaning": "" },
+				{ "content": "نهر", "meaning": "" },
+				{ "content": "بئر", "meaning": "" }
+			],
+			"solution": "بئر",
+			"status": "missing",
+			"id": 891
+		},
+		{
+			"answers": [
+				{ "content": "الذخيرة", "meaning": "عدة الحرب" },
+				{ "content": "القنبلة", "meaning": "" },
+				{ "content": "البندقية", "meaning": "" },
+				{ "content": "الصاروخ", "meaning": "" }
+			],
+			"solution": "الذخيرة",
+			"status": "missing && hundred",
+			"id": 892
+		},
+		{
+			"answers": [
+				{ "content": "مغامرة", "meaning": "" },
+				{ "content": "مخاطرة", "meaning": "" },
+				{ "content": "تضحية", "meaning": "" },
+				{ "content": "تعدية", "meaning": "الباقي فيها مغامرة" }
+			],
+			"solution": "تعدية",
+			"status": "missing && difficult",
+			"id": 893
+		},
+		{
+			"answers": [
+				{ "content": "هدوء", "meaning": "" },
+				{ "content": "سكون", "meaning": "" },
+				{ "content": "توقف", "meaning": "" },
+				{ "content": "تمهل", "meaning": "البقية قريبين من بعض" }
+			],
+			"solution": "تمهل",
+			"status": "missing && incorrect",
+			"id": 894
+		},
+		{
+			"answers": [
+				{ "content": "حج", "meaning": "" },
+				{ "content": "عمرة", "meaning": "" },
+				{ "content": "طواف", "meaning": "" },
+				{ "content": "رمي", "meaning": "" }
+			],
+			"solution": "حج",
+			"status": "missing",
+			"id": 895
+		},
+		{
+			"answers": [
+				{ "content": "السدل", "meaning": "سدلت الثوب, أي غطيت جسمي بالثياب" },
+				{ "content": "الاضطباع", "meaning": "في العمرة وضع الحرام في ناحية الكتف الثانية" },
+				{ "content": "الاضطجاع", "meaning": "النوم" },
+				{ "content": "التلفع", "meaning": "رمي اللبس أو العمامة على الرأس او الكتف" }
+			],
+			"solution": "الاضطجاع",
+			"status": "missing && super incorrect",
+			"id": 896
+		},
+		{
+			"answers": [
+				{ "content": "ذهب", "meaning": "" },
+				{ "content": "فضة", "meaning": "" },
+				{ "content": "ألماس", "meaning": "" },
+				{ "content": "لؤلؤ", "meaning": "" }
+			],
+			"solution": "لؤلؤ",
+			"status": "missing",
+			"id": 897
+		},
+		{
+			"answers": [
+				{ "content": "حامد", "meaning": "" },
+				{ "content": "ذاكر", "meaning": "" },
+				{ "content": "شاكر", "meaning": "" },
+				{ "content": "سامع", "meaning": "" }
+			],
+			"solution": "سامع",
+			"status": "missing",
+			"id": 898
+		}
+	]
 ]
