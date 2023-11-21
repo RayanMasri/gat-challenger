@@ -1017,16 +1017,6 @@
 	},
 	{
 		"answers": [
-			{ "content": "الفستان", "meaning": "" },
-			{ "content": "الخلخال", "meaning": "" },
-			{ "content": "القميص", "meaning": "لباس داخليّ يغطِّي الجلدَ وتغطِّيه ثيابٌ خارجيَّة" },
-			{ "content": "العقد", "meaning": "" }
-		],
-		"solution": "القميص",
-		"id": 102
-	},
-	{
-		"answers": [
 			{ "content": "الفكر", "meaning": "" },
 			{ "content": "القلم", "meaning": "" },
 			{ "content": "عدوّ", "meaning": "" },
@@ -6525,16 +6515,6 @@
 	},
 	{
 		"answers": [
-			{ "content": "الماء", "meaning": "" },
-			{ "content": "الغذاء", "meaning": "" },
-			{ "content": "الشمس", "meaning": "" },
-			{ "content": "القمر", "meaning": "" }
-		],
-		"solution": "الغذاء",
-		"id": 649
-	},
-	{
-		"answers": [
 			{ "content": "توت", "meaning": "" },
 			{ "content": "رمان", "meaning": "" },
 			{ "content": "برتقال", "meaning": "" },
@@ -6808,7 +6788,7 @@
 			{ "content": "قضاء", "meaning": "رجالُ القضاء: الهيئةُ التي يُوكَلُ إليها بحثُ الخصومات للفصل فيها طبقاً للقوانين. القضاء هو من يصدر الحكم" }
 		],
 		"solution": "قضاء",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 677
 	},
 	{
@@ -6885,7 +6865,7 @@
 			{ "content": "مسجد", "meaning": "" }
 		],
 		"solution": "مكان",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 684
 	},
 	{
@@ -7196,7 +7176,7 @@
 			{ "content": "الماء", "meaning": "" }
 		],
 		"solution": "الهواء",
-		"status": "missing && hundred",
+		"status": "missing && hundred && memorize",
 		"id": 711
 	},
 	{
@@ -7229,7 +7209,7 @@
 			{ "content": "عقد", "meaning": "تلبسه المرأة حول عنقها" }
 		],
 		"solution": "قميص",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 714
 	},
 	{
@@ -7284,7 +7264,7 @@
 			{ "content": "الشمس", "meaning": "" }
 		],
 		"solution": "الغذاء",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 719
 	},
 	{
@@ -7361,7 +7341,7 @@
 			{ "content": "شموع", "meaning": "الباقي أجرام سماوية" }
 		],
 		"solution": "شموع",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 726
 	},
 	{
@@ -7427,7 +7407,7 @@
 			{ "content": "قرأ", "meaning": "الباقي باليد, القراءة بالنظر" }
 		],
 		"solution": "قرأ",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 732
 	},
 	{
@@ -7438,7 +7418,7 @@
 			{ "content": "ثوب", "meaning": "" }
 		],
 		"solution": "عمامة",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 733
 	},
 	{
@@ -7449,7 +7429,7 @@
 			{ "content": "عسل", "meaning": "" }
 		],
 		"solution": "سكر",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 734
 	},
 	{
@@ -7460,7 +7440,7 @@
 			{ "content": "زكاة", "meaning": "من أركان الإسلام" }
 		],
 		"solution": "زكاة",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 735
 	},
 	{
@@ -7515,7 +7495,7 @@
 			{ "content": "قطار", "meaning": "" }
 		],
 		"solution": "دراجة",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 740
 	},
 	{
@@ -7548,7 +7528,7 @@
 			{ "content": "فرس", "meaning": "" }
 		],
 		"solution": "زرافة",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 743
 	},
 	{
@@ -7603,7 +7583,7 @@
 			{ "content": "دقيق", "meaning": "" }
 		],
 		"solution": "بر",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 748
 	},
 	{
@@ -7636,7 +7616,7 @@
 			{ "content": "هدية", "meaning": "" }
 		],
 		"solution": "نفقة",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 751
 	},
 	{
@@ -7757,7 +7737,7 @@
 			{ "content": "تجارة", "meaning": "" }
 		],
 		"solution": "بذخ",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 761
 	},
 	{
@@ -7768,7 +7748,7 @@
 			{ "content": "انصهار", "meaning": "الباقي جميعه يحدث للماء, الانصهار للحديث" }
 		],
 		"solution": "انصهار",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 762
 	},
 	{
@@ -7889,7 +7869,7 @@
 			{ "content": "استعطاف", "meaning": "طلب المساعدة" }
 		],
 		"solution": "استنجاد",
-		"status": "missing && incorrect && closed",
+		"status": "missing && incorrect && closed && difficult",
 		"id": 772
 	},
 	{
@@ -7900,7 +7880,7 @@
 			{ "content": "عزم", "meaning": "عزَم الشَّخصُ : صبر وثبت وجدَّ في أمره" }
 		],
 		"solution": "قسم",
-		"status": "missing && incorrect && closed",
+		"status": "missing && super super super super incorrect && closed",
 		"id": 773
 	},
 	{
@@ -7944,7 +7924,7 @@
 			{ "content": "حارس", "meaning": "" }
 		],
 		"solution": "مشجع",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 780
 	},
 	{
@@ -7999,7 +7979,7 @@
 			{ "content": "ممارسة", "meaning": "" }
 		],
 		"solution": "اختبار",
-		"status": "missing && incorrect && difficult",
+		"status": "missing && super incorrect && difficult",
 		"id": 785
 	},
 	{
@@ -8131,7 +8111,7 @@
 			{ "content": "الشمس", "meaning": "الأرض يشمل الماء والهواء, فالشمس هي الشاذة" }
 		],
 		"solution": "الشمس",
-		"status": "missing && super incorrect",
+		"status": "missing && super super incorrect && memorize",
 		"id": 797
 	},
 	{
@@ -8142,7 +8122,7 @@
 			{ "content": "شمس", "meaning": "" }
 		],
 		"solution": "قمر",
-		"status": "missing && super incorrect",
+		"status": "missing && super super incorrect && memorize",
 		"id": 798
 	},
 	{
@@ -8153,7 +8133,7 @@
 			{ "content": "شمس", "meaning": "" }
 		],
 		"solution": "غذاء",
-		"status": "missing",
+		"status": "missing && memorize",
 		"id": 799
 	},
 	{
@@ -8230,7 +8210,7 @@
 			{ "content": "نصيحة", "meaning": "" }
 		],
 		"solution": "ندم",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 806
 	},
 	{
@@ -8241,7 +8221,7 @@
 			{ "content": "تهديد", "meaning": "" }
 		],
 		"solution": "تهريب",
-		"status": "missing && incorrect",
+		"status": "missing && super incorrect",
 		"id": 807
 	},
 	{
@@ -8307,7 +8287,7 @@
 			{ "content": "محاولة", "meaning": "" }
 		],
 		"solution": "مقاتلة",
-		"status": "missing && super incorrect",
+		"status": "missing && super super incorrect",
 		"id": 813
 	},
 	{
@@ -8384,7 +8364,7 @@
 			{ "content": "طاولة", "meaning": "" }
 		],
 		"solution": "كتاب",
-		"status": "missing && super incorrect",
+		"status": "missing && super super incorrect",
 		"id": 820
 	},
 	{
@@ -8461,7 +8441,7 @@
 			{ "content": "شيخوخة", "meaning": "" }
 		],
 		"solution": "بنوه",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 827
 	},
 	{
@@ -8505,7 +8485,7 @@
 			{ "content": "عجز", "meaning": "" }
 		],
 		"solution": "كسل",
-		"status": "missing",
+		"status": "missing && incorrect",
 		"id": 831
 	},
 	{
@@ -8682,7 +8662,7 @@
 				{ "content": "قسم", "meaning": "" }
 			],
 			"solution": "قسم",
-			"status": "missing",
+			"status": "missing && incorrect",
 			"id": 847
 		},
 		{
